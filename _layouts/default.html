@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/display.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/display.css">
 
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type='text/javascript' src='js/jquery.cookie.js'></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.js"></script>
+        <script type='text/javascript' src='{{ site.baseurl }}/js/jquery.cookie.js'></script>
 
         <script type="text/javascript">
             $(document).ready(function () {
@@ -22,11 +22,11 @@
 
                     if (text.is(':hidden')) {
                         text.slideDown('10');
-                        $(this).children('span').html('<img src="images/arrow-open.gif" />');
+                        $(this).children('span').html('<img src="{{ site.baseurl }}/images/arrow-open.gif" />');
                         $.cookie((this).children.attr('id'), 'expanded');
                     } else {
                         text.slideUp('10');
-                        $(this).children('span').html('<img src="images/arrow-closed.gif" />');
+                        $(this).children('span').html('<img src="{{ site.baseurl }}/images/arrow-closed.gif" />');
                         $.cookie((this).children.attr('id'), 'collapsed');
                     }
 
