@@ -1,0 +1,89 @@
+<div id="banner">
+    <p><img src="images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+    <h1>User Guides</h1>
+</div> <!-- banner -->
+
+<!-- Level 1 List -->
+<ul class="level1" id="toggle-1">
+
+    <!-- Level 1 Item -->
+    <li><a href="index.html">Home</a></li><!-- End Level 1 Item -->
+
+    <!-- Level 1 Item -->
+    <li class="toggle"><span><img src="images/arrow-open.gif" /></span>Quickstart User Guides <!-- Level 1 Item -->
+
+        <!-- Level 2 List -->
+        <ul class="level2" id="item1">
+
+            {% for item in site.pages %}
+            {% if item.level1 == 'Quickstart User Guides' %}
+            <li><a href="{{ item.url }}">{{item.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+
+        </ul><!-- End Level 2 List -->
+
+    </li><!-- End Level 1 Item -->
+
+    <!-- Level 1 Item -->
+    <li>Workflow User Guides
+
+        <li class="toggle"><span><img src="images/arrow-closed.gif" /></span>OMERO.insight <!-- Level 1 Item -->
+
+            <!-- Level 2 List -->
+            <ul class="level2" id="item2" style="display:none">
+            
+                {% for item in site.pages %}
+                {% if item.level1 == 'OMERO.insight' %}
+                <li><a href="{{ item.url }}">{{item.title}}</a></li>
+                {% endif %}
+                {% endfor %}
+
+            </ul><!-- End Level 2 List -->
+
+        </li><!-- End Level 1 Item -->
+
+        <li class="no-toggle"><span><img src="images/arrow-closed.gif" /></span>OMERO.web <!-- Level 1 Item -->
+
+            <!-- Level 2 List -->
+            <ul class="level2"  id="item3" style="display:none">
+
+                {% for item in site.pages %}
+                {% if item.level1 == 'OMERO.web' %}
+                <li><a href="{{ item.url }}">{{item.title}}</a></li>
+                {% endif %}
+                {% endfor %}
+
+            </ul><!-- End Level 2 List -->
+
+            </li><!-- End Level 2 Item -->
+
+        </li><!-- End Level 1 Item -->
+
+        <!-- Level 1 Item -->
+
+        <li class="toggle"><span><img src="images/arrow-open.gif" /></span>More<!-- Level  Item -->
+
+            <!-- Level 2 List -->
+            <ul class="level2"  id="item4">
+
+                {% for item in site.pages %}
+                {% if item.level1 == 'More' %}
+                <li><a href="{{ item.url }}">{{item.title}}</a></li>
+                {% endif %}
+                {% endfor %}
+                <li><a href="http://www.openmicroscopy.org/site">Main OME Website</a></li><!-- End Level 2 Item -->
+
+            </ul><!-- End Level 2 List -->
+
+        </li><!-- End Level 1 Item -->
+
+    </li>
+
+</ul><!-- End Level 1 List -->
+
+<div id="footer">
+
+    <p>&copy; Copyright <br/>Open Microscopy Environment <br/>2000 - 2013.</p>
+
+</div><!-- End Footer -->
