@@ -1,3 +1,29 @@
+---
+navigation:
+    - id: l1-home
+      name: Home
+      open: always
+      link: index.html
+    - id: l1-quickstart
+      name: Quickstart User Guides
+      open: yes
+    - id: l1-workflow
+      name: Workflow User Guides
+      open: always
+      children:
+        - id: l2-insight
+          name: OMERO.insight
+          open: no
+        - id: l2-web
+          name: OMERO.web
+          open: no
+        - id: l2-more
+          name: More
+          open: yes
+          links:
+            - href: http://www.openmicroscopy.org/site
+              text: Main OME Website
+---
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,27 +37,19 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/css/display.css">
 
         <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.js"></script>
-        <script type='text/javascript' src='{{ site.baseurl }}/js/jquery.cookie.js'></script>
 
         <script type="text/javascript">
             $(document).ready(function () {
-
                 $('#toggle-1 li').click(function () {
-
                     var text = $(this).children('ul.level2');
-
                     if (text.is(':hidden')) {
                         text.slideDown('10');
                         $(this).children('span').html('<img src="{{ site.baseurl }}/images/arrow-open.gif" />');
-                        $.cookie((this).children.attr('id'), 'expanded');
                     } else {
                         text.slideUp('10');
                         $(this).children('span').html('<img src="{{ site.baseurl }}/images/arrow-closed.gif" />');
-                        $.cookie((this).children.attr('id'), 'collapsed');
                     }
-
                 });
-
             });
         </script>
 
@@ -42,7 +60,25 @@
             <div id="container">
                 <div id="navigation">
 
-                    {% include navigation.html %}
+                    <div id="banner">
+                        <p><img src="{{ site.baseurl }}/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+                        <h1>User Guides</h1>
+                    </div> <!-- banner -->
+
+                    <!-- Level 1 List -->
+                    <ul class="level1" id="toggle-1">
+
+                        {% for level1 in page.navigation %}
+                        {% include navigation.html item=level1 %}
+                        {% endfor %}
+
+                    </ul><!-- End Level 1 List -->
+
+                    <div id="footer">
+
+                        <p>&copy; Copyright <br/>Open Microscopy Environment <br/>2000 - 2013.</p>
+
+                    </div><!-- End Footer -->
 
                 </div> <!-- navigation -->
 

@@ -1,0 +1,11 @@
+<!-- Level 2 List -->
+<ul class="level2" {% unless include.child.open or page.menu-id == include.child.id %}style="display: none;"{% endunless %}>
+    {% for the_page in site.pages %}
+    {% if the_page.menu-id == include.child.id %}
+    <li><a href="{{ site.baseurl }}{{ the_page.url }}">{{ the_page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% for link in include.child.links %}
+    <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a></li>
+    {% endfor %}
+</ul><!-- End Level 2 List -->
