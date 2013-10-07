@@ -3,7 +3,7 @@ user-guides
 
 OME Project User Guides
 
-Thi site hosts the User Guides for the Open Microscopy Environment clients and applications.
+This site hosts the User Guides for the Open Microscopy Environment clients and applications.
 
 For more detils see: http://www.openmicroscopy.org/
 
