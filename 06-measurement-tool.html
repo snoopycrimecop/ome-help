@@ -1,0 +1,201 @@
+---
+layout: default
+title: Measurement Tool
+menu-id: l2-insight
+pdfs:
+    - measurement-tool.pdf
+---
+<p>Using the measurement tool in OMERO.insight to draw <span class="bold">Regions of Interest</span> (ROIs) and undertake analysis.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">Open the image in the <span class="bold">Image Viewer</span> and click on the <span class="bold">Measuring Tools</span> icon to open the tools palette.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolIcon.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolIcon.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">To draw or manipulate ROIs, click on the buttons in the palette tool bar (left to right):</p>
+
+<p>- ROI selector</p>
+
+<p>- draw rectangle</p>
+
+<p>- draw ellipse</p>
+
+<p>- draw point</p>
+
+<p>- draw line</p>
+
+<p>- draw polygon</p>
+
+<p>- add a text ROI</p>
+
+<p>- show/hide text</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolToolbar1.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolToolbar1.jpg" style="width: 55%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Other buttons in the tool bar of the tools palette are (left to right):</p>
+
+<p>- save ROIs (once created)</p>
+
+<p>- load ROIs from saved local file</p>
+
+<p>- open the ROI assistant</li>
+
+<p>- delete ROIs (click gives options)</p>
+
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolToolbar2.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolToolbar2.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Details of <span class="bold">ROIs</span> are viewed in the <span class="bold">Manager</span> tab of the tools palette.
+The columns show:</p>
+
+<p>- ID of the ROI</p>
+
+<p>- Z section(s) and time sequence(s) the ROI is drawn on</p>
+
+<p>- ROI type</p>
+
+<p>- text associated with the ROI</p>
+
+<p>- check box to toggle the visibility of the ROI</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolManager.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolManager.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Select an ROI and click on the <span class="bold">Inspector</span> tab to view and edit the text label, dimensions, fill and line colour, and toggle the visibility of the text and measurements on and off.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolInspector.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolInspector.jpg" style="width: 45%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Select an ROI in the <span class="bold">Manager</span> tab and click on <span class="bold">ROI Assistant</span> button in the toolbar to propagate an ROI through the Z stack or time sequence;</p>
+
+<p>or right click on an ROI and select <span class="bold">Propagate</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolPropagate1.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolPropagate1.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">In the <span class="bold">ROI Assistant</span> window, click on the ROI and drag it.</p>
+
+<p>Up or down propagates through the Z stack and left or right through the time sequence (T).</p>
+
+<p>Dragging diagonally will propagate the ROI through both Z stack and time sequence.</p>
+
+<p>Click <span class="bold">Close</span> to return to the ROI palette.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolPropagate2.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolPropagate2.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Click on the <span class="bold">Graph Pane</span> tab to show a plot of the channel intensities for an ROI.</p>
+
+<p>A line ROI has a profile of intensities along the line and a histogram of intensity vs. frequency (data for other types of ROI vary).</p>
+
+<p>If an ROI is propagated across a time sequence, the slider below the histogram allows stepping through the sequence.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolGraph.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolGraph.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Click on the <span class="bold">Intensity View</span> and <span class="bold">Intensity Results View</span> tabs to see tables of intensity values for the ROI.</p>
+
+<p>These values can be exported in Excel spread sheet format for further analysis.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/measurementToolIntensity.jpg" class="align-center" src="{{ site.baseurl }}/images/measurementToolIntensity.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="page-end">
+<p>All Tutorial Material is available on line at: <a href="http://www.user-guides.openmicroscopy.org">www.user-guides.openmicroscopy.org</a></p>
+<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+</div> <!-- end page-end -->
+
+</li><!-- end page list item -->
+
+</ol> <!-- end page list -->
