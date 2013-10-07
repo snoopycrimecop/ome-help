@@ -1,0 +1,268 @@
+---
+layout: default
+title: Importing Data Version 5.0 beta
+menu-id: l2-insight
+pdfs:
+    - importing-data-5.pdf
+---
+<p>Using the OMERO.insight to import image data onto the OMERO server.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">Select <span class="bold">Import</span> from the <span class="bold">File</span> menu;</p>
+
+<p>or click on the Import icon in the toolbar;</p>
+
+<p>or select a destination Project or Dataset for the imported data and right click then select <span class="bold">Import</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingDataManager.jpg" class="align-center" src="{{ site.baseurl }}/images/importingDataManager.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Use the <span class="bold">File Finder</span> to locate data to be imported on local or networked drives.</p>
+
+<p>Select files for importing and click the top arrow to add them to the import queue.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingData5Importer.jpg" class="align-center" src="{{ site.baseurl }}/images/importingData5Importer.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Use the <span class="bold">Location Selection</span> window to determine the destination of the imported data.</p>
+
+<p>Choose an existing project or dataset using the drop-down menus;</p>
+
+<p>or click <span class="bold">New</span> to create a new project or dataset;</p>
+
+<p>When import location has been set, click <span class="bold">Add to the Queue</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingDataProjectDataset.jpg" class="align-center" src="{{ site.baseurl }}/images/importingDataProjectDataset.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">When ready, click <span class="bold">Import</span> to start importing queued data.</p>
+
+<p>The progress of imports is shown in the <span class="bold">Import</span> tab.</p>
+
+<p>A green tick indicates when the queue is successfully imported.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingData5Start.jpg" class="align-center" src="{{ site.baseurl }}/images/importingData5Start.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Mouse-over the thumbnails of successfully imported images to see a preview.</p>
+
+<p>Click on the <span class="bold">View</span> menu to view the image in the <span class="bold">Viewer</span> or <span class="bold">Data Manager</span>, or view the <span class="bold">Import Log</span> and the data <span class="bold">Checksum</span> verification.</p>
+
+<p>or close the <span class="bold">Import</span> window to view the data in the <span class="bold">Data Manager</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingData5End.jpg" class="align-center" src="{{ site.baseurl }}/images/importingData5End.jpg" style="width: 82%;"  />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">From Version 5, OMERO imports and stores image files unchanged, in their original format. Therefore there is no longer any need to archive files on import.</p>
+</div>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+</li>
+
+
+<li><p class="first">Select an image and click on the green <span class="bold">File Path</span> button to see the file path of the imported data in the OMERO data repository.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingData5FilePath.jpg" class="align-center" src="{{ site.baseurl }}/images/importingData5FilePath.jpg" style="width: 82%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+</ol>
+
+<div class="section" id="importing-options">
+
+<h2>Importing Options</h2>
+
+<p>The following points illustrate how to set some of the options that can be used when importing.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Adding tags at import</h3>
+
+<ol class="step">
+
+<li><p class="first">Click the Options tab then <span class="bold">Add Tags</span> to batch-add tags to the data as it is imported.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingData5AddTag1.jpg" class="align-center" src="{{ site.baseurl }}/images/importingData5AddTag1.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Select an existing tag in the left hand pane and click the right arrow;</p>
+
+<p>or enter the name of a new tag and click <span class="bold">Add</span>.</p>
+
+<p>Click <span class="bold">Save</span> to add these tags to the data at import.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingDataAddTag2.jpg" class="align-center" src="{{ site.baseurl }}/images/importingDataAddTag2.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">After saving, added tags can be seen in the <span class="bold">Options</span> tab and can be removed by clicking the <span class="bold">-</span> button.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingData5RemoveTag.jpg" class="align-center" src="{{ site.baseurl }}/images/importingData5RemoveTag.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+</ol>
+
+<h3>Selecting group for import</h3>
+
+<p>If you are a member of more than one group, use the <span class="bold">Group</span> drop down box to select which group to import the data into.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingDataSelectGroup.jpg" class="align-center" src="{{ site.baseurl }}/images/importingDataSelectGroup.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<h3>Toggle between project and screen</h3>
+
+<p>Click the <span class="bold">Project - Screen</span> tabs to change between image and screen data.</p>
+
+<p>The File Finder window changes to reflect available file types, according to the selection.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingDataProjectScreen.jpg" class="align-center" src="{{ site.baseurl }}/images/importingDataProjectScreen.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<p><span class="bold">Import for Another User</span></p>
+
+<p>If you are an Administrator user, use the <span class="bold">Import For</span> drop down box to select another user to import the data as.</p>
+
+<p>The chosen user will then own this data.</p>
+
+<p>The projects and datasets shown in the drop-down boxes as available to import into, is determined by the permission status of the group.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="{{ site.baseurl }}/images/importingDataImportFor.jpg" class="align-center" src="{{ site.baseurl }}/images/importingDataImportFor.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="page-end">
+	<p>All Tutorial Material is available on line at: <a href="http://www.user-guides.openmicroscopy.org">www.user-guides.openmicroscopy.org</a></p>
+	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+</div> <!-- end page-end -->
+
+
+
+</div><!-- end section -->
