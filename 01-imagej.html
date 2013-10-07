@@ -1,0 +1,155 @@
+---
+layout: default
+title: ImageJ with OMERO
+menu-id: l2-other
+pdfs:
+    - imagej.pdf
+---
+<p>This guide assumes you have never installed ImageJ before.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="using-imagej-with-omero">
+<ol class="step">
+<li><p class="first">Download the latest version of ImageJ for your platform from the website:</p>
+<p><a class="reference external" href="http://rsbweb.nih.gov/ij/download.html">http://rsbweb.nih.gov/ij/download.html</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJWebsite.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJWebsite.jpg" style="width: 80%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">On Windows run the set-up programme (either from the Downloads folder or when prompted by download Wizard) and follow instructions to install ImageJ.</p>
+<p>On a Mac, extract the .zip archive and drag the ImageJ folder to your Applications folder.</p>
+<p>On Linux extract the .gz archive and double click the “run” script.</p>
+<p>Further install instructions can be found on the ImageJ web site (above).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">Once installed, the ImageJ folder (typically C:Program FilesImageJ on Windows) contains the programme and a number of subfolders, one of which is <span class="bold">plugins</span>.</p>
+<p>To use OMERO with ImageJ, two plugins need to be installed in this folder:
+loci_tools and OMERO.insight-ij.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJPlugins.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJPlugins.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">Download the latest version of the LOCI tools plugin from:</p>
+<p><a class="reference external" href="http://openmicroscopy.org/latest/loci-tools-jar">http://openmicroscopy.org/latest/loci-tools-jar</a></p>
+<p>Save or move the downloaded file into the <span class="bold">ImageJ &gt; plugins</span> folder.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJLociTools.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJLociTools.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Further details on the download are at:
+<a class="reference external" href="http://www.openmicroscopy.org/site/products/bio-formats/downloads">http://www.openmicroscopy.org/site/products/bio-formats/downloads</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">Download the latest version of the OMERO.insight-ij plugin from:</p>
+<p><a class="reference external" href="http://www.openmicroscopy.org/site/products/omero/downloads">http://www.openmicroscopy.org/site/products/omero/downloads</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJInsight.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJInsight.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">Copy or move the .zip archive to the <span class="bold">ImageJ &gt; plugins</span> folder.</p>
+<p>Extract the archive into the plugins folder to give a folder named <span class="bold">“OMERO.insight-ij-x.x.x”</span> where x.x.x is the version number/ID.</p>
+<p>The OMERO.insight-ij plugin consists of a folder with a number of components inside.</p>
+<p>The complete folder is left in the <span class="bold">ImageJ &gt; plugins</span> folder.</p>
+
+<div class="note">
+<p class="note-title">Note</p>
+<p>With some versions of Windows unzipping programmes, a double folder enclosing the plugin is created. It is worth checking to make sure this has not happened. If it has, copy the inner <span class="bold">OMERO.insight-ij-x.x.x</span> folder into the <span class="bold">ImageJ &gt; plugins</span> folder.</p></div>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJOMEROPlugins.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJOMEROPlugins.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The <span class="bold">OMERO.insight-ij-x.x.x.zip</span> archive can be left in the plugins folder or deleted.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">Launch the ImageJ application and click on the Plugins menu.</p>
+<p>Select <span class="bold">OMERO &gt; Connect to OMERO</span>.</p>
+<p>A version of OMERO.insight will open and can be used as normal.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJInsight2.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJInsight2.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">As ImageJ needs to load the plugin software, it can take a minute or two for the OMERO login screen to appear, and then another two or three minutes for the progress bar to start moving and complete.</p>
+<p>Enter your OMERO server address (if needed) and <span class="bold">Username</span> and <span class="bold">Password</span>.</p>
+<p>Click <span class="bold">Login</span>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJLogin.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJLogin.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">You will then be taken to the OMERO.insight Data Manager screen.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJDataManager.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJDataManager.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
+<div class="note">
+<p class="note-title">Note</p>
+<p>If you quit OMERO.insight and then connect again during the same ImageJ session, logging in and launching the OMERO plugin will be much quicker. So if you intend using the OMERO plugin through ImageJ again soon, it may be worth leaving your ImageJ application running.</p>
+</div>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">Double click on the image in the data tree or selecting the image and <span class="bold">View &gt; View in ImageJ</span> in the contextual menu.</p>
+<p>The Bio-Formats Import Options window opens.</p>
+<p>Select parameters and click <span class="bold">OK</span>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="{{ site.baseurl }}/images/imageJBioformats.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJBioformats.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p class="first">Double click on the image in the data tree or selecting the image and <span class="bold">View &gt; View in ImageJ</span> in the contextual menu.</p>
+<p>The Bio-Formats Import Options window opens.</p>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
+<img alt="{{ site.baseurl }}/images/imageJBioformats2.jpg" class="align-center" src="{{ site.baseurl }}/images/imageJBioformats2.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+
+</div>
+</li>
+</ol>
+</div><!-- end Section -->
