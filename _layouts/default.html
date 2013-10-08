@@ -2,30 +2,70 @@
 navigation:
     - id: l1-home
       name: Home
-      open: always
       link: index.html
     - id: l1-quickstart
       name: Quickstart User Guides
       open: yes
+      children:
+          - name: Getting Started Version 4.4.9
+            link: getting-started-4.html
+          - name: Getting Started Version 5.0 beta
+            link: getting-started-5.html
     - id: l1-workflow
       name: Workflow User Guides
       open: always
+    - id: l1-insight
+      name: OMERO.insight
+      open: no
       children:
-        - id: l2-insight
-          name: OMERO.insight
-          open: no
-        - id: l2-web
-          name: OMERO.web
-          open: no
-        - id: l2-other
-          name: Other OMERO Applications
-          open: no
-        - id: l2-more
-          name: More
-          open: yes
-          links:
-            - href: http://www.openmicroscopy.org/site
-              text: Main OME Website
+          - name: Managing Data
+            link: managing-data.html
+          - name: Export Images Using Scripts
+            link: scripts.html
+          - name: Collaborating with Data
+            link: collaboration.html
+          - name: Using Utility Scripts
+            link: utility-scripts.html
+          - name: Viewing Data
+            link: viewing-data.html
+          - name: Exporting Images
+            link: output.html
+          - name: Increasing Client Memory
+            link: memory.html
+          - name: Importing Data Version 4.4.9
+            link: importing-data-4.html
+          - name: Importing Data Version 5.0 beta
+            link: importing-data-5.html
+          - name: Measurement Tool
+            link: measurement-tool.html
+    - id: l1-web
+      name: OMERO.web
+      open: no
+      children:
+          - name: URLs for Linking to Data
+            link: urls-to-data.html
+          - name: Using the Web Client
+            link: web-client.html
+    - id: l1-other
+      name: Other OMERO Applications
+      open: no
+      children:
+          - name: OMERO.editor
+            link: editor.html
+          - name: ImageJ with OMERO
+            link: imagej.html
+    - id: l1-more
+      name: More
+      open: yes
+      children:
+          - name: Contact OME
+            link: contact.html
+          - name: Resources
+            link: resources.html
+          - name: Previous Versions
+            link: previous.html
+          - name: Main OME Website
+            href: http://www.openmicroscopy.org/site
 ---
 <!DOCTYPE html>
 <html>
