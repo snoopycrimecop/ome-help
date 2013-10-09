@@ -1,1 +1,6 @@
 _site
+pdf/archives
+pdf/downloads
+resources
+.DS_Store
+pdf/.DS_Store
