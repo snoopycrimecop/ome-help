@@ -83,7 +83,10 @@ navigation:
 
         <script type="text/javascript">
             $(document).ready(function () {
-                $('#toggle-1 li').click(function () {
+                $('#toggle-1 li').click(function (event) {
+                    if (event.target.nodeName.toLowerCase() == "a"){
+                    return;
+                    };
                     var text = $(this).children('ul.level2');
                     if (text.is(':hidden')) {
                         text.slideDown('10');
