@@ -237,6 +237,25 @@ img.float-left {
 	font-weight: bold;
 }
 
+#page-body .note-text {
+}
+
+
+#page-body .warning {
+	width: 95%;
+	padding-left: 5px;
+	border: 2px solid #ff2600;
+}
+
+#page-body .warning-title {
+	font-weight: bold;
+	color: #ff2600;
+}
+
+#page-body .warning-title {
+}
+
+
 #page-body .page-navigation {
 	font-weight: bold;
 }
