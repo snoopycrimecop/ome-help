@@ -3,41 +3,56 @@ layout: default
 title: OMERO User Help - Home Page
 ---
 
-<p>These pages contain the User Help for OMERO.insight and OMERO.web.</p>
-<p>The User Guides for the current versions are listed in the main menu, and the <a href="previous.html"> Guides for Previous Versions</a> page has links to archives of older versions.</p>
-<p>The <a href="resources.html">Resources</a> page contains links to ZIP archives of the PDFs for all the current versions,  customised versions of some of the User Guides and other resources such as  Omnigraffle&reg; and Word&reg; files.</p>
-<p>The current release versions of OMERO.insight are 4.4.10 and 5.0.0. You can tell what version of OMERO.insight you are using by looking at the login screen.</p>
+<p>These pages contain the User Help for applications which can connect to an OMERO server or use OMERO plugins.</p>
+<p>The User Guides for the current versions are listed in the main menu, for all OMERO applications, including OMERO.insight, OMERO.web, OMERO.editor and OMERO in ImageJ and Fiji.</p>
+<p>The Guides for the current versions are listed in the main menu, and the <a href="previous.html"> Guides for Previous Versions</a> page has links to archives of older versions.</p>
+<p>The <a href="resources.html">Resources</a> page contains links to ZIP archives of the PDFs for all the current versions,  customised versions of some of the Guides and other resources such as  Omnigraffle&reg; and Word&reg; files.</p>
+<p>The current release versions of OMERO.insight are 4.4.11 and 5.0.1. You can tell what version of OMERO.insight you are using by looking at the login screen.</p>
 <p>&nbsp;</p>
-<p><img src="{{ site.baseurl }}/images/homeVersion.jpg" width="655" height="192" alt="OMERO.insight Version" /></p>
+<p><img src="images/homeVersion.jpg" alt="OMERO.insight Version" style="width: 100%;"/></p>
 <p>&nbsp;</p>
 <p>All material is  covered by the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> - you are free to share or adapt content as long as you credit the Open Microscopy Environment. The exception to this is the screenshots and videos which can only be used for non-commercial purposes.</p>
 <p>&nbsp;</p>
-<h2 style="text-align: center;">New Features Highlight</h2>
-<p>Recently the ability to edit channel names was added to OMERO in response to requests from users.</p>
-<p><span class="bold">OMERO.insight</span></p>
-<p class="first">To edit the channel names, click on the green <span class="bold">Pen</span> button.
-<br/>Click <span class="bold">Save</span> to make the changes to the selected image.
-<br/>Click <span class="bold">Apply to All</span> to save the changes to all images in the dataset.</p>
+<h2 style="text-align: center;">New in OMERO.insight 5.0.1</h2>
+
 <div class="line-block">
-  <div class="line"><br />
-  </div>
-  <!-- end #line -->
-</div>
-<!-- end #line-block -->
-<img alt="{{ site.baseurl }}/images/managingChannel.jpg" class="align-center" src="{{ site.baseurl }}/images/managingChannel.jpg" style="width: 80%;" />
-<p>&nbsp;</p>
-<p><span class="bold">OMERO.web</span></p>
-<p class="first">To edit the channel names, click on the <span class="bold">Pen</span> icon.
-<br/>Click <span class="bold">Save</span> to make the changes to the selected image.
-<br/>Click <span class="bold">Apply to All</span> to save the changes to all images in the dataset.</p>
+  <div class="line"><br /></div> <!-- end #line -->
+</div><!-- end #line-block -->
+
+<p><span class="bold">Using ImageJ with OMERO</span></p>
+
+<p>The way that the ImageJ plugin for OMERO 5.0.1, OMERO.insight-ij, uses Bio-formats has changed. To use ImageJ with OMERO 5.0.1 you now need the Bioformats Package jar in the plugins folder, to replace the LOCI Tools jar, which must be removed.</p>
+
+<p>Fiji now ships with Bio-Formats 5.0.x by default so you can use it with the OMERO.insight-li plugin version 5.0.1 without needing to update anything.</p>
+
+<p>Full details of how to use OMERO with ImageJ and Fiji for both Version 5.0.1 and Version 4.4.11, and how to upgrade the ImageJ plugins from Version 4.4.11 to Version 5.0.1 are shown in the <a href="imagej.html">Using ImageJ with OMERO</a> section.</p>
+
 <div class="line-block">
-  <div class="line"><br/>
-  </div>
-  <!-- end #line -->
-</div>
-<!-- end #line-block -->
-<img alt="{{ site.baseurl }}/images/managingChannel.jpg" class="align-center" src="{{ site.baseurl }}/images/homeChannel.jpg" style="width: 100%;" />
-<p>&nbsp;</p>
+  <div class="line"><br /></div> <!-- end #line -->
+</div><!-- end #line-block -->
+
+<img alt="../images/index_5_1.jpg" class="align-center" src="images/index_5_1.jpg" style="width: 100%;" />
+<div class="line-block">
+  <div class="line"><br /></div><!-- end #line -->
+</div><!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p><span class="bold">File integrity report</span></p>
+
+<p>At import, checksums now confirm if your file has been correctly uploaded so you can have confidence no corruption has occurred on import and your files are safely stored.</p>
+
+<div class="line-block">
+  <div class="line"><br /></div> <!-- end #line -->
+</div><!-- end #line-block -->
+
+<img alt="../images/index_5_2.jpg" class="align-center" src="images/index_5_2.jpg" style="width: 100%;" />
+<div class="line-block">
+  <div class="line"><br /></div><!-- end #line -->
+</div><!-- end #line-block -->
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
