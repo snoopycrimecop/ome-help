@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/display.css">
+
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.js"></script>
+        
+        <script language="JavaScript" type="text/javascript">
+            var edress = 'ux_at_openmicroscopy_dot_org';
+               function get_edress(){
+                  var re= /_at_/gi;
+                  edress = edress.replace(re,'@');
+                  var re= /_dot_/gi;
+                  edress = edress.replace(re,'.');
+                  var the_link="mai" + "lto" +":"+edress+"?subject=Nightshade%20Feedback" ;
+                  window.location=the_link;
+               }
+        </script>
+
+    </head>
+
+    <body>
+        <div id="content">
+            <div id="container">
+                <div id="navigation">
+
+                    <div id="banner">
+                        <p><img src="{{ site.baseurl }}/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+                        <h1>User Help</h1>
+                    </div> <!-- banner -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+
+                    <div id="footer">
+
+                        <p>&copy; 2000-2014<br/>The Open Microscopy Environment</p>
+
+                    </div><!-- End Footer -->
+
+                </div> <!-- navigation -->
+
+                <div id="page">
+                    
+                    <div id="page-header">
+                        <h1>{{ page.title }}</h1>
+
+                        {% for pdf in page.pdfs %}
+                        <p class="actions"><a href="pdf/{{ pdf }}">Download PDF</a></p>
+                        {% endfor %}
+                    </div> <!-- page-header -->
+
+                    <div id="page-body">
+
+                        <div id="page-contents">
+
+                            {{ content }}
+
+                        </div> <!-- page-contents -->
+
+                    </div> <!-- page-body -->
+
+                </div> <!-- page -->
+
+            </div> <!-- container -->
+        </div> <!-- content -->
+    </body>
+</html>
