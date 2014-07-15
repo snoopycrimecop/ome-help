@@ -1,5 +1,5 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-baseurl: /user-guides
-clsbaseurl: /user-guides/cls
+baseurl: /ome-help
+clsbaseurl: /ome-help/cls
