@@ -1,13 +1,189 @@
----
-layout: cls
-title: Getting Started with CLS OMERO
-menu-id:
-pdfs:
-    - cls-omero.pdf
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CLS OMERO Server - Getting Started</title>
+
+<style type="text/css">
+@import url(../design/css/display.css);
+</style>
+
+
+<script type="text/javascript" src="design/js/jquery.js"></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+    
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	var url = document.URL,
+    page = url.split('/').slice(-1)[0],
+    $link = $("a[href='"+page+"']"),
+    $ul = $link.parent().parent(),
+    $span = $ul.parent().children('span');
+
+	$ul.show();
+	$span.html('<img src="design/images/arrow-open.gif" />')
+	
+	
+	$('#toggle-1 li').click(function () {
+
+		var text = $(this).children('ul.level2');
+
+		if (text.is(':hidden')) {
+			text.slideDown('1');
+			$(this).children('span').html('<img src="design/images/arrow-open.gif" />');
+		} else {
+			text.slideUp('10');
+			$(this).children('span').html('<img src="design/images/arrow-closed.gif" />');
+		}
+		
+	});
+
+});
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+
+function get_edress(){
+var edress = 'ux_at_openmicroscopy_dot_org';
+var re= /_at_/gi;
+edress = edress.replace(re,'@');
+var re= /_dot_/gi;
+edress = edress.replace(re,'.');
+var the_link="mai" + "lto" +":"+edress+"?subject=Nightshade%20Feedback" ;
+window.location=the_link;
+}
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+
+function get_edress2(){
+var edress = 'sysadmin_at_openmicroscopy_dot_org';
+var re= /_at_/gi;
+edress = edress.replace(re,'@');
+var re= /_dot_/gi;
+edress = edress.replace(re,'.');
+var the_link="mai" + "lto" +":"+edress+"?subject=Nightshade%20Feedback" ;
+window.location=the_link;
+}
+
+</script>
+</head>
+
+<body>
+
+<!-- Content -->
+
+<div id="content">
+
+<!-- container holds navigation and page -->
+<div id="container" class="cf">
+
+<div id="navigation">
+
+<div id="banner">
+	<p><img src="../design/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+    <h1>User Help</h1>
+</div><!-- End Banner" -->
+
+<!-- Level 1 List -->
+<ul class="level1" id="toggle-1">
+
+<!-- Level 1 Item -->
+<li><a href="http://help.openmicroscopy.org/index.html">User Help Home Page</a></li><!-- End Level 1 Item -->
+
+</ul>
+<!-- End Level 1 List -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div id="footer">
+
+<p>&copy; 2000-2014<br/>
+The Open Microscopy Environment</p>
+
+</div><!-- End Footer -->
+
+</div><!-- End navigation -->
+ 
+<div id="page">
+
+<div id="page-header">
+
+<a href="pdf/.pdf" target="_blank"><img src="design/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
+
+<h1>Getting Started with CLS OMERO</h1>
+
+<p class="actions"><a href="pdf/cls-omero.pdf" target="_blank">Download PDF</a></p>
+
+</div><!-- End Page header -->
+ 
+<div id="page-body">
+ 
+<div id="page-contents">
+
+
 <div class="page-navigation">
 
-<h2><a name="top" id="top">Contents</a></h2>
+<h2><a class="anchor" name="top" id="top">Contents</a></h2>
 
 <p>
 
@@ -32,9 +208,9 @@ pdfs:
 <ol class="step">
 
 <li>
-<p class="top_link"><a href="#top"><img src="../images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="../design/images/back_to_top.png" alt="back_to_top.jpg" style="float: right;"/></a></p>
 
-<p class="first"><a name="insight" id="insight"></a>Download the OMERO.insight client for your operating system from:
+<p class="first"><a class="anchor" name="insight" id="insight"></a>Download the OMERO.insight client for your operating system from:
 
 <p><span class="bold"><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="external-url">http://downloads.openmicroscopy.org/latest/omero5</a></span></p>
 
@@ -78,9 +254,9 @@ pdfs:
 </li>
 
 <li>
-<p class="top_link"><a href="#top"><img src="../images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="../design/images/back_to_top.png" alt="back_to_top.jpg" style="float: right;"/></a></p>
 
-<p class="first"><a name="login" id="login"></a>Open OMERO.insight client.</p>
+<p class="first"><a class="anchor" name="login" id="login"></a>Open OMERO.insight client.</p>
 <p>Click on the <span class="bold">Spanner</span> icon.</p>
 
 <div class="line-block">
@@ -136,9 +312,9 @@ pdfs:
 
 <li>
 
-<p class="top_link"><a href="#top"><img src="../images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="../design/images/back_to_top.png" alt="back_to_top.jpg" style="float: right;"/></a></p>
 
-<p class="first"><a name="groups" id="groups"></a>When you log into OMERO for the first time, you will be in a "default" group, which is Private, so only you can see data you place in that group.
+<p class="first"><a class="anchor" name="groups" id="groups"></a>When you log into OMERO for the first time, you will be in a "default" group, which is Private, so only you can see data you place in that group.
 <p>Being a member of a read-only or read-annotate group in OMERO allows you to share data with other members of the group.</p>
 <p>Your lab or PI may have a group you wish to use for collaborating with colleagues.</p>
 <p>Ask your PI to add you to their group or send an email to the Nightshade 
@@ -146,7 +322,7 @@ pdfs:
   <!-- xxx link cut xxx -->
   <script language="JavaScript" type="text/javascript">
 					<!-- 
-						document.write("<a href='#' onClick='get_edress();return false;'>sysadmin</a>");
+						document.write("<a href='#' onClick='get_edress2();return false;'>sysadmin</a>");
 					// --> 
 				</script>
 	  <noscript>
@@ -169,9 +345,9 @@ giving the names of the groups you wish to be added to.</p>
 
 <li>
 
-<p class="top_link"><a href="#top"><img src="../images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="../design/images/back_to_top.png" alt="back_to_top.jpg" style="float: right;"/></a></p>
 
-<p class="first"><a name="importing" id="importing"></a>Click the <span class="bold">Importer</span> icon to add image data.</p>
+<p class="first"><a class="anchor" name="importing" id="importing"></a>Click the <span class="bold">Importer</span> icon to add image data.</p>
 <p>Use the <span class="bold">File Chooser</span> in the Importer window to select and queue data for import.</p>
 <p>In the location window, if you belong to more than one group, select the group you wish to import the data into.</p>
 <p>Choose existing, or create new Projects, Datasets or Screens to import the data into.</p>
@@ -189,12 +365,12 @@ giving the names of the groups you wish to be added to.</p>
 </li>
 
 <li>
-<p class="top_link"><a href="#top"><img src="../images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="../design/images/back_to_top.png" alt="back_to_top.jpg" style="float: right;"/></a></p>
 
-<p class="first"><a name="web" id="web"></a>OMERO.web allows you to view your data from any web browser with the URL:</p>
+<p class="first"><a class="anchor" name="web" id="web"></a>OMERO.web allows you to view your data from any web browser with the URL:</p>
 <p><span class="bold"><a href="http://nightshade.openmicroscopy.org" target="_blank">nightshade.openmicroscopy.org</a></span></p>
 <p>You do not have to enter a server name.</p>
-<p>OMERO.web uses the same login, and has the same functionality, as OMERO.insight, except OMERO.web cannot import data or create Regions of Interest (ROI).</p>
+<p>OMERO.web uses the same login, and has the same functionality, as OMERO.insight, except OMERO.web cannot import data or create Regions of Interest (ROIs).</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -206,9 +382,9 @@ giving the names of the groups you wish to be added to.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="../images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="../design/images/back_to_top.png" alt="back_to_top.jpg" style="float: right;"/></a></p>
 
-<p><a name="help" id="help"></a>Detailed User Guides for common workflows using OMERO.insight and OMERO.web are available online and for download at:</p>
+<p><a class="anchor" name="help" id="help"></a>Detailed User Guides for common workflows using OMERO.insight and OMERO.web are available online and for download at:</p>
 
 <p><span class="bold"><a href="http://help.openmicroscopy.org" target="_blank">help.openmicroscopy.org</a></span></p>
 
@@ -242,3 +418,16 @@ giving the names of the groups you wish to be added to.</p>
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+
+</div><!-- End Page-contents -->
+
+</div><!-- End Page-body -->
+
+</div><!-- End Page" -->
+
+</div><!-- End Container" -->
+
+</div><!-- End Content -->
+
+</body>
+</html>

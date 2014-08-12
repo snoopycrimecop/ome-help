@@ -1,10 +1,212 @@
----
-layout: default
-title: Using Utility Scripts
-menu-id: l1-insight
-pdfs:
-    - utility-scripts.pdf
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" ><!-- InstanceBegin template="/Templates/Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="OME, OMERO, ome, omero, OMERO.insight, OMERO.web, microscopy images, user guide, user guides" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<meta name="description" content="Scripts allow users to add server-side functionality to the OMERO clients." />
+
+<title>OMERO User Help - Using Utility Scripts</title>
+
+<!-- InstanceEndEditable --><!-- End Doc Title --> 
+
+<style type="text/css">
+@import url(design/css/display.css);
+</style>
+
+
+<script type="text/javascript" src="design/js/jquery.js"></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+    
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	var url = document.URL,
+    page = url.split('/').slice(-1)[0],
+    $link = $("a[href='"+page+"']"),
+    $ul = $link.parent().parent(),
+    $span = $ul.parent().children('span');
+
+	$ul.show();
+	$span.html('<img src="design/images/arrow-open.gif" />')
+	
+	
+	$('#toggle-1 li').click(function () {
+
+		var text = $(this).children('ul.level2');
+
+		if (text.is(':hidden')) {
+			text.slideDown('1');
+			$(this).children('span').html('<img src="design/images/arrow-open.gif" />');
+		} else {
+			text.slideUp('10');
+			$(this).children('span').html('<img src="design/images/arrow-closed.gif" />');
+		}
+		
+	});
+
+});
+
+</script>
+
+
+<!-- InstanceBeginEditable name="EditRegionScripts" -->
+
+
+<!-- InstanceEndEditable --><!-- End Scrits editable region -->
+
+</head>
+
+<body>
+
+<!-- Content -->
+
+<div id="content">
+
+<!-- container holds navigation and page -->
+<div id="container" class="cf">
+
+<div id="navigation">
+
+<div id="banner">
+	<p><img src="design/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+    <h1>User Help</h1>
+</div><!-- End Banner" -->
+ 
+<!-- Level 1 List -->
+<ul class="level1" id="toggle-1">
+
+<!-- Level 1 Item -->
+<li><a href="index.html">User Help Home Page</a></li><!-- End Level 1 Item -->
+
+
+
+<!-- Level 1 Item -->
+<li  class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Quickstart User Guides 
+
+	<!-- Level 2 List -->
+	<ul class="level2" id="item1">
+    
+		<li><a href="getting-started-5.html">Getting Started v. 5.0.3</a></li><!-- Level 2 Item -->
+   		<li><a href="getting-started-4.html">Getting Started v. 4.4.11</a></li><!-- Level 2 Item -->
+        <li><a href="imagej.html">Using ImageJ with OMERO</a></li><!-- Level 2 Item -->
+        <li><a href="demo-server.html">Try the OMERO Demo Server</a></li><!-- Level 2 Item -->
+	
+	</ul><!-- End Level 2 List -->
+		
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Workflow User Guides 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item2">
+        
+        <li><a href="sharing-data.html">Sharing Data</a></li><!-- Level 2 Item -->
+        <li><a href="search.html">Search</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+            
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.insight 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item3" style="display:none">
+        
+			<li><a href="importing-data-5.html">Importing Data v. 5.0.3</a></li><!-- Level 2 Item -->        
+			<li><a href="importing-data-4.html">Importing Data v. 4.4.11</a></li><!-- Level 2 Item -->
+			<li><a href="viewing-data.html">Viewing Data</a></li><!-- Level 2 Item -->
+			<li><a href="managing-data.html">Managing Data</a></li><!-- Level 2 Item -->
+			<li><a href="measurement-tool.html">ROIs and Measurement Tool</a></li><!-- Level 2 Item -->
+			<li><a href="output.html">Exporting Images</a></li><!-- Level 2 Item -->
+			<li><a href="scripts.html">Export Images Using Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="utility-scripts.html">Utility Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="client-memory.html">Increasing Client Memory</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+        
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.web 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item4" style="display:none">
+        
+			<li><a href="web-client.html">Using the Web Client</a></li><!-- Level 2 Item -->
+			<li><a href="urls-to-data.html">URLs for Linking to Data</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Other OMERO Applications 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item5">
+        	
+            <li><a href="figure.html">OMERO.figure</a></li><!-- Level 2 Item -->
+            <li><a href="virtual-microscope.html">Virtual Microscope</a></li><!-- Level 2 Item -->
+            <li><a href="dropbox.html">OMERO.dropbox</a></li><!-- Level 2 Item -->        
+            <li><a href="editor.html">OMERO.editor</a></li><!-- Level 2 Item -->
+
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>More<!-- Level  Item -->
+    
+	<!-- Level 2 List -->
+	<ul class="level2"  id="item6">
+
+		<li><a href="previous.html">Guides for Previous Versions</a></li><!-- End Level 2 Item -->
+		<li><a href="resources.html">Resources</a></li><!-- End Level 2 Item -->
+		<li><a href="contact.html">Contact Us</a></li><!-- End Level 2 Item -->
+		<li><a href="http://www.openmicroscopy.org/site" target="_blank">Main OME Website</a></li><!-- End Level 2 Item -->
+
+	</ul><!-- End Level 2 List -->
+
+</ul>
+<!-- End Level 1 List -->
+
+<div id="footer">
+
+<p>&copy; 2000-2014<br/>
+The Open Microscopy Environment</p>
+
+</div><!-- End Footer -->
+
+
+</div><!-- End navigation -->
+ 
+<div id="page">
+
+<!-- InstanceBeginEditable name="pagecontents" -->
+
+<div id="page-header">
+
+<a href="pdf/utility-scripts.pdf" target="_blank"><img src="design/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
+
+<h1>Using Utility Scripts</h1>
+
+</div><!-- End Page header -->
+ 
+<div id="page-body">
+ 
+<div id="page-contents">
+
+<a class="top" id="top">Top</a>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <p>As well as scripts for exporting images and figures, OMERO.insight also
 includes &#8216;Util Scripts&#8217; to add other functionality.</p>
@@ -15,7 +217,13 @@ includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 
 <p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/ChannelOffsets-4.3.mov">MOVIE: channel offsets demo</a></p>
 
-<p>The Channel Offsets script allows you to apply X, Y and Z offsets to individual channels in an image, creating a new image in the process. You can pick which of the channels from the source image to combine in the new image (up to the first 4 channels). The script can process several images at once, placing the new images in the same Dataset as the source images by default, or in a new Dataset if the &#8220;New Dataset Name&#8221; parameter is filled out.</p>
+<p>The Channel Offsets script allows you to apply X, Y and Z offsets to
+individual channels in an image, creating a new image in the process.
+You can pick which of the channels from the source image to combine in
+the new image (up to the first 4 channels). The script can process
+several images at once, placing the new images in the same Dataset as
+the source images by default, or in a new Dataset if the &#8220;New Dataset
+Name&#8221; parameter is filled out.</p>
 
 </div><!-- End section -->
 
@@ -25,7 +233,10 @@ includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 
 <p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/Dataset_To_Plate-4.3.2.mov">MOVIE: Dataset to Plate demo</a></p>
 
-<p>This script allows you to create a &#8220;Plate&#8221; from an ordered set of images in a Dataset, assigning images to a row and column based on their sequence by name. You can arrange images by row or column, choose the size of the row or column and how they are named.</p>
+<p>This script allows you to create a &#8220;Plate&#8221; from an ordered set of images
+in a Dataset, assigning images to a row and column based on their
+sequence by name. You can arrange images by row or column, choose the
+size of the row or column and how they are named.</p>
 
 <p>View the movie above to see a demonstration of this script.</p>
 
@@ -36,7 +247,7 @@ includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 <h2>Combine images</h2>
 
 <div class="figure align-center">
-<img alt="Combine\_Images screen-shot" src="{{ site.baseurl }}/images/Combine_Images.png" style="width: 55%;" />
+<img alt="Combine\_Images screen-shot" src="images/Combine_Images.png" style="width: 55%;" />
 
 
 </div><!-- End image -->
@@ -45,18 +256,29 @@ includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 <p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/Combine_Images.mov">MOVIE: Combine Images demo</a>.  Slightly older movie
 <a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-2/mov/Scripting1.mov">here</a>.</p>
 
-<p>This script takes a number of single-plane images or image Z-stacks, identified either by <cite>Image_ID</cite> or by the ID of the Dataset that contains them. All input images should have the same X, Y and Z dimensions and are expected to have a single channel and time-point. If you want to use a subset of the images, choose the &#8220;Filter Names&#8221; option by entering some text. Only image names that contain this text will be used.</p>
+<p>This script takes a number of single-plane images or image Z-stacks,
+identified either by <cite>Image_ID</cite> or by the ID of the Dataset that contains
+them. All input images should have the same X, Y and Z dimensions and
+are expected to have a single channel and time-point. If you want to use a
+subset of the images, choose the &#8220;Filter Names&#8221; option by entering some
+text. Only image names that contain this text will be used.</p>
 
-<p>There are 2 alternative methods you can use to define which images are assigned to which Z, T or C index in the new image and how big the new dimensions are (see below).</p>
+<p>There are 2 alternative methods you can use to define which images are
+assigned to which Z, T or C index in the new image and how big the new
+dimensions are (see below).</p>
 
-<p>Optionally you can specify colors and names for the channels in the new image.</p>
+<p>Optionally you can specify colors and names for the channels in the new
+image.</p>
 
 </div><!-- End section -->
 
 <div class="section" id="auto-define-dimensions">
 <h3>Auto define dimensions</h3>
 
-<p>This option is chosen by default. This method uses the names of each image to try and identify the Z, T or C index. The user should choose the naming pattern for each dimension. For example, if you want to combine images named like these:</p>
+<p>This option is chosen by default. This method uses the names of each
+image to try and identify the Z, T or C index. The user should choose
+the naming pattern for each dimension. For example, if you want to
+combine images named like these:</p>
 <ul class="bullet-list">
 
 <li>image001_C01_Z01.tiff</span></tt></li>
@@ -67,7 +289,8 @@ includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 <p>you should choose: * Channel Name Pattern: &#8220;_C&#8221; * Z Name Pattern:
 &#8220;_Z&#8221; * Time Name Pattern: &#8220;None&#8221; (optional)</p>
 
-<p>If the input images are Z stacks, then the &#8216;Z Name Pattern&#8217; will be ignored and the Z-size of the first image will be used instead.</p>
+<p>If the input images are Z stacks, then the &#8216;Z Name Pattern&#8217; will be
+ignored and the Z-size of the first image will be used instead.</p>
 
 <div class="note">
 <p class="note-title">Note</p>
@@ -80,9 +303,14 @@ includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 <div class="section" id="manually-define-dimensions">
 <h3>Manually define dimensions</h3>
 
-<p>With this option, the images are combined in the same order that they appear when sorted alphabetically (default in OMERO.insight). If you want to stitch the planes in a single dimension (e.g. time) then you only need to choose &#8220;Time&#8221; as the Dimension 1 value and this will do the job.</p>
+<p>With this option, the images are combined in the same order that they
+appear when sorted alphabetically (default in OMERO.insight). If you want to
+stitch the planes in a single dimension (e.g. time) then you only need
+to choose &#8220;Time&#8221; as the Dimension 1 value and this will do the job.</p>
 
-<p>If you want to stitch the planes across 2 or more dimensions, you need to specify the dimensions in the order that they change in the list of input images. For example, images named like this:</p>
+<p>If you want to stitch the planes across 2 or more dimensions, you need
+to specify the dimensions in the order that they change in the list of
+input images. For example, images named like this:</p>
 
 <ul class="bullet-list">
 
@@ -107,23 +335,53 @@ includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 <li>image001_C02-Z05.tiff</span></tt></li>
 </ul>
 
-<p>The first dimension to change is Z (changes between images 1,2,3,4,5 in the list) and the second dimension to change is Channel (changes between images 5 and 6).</p>
+<p>The first dimension to change is Z (changes between images 1,2,3,4,5 in
+the list) and the second dimension to change is Channel (changes between
+images 5 and 6).</p>
 
-<p>You must specify the Dimensions that these images represent in the combined image, in the order that they change in the sorted list. In the above example, Dimension_1 would be &#8220;Z&#8221;, since this changes first, and Dimension_2 is &#8220;Channel&#8221;. It is also necessary to specify the Size of the dimensions. In this case, &#8220;size Z&#8221; is 5 and &#8220;size C&#8221; is 2. It is possible to omit the size of the last dimension since this can be calculated by the script.</p>
+<p>You must specify the Dimensions that these images represent in the
+combined image, in the order that they change in the sorted list. In the
+above example, Dimension_1 would be &#8220;Z&#8221;, since this changes first, and
+Dimension_2 is &#8220;Channel&#8221;. It is also necessary to specify the Size of
+the dimensions. In this case, &#8220;size Z&#8221; is 5 and &#8220;size C&#8221; is 2. It is
+possible to omit the size of the last dimension since this can be
+calculated by the script.</p>
 
-<p>If the input images are Z stacks, you do not need to specify a Z dimension (it will be ignored if you do).</p>
+<p>If the input images are Z stacks, you do not need to specify a Z
+dimension (it will be ignored if you do).</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="page-end">
-<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">www.help.openmicroscopy.org</a></p>
-<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
+	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
 </div> <!-- end page-end -->
 
 </div><!-- End section -->
+
+</div><!-- End Page-contents -->
+
+</div><!-- End Page-body -->
+
+<!-- InstanceEndEditable -->
+
+</div><!-- End Page" -->
+
+</div><!-- End Container" -->
+
+
+
+</div><!-- End Content -->
+
+
+
+</body>
+<!-- InstanceEnd --></html>

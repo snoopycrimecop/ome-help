@@ -1,8 +1,207 @@
----
-layout: default
-title: Guides for Previous Versions
-menu-id: l1-more
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" ><!-- InstanceBegin template="/Templates/Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="OME, OMERO, ome, omero, OMERO.insight, OMERO.web, microscopy images, user guide, user guides" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<meta name="description" content="Accesss to Zip archives of all the previous versions of the User Help documentation." />
+
+<title>OMERO User Help - Previous Versions</title>
+
+<!-- InstanceEndEditable --><!-- End Doc Title --> 
+
+<style type="text/css">
+@import url(design/css/display.css);
+</style>
+
+
+<script type="text/javascript" src="design/js/jquery.js"></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+    
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	var url = document.URL,
+    page = url.split('/').slice(-1)[0],
+    $link = $("a[href='"+page+"']"),
+    $ul = $link.parent().parent(),
+    $span = $ul.parent().children('span');
+
+	$ul.show();
+	$span.html('<img src="design/images/arrow-open.gif" />')
+	
+	
+	$('#toggle-1 li').click(function () {
+
+		var text = $(this).children('ul.level2');
+
+		if (text.is(':hidden')) {
+			text.slideDown('1');
+			$(this).children('span').html('<img src="design/images/arrow-open.gif" />');
+		} else {
+			text.slideUp('10');
+			$(this).children('span').html('<img src="design/images/arrow-closed.gif" />');
+		}
+		
+	});
+
+});
+
+</script>
+
+
+<!-- InstanceBeginEditable name="EditRegionScripts" -->
+
+
+<!-- InstanceEndEditable --><!-- End Scrits editable region -->
+
+</head>
+
+<body>
+
+<!-- Content -->
+
+<div id="content">
+
+<!-- container holds navigation and page -->
+<div id="container" class="cf">
+
+<div id="navigation">
+
+<div id="banner">
+	<p><img src="design/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+    <h1>User Help</h1>
+</div><!-- End Banner" -->
+ 
+<!-- Level 1 List -->
+<ul class="level1" id="toggle-1">
+
+<!-- Level 1 Item -->
+<li><a href="index.html">User Help Home Page</a></li><!-- End Level 1 Item -->
+
+
+
+<!-- Level 1 Item -->
+<li  class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Quickstart User Guides 
+
+	<!-- Level 2 List -->
+	<ul class="level2" id="item1">
+    
+		<li><a href="getting-started-5.html">Getting Started v. 5.0.3</a></li><!-- Level 2 Item -->
+   		<li><a href="getting-started-4.html">Getting Started v. 4.4.11</a></li><!-- Level 2 Item -->
+        <li><a href="imagej.html">Using ImageJ with OMERO</a></li><!-- Level 2 Item -->
+        <li><a href="demo-server.html">Try the OMERO Demo Server</a></li><!-- Level 2 Item -->
+	
+	</ul><!-- End Level 2 List -->
+		
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Workflow User Guides 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item2">
+        
+        <li><a href="sharing-data.html">Sharing Data</a></li><!-- Level 2 Item -->
+        <li><a href="search.html">Search</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+            
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.insight 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item3" style="display:none">
+        
+			<li><a href="importing-data-5.html">Importing Data v. 5.0.3</a></li><!-- Level 2 Item -->        
+			<li><a href="importing-data-4.html">Importing Data v. 4.4.11</a></li><!-- Level 2 Item -->
+			<li><a href="viewing-data.html">Viewing Data</a></li><!-- Level 2 Item -->
+			<li><a href="managing-data.html">Managing Data</a></li><!-- Level 2 Item -->
+			<li><a href="measurement-tool.html">ROIs and Measurement Tool</a></li><!-- Level 2 Item -->
+			<li><a href="output.html">Exporting Images</a></li><!-- Level 2 Item -->
+			<li><a href="scripts.html">Export Images Using Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="utility-scripts.html">Utility Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="client-memory.html">Increasing Client Memory</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+        
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.web 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item4" style="display:none">
+        
+			<li><a href="web-client.html">Using the Web Client</a></li><!-- Level 2 Item -->
+			<li><a href="urls-to-data.html">URLs for Linking to Data</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Other OMERO Applications 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item5">
+        	
+            <li><a href="figure.html">OMERO.figure</a></li><!-- Level 2 Item -->
+            <li><a href="virtual-microscope.html">Virtual Microscope</a></li><!-- Level 2 Item -->
+            <li><a href="dropbox.html">OMERO.dropbox</a></li><!-- Level 2 Item -->        
+            <li><a href="editor.html">OMERO.editor</a></li><!-- Level 2 Item -->
+
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>More<!-- Level  Item -->
+    
+	<!-- Level 2 List -->
+	<ul class="level2"  id="item6">
+
+		<li><a href="previous.html">Guides for Previous Versions</a></li><!-- End Level 2 Item -->
+		<li><a href="resources.html">Resources</a></li><!-- End Level 2 Item -->
+		<li><a href="contact.html">Contact Us</a></li><!-- End Level 2 Item -->
+		<li><a href="http://www.openmicroscopy.org/site" target="_blank">Main OME Website</a></li><!-- End Level 2 Item -->
+
+	</ul><!-- End Level 2 List -->
+
+</ul>
+<!-- End Level 1 List -->
+
+<div id="footer">
+
+<p>&copy; 2000-2014<br/>
+The Open Microscopy Environment</p>
+
+</div><!-- End Footer -->
+
+
+</div><!-- End navigation -->
+ 
+<div id="page">
+
+<!-- InstanceBeginEditable name="pagecontents" -->
+
+<div id="page-header">
+
+<h1>Previous Versions</h1>
+
+</div><!-- End Page header -->
+ 
+<div id="page-body">
+ 
+<div id="page-contents">
+
+<a class="top" id="top">Top</a>
+ 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
@@ -14,10 +213,9 @@ menu-id: l1-more
 <p>All User Guides for <a href="pdf/archives/OMERO_User_Guides_5_0_0_rc1.zip">Version 5.0.0-rc1</a> (Zipped PDF 280.7 MB)</p>
 <p>All User Guides for <a href="pdf/archives/OMERO_User_Guides_5_0_0.zip">Version 5.0.0</a> (Zipped PDF 179.4 MB)</p>
 <p>All User Guides for <a href="pdf/archives/OMERO_User_Guides_5_0_1.zip">Version 5.0.1</a> (Zipped PDF 287.6 MB)</p>
-
-
-  <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+<p>All User Guides for <a href="pdf/archives/OMERO_User_Guides_5_0_2.zip">Version 5.0.2</a> (Zipped PDF 195.9 MB)</p>
+<div class="line-block">
+  <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 
@@ -28,7 +226,57 @@ menu-id: l1-more
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
    
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</div><!-- End Page-contents -->
+
+</div><!-- End Page-body -->
+
+<!-- InstanceEndEditable -->
+
+</div><!-- End Page" -->
+
+</div><!-- End Container" -->
+
+
+
+</div><!-- End Content -->
+
+
+
+</body>
+<!-- InstanceEnd --></html>

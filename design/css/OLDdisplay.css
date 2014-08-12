@@ -1,0 +1,405 @@
+/*
+Stylesheet for the OMERO User Guides Website
+© Copyright Open Microscopy Environment 2000 - 2013.
+All material is covered by the Creative Commons Attribution 3.0 Unported License - you are free to share or adapt content as long as you credit the Open Microscopy Environment. The exception to this is the screenshots and videos which can only be used for non-commercial purposes.
+*/
+
+* {
+	margins: 0;
+}
+
+html{
+	background: #00426d;
+	font: small/1.5em verdana,tahoma,sans-serif;	
+	text-align: left;
+	height: 100%;
+}
+
+body {
+	height: 100px;
+}
+
+/* Structure */
+
+#content {
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom: 0;
+    overflow: hidden !important; /* FF scroll-bar */
+	width: 960px;
+	height: 100%;
+	min-height: 600px;
+	margin-right: auto;
+	margin-top: 0;
+	margin-left: auto;
+	
+}
+
+#banner {
+	width: 100%;
+	float: left;
+	height: auto;
+	color: #eeedef;
+	text-align: center;
+	font-size: 110%;
+	line-height: 1em;
+	padding-bottom: 10px;
+}
+
+#banner h1 {
+}
+
+#container {
+	position: relative;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	overflow: hidden !important; /* FF scroll-bar */
+}
+
+#page {
+	width: 700px;
+	display: inline;
+	float: right;
+	background-color: white;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+/*Page Header*/
+#page-header {
+	border-bottom: 1px dotted #f4f4f4;
+	border-color: #c0c0c0;
+	line-height: 1.5em;
+	padding-bottom: 7px;
+	min-height: 36px;
+}
+	
+#page-header .h1{
+	font-size: 130%;
+	color: #00426c;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+.actions {
+	text-align: center;
+	margin-top: -10px;
+	font-size: 85%;
+	border: 2px solid #dad9da;
+	margin-right: 15px;
+	padding-right: 7px;
+	padding-left: 7px;
+	width: 90px;
+	float: right;
+	background-color: #06436b;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #eeedef;
+	display: inline;
+}
+
+.actions a {
+	text-decoration: none;
+	color: #eeedef;
+}
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+
+#page-body {
+	text-align: left;
+	width: 100%;
+	overflow-y: scroll;
+	height: 95%;
+}
+
+#page-body h1 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 110%;
+	text-decoration: underline;
+}
+
+#page-body h2 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 110%;
+	text-decoration: underline;
+}
+
+#page-body h3 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+#page-body p {
+	text-align: left;
+	padding-left: 5px;
+}
+
+#page-contents {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#page-section {
+}
+
+p.centre {
+	text-align: center;
+}
+
+/*
+#page-section 
+*/
+ol.step {
+	list-style: decimal;
+
+}
+
+ol li {
+	font-weight: bold;
+}
+
+
+ol p.first {
+	font-weight: normal;
+}
+
+ol p {
+	font-weight: normal;
+}
+
+/*Images*/
+
+img.align-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.align-left {
+	display: block;
+	margin-left: 0;
+}
+
+img.align-right {
+	display: block;
+	margin-right: 0;
+}
+
+img.float-right {
+	border: 1px solid #000;
+	float: right;
+}
+
+img.float-left {
+	float: left;
+	border: 1px solid #000;
+}
+
+/*Caption*/
+
+#page-body .caption {
+	font-style: italic;
+}
+/*Note*/
+
+#page-body .note {
+	border-style: dotted;
+	border-width: 1px;
+	background-color: #e8f2fd;
+	width: 95%;
+	padding-left: 5px;
+	color: #06436b;
+}
+
+#page-body .note-title {
+	font-weight: bold;
+}
+
+#page-body .note-text {
+}
+
+
+#page-body .warning {
+	width: 95%;
+	padding-left: 5px;
+	border: 2px solid #ff2600;
+}
+
+#page-body .warning-title {
+	font-weight: bold;
+	color: #ff2600;
+}
+
+#page-body .warning-title {
+}
+
+
+#page-body .page-navigation {
+	font-weight: bold;
+}
+
+/*Page end*/
+
+.page-end {
+	display: none;
+	text-align: center;
+}
+
+
+
+/*Line spacers*/
+
+#line-block {
+}
+
+#line {
+}
+
+#line-block {	
+}
+
+#line {	
+}
+
+/*URLs*/
+
+#external-url {
+	
+}
+
+/*Formatting Within Pages*/
+
+#bullet-list {
+	
+}
+
+.code-example {
+	font: 115% "Courier New", Courier, mono;
+}
+
+/*Navigation*/
+
+#navigation {
+	width: 232px;
+	float: left;
+	height: auto;
+	color: #f4f4f4;
+	text-align: left;
+	font-size: 95%;
+}
+
+#navigation ul {
+	list-style-type: none;
+	margin-left: -27px;
+	font-weight: bold;
+}
+
+#navigation ul ul {
+}
+	
+#navigation ul ul ul {
+	}
+
+#navigation ul a {
+	color: #d8e4f6;
+	font-weight: normal;
+	line-height: 2.1em;
+}
+
+#navigation ul ul a {
+	color: #d8e4f6;
+	font-weight: normal;
+}
+
+#navigation ul ul ul a {
+	color: #d8e4f6;
+	font-weight: normal;
+}
+	
+#navigation li {
+	
+}
+	
+#navigation ul li {
+	line-height: 2em;
+	background: none;
+	border-top-style: solid 1px;
+}
+	
+#navigation ul ul li {
+	padding-left: 10px;
+	border: none;
+}
+
+#navigation ul ul ul li {
+	font-weight: normal;
+	background: none;
+	padding-left: 0;
+}
+
+#navigation span {
+	padding-right: 4px;
+}
+
+/*Footer*/
+
+#footer {
+	color: white;
+	font-size: 85%;
+	text-align: left; 
+	width: 100%;
+	background-color: #00426d;
+	padding-top: 25px;
+	margin-left: 15px;
+}
+
+
+/*Clearfix*/
+
+.clearfix:before,
+.clearfix:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;	
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;} /* IE < 8 */
+
+.cf:before,
+.cf:after {
+  content:".";
+  display: table;
+  height: 0;
+  font-size: 0; 
+  line-height: 0;   
+  visibility: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}

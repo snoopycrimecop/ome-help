@@ -1,15 +1,215 @@
----
-layout: default
-title: Sharing Data in OMERO
-menu-id: l1-workflow
-pdfs:
-    - sharing-data.pdf
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" ><!-- InstanceBegin template="/Templates/Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="OME, OMERO, ome, omero, OMERO.insight, OMERO.web, microscopy images, user guide, user guides" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<meta name="description" content="OMERO allows controlled sharing of data using groups with varying levels of access and interaction." />
+
+<title>OMERO User Help - Sharing Data in OMERO</title>
+
+<!-- InstanceEndEditable --><!-- End Doc Title --> 
+
+<style type="text/css">
+@import url(design/css/display.css);
+</style>
+
+
+<script type="text/javascript" src="design/js/jquery.js"></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+    
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	var url = document.URL,
+    page = url.split('/').slice(-1)[0],
+    $link = $("a[href='"+page+"']"),
+    $ul = $link.parent().parent(),
+    $span = $ul.parent().children('span');
+
+	$ul.show();
+	$span.html('<img src="design/images/arrow-open.gif" />')
+	
+	
+	$('#toggle-1 li').click(function () {
+
+		var text = $(this).children('ul.level2');
+
+		if (text.is(':hidden')) {
+			text.slideDown('1');
+			$(this).children('span').html('<img src="design/images/arrow-open.gif" />');
+		} else {
+			text.slideUp('10');
+			$(this).children('span').html('<img src="design/images/arrow-closed.gif" />');
+		}
+		
+	});
+
+});
+
+</script>
+
+
+<!-- InstanceBeginEditable name="EditRegionScripts" -->
+
+
+<!-- InstanceEndEditable --><!-- End Scrits editable region -->
+
+</head>
+
+<body>
+
+<!-- Content -->
+
+<div id="content">
+
+<!-- container holds navigation and page -->
+<div id="container" class="cf">
+
+<div id="navigation">
+
+<div id="banner">
+	<p><img src="design/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+    <h1>User Help</h1>
+</div><!-- End Banner" -->
+ 
+<!-- Level 1 List -->
+<ul class="level1" id="toggle-1">
+
+<!-- Level 1 Item -->
+<li><a href="index.html">User Help Home Page</a></li><!-- End Level 1 Item -->
+
+
+
+<!-- Level 1 Item -->
+<li  class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Quickstart User Guides 
+
+	<!-- Level 2 List -->
+	<ul class="level2" id="item1">
+    
+		<li><a href="getting-started-5.html">Getting Started v. 5.0.3</a></li><!-- Level 2 Item -->
+   		<li><a href="getting-started-4.html">Getting Started v. 4.4.11</a></li><!-- Level 2 Item -->
+        <li><a href="imagej.html">Using ImageJ with OMERO</a></li><!-- Level 2 Item -->
+        <li><a href="demo-server.html">Try the OMERO Demo Server</a></li><!-- Level 2 Item -->
+	
+	</ul><!-- End Level 2 List -->
+		
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Workflow User Guides 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item2">
+        
+        <li><a href="sharing-data.html">Sharing Data</a></li><!-- Level 2 Item -->
+        <li><a href="search.html">Search</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+            
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.insight 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item3" style="display:none">
+        
+			<li><a href="importing-data-5.html">Importing Data v. 5.0.3</a></li><!-- Level 2 Item -->        
+			<li><a href="importing-data-4.html">Importing Data v. 4.4.11</a></li><!-- Level 2 Item -->
+			<li><a href="viewing-data.html">Viewing Data</a></li><!-- Level 2 Item -->
+			<li><a href="managing-data.html">Managing Data</a></li><!-- Level 2 Item -->
+			<li><a href="measurement-tool.html">ROIs and Measurement Tool</a></li><!-- Level 2 Item -->
+			<li><a href="output.html">Exporting Images</a></li><!-- Level 2 Item -->
+			<li><a href="scripts.html">Export Images Using Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="utility-scripts.html">Utility Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="client-memory.html">Increasing Client Memory</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+        
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.web 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item4" style="display:none">
+        
+			<li><a href="web-client.html">Using the Web Client</a></li><!-- Level 2 Item -->
+			<li><a href="urls-to-data.html">URLs for Linking to Data</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Other OMERO Applications 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item5">
+        	
+            <li><a href="figure.html">OMERO.figure</a></li><!-- Level 2 Item -->
+            <li><a href="virtual-microscope.html">Virtual Microscope</a></li><!-- Level 2 Item -->
+            <li><a href="dropbox.html">OMERO.dropbox</a></li><!-- Level 2 Item -->        
+            <li><a href="editor.html">OMERO.editor</a></li><!-- Level 2 Item -->
+
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>More<!-- Level  Item -->
+    
+	<!-- Level 2 List -->
+	<ul class="level2"  id="item6">
+
+		<li><a href="previous.html">Guides for Previous Versions</a></li><!-- End Level 2 Item -->
+		<li><a href="resources.html">Resources</a></li><!-- End Level 2 Item -->
+		<li><a href="contact.html">Contact Us</a></li><!-- End Level 2 Item -->
+		<li><a href="http://www.openmicroscopy.org/site" target="_blank">Main OME Website</a></li><!-- End Level 2 Item -->
+
+	</ul><!-- End Level 2 List -->
+
+</ul>
+<!-- End Level 1 List -->
+
+<div id="footer">
+
+<p>&copy; 2000-2014<br/>
+The Open Microscopy Environment</p>
+
+</div><!-- End Footer -->
+
+
+</div><!-- End navigation -->
+ 
+<div id="page">
+
+<!-- InstanceBeginEditable name="pagecontents" -->
+
+<div id="page-header">
+
+<a href="pdf/sharing-data.pdf" target="_blank"><img src="design/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
+
+<h1>Sharing Data in OMERO</h1>
+
+</div><!-- End Page header -->
+ 
+<div id="page-body">
+ 
+<div id="page-contents">
+ 
+<a class="top" id="top">Top</a>
+
 <div class="page-navigation">
 
-<h2><a name="top" id="top">Contents</a></h2>
+<h2>Contents</h2>
 
 <p>
+<a href="#introduction">Introduction</a><br />
 <a href="#roles">User Roles</a><br />
 <a href="#groups">Group Types</a><br />
 <a href="#permissions">Tables Summarising the Roles and Permissions in Groups</a><br />
@@ -18,8 +218,12 @@ pdfs:
 <a href="#admin">Admin Tasks</a></p>
 
 </div><!-- End Page Navigation -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
  
-<h2>Introduction</h2>
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
 <p>Groups are used in OMERO to enable sharing of data between users. Groups are created by the OMERO administrator and usually have one or more group owners. Group owners and admins can add or remove users.</p>
 
@@ -31,9 +235,9 @@ pdfs:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="roles" id="roles"></a>User Roles</h2>
+<h2><a class="anchor" name="roles" id="roles"></a>User Roles</h2>
 
 <p>There are three levels of role in any group:</p>
 
@@ -63,9 +267,9 @@ pdfs:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="groups" id="groups"></a>Group Types</h2>
+<h2><a class="anchor" name="groups" id="groups"></a>Group Types</h2>
 
 <p>There are three types of group in OMERO:</p>
 
@@ -108,9 +312,9 @@ pdfs:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="permissions" id="permissions"></a>Tables Summarising the Roles and Permissions in Groups</h2>
+<h2><a class="anchor" name="permissions" id="permissions"></a>Tables Summarising the Roles and Permissions in Groups</h2>
 
 <span class="bold">Private Group</span>
 
@@ -158,9 +362,9 @@ pdfs:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="viewing" id="viewing"></a>Viewing Data by Groups</h2>
+<h2><a class="anchor" name="viewing" id="viewing"></a>Viewing Data by Groups</h2>
 
 <p>If you are a member of more than one group, your default group shows in the data tree on start-up (left hand panel).</p>
 
@@ -253,9 +457,9 @@ pdfs:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="moving" id="moving"></a>Moving Data Between Groups</h2>
+<h2><a class="anchor" name="moving" id="moving"></a>Moving Data Between Groups</h2>
 
 <p>If you are a member of more than one group, you can move data between groups.</p>
 <p>Right-click on a project, dataset or one or more images and select <span class="bold">Move to</span> from the menu.</p>
@@ -285,9 +489,9 @@ pdfs:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="admin" id="admin"></a>Admin Tasks</h2>
+<h2><a class="anchor" name="admin" id="admin"></a>Admin Tasks</h2>
 
 <p>To change your default group, go to your user settings.</p>
 <p>In the <span class="bold">User Settings</span> select the new default group from the drop-down list.</p>
@@ -372,7 +576,32 @@ pdfs:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
 <div class="page-end">
-	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">www.help.openmicroscopy.org</a></p>
+	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
 	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
 </div> <!-- end page-end -->
+
+</div><!-- End Page-contents -->
+
+</div><!-- End Page-body -->
+
+<!-- InstanceEndEditable -->
+
+</div><!-- End Page" -->
+
+</div><!-- End Container" -->
+
+
+
+</div><!-- End Content -->
+
+
+
+</body>
+<!-- InstanceEnd --></html>

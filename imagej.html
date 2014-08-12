@@ -1,15 +1,215 @@
----
-layout: default
-title: Using ImageJ with OMERO
-menu-id: l1-quickstart
-pdfs:
-    - imagej.pdf
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" ><!-- InstanceBegin template="/Templates/Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="OME, OMERO, ome, omero, OMERO.insight, OMERO.web, microscopy images, user guide, user guides" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<meta name="description" content="How to use OMERO.insight with ImageJ and Fiji to access data on an OMERO server." />
+
+<title>OMERO User Help - Using ImageJ with OMERO</title>
+
+<!-- InstanceEndEditable --><!-- End Doc Title --> 
+
+<style type="text/css">
+@import url(design/css/display.css);
+</style>
+
+
+<script type="text/javascript" src="design/js/jquery.js"></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+    
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	var url = document.URL,
+    page = url.split('/').slice(-1)[0],
+    $link = $("a[href='"+page+"']"),
+    $ul = $link.parent().parent(),
+    $span = $ul.parent().children('span');
+
+	$ul.show();
+	$span.html('<img src="design/images/arrow-open.gif" />')
+	
+	
+	$('#toggle-1 li').click(function () {
+
+		var text = $(this).children('ul.level2');
+
+		if (text.is(':hidden')) {
+			text.slideDown('1');
+			$(this).children('span').html('<img src="design/images/arrow-open.gif" />');
+		} else {
+			text.slideUp('10');
+			$(this).children('span').html('<img src="design/images/arrow-closed.gif" />');
+		}
+		
+	});
+
+});
+
+</script>
+
+
+<!-- InstanceBeginEditable name="EditRegionScripts" -->
+
+
+<!-- InstanceEndEditable --><!-- End Scrits editable region -->
+
+</head>
+
+<body>
+
+<!-- Content -->
+
+<div id="content">
+
+<!-- container holds navigation and page -->
+<div id="container" class="cf">
+
+<div id="navigation">
+
+<div id="banner">
+	<p><img src="design/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+    <h1>User Help</h1>
+</div><!-- End Banner" -->
+ 
+<!-- Level 1 List -->
+<ul class="level1" id="toggle-1">
+
+<!-- Level 1 Item -->
+<li><a href="index.html">User Help Home Page</a></li><!-- End Level 1 Item -->
+
+
+
+<!-- Level 1 Item -->
+<li  class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Quickstart User Guides 
+
+	<!-- Level 2 List -->
+	<ul class="level2" id="item1">
+    
+		<li><a href="getting-started-5.html">Getting Started v. 5.0.3</a></li><!-- Level 2 Item -->
+   		<li><a href="getting-started-4.html">Getting Started v. 4.4.11</a></li><!-- Level 2 Item -->
+        <li><a href="imagej.html">Using ImageJ with OMERO</a></li><!-- Level 2 Item -->
+        <li><a href="demo-server.html">Try the OMERO Demo Server</a></li><!-- Level 2 Item -->
+	
+	</ul><!-- End Level 2 List -->
+		
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Workflow User Guides 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item2">
+        
+        <li><a href="sharing-data.html">Sharing Data</a></li><!-- Level 2 Item -->
+        <li><a href="search.html">Search</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+            
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.insight 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item3" style="display:none">
+        
+			<li><a href="importing-data-5.html">Importing Data v. 5.0.3</a></li><!-- Level 2 Item -->        
+			<li><a href="importing-data-4.html">Importing Data v. 4.4.11</a></li><!-- Level 2 Item -->
+			<li><a href="viewing-data.html">Viewing Data</a></li><!-- Level 2 Item -->
+			<li><a href="managing-data.html">Managing Data</a></li><!-- Level 2 Item -->
+			<li><a href="measurement-tool.html">ROIs and Measurement Tool</a></li><!-- Level 2 Item -->
+			<li><a href="output.html">Exporting Images</a></li><!-- Level 2 Item -->
+			<li><a href="scripts.html">Export Images Using Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="utility-scripts.html">Utility Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="client-memory.html">Increasing Client Memory</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+        
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.web 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item4" style="display:none">
+        
+			<li><a href="web-client.html">Using the Web Client</a></li><!-- Level 2 Item -->
+			<li><a href="urls-to-data.html">URLs for Linking to Data</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Other OMERO Applications 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item5">
+        	
+            <li><a href="figure.html">OMERO.figure</a></li><!-- Level 2 Item -->
+            <li><a href="virtual-microscope.html">Virtual Microscope</a></li><!-- Level 2 Item -->
+            <li><a href="dropbox.html">OMERO.dropbox</a></li><!-- Level 2 Item -->        
+            <li><a href="editor.html">OMERO.editor</a></li><!-- Level 2 Item -->
+
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>More<!-- Level  Item -->
+    
+	<!-- Level 2 List -->
+	<ul class="level2"  id="item6">
+
+		<li><a href="previous.html">Guides for Previous Versions</a></li><!-- End Level 2 Item -->
+		<li><a href="resources.html">Resources</a></li><!-- End Level 2 Item -->
+		<li><a href="contact.html">Contact Us</a></li><!-- End Level 2 Item -->
+		<li><a href="http://www.openmicroscopy.org/site" target="_blank">Main OME Website</a></li><!-- End Level 2 Item -->
+
+	</ul><!-- End Level 2 List -->
+
+</ul>
+<!-- End Level 1 List -->
+
+<div id="footer">
+
+<p>&copy; 2000-2014<br/>
+The Open Microscopy Environment</p>
+
+</div><!-- End Footer -->
+
+
+</div><!-- End navigation -->
+ 
+<div id="page">
+
+<!-- InstanceBeginEditable name="pagecontents" -->
+
+<div id="page-header">
+
+<a href="pdf/imagej.pdf" target="_blank"><img src="design/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
+
+<h1>Using ImageJ with OMERO</h1>
+
+</div><!-- End Page header -->
+ 
+<div id="page-body">
+ 
+<div id="page-contents">
+
+<a class="top" id="top">Top</a>
+
 <div class="page-navigation">
 
-<h2><a name="top" id="top">Contents</a></h2>
+<h2>Contents</h2>
 
 <p>
+<a href="#using">Using ImageJ and Fiji with OMERO</a><br />
 <a href="#downloadImageJ">Downloading and installing ImageJ</a><br />
 <a href="#downloadFuji">Downloading and installing Fiji</a><br />
 <a href="#plugins">Installing Plugins for ImageJ and Fiji</a><br />
@@ -25,7 +225,7 @@ pdfs:
 <div class="line"><br /></div>
 </div>
 
-<h2>Using ImageJ and Fiji with OMERO</h2>
+<h2><a class="anchor" id="using"></a>Using ImageJ and Fiji with OMERO</h2>
 
 <p>This initial section assumes you have never installed ImageJ or Fiji before and covers both OMERO version 4.4.x and version 5.0.x.</p>
 
@@ -47,9 +247,9 @@ pdfs:
 <div class="line"><br /></div>
 </div>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="downloadImageJ" id="downloadImageJ"></a>Downloading and installing ImageJ</h2>
+<h2><a class="anchor" id="downloadImageJ"></a>Downloading and installing ImageJ</h2>
 
 <ol class="step">
 
@@ -79,9 +279,9 @@ pdfs:
 <div class="line"><br /></div>
 </div>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="downloadFuji" id="downloadFuji"></a>Downloading and Installing Fiji</h2>
+<h2><a class="anchor" id="downloadFuji"></a>Downloading and Installing Fiji</h2>
 
 <p>Fiji (Fiji is Just ImageJ) is a distribution of ImageJ together with Java, Java3D and a lot of plugins organized into a coherent menu structure.</p>
 
@@ -125,9 +325,9 @@ pdfs:
 <div class="line"><br /></div>
 </div>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="plugins" id="plugins"></a>Installing Plugins for ImageJ and Fiji</h2>
+<h2><a class="anchor" id="plugins"></a>Installing Plugins for ImageJ and Fiji</h2>
 
 <p>The location for the plugins in ImageJ and Fiji are essentially the same, with the following differences in gaining access to them:</p>
 
@@ -188,9 +388,9 @@ pdfs:
 </div>
 
 <!-- ImageJ 4 -->
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="imagej4" id="imagej4"></a>Using ImageJ with OMERO version 4.4.x</h2>		
+<h2><a class="anchor" id="imagej4"></a>Using ImageJ with OMERO version 4.4.x</h2>		
 
 <p>Two plugins are required:</p>
 
@@ -269,10 +469,10 @@ pdfs:
 <div class="line"><br /></div>
 </div>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 <!-- ImageJ 5 -->
 
-<h2><a name="imagej5" id="imagej5"></a>Using ImageJ with OMERO version 5.0.x</h2>		
+<h2><a class="anchor" id="imagej5"></a>Using ImageJ with OMERO version 5.0.x</h2>		
 
 <p>Two plugins are required:</p>
 
@@ -284,7 +484,8 @@ pdfs:
 <ol class="step">
 
 <li>
-<p class="first"><a name="screenshot1" id="screenshot1"></a>Download the latest 5.0.x version of the <span class="bold">Bioformats Package</span> plugin from:</p>
+<p class="first"><a class="anchor" id="screenshot1"></a>Download the latest 5.0.x version of the <span class="bold">Bioformats Package</span> plugin from:</p>
+
 <p><a href="http://downloads.openmicroscopy.org/latest/bio-formats5" target="_blank" class="reference external">http://downloads.openmicroscopy.org/latest/bio-formats5</a></p>
 <p>Check there is a &#8220;Bio-formats 5.0.x Downloads&#8221; heading on the page.</p>
 
@@ -309,7 +510,9 @@ pdfs:
 </div>
 </li>
 
-<li><p class="first"><a name="screenshot2" id="screenshot2"></a>Download the latest 5.0.x version of the <span class="code-example">OMERO.insight-ij</span> plugin from:</p>
+<li>
+<p class="first"><a class="anchor" id="screenshot2"></a>Download the latest 5.0.x version of the <span class="code-example">OMERO.insight-ij</span> plugin from:</p>
+
 <p><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="reference external">http://downloads.openmicroscopy.org/latest/omero5</a></p>
 <p>Check there is a &#8220;OMERO 5.0.x Downloads&#8221; heading on the page.</p>
 
@@ -350,9 +553,9 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 </ol>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="upgradeimagej" id="upgradeimagej"></a>Upgrading ImageJ from 4.4.x to 5.0.x</h2>		
+<h2><a class="anchor" id="upgradeimagej"></a>Upgrading ImageJ from 4.4.x to 5.0.x</h2>		
 
 <p>To upgrade ImageJ for use with an OMERO version 5 server, you need to:</p>
 
@@ -398,10 +601,10 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line"><br /></div>
 </div>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <!-- FIJI -->
-<h2><a name="fiji4" id="fiji4"></a>Using Fiji with OMERO version 4.4.x</h2>
+<h2><a class="anchor" id="fiji4"></a>Using Fiji with OMERO version 4.4.x</h2>
 
 <p>Fiji changed the way it bundles and updates the plugins and jars needed to work with OMERO version 4.4.x in April 2014. Versions of Fiji since require the following steps to work with OMERO version 4.4.x.</p>		
 
@@ -459,10 +662,10 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 </ol>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 <!-- Fiji 5 -->
 
-<h2><a name="fiji5" id="fiji5"></a>Using Fiji with OMERO version 5.0.x</h2>		
+<h2><a class="anchor" id="fiji5"></a>Using Fiji with OMERO version 5.0.x</h2>		
 
 <p>As Fiji comes bundled with the components of Bioformats Package, there is no need to download and install this plugin.</p>
 
@@ -551,9 +754,9 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line"><br /></div>
 </div>
 
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a name="access" id="access"></a>Accessing OMERO using ImageJ and Fiji</h2>
+<h2><a class="anchor" id="access"></a>Accessing OMERO using ImageJ and Fiji</h2>
 
 <ol class="step">
 
@@ -615,19 +818,13 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 </div>
 <img alt="../images/imagejBio-Formats.jpg" class="align-center" src="images/imagejBioformats.jpg" style="width: 100%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="design/images/back_to_top.jpg" alt="back_to_top.jpg" style="float: right;"/></a></p>
+</ol> <!-- end page list -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -638,4 +835,21 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
 </div> <!-- end page-end -->
 
-</ol> <!-- end page list -->
+</div><!-- End Page-contents -->
+
+</div><!-- End Page-body -->
+
+<!-- InstanceEndEditable -->
+
+</div><!-- End Page" -->
+
+</div><!-- End Container" -->
+
+
+
+</div><!-- End Content -->
+
+
+
+</body>
+<!-- InstanceEnd --></html>

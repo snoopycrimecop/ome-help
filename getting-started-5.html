@@ -1,10 +1,227 @@
----
-layout: default
-title: Getting Started with OMERO.insight v. 5.0.2
-menu-id: l1-quickstart
-pdfs:
-    - getting-started-5.pdf
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" ><!-- InstanceBegin template="/Templates/Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="OME, OMERO, ome, omero, OMERO.insight, OMERO.web, microscopy images, user guide, user guides" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<meta name="description" content="Using OMERO.insight Version 5.0.3 to upload, view and download data from any personal computer." />
+
+<title>OMERO User Help - Getting Started Version 5.0.3</title>
+
+<!-- InstanceEndEditable --><!-- End Doc Title --> 
+
+<style type="text/css">
+@import url(design/css/display.css);
+</style>
+
+
+<script type="text/javascript" src="design/js/jquery.js"></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+    
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	var url = document.URL,
+    page = url.split('/').slice(-1)[0],
+    $link = $("a[href='"+page+"']"),
+    $ul = $link.parent().parent(),
+    $span = $ul.parent().children('span');
+
+	$ul.show();
+	$span.html('<img src="design/images/arrow-open.gif" />')
+	
+	
+	$('#toggle-1 li').click(function () {
+
+		var text = $(this).children('ul.level2');
+
+		if (text.is(':hidden')) {
+			text.slideDown('1');
+			$(this).children('span').html('<img src="design/images/arrow-open.gif" />');
+		} else {
+			text.slideUp('10');
+			$(this).children('span').html('<img src="design/images/arrow-closed.gif" />');
+		}
+		
+	});
+
+});
+
+</script>
+
+
+<!-- InstanceBeginEditable name="EditRegionScripts" -->
+
+
+<!-- InstanceEndEditable --><!-- End Scrits editable region -->
+
+</head>
+
+<body>
+
+<!-- Content -->
+
+<div id="content">
+
+<!-- container holds navigation and page -->
+<div id="container" class="cf">
+
+<div id="navigation">
+
+<div id="banner">
+	<p><img src="design/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+    <h1>User Help</h1>
+</div><!-- End Banner" -->
+ 
+<!-- Level 1 List -->
+<ul class="level1" id="toggle-1">
+
+<!-- Level 1 Item -->
+<li><a href="index.html">User Help Home Page</a></li><!-- End Level 1 Item -->
+
+
+
+<!-- Level 1 Item -->
+<li  class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Quickstart User Guides 
+
+	<!-- Level 2 List -->
+	<ul class="level2" id="item1">
+    
+		<li><a href="getting-started-5.html">Getting Started v. 5.0.3</a></li><!-- Level 2 Item -->
+   		<li><a href="getting-started-4.html">Getting Started v. 4.4.11</a></li><!-- Level 2 Item -->
+        <li><a href="imagej.html">Using ImageJ with OMERO</a></li><!-- Level 2 Item -->
+        <li><a href="demo-server.html">Try the OMERO Demo Server</a></li><!-- Level 2 Item -->
+	
+	</ul><!-- End Level 2 List -->
+		
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Workflow User Guides 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item2">
+        
+        <li><a href="sharing-data.html">Sharing Data</a></li><!-- Level 2 Item -->
+        <li><a href="search.html">Search</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+            
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.insight 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item3" style="display:none">
+        
+			<li><a href="importing-data-5.html">Importing Data v. 5.0.3</a></li><!-- Level 2 Item -->        
+			<li><a href="importing-data-4.html">Importing Data v. 4.4.11</a></li><!-- Level 2 Item -->
+			<li><a href="viewing-data.html">Viewing Data</a></li><!-- Level 2 Item -->
+			<li><a href="managing-data.html">Managing Data</a></li><!-- Level 2 Item -->
+			<li><a href="measurement-tool.html">ROIs and Measurement Tool</a></li><!-- Level 2 Item -->
+			<li><a href="output.html">Exporting Images</a></li><!-- Level 2 Item -->
+			<li><a href="scripts.html">Export Images Using Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="utility-scripts.html">Utility Scripts</a></li><!-- Level 2 Item -->
+			<li><a href="client-memory.html">Increasing Client Memory</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+        
+</li><!-- End Level 1 Item -->
+
+
+<!-- Level 1 Item -->            
+<li class="no-toggle"><span><img src="design/images/arrow-closed.gif" alt="Closed menu list" /></span>OMERO.web 
+		
+        <!-- Level 2 List -->
+		<ul class="level2"  id="item4" style="display:none">
+        
+			<li><a href="web-client.html">Using the Web Client</a></li><!-- Level 2 Item -->
+			<li><a href="urls-to-data.html">URLs for Linking to Data</a></li><!-- Level 2 Item -->
+            
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>Other OMERO Applications 
+            
+		<!-- Level 2 List -->
+		<ul class="level2"  id="item5">
+        	
+            <li><a href="figure.html">OMERO.figure</a></li><!-- Level 2 Item -->
+            <li><a href="virtual-microscope.html">Virtual Microscope</a></li><!-- Level 2 Item -->
+            <li><a href="dropbox.html">OMERO.dropbox</a></li><!-- Level 2 Item -->        
+            <li><a href="editor.html">OMERO.editor</a></li><!-- Level 2 Item -->
+
+		</ul><!-- End Level 2 List -->
+    
+</li><!-- End Level 1 Item -->
+
+<!-- Level 1 Item -->
+<li class="toggle"><span><img src="design/images/arrow-open.gif" alt="Open menu list" /></span>More<!-- Level  Item -->
+    
+	<!-- Level 2 List -->
+	<ul class="level2"  id="item6">
+
+		<li><a href="previous.html">Guides for Previous Versions</a></li><!-- End Level 2 Item -->
+		<li><a href="resources.html">Resources</a></li><!-- End Level 2 Item -->
+		<li><a href="contact.html">Contact Us</a></li><!-- End Level 2 Item -->
+		<li><a href="http://www.openmicroscopy.org/site" target="_blank">Main OME Website</a></li><!-- End Level 2 Item -->
+
+	</ul><!-- End Level 2 List -->
+
+</ul>
+<!-- End Level 1 List -->
+
+<div id="footer">
+
+<p>&copy; 2000-2014<br/>
+The Open Microscopy Environment</p>
+
+</div><!-- End Footer -->
+
+
+</div><!-- End navigation -->
+ 
+<div id="page">
+
+<!-- InstanceBeginEditable name="pagecontents" -->
+
+<div id="page-header">
+
+<a href="pdf/getting-started-5.pdf" target="_blank"><img src="design/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
+
+<h1>Getting Started with OMERO.insight v. 5.0.3</h1>
+
+</div><!-- End Page header -->
+ 
+<div id="page-body">
+
+<div id="page-contents">
+
+<a class="top" id="top">Top</a>
+
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#introduction">Introduction</a><br />
+<a href="#installing">Installing</a><br />
+<a href="#server">Adding server and logging in</a><br />
+<a href="#adding-data">Adding image data</a><br />
+<a href="#viewing-data">Viewing image data</a><br />
+<a href="#web-start">Using Web Start</a><br />
+</p>
+</div><!-- End Page Navigation -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
+
 <p>OMERO stores image data on a central server. You can use the OMERO.insight
 client to upload, view and download data from any personal computer.</p>
 
@@ -19,17 +236,19 @@ your standard login for the institution&#8217;s networked computers.</p>
 
 <div class="section" id="installing">
 
-<h2>Installing</h2>
+<h2><a class="anchor" id="installing"></a>Installing</h2>
+
 <ol class="step">
 
-<li><p class="first">Download OMERO.insight client at:
-<a class="external-url" href="http://downloads.openmicroscopy.org/omero/5.0.0/" target="_blank">http://downloads.openmicroscopy.org/omero/5.0.2/</a></p>
+<li>
+<p class="first">Download OMERO.insight client at:
+<a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="external-url">http://downloads.openmicroscopy.org/latest/omero5</a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStarted5Downloads.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStarted5Downloads.jpg" style="width: 100%;" />
+<img alt="../images/gettingStarted5Downloads.jpg" class="align-center" src="images/gettingStarted5Downloads.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -43,7 +262,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStarted5Zips.jpg" src="{{ site.baseurl }}/images/gettingStarted5Zips.jpg" style="width: 80%; class="align-center" " />
+<img alt="../images/gettingStarted5Zips.jpg" src="images/gettingStarted5Zips.jpg" style="width: 80%; class="align-center" " />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -57,7 +276,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedApps.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedApps.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedApps.jpg" class="align-center" src="images/gettingStartedApps.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -69,7 +288,9 @@ your standard login for the institution&#8217;s networked computers.</p>
 
 <div class="section" id="adding-server-and-logging-in">
 
-<h2>Adding server and logging in</h2>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="server"></a>Adding server and logging in</h2>
 
 <p>Adding the server is only required the first time an OMERO server is accessed from the computer.</p>
 
@@ -85,7 +306,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedSpanner.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedSpanner.jpg" style="width: 75%;" />
+<img alt="../images/gettingStartedSpanner.jpg" class="align-center" src="images/gettingStartedSpanner.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -99,7 +320,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedAdd.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedAdd.jpg" style="width: 75%;" />
+<img alt="../images/gettingStartedAdd.jpg" class="align-center" src="images/gettingStartedAdd.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -115,7 +336,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedApply.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedApply.jpg" style="width: 75%;" />
+<img alt="../images/gettingStartedApply.jpg" class="align-center" src="images/gettingStartedApply.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -131,7 +352,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedLogin.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedLogin.jpg" style="width: 75%;" />
+<img alt="../images/gettingStartedLogin.jpg" class="align-center" src="images/gettingStartedLogin.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -143,7 +364,9 @@ your standard login for the institution&#8217;s networked computers.</p>
 
 <div class="section" id="adding-image-data">
 
-<h2>Adding image data</h2>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="adding-data"></a>Adding image data</h2>
 <ol class="step">
 
 <li><p class="first">Click on the <span class="bold">Importer</span> icon.</p>
@@ -152,7 +375,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedDataManager.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedDataManager.jpg" style="width: 75%;" />
+<img alt="../images/gettingStartedDataManager.jpg" class="align-center" src="images/gettingStartedDataManager.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -166,7 +389,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStarted5FileChooser.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStarted5FileChooser.jpg" style="width: 100%;" />
+<img alt="../images/gettingStarted5FileChooser.jpg" class="align-center" src="images/gettingStarted5FileChooser.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -182,7 +405,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedData.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedData.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedData.jpg" class="align-center" src="images/gettingStartedData.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -204,7 +427,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedProject.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedProject.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedProject.jpg" class="align-center" src="images/gettingStartedProject.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -220,7 +443,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStarted5Import.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStarted5Import.jpg" style="width: 100%;" />
+<img alt="../images/gettingStarted5Import.jpg" class="align-center" src="images/gettingStarted5Import.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -238,7 +461,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStarted5Complete.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStarted5Complete.jpg" style="width: 100%;" />
+<img alt="../images/gettingStarted5Complete.jpg" class="align-center" src="images/gettingStarted5Complete.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -256,7 +479,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStarted5Close.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStarted5Close.jpg" style="width: 100%;" />
+<img alt="../images/gettingStarted5Close.jpg" class="align-center" src="images/gettingStarted5Close.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -276,7 +499,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStarted5ImportedData.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStarted5ImportedData.jpg" style="width: 100%;" />
+<img alt="../images/gettingStarted5ImportedData.jpg" class="align-center" src="images/gettingStarted5ImportedData.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -286,7 +509,9 @@ your standard login for the institution&#8217;s networked computers.</p>
 
 <div class="section" id="viewing-image-data">
 
-<h2>Viewing image data</h2>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="viewing-data"></a>Viewing image data</h2>
 <ol class="step">
 
 <li><p class="first">The Data Manager window is divided into 3 panes:</p>
@@ -302,7 +527,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedImportedData2.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedImportedData2.jpg" style="width: 75%;" />
+<img alt="../images/gettingStartedImportedData2.jpg" class="align-center" src="images/gettingStartedImportedData2.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -316,7 +541,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedPanes.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedPanes.jpg" style="width: 75%;" />
+<img alt="../images/gettingStartedPanes.jpg" class="align-center" src="images/gettingStartedPanes.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -336,7 +561,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedRendering.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedRendering.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedRendering.jpg" class="align-center" src="images/gettingStartedRendering.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -354,7 +579,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedPicker.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedPicker.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedPicker.jpg" class="align-center" src="images/gettingStartedPicker.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -368,7 +593,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedMetadata.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedMetadata.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedMetadata.jpg" class="align-center" src="images/gettingStartedMetadata.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -382,7 +607,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedROI.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedROI.jpg" style="width: 90%;" />
+<img alt="../images/gettingStartedROI.jpg" class="align-center" src="images/gettingStartedROI.jpg" style="width: 90%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -398,7 +623,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedTools.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedTools.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedTools.jpg" class="align-center" src="images/gettingStartedTools.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -412,7 +637,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedStacks.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedStacks.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedStacks.jpg" class="align-center" src="images/gettingStartedStacks.jpg" style="width: 100%;" />
 </li>
 </ol>
 
@@ -424,11 +649,13 @@ your standard login for the institution&#8217;s networked computers.</p>
 
 <div class="section" id="using-web-start">
 
-<h2>Using Web Start</h2>
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="web-start"></a>Using Web Start</h2>
 
 <p>If users have restrictions on their ability to install software on their computers, a version of the OMERO.insight client can be downloaded as a Web Start package via the OMERO.web client.</p>
 
-<p>Using Web Start ensures you are always using an up-to-date version of OMERO-insight. For all practical purposes the Web Start OMERO.insight client is identical to the standard OMERO.insight client.</p>
+<p>The Web Start download has to be repeated each session, but this has the advantage of ensuring an up-to-date version is always used. For all practical purposes the Web Start OMERO.insight client is identical to the standard OMERO.insight client.</p>
 
 <p>To access the OMERO.web client you will need a web address (URL) provided by your OMERO administrator.</p>
 
@@ -446,7 +673,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedWebStart.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedWebStart.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedWebStart.jpg" class="align-center" src="images/gettingStartedWebStart.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -476,7 +703,7 @@ your standard login for the institution&#8217;s networked computers.</p>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="{{ site.baseurl }}/images/gettingStartedDownload.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedDownload.jpg" style="width: 100%;" />
+<img alt="../images/gettingStartedDownload.jpg" class="align-center" src="images/gettingStartedDownload.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -488,21 +715,50 @@ your standard login for the institution&#8217;s networked computers.</p>
 
 <p>On a Mac click <span class="bold">Allow</span>.</p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="{{ site.baseurl }}/images/gettingStartedRun.jpg" class="align-center" src="{{ site.baseurl }}/images/gettingStartedRun.jpg" style="width: 100%;" />
+<p>Web Start OMERO.insight will have to be downloaded each session, but this ensures you automatically have the latest OMERO.insight version.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+
+<img alt="../images/gettingStartedRun.jpg" class="align-center" src="images/gettingStartedRun.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="design/images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="page-end">
-	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">www.help.openmicroscopy.org</a></p>
+	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
 	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
 </div> <!-- end page-end -->
+
+</li><!-- end page list item -->
+
+</ol> <!-- end page list -->
+
+</div><!-- end section -->
+
+</div><!-- End Page-contents -->
+
+</div><!-- End Page-body -->
+
+<!-- InstanceEndEditable -->
+
+</div><!-- End Page" -->
+
+</div><!-- End Container" -->
+
+
+
+</div><!-- End Content -->
+
+
+
+</body>
+<!-- InstanceEnd --></html>

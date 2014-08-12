@@ -1,0 +1,413 @@
+/*
+Stylesheet for the OMERO User Guides Website
+© Copyright Open Microscopy Environment 2000 - 2013.
+All material is covered by the Creative Commons Attribution 3.0 Unported License - you are free to share or adapt content as long as you credit the Open Microscopy Environment. The exception to this is the screenshots and videos which can only be used for non-commercial purposes.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+* {
+	margins: 0;
+}
+
+html{
+	background: #00426d;
+	font: small/1.5em 'Open Sans', sans-serif;
+	text-align: left;
+	height: 100%;
+}
+
+body {
+
+}
+
+/* Structure */
+
+#content {
+	width: 960px;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+#banner {
+	width: 100%;
+	float: left;
+	height: auto;
+	color: #eeedef;
+	text-align: center;
+	font-size: 110%;
+	line-height: 1em;
+	padding-bottom: 10px;
+	margin-left: -5px;
+}
+
+#banner h1 {
+}
+
+#container {
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+#page {
+	width: 700px;
+	display: inline;
+	float: right;
+	background-color: #feffff;
+	text-align: center;
+	height: 100%;
+	border: 1.5px solid silver;
+	padding-top: 10px;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+/*Page Header*/
+#page-header {
+	border-bottom: 1px solid #f4f4f4;
+	border-color: #c0c0c0;
+	position: fixed;
+	background-color: #feffff;
+	width: 700px;
+	height: 55px;
+	margin-top: -55px;
+	box-shadow: 2px 2px 5px #888888;
+	padding-top: 10px;
+	font-size: 80%;
+	top: 47px;
+}
+	
+#page-header .h1{
+	color: #00426c;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+/*Page Body*/
+
+#page-body {
+	text-align: left;
+	width: 100%;
+	background-color: #feffff;
+	overflow: hidden;
+}
+
+#page-body h1 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 110%;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+
+#page-body h2 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 110%;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+
+#page-body h3 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 100%;
+	padding-left: 5px;
+}
+
+#page-body p {
+	text-align: left;
+	padding-left: 5px;
+}
+
+#page-contents {
+	margin-right: 10px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#page-section {
+}
+
+p.centre {
+	text-align: center;
+}
+
+a img{
+    border: 0;
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -70px;
+	visibility: hidden;
+	}
+	
+a.top {
+	display: block;
+	position: relative;
+	top: -110px;
+}
+
+/*
+#page-section 
+*/
+ol.step {
+	list-style: decimal;
+
+}
+
+ol li {
+	font-weight: bold;
+}
+
+
+ol p.first {
+	font-weight: normal;
+}
+
+ol p {
+	font-weight: normal;
+}
+
+/*Images*/
+
+img.align-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.align-left {
+	display: block;
+	margin-left: 0;
+}
+
+img.align-right {
+	display: block;
+	margin-right: 0;
+}
+
+img.float-right {
+	border: 1px solid #000;
+	float: right;
+}
+
+img.float-left {
+	float: left;
+	border: 1px solid #000;
+}
+
+img.header-right {
+	float: right;
+	margin-top: 5px;
+	margin-right: 3px;
+}
+
+/*Caption*/
+
+#page-body .caption {
+	font-style: italic;
+}
+/*Note*/
+
+#page-body .note {
+	border-style: dotted;
+	border-width: 1px;
+	background-color: #e8f2fd;
+	width: 95%;
+	padding-left: 5px;
+	color: #06436b;
+}
+
+#page-body .note-title {
+	font-weight: bold;
+}
+
+#page-body .note-text {
+}
+
+
+#page-body .warning {
+	width: 95%;
+	padding-left: 5px;
+	border: 2px solid #ff2600;
+}
+
+#page-body .warning-title {
+	font-weight: bold;
+	color: #ff2600;
+}
+
+#page-body .warning-title {
+}
+
+
+#page-body .page-navigation {
+	font-weight: bold;
+}
+
+/*Page end*/
+
+.page-end {
+	display: none;
+	text-align: center;
+}
+
+
+/*Line spacers*/
+
+#line-block {
+}
+
+#line {
+}
+
+#line-block {	
+}
+
+#line {	
+}
+
+/*URLs*/
+
+#external-url {
+	
+}
+
+
+/*Formatting Within Pages*/
+
+#bullet-list {
+	
+}
+
+.code-example {
+	font: 115% "Courier New", Courier, monospace;
+}
+
+/*Navigation*/
+
+#navigation {
+	font-family: Roboto;
+	float: left;
+	position: fixed;
+	height: auto;
+	width: 250px;
+	top: 0;
+	left: 4px;
+	clear: left;
+	color: #f4f4f4;
+	text-align: left;
+	font-size: 110%;
+	font-weight: 500;
+}
+
+#navigation ul {
+	list-style-type: none;
+	margin-left: -25px;
+}
+
+#navigation ul ul {
+
+}
+	
+#navigation ul ul ul {
+}
+
+#navigation ul a {
+	color: #d8e4f6;
+	line-height: 2.2em;
+}
+
+#navigation ul ul a {
+	color: #d8e4f6;
+	font-size: 90%;
+	line-height: 2.2em;
+}
+
+#navigation ul ul ul a {
+	color: #d8e4f6;
+	line-height: 2.2em;
+}
+	
+#navigation li {
+	
+}
+	
+#navigation ul li {
+	line-height: 2em;
+	background: none;
+	border-top-style: solid 1px;
+}
+	
+#navigation ul ul li {
+	padding-left: 10px;
+	border: none;
+}
+
+#navigation ul ul ul li {
+	background: none;
+	padding-left: 0;
+}
+
+#navigation span {
+	padding-right: 4px;
+}
+
+/*Footer*/
+
+#footer {
+	color: white;
+	font-size: 75%;
+	text-align: left; 
+	width: 80%;
+	background-color: #00426d;
+	padding-top: 25px;
+	margin-left: 15px;
+}
+
+
+/*Clearfix*/
+
+.clearfix:before,
+.clearfix:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;	
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;} /* IE < 8 */
+
+.cf:before,
+.cf:after {
+  content:".";
+  display: table;
+  height: 0;
+  font-size: 0; 
+  line-height: 0;   
+  visibility: hidden;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
