@@ -152,13 +152,14 @@ navigation:
                 <div id="page">
                     
                     <div id="page-header">
-                        <h1>{{ page.title }}</h1>
 
                         {% for pdf in page.pdfs %}
-                        <p class="actions"><a href="pdf/{{ pdf }}">Download PDF</a></p>
+                        <a href="http://downloads.openmicroscopy.org/help/pdfs/{{ pdf }}" target="_blank"> <img src="{{ site.baseurl }}/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
                         {% endfor %}
-                    </div> <!-- page-header -->
-
+                        
+                         <h1>{{ page.title }}</h1>
+                         
+                    </div> <!-- End page-header -->
                     <div id="page-body">
 
                         <div id="page-contents">
