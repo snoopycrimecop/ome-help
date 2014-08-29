@@ -270,6 +270,44 @@ img.header-right {
 	text-align: center;
 }
 
+.gallery {
+	width: 100%;
+	display: inline-block;
+}
+
+.gallery-image {
+  margin: 15px;
+  height:auto;
+  width:auto;
+  float:left;
+  text-align:center;
+  }
+
+.gallery-image img {
+  display:inline;
+  margin:3px;
+  border:1px solid #ffffff;
+  }
+
+.gallery-image a:hover img {
+  border:1px solid #0000ff;
+  }
+  
+.desc {
+  text-align:center;
+  font-weight:normal;
+  width: 100%;
+	margin: 5px;
+}
+
+.attribute {
+	font-size: 70%;
+	text-align: left;
+}
+
+.red {
+	color: #ff2600;
+}
 
 /*Line spacers*/
 
