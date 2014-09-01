@@ -7,7 +7,7 @@ navigation:
       name: Quickstart User Guides
       open: yes
       children:
-          - name: Getting Started v. 5.0.2
+          - name: Getting Started v. 5.0.3
             link: getting-started-5.html
           - name: Getting Started v. 4.4.11
             link: getting-started-4.html
@@ -21,11 +21,13 @@ navigation:
       children:
           - name: Sharing Data
             link: sharing-data.html
+          - name: Search
+            link: search.html
     - id: l1-insight
       name: OMERO.insight
       open: no
       children:
-          - name: Importing Data v. 5.0.2
+          - name: Importing Data v. 5.0.3
             link: importing-data-5.html
           - name: Importing Data v. 4.4.11
             link: importing-data-4.html
@@ -74,7 +76,7 @@ navigation:
           - name: Contact OME
             link: contact.html
           - name: Main OME Website
-            href: http://www.openmicroscopy.org/site
+            href: http://www.openmicroscopy.org/site" target="_blank
 ---
 <!DOCTYPE html>
 <html>
@@ -84,6 +86,10 @@ navigation:
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
+
+        <meta name="keywords" content="OME, OMERO, ome, omero, OMERO.insight, OMERO.web, microscopy images, user guide, user guides" />
+        
+        <meta name="description" content="{{ page.description }}" />
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}/css/display.css">
@@ -106,18 +112,6 @@ navigation:
                     }
                 });
             });
-        </script>
-        
-        <script language="JavaScript" type="text/javascript">
-            var edress = 'ux_at_openmicroscopy_dot_org_dot_uk';
-               function get_edress(){
-                  var re= /_at_/gi;
-                  edress = edress.replace(re,'@');
-                  var re= /_dot_/gi;
-                  edress = edress.replace(re,'.');
-                  var the_link="mai" + "lto" +":"+edress+"?subject=User%20Guides%20Website%20Feedback&body=Thank%20you%20for%20contacting%20us.%0APlease%20provide%20as%20much%20information%20as%20possible%20so%20we%20can%20deal%20with%20your%20enquiry%20efficiently." ;
-                  window.location=the_link;
-               }
         </script>
 
     </head>
@@ -152,17 +146,20 @@ navigation:
                 <div id="page">
                     
                     <div id="page-header">
-                        <h1>{{ page.title }}</h1>
 
                         {% for pdf in page.pdfs %}
-                        <p class="actions"><a href="pdf/{{ pdf }}">Download PDF</a></p>
+                        <a href="http://downloads.openmicroscopy.org/help/pdfs/{{ pdf }}" target="_blank"> <img src="{{ site.baseurl }}/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
                         {% endfor %}
-                    </div> <!-- page-header -->
-
+                        
+                         <h1>{{ page.title }}</h1>
+                         
+                    </div> <!-- End page-header -->
                     <div id="page-body">
 
                         <div id="page-contents">
-
+                            
+                            <a class="top" id="top">Top</a>
+                            
                             {{ content }}
 
                         </div> <!-- page-contents -->

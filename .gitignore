@@ -1,6 +1,5 @@
 _site
-pdf/archives
-pdf/downloads
-resources
+downloads/archives
+downloads/pdfs
+downloads/resources
 .DS_Store
-pdf/.DS_Store

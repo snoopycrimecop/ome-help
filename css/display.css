@@ -4,37 +4,30 @@ Stylesheet for the OMERO User Guides Website
 All material is covered by the Creative Commons Attribution 3.0 Unported License - you are free to share or adapt content as long as you credit the Open Microscopy Environment. The exception to this is the screenshots and videos which can only be used for non-commercial purposes.
 */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
 * {
 	margins: 0;
 }
 
 html{
 	background: #00426d;
-	font: small/1.5em verdana,tahoma,sans-serif;	
+	font: small/1.5em 'Open Sans', sans-serif;
 	text-align: left;
 	height: 100%;
 }
 
 body {
-	height: 100px;
+
 }
 
 /* Structure */
 
 #content {
-	position: absolute;
-	top:0;
-	right:0;
-	left:0;
-	bottom: 0;
-    overflow: hidden !important; /* FF scroll-bar */
 	width: 960px;
-	height: 100%;
-	min-height: 600px;
 	margin-right: auto;
 	margin-top: 0;
-	margin-left: auto;
-	
 }
 
 #banner {
@@ -46,6 +39,7 @@ body {
 	font-size: 110%;
 	line-height: 1em;
 	padding-bottom: 10px;
+	margin-left: -5px;
 }
 
 #banner h1 {
@@ -54,61 +48,42 @@ body {
 #container {
 	position: relative;
 	overflow: auto;
-	height: 100%;
 	width: 100%;
-	overflow: hidden !important; /* FF scroll-bar */
+	overflow: hidden;
 }
 
 #page {
 	width: 700px;
 	display: inline;
 	float: right;
-	background-color: white;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	background-color: #feffff;
 	text-align: center;
 	height: 100%;
+	border: 1.5px solid silver;
+	padding-top: 10px;
+	margin-top: 25px;
 	overflow: hidden;
-	margin: 0;
-	padding: 0;
 }
 
 /*Page Header*/
 #page-header {
-	border-bottom: 1px dotted #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
 	border-color: #c0c0c0;
-	line-height: 1.5em;
-	padding-bottom: 7px;
-	min-height: 36px;
+	position: fixed;
+	background-color: #feffff;
+	width: 700px;
+	height: 55px;
+	margin-top: -55px;
+	box-shadow: 2px 2px 5px #888888;
+	padding-top: 10px;
+	font-size: 80%;
+	top: 47px;
 }
 	
 #page-header .h1{
-	font-size: 130%;
 	color: #00426c;
 	font-weight: bold;
 	letter-spacing: 0.1em;
-}
-
-.actions {
-	text-align: center;
-	margin-top: -10px;
-	font-size: 85%;
-	border: 2px solid #dad9da;
-	margin-right: 15px;
-	padding-right: 7px;
-	padding-left: 7px;
-	width: 90px;
-	float: right;
-	background-color: #06436b;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	color: #eeedef;
-	display: inline;
-}
-
-.actions a {
-	text-decoration: none;
-	color: #eeedef;
 }
 
 .previous {
@@ -119,12 +94,13 @@ body {
 	float: right;
 }
 
+/*Page Body*/
 
 #page-body {
 	text-align: left;
 	width: 100%;
-	overflow-y: scroll;
-	height: 95%;
+	background-color: #feffff;
+	overflow: hidden;
 }
 
 #page-body h1 {
@@ -132,6 +108,7 @@ body {
 	font-weight: bold;
 	font-size: 110%;
 	text-decoration: underline;
+	padding-left: 5px;
 }
 
 #page-body h2 {
@@ -139,12 +116,14 @@ body {
 	font-weight: bold;
 	font-size: 110%;
 	text-decoration: underline;
+	padding-left: 5px;
 }
 
 #page-body h3 {
 	text-align: left;
 	font-weight: bold;
 	font-size: 100%;
+	padding-left: 5px;
 }
 
 #page-body p {
@@ -153,8 +132,9 @@ body {
 }
 
 #page-contents {
-	margin-right: 5px;
-	margin-left: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	overflow: hidden;
 }
 
 .bold {
@@ -166,6 +146,23 @@ body {
 
 p.centre {
 	text-align: center;
+}
+
+a img{
+    border: 0;
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -70px;
+	visibility: hidden;
+	}
+	
+a.top {
+	display: block;
+	position: relative;
+	top: -110px;
 }
 
 /*
@@ -215,6 +212,12 @@ img.float-right {
 img.float-left {
 	float: left;
 	border: 1px solid #000;
+}
+
+img.header-right {
+	float: right;
+	margin-top: 5px;
+	margin-right: 3px;
 }
 
 /*Caption*/
@@ -267,7 +270,44 @@ img.float-left {
 	text-align: center;
 }
 
+.gallery {
+	width: 100%;
+	display: inline-block;
+}
 
+.gallery-image {
+  margin: 15px;
+  height:auto;
+  width:auto;
+  float:left;
+  text-align:center;
+  }
+
+.gallery-image img {
+  display:inline;
+  margin:3px;
+  border:1px solid #ffffff;
+  }
+
+.gallery-image a:hover img {
+  border:1px solid #0000ff;
+  }
+  
+.desc {
+  text-align:center;
+  font-weight:normal;
+  width: 100%;
+	margin: 5px;
+}
+
+.attribute {
+	font-size: 70%;
+	text-align: left;
+}
+
+.red {
+	color: #ff2600;
+}
 
 /*Line spacers*/
 
@@ -289,6 +329,7 @@ img.float-left {
 	
 }
 
+
 /*Formatting Within Pages*/
 
 #bullet-list {
@@ -296,46 +337,52 @@ img.float-left {
 }
 
 .code-example {
-	font: 115% "Courier New", Courier, mono;
+	font: 115% "Courier New", Courier, monospace;
 }
 
 /*Navigation*/
 
 #navigation {
-	width: 232px;
+	font-family: Roboto;
 	float: left;
+	position: fixed;
 	height: auto;
+	width: 250px;
+	top: 0;
+	left: 4px;
+	clear: left;
 	color: #f4f4f4;
 	text-align: left;
-	font-size: 95%;
+	font-size: 110%;
+	font-weight: 500;
 }
 
 #navigation ul {
 	list-style-type: none;
-	margin-left: -27px;
-	font-weight: bold;
+	margin-left: -25px;
 }
 
 #navigation ul ul {
+
 }
 	
 #navigation ul ul ul {
-	}
+}
 
 #navigation ul a {
 	color: #d8e4f6;
-	font-weight: normal;
-	line-height: 2.1em;
+	line-height: 2.2em;
 }
 
 #navigation ul ul a {
 	color: #d8e4f6;
-	font-weight: normal;
+	font-size: 90%;
+	line-height: 2.2em;
 }
 
 #navigation ul ul ul a {
 	color: #d8e4f6;
-	font-weight: normal;
+	line-height: 2.2em;
 }
 	
 #navigation li {
@@ -354,7 +401,6 @@ img.float-left {
 }
 
 #navigation ul ul ul li {
-	font-weight: normal;
 	background: none;
 	padding-left: 0;
 }
@@ -367,9 +413,9 @@ img.float-left {
 
 #footer {
 	color: white;
-	font-size: 85%;
+	font-size: 75%;
 	text-align: left; 
-	width: 100%;
+	width: 80%;
 	background-color: #00426d;
 	padding-top: 25px;
 	margin-left: 15px;
