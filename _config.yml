@@ -1,5 +1,5 @@
 name: OMERO User Help Website
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 baseurl: /ome-help
 clsbaseurl: /ome-help/cls
