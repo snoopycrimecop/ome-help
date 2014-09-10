@@ -270,43 +270,45 @@ img.header-right {
 	text-align: center;
 }
 
-.gallery {
+/*CLS Page Specific*/
+
+#page-body .gallery {
 	width: 100%;
 	display: inline-block;
 }
 
-.gallery-image {
-  margin: 15px;
-  height:auto;
-  width:auto;
-  float:left;
-  text-align:center;
+#page-body .gallery-image {
+	  margin: 15px;
+	  height:auto;
+	  width:auto;
+	  float:left;
+	  text-align:center;
   }
 
-.gallery-image img {
-  display:inline;
-  margin:3px;
-  border:1px solid #ffffff;
+#page-body .gallery-image img {
+	  display:inline;
+	  margin:3px;
+	  border:1px solid #ffffff;
   }
 
-.gallery-image a:hover img {
-  border:1px solid #0000ff;
+#page-body .gallery-image a:hover img {
+	  border:1px solid #0000ff;
   }
   
-.desc {
-  text-align:center;
-  font-weight:normal;
-  width: 100%;
-	margin: 5px;
+#page-body .desc {
+	  text-align:center;
+	  font-weight:normal;
+	  width: 100%;
+	  margin: 5px;
 }
 
-.attribute {
-	font-size: 70%;
-	text-align: left;
+#page-body .attribute {
+	  font-size: 70%;
+	  text-align: left;
 }
 
-.red {
-	color: #ff2600;
+#page-body .red {
+	  color: #ff2600;
 }
 
 /*Line spacers*/
@@ -336,8 +338,8 @@ img.header-right {
 	
 }
 
-.code-example {
-	font: 115% "Courier New", Courier, monospace;
+#page-body .code-example {
+	font: 100% "Courier New", Courier, monospace;
 }
 
 /*Navigation*/

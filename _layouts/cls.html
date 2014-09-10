@@ -1,3 +1,9 @@
+---
+navigation:
+    - id: l1-home
+      name: OMERO User Help Home Page
+      href: http://www.help.openmicroscopy.org" target="_blank
+---
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,9 +17,9 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/css/display.css">
 
         <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.js"></script>
-        
+
         <script language="JavaScript" type="text/javascript">
-            var edress = 'ux_at_openmicroscopy_dot_org';
+		var edress = 'sysadmin_at_openmicroscopy_dot_org';
                function get_edress(){
                   var re= /_at_/gi;
                   edress = edress.replace(re,'@');
@@ -23,6 +29,19 @@
                   window.location=the_link;
                }
         </script>
+
+        <script language="JavaScript" type="text/javascript">
+               var xdress = 'ux_at_openmicroscopy_dot_org';
+               function get_xdress(){
+                  var re= /_at_/gi;
+                  xdress = xdress.replace(re,'@');
+                  var re= /_dot_/gi;
+                  xdress = xdress.replace(re,'.');
+                  var the_link="mai" + "lto" +":"+xdress+"?subject=Nightshade%20Feedback" ;
+                  window.location=the_link;
+               }
+        </script>
+
 
     </head>
 
@@ -36,17 +55,9 @@
                         <h1>User Help</h1>
                     </div> <!-- banner -->
 
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
+<!-- Level 1 List -->
 
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
+                    <ul class="level1"><a href="http://help.openmicroscopy.org/" target="_blank">Main OMERO User Help Site</a></ul>
 
                     <div class="line-block">
                     <div class="line"><br /></div> <!-- end #line -->
