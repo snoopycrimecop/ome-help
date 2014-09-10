@@ -6,7 +6,6 @@ All material is covered by the Creative Commons Attribution 3.0 Unported License
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 * {
 	margins: 0;
@@ -340,7 +339,7 @@ img.header-right {
 }
 
 #page-body .code-example {
-	font: 110% "Inconsolata", "Courier New", Courier, monospace;
+	font: 100% "Courier New", Courier, monospace;
 }
 
 /*Navigation*/
