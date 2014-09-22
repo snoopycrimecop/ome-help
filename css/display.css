@@ -270,6 +270,46 @@ img.header-right {
 	text-align: center;
 }
 
+/*CLS Page Specific*/
+
+#page-body .gallery {
+	width: 100%;
+	display: inline-block;
+}
+
+#page-body .gallery-image {
+	  margin: 15px;
+	  height:auto;
+	  width:auto;
+	  float:left;
+	  text-align:center;
+  }
+
+#page-body .gallery-image img {
+	  display:inline;
+	  margin:3px;
+	  border:1px solid #ffffff;
+  }
+
+#page-body .gallery-image a:hover img {
+	  border:1px solid #0000ff;
+  }
+  
+#page-body .desc {
+	  text-align:center;
+	  font-weight:normal;
+	  width: 100%;
+	  margin: 5px;
+}
+
+#page-body .attribute {
+	  font-size: 70%;
+	  text-align: left;
+}
+
+#page-body .red {
+	  color: #ff2600;
+}
 
 /*Line spacers*/
 
@@ -299,7 +339,7 @@ img.header-right {
 }
 
 .code-example {
-	font: 115% "Courier New", Courier, monospace;
+	font: 100% "Courier New", Courier, monospace;
 }
 
 /*Navigation*/
