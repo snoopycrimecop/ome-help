@@ -41,7 +41,7 @@ branch.**
 When work is complete and the changes pushed, a pull request should be opened
 against the 'master' branch of the main repo. This will be picked up by the
 OME CI system and the updated page will be viewable for review at
-[http://snoopycrimecop.github.io/ome-help/](http://snoopycrimecop.github.io/ome-help/) once the build has been run.
+[http://help.staging.openmicroscopy.org/](http://help.staging.openmicroscopy.org/) once the build has been run.
 The PR will be posted in the OME stand-up document for review.
 
 **Web Site Structure**
