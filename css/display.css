@@ -13,7 +13,7 @@ All material is covered by the Creative Commons Attribution 3.0 Unported License
 
 html{
 	background: #00426d;
-	font: small/1.5em 'Open Sans', sans-serif;
+	font: small/1.5em "Open Sans", Verdana, sans-serif;
 	text-align: left;
 	height: 100%;
 }
@@ -345,7 +345,7 @@ img.header-right {
 /*Navigation*/
 
 #navigation {
-	font-family: Roboto;
+	font-family: Roboto, Verdana, sans-serif;
 	float: left;
 	position: fixed;
 	height: auto;
