@@ -55,6 +55,7 @@ The structure is as follows:
 - js/ - contains the Javascript files for the site
 - css/ - contains the CSS files
 - config.yml - YAML configuration file
+- 404.html - a custom error page that redirects to the home page
 
 Once you have built the site locally your git repository will also have:
 
