@@ -1,0 +1,304 @@
+---
+layout: default
+title: Troubleshooting OMERO
+menu-id: l2-more
+pdfs:
+    - troubleshooting.pdf
+description: Help with any problems encountered with OMERO.
+---
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#error">Error reports</a><br />
+<a href="#log">Finding your OMERO.insight log file</a><br />
+<a href="#fail">Import failure</a><br />
+<a href="#submit">Submitting files</a><br />
+<a href="#information">What information OME stores</a><br />
+<a class="reference external" target="_blank" href="http://www.openmicroscopy.org/site/support/omero/sysadmins/troubleshooting.html">System Administrator Troubleshooting page - OME website</a><br />
+<a class="reference external" target="_blank" href="http://help.openmicroscopy.org/client-memory.html">Chapter on Memory Management - User Help website</a><br />
+</p>
+</div><!-- End Page Navigation -->
+
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<p>If you have any problems with OMERO the following points may help you resolve them.</p>
+
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="error"></a>Error reports</h2>
+
+<p class="indent1">The commonest form of error report is a pop-up in either OMERO.insight or OMERO.web.</p>
+<p class="indent1">This tells you there has been a problem and invites you to submit a report.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<p class="indent1">In OMERO.insight enter your email address.</p>
+<p class="indent1">Describe what caused the problem in the <span class="bold">Comments</span> tab.</p>
+<p class="indent1">Click on the <span class="bold">Error Message</span> tab to view the OMERO system error information.</p>
+<p class="indent1">Click <span class="bold">Send</span> to submit the information.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/tsInsightError.jpg" class="align-center" src="images/tsInsightError.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<p class="indent1">In OMERO.web, enter your email address.</p>
+<p class="indent1">Describe what caused the problem in the form.</p>
+<p class="indent1">The OMERO system error information can be seen in the lower field.</p>
+<p class="indent1">Click <span class="bold">Send</span> to submit the information.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/tsWebError.jpg" class="align-center" src="images/tsWebError.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">OME will only use your email address to contact you about the problem.<br/>
+If you prefer, you can still send in the report without including your email address.</p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="log"></a>Finding your OMERO.insight log file</h2>
+
+
+<p class="indent1">The OME team may ask you to send your OMERO.insight log file to them.</p>
+<p class="indent1">Go to the OMERO.insight <span class="bold">Help</span> menu and select <span class="bold">Show Log File</span>.</p>
+<p class="indent1">This will show you the location of the log file - <span class="code">omeroinsight.log</span>.</p>
+<p class="indent1">If there are other log files with <span class="code">_1</span> or <span class="code">_2</span> appended to the name, ignore them.</p> 
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/tsShowLog.jpg" class="align-center" src="images/tsShowLog.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="indent1">Alternatively  you can find the log file in your user folder:</p>
+<p class="indent1">Windows: <span class="code">C:\Users\you\omero\log\omeroinsight.log</span>.</p>
+<p class="indent1">Mac: <span class="code">~/omero/log/omeroinsight.log</span></p> 
+
+
+<div class="line-block">
+  <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="fail"></a>Import failure</h2>
+
+<ol class="step">
+
+<li>
+<p class="first">A red cross is shown if a file fails to import in OMERO.insight.</p>
+<p>Click on the <span class="bold">Fail</span> button to see the options to deal with the failure.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/tsImportFail.jpg" class="align-center" src="images/tsImportFail.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li>
+<p class="first">Select <span class="bold">Submit</span> from the drop-down menu to submit the file that failed to import to the OME QA system.</p>
+<p>Click <span class="bold">Yes</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/tsImportSubmit.jpg" class="align-center" src="images/tsImportSubmit.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li>
+<p class="first">Enter your email address and any information about the failure.</p>
+<p class="first">Click <span class="bold">Files to Send</span> to view the list of files that will be submitted.</p>
+<p class="first">Click <span class="bold">Submit</span> to send the files to the OME QA system.</p>
+<p class="first">Any submitted files are uploaded to a secure server and are kept confidential.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/tsImportSend.jpg" class="align-center" src="images/tsImportSend.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">The OME QA system has a file size limit of 2GB, and if this is exceeded it will fail.<br/>
+Smaller file sizes can also cause a failure if you are uploading over a slow or unreliable network (e.g. home wireless).<br/>
+If this happens follow the instructions in the <a href="#submit">Submitting files</a> section below.</p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li>
+<p class="first">Select <span class="bold">View Exception</span> from the drop-down menu to see OMERO system error information.</p>
+<p class="first">Select <span class="bold">View Import Log</span> to view the relevant OMERO log information.</p>
+<p class="first">Select <span class="bold">View Checksum</span> to see the file and server checksums.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/tsImportFail.jpg" class="align-center" src="images/tsImportFail.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="submit"></a>Submitting files</h2>
+
+
+<p class="indent1">Automatic uploading of files to OME QA will not work if the file size is greater than 2GB.</p>
+<p class="indent1">Submission of smaller file sizes can also not work if you are uploading over a slow or unreliable network (e.g. home wireless).</p>
+<p class="indent1">If the file upload to OME QA fails, you need to let the OME team know, either by:</p>
+
+<ul class="bullet-list">
+<li>commenting on the QA issue, making sure to include your correct email address</li>
+<li>writing on the forums - <a class="reference external" target="_blank" href="http://www.openmicroscopy.org/community/">OME Forums</a></li>
+<li>emailing the OME lists - <a class="reference external" target="_blank" href="http://www.openmicroscopy.org/site/community/mailing-lists">OME Mailing Lists</a></li>
+</ul>
+
+<p class="indent1">The OME team will then contact you privately with details of an FTP server that can be used instead of QA.</p> 
+<p class="indent1">You may occasionally have difficulty submitting files that are in a format QA does not recognize, e.g. datasets for a new format.</p> 
+<p class="indent1">In this case, you need create a Zip file containing all the files and submit that instead.</p> 
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="information"></a>What information OME stores</h2>
+
+
+<p class="indent1">If you submit an OMERO error message to the OME QA system via our forms we record:</p>
+
+<ul class="bullet-list">
+<li>your email address</li>
+<li>the IP address you are currently using</li>
+<li>any comment you add</li>
+<li>information about the nature of the problem you have encountered</li>
+<li>information about the OMERO.insight and OMERO.server versions and platforms being used</li>
+</ul>
+
+<p class="indent1">Your email address will only ever be used to contact you with feedback about the error you reported, or to request further details of the problem if needed. If you do not wish us to hold your email address then you can still submit the QA form without your email address.</p> 
+<p class="indent1">Any feedback you provide to OME will only be used to further the development of OMERO and improve our software.</p> 
+<p class="indent1">All information is held on a secure server and is only accessible to the OME team.</p> 
+<p class="indent1">Even if you elect to withhold your email address, the QA form will still send us your current IP address, and we may use this to contact your OMERO system administrator if we need any further information about the nature of the problem.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<h2>Further information</h2>
+
+<p class="indent1">Troubleshooting information for System Administrators and Developers can be found on the main OME website at:</p>
+
+<p class="indent1"><a class="reference external" target="_blank" href="http://www.openmicroscopy.org/site/support/omero/sysadmins/troubleshooting.html">System Administrator Troubleshooting</a> page</p>
+
+<p class="indent1">The User Help section on OMERO.insight memory management is at:</p>
+
+<p class="indent1"><a class="reference external" target="_blank" href="http://help.openmicroscopy.org/client-memory.html">Memory Management</a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="page-end">
+<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
+<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+</div> <!-- end page-end -->
