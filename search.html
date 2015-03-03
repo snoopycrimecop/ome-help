@@ -14,6 +14,7 @@ description: How to use the search functionality in OMERO.insight and OMERO.web.
 <a href="#introduction">Introduction</a><br />
 <a href="#tips">Tips (wildcards)</a><br />
 <a href="#keyword">Keyword Searching</a><br />
+<a href="#keyvalue">Key-value Pair Annotation Search</a><br />
 
 </div><!-- End Page Navigation -->
 
@@ -26,7 +27,7 @@ description: How to use the search functionality in OMERO.insight and OMERO.web.
 
 <p>OMERO has a text-based search feature which allows you to search for data by name or other text associated with the data.</p>
 
-<p>Other fields which will be searched for include Description or annotations on the data such as Tags, Comments and text-based file Attachments.</p>
+<p>Other fields which will be searched for include Description or annotations on the data such as Tags, Key-value pairs, Comments and text-based file Attachments.</p>
 
 <p>Details on keyword searching are discussed after the walk-through steps below.</p>
 
@@ -140,7 +141,7 @@ description: How to use the search functionality in OMERO.insight and OMERO.web.
 
 <li>
 <p class="first">To limit your search to the Name, Description or Annotations attached to your data, select the relevant <span class="bold">Restrict by Field</span> box(es).</p>
-<p>Annotations include Tags, Comments and the name and contents of attached files.</p>
+<p>Annotations include Tags, Key-value pairs, Comments and the name and contents of attached files.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -213,26 +214,36 @@ description: How to use the search functionality in OMERO.insight and OMERO.web.
 <h2><a class="anchor" id="keyword"></a>Keyword Searching</h2>
 
 
-<p>When OMERO adds data to it's search index, it processes the text and looks for keywords or “tokens” to index.</p> 
+<p>When OMERO adds data to its search index, it processes the text and looks for keywords or “tokens” to index.</p> 
 
-<p>In general it does this by splitting text by any character that is not a letter or number. For example, an image name such as AuroraB-siRNAi_control_01.tiff will be split into 5 tokens: AuroraB, siRNAi, control, 01, tiff.</p>
+<p>In general it does this by splitting text by any character that is not a letter or number. For example, an image name such as <span class="code-example">AuroraB-siRNAi_control_01.tiff</span> will be split into 5 tokens:</p>
+
+<p class="code-example">AuroraB, siRNAi, control, 01, tiff.</p>
 
 <p>This image will be returned by a search for any of those tokens, but will be ranked higher in the search results if multiple tokens are matched.</p>
 
 <p>For example, searching for:</p>
 
-<p class="indent1">siRNAi AuroraB</p>
+<p class="indent1"><span class="code-example">siRNAi AuroraB</span></p>
 
-<p>will find any images that have tokens of siRNAi OR AuroraB, but images that contain both these keywords will be returned ahead of other results. Searching for siRNAi AND AuroraB will only match images that have both tokens.</p>
+<p>will find any images that have tokens of:</p>
+<p><span class="code-example">siRNAi OR AuroraB</span></p>
+<p>but images that contain both these keywords will be returned ahead of other results.</p>
 
-<p>Search queries themselves are split into tokens as part of the search. Therefore, you expect to find an image named AuroraB-siRNAi_control_01.tiff with any of the following searches:</p>
+<p>Searching for:</p>
+<p><span class="code-example">siRNAi AND AuroraB</span></p>
+<p>will only match images that have both tokens.</p>
+
+<p>Search queries themselves are split into tokens as part of the search. Therefore, you expect to find an image named <span class="code-example">AuroraB-siRNAi_control_01.tiff</span> with any of the following searches:</p>
 
 <ul class="bullet-list">
-<li>AuroraB_siRNAi</li>
-<li>AuroraB-siRNAi</li>
-<li>AuroraB siRNAi</li>
-<li>siRNAi AuroraB (Order is ignored for separate keywords)</li>
+<li class="code-example">AuroraB_siRNAi</li>
+<li class="code-example">AuroraB-siRNAi</li>
+<li class="code-example">AuroraB siRNAi</li>
+<li class="code-example">siRNAi AuroraB</li>
 </ul>
+
+<p>Order is ignored for separate keywords.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -242,9 +253,38 @@ description: How to use the search functionality in OMERO.insight and OMERO.web.
 <div class="note">
 <p class="note-title">Note</p>
 <p class="note-text">Due to this tokenisation searching for:</p>
-<p class="indent1">si</p>
-<p class="note-text">will not return siRNAi unless a wildcard is added - si*.</p>
+<p class="indent1"><span class="code-example">si</span></p>
+<p class="note-text">will not return <span class="code-example">siRNAi</span> unless a wildcard is added - <span class="code-example">si*</span>.</p>
 </div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="keyvalue"></a>Key-value Pair Annotation Search</h2>
+
+<p>Key-value pairs are included in the annotations indexed and searched by OMERO.</p>
+
+<p>Use the syntax: <span class="code-example">Key:value</span> to find key-value pairs specifically (not other annotations).</p>
+
+<p>For example, searching for:</p>
+
+<p class="code-example">Temperature:37.5</p>
+
+<p>will find all Projects, Datasets or Images with a key-value pair annotation where the key is: <span class="code-example">Temperature</span> and the corresponding value is: <span class="code-example">37.5</span>.</p>
+
+<p>Searching for:</p>
+
+<p class="code-example">has_key:Temperature</p>
+
+<p>will return objects with a key-value pair annotation with the specific key: <span class="code-example">Temperature</span>.</p>
+
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
