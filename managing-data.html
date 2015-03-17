@@ -1,12 +1,41 @@
 ---
 layout: default
 title: Managing Data
-menu-id: l1-insight
+menu-id: l1-workflow
 pdfs:
     - managing-data.pdf
 description: Using OMERO.insight to manage image data.
 ---
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#introduction">Introduction</a><br />
+<a href="#create">Creating and viewing Projects and Datasets</a><br />
+<a href="#editing">Editing names, descriptions and channel names</a><br />
+<a href="#annotating">Adding annotations</a><br />
+<a href="#filter">Filtering images</a><br />
+<a href="#attach">Attach files</a><br />
+<a href="#keyvalue">Key-value pairs in OMERO 5.1</a><br />
+<a href="#rendering">Rendering settings</a><br />
+<a href="#metadata">Acquisition metadata</a><br />
+<a href="#settings">Managing user settings</a><br />
+
+</p>
+</div><!-- End Page Navigation -->
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
+
 <p>Using OMERO.insight to manage image data.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="create"></a>Creating and viewing Projects and Datasets</h2>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -14,13 +43,13 @@ description: Using OMERO.insight to manage image data.
 
 <ol class="step">
 
-<li><p class="first">Click on your user name to see the <span class="bold">User settings</span> in the right hand pane.</p>
+<li><p class="first">Click on the icons to create new Projects or Datasets.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/managingUser.jpg" class="align-center" src="images/managingUser.jpg" style="width: 100%;" />
+<img alt="../images/managingContainer.jpg" class="align-center" src="images/managingContainer.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -28,9 +57,9 @@ description: Using OMERO.insight to manage image data.
 
 </li>
 
-<li><p class="first">Click on a <span class="bold">+</span> in front of a <span class="bold">Project</span> in the data tree in left hand pane.</p>
+<li><p class="first">Click on the <span class="bold">+</span> or <span class="bold">arrow</span> to expand a <span class="bold">Project</span> in the data tree in left hand pane.</p>
 
-<p>Click on a <span class="bold">+</span> in front of a <span class="bold">Dataset</span> to expand the dataset and view images.</p>
+<p>Click on the <span class="bold">+</span> or <span class="bold">arrow</span> in front of a <span class="bold">Dataset</span> to expand the dataset and view images.</p>
 
 <p>Thumbnails of images in a dataset are seen in the centre pane.</p>
 
@@ -40,7 +69,25 @@ description: Using OMERO.insight to manage image data.
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/managingTree.jpg" class="align-center" src="images/managingTree.jpg" style="width: 100%;" />
+<h3>OMERO.insight</h3>
+
+<img alt="../images/managingTreeInsight.jpg" class="align-center" src="images/managingTreeInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<img alt="../images/managingTreeWeb.jpg" class="align-center" src="images/managingTreeWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -48,15 +95,47 @@ description: Using OMERO.insight to manage image data.
 
 </li>
 
-<li><p class="first">Click on the green <span class="bold">Pen</span> icons to edit the image name or description.</p>
-
-<p>Below the description in the <span class="bold">General</span> tab is a summary of information on the image.</p>
+</ol>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/managingName.jpg" class="align-center" src="images/managingName.jpg" style="width: 75%;" />
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="editing"></a>Editing names, descriptions and channel names</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">Click on the <span class="bold">Pen</span> icons to edit the image name or description.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<img alt="../images/managingNameInsight.jpg" class="align-center" src="images/managingNameInsight.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<img alt="../images/managingNameWeb.jpg" class="align-center" src="images/managingNameWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -64,11 +143,15 @@ description: Using OMERO.insight to manage image data.
 
 </li>
 
-<li><p class="first">To edit the channel names, click on the green <span class="bold">Pen</span> button.</p>
+<li><p class="first">Below the description in the <span class="bold">General</span> tab is a summary of information on the image.</p>
+
+<p>To edit the channel names, click on the <span class="bold">Pen</span> button.</p>
 
 <p>Click <span class="bold">Save</span> to make the changes to the selected image.</p>
 
 <p>Click <span class="bold">Apply to All</span> to save the changes to all images in the dataset.</p>
+
+<p>This functionality is the same in OMERO.insight and OMERO.web.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -82,13 +165,66 @@ description: Using OMERO.insight to manage image data.
 
 </li>
 
-<li><p class="first">In Annotations section of the <span class="bold">General</span> tab, click on one to five <span class="bold">Stars</span> to rate the image.</p>
+</ol>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/managingRate.jpg" class="align-center" src="images/managingRate.jpg" style="width: 75%;" />
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="annotating"></a>Adding annotations</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">Images can be rated from 1 to 5 in the Annotations section of the <span class="bold">General</span> pane.</p>
+
+<p>OMERO.insight:</p>
+
+<ul class="simple">
+	
+<p class="indent1">- click on the stars to set your rating</p>
+<p class="indent1">- click on the <span class="bold">-</span> button to remove your rating.</p>
+
+</ul>
+
+<p>OMERO.web:</p>
+
+<ul class="simple">
+	
+<p class="indent1">- click on the <span class="bold">+</span> button</p>
+<p class="indent1">- click on the stars to set your rating</p>
+<p class="indent1">- mouse over the rating and click the <span class="bold">x</span> to remove your rating.</p>
+
+</ul>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<img alt="../images/managingRateInsight.jpg" class="align-center" src="images/managingRateInsight.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<img alt="../images/managingRateWeb.jpg" class="align-center" src="images/managingRateWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -99,11 +235,12 @@ description: Using OMERO.insight to manage image data.
 <li><p class="first">Click on the <span class="bold">+</span> to add a tag to an image.</p>
 
 <p>In the <span class="bold">Tag Selection</span> window:</p>
+
 <ul class="simple">
 
-<li>select an existing tag and use the <span class="bold">right arrow</span> to add it to the image</li>
+<p class="indent1">- select an existing tag and use the <span class="bold">right arrow</span> to add it to the image</p>
 
-<li>or create a <span class="bold">New Tag</span> in the text field and click <span class="bold">Add</span>.</li>
+<p class="indent1">- or create a <span class="bold">New Tag</span> in the text field and click <span class="bold">Add</span>.</p>
 </ul>
 
 <p>Click <span class="bold">Accept</span> to add the tags and close the window.</p>
@@ -112,7 +249,7 @@ description: Using OMERO.insight to manage image data.
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/managingAdd.jpg" class="align-center" src="images/managingAdd.jpg" style="width: 100%;" />
+<img alt="../images/managingTag.jpg" class="align-center" src="images/managingTag.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -138,11 +275,25 @@ description: Using OMERO.insight to manage image data.
 
 </li>
 
-<li><p class="first">Select an expanded dataset and use the <span class="bold">Filter images</span> drop-down menu to select <span class="bold">Tags</span>.</p>
+</ol>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="filter"></a>Filtering images</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="first">To filter images, select an expanded dataset and use the <span class="bold">Filter images</span> drop-down menu to select attributes to filter by, such as <span class="bold">Tags</span>.</p>
 
 <p>Type in the name of a tag and select from autocomplete.</p>
 
-<p><span class="bold">Return</span> will filter the image thumbnails shown in the centre pane according to tag.</p>
+<p><span class="bold">Return</span> will filter the image thumbnails shown in the centre pane according to the tag selected.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -154,15 +305,23 @@ description: Using OMERO.insight to manage image data.
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-</li>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<li><p class="first">To attach a file to an image click on the <span class="bold">+</span> and select from the menu.</p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<p>Select <span class="bold">Local document ...</span> to upload a file from your local hard drive.</p>
+<h2><a class="anchor" id="attach"></a>Attach files</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="first">Click on the <span class="bold">+</span> button to attach a file to an image or other object.</p>
+
+<p>Select <span class="bold">Local document ...</span> from the menu to upload a file from your local hard drive.</p>
 
 <p><span class="bold">Uploaded document ...</span> allows you to attach a file already on the server.</p>
-
-<p><span class="bold">New Experiment ...</span>  opens a new OMERO.editor window which allows you to edit and save an XML file describing an experiment.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -174,15 +333,83 @@ description: Using OMERO.insight to manage image data.
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+</ol>
+	
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="keyvalue"></a>Key-value pairs in OMERO 5.1</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>OMERO version 5.1 allows you to annotate Projects, Datasets and Images with key-value pairs. The key-value pairs are indexed by OMERO.server, so are fully searchable.</p>
+
+<p>This functionality is exactly the same for OMERO.insight and OMERO.web.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">The key-value pairs table is located in the Annotations section of the <span class="bold">General</span> pane on the right hand side.</p>
+
+<p>Click the <span class="bold">+</span> button or click on an empty cell in the table to add a key-value pair.</p>
+
+<p>Enter text for the key and use <span class="bold">Return</span> or <span class="bold">Tab</span> to move to the value field.</p>
+
+<p>Use <span class="bold">Return</span>, <span class="bold">Tab</span> or click the <span class="bold">+</span> button to add another key-value pair.</p>
+
+<p>The key-value pairs are saved automatically.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/keyvalueAddInsight.jpg" class="align-center" src="images/keyvalueAddInsight.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/keyvalueAddWeb.jpg" class="align-center" src="images/keyvalueAddWeb.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
 </li>
 
-<li><p class="first">Select the <span class="bold">Acquisition</span> tab in the right hand pane to see metadata and microscope details.</p>
+<li><p class="first">To copy and paste key-value pairs, select one or more rows from the table.</p>
+
+<p>Click the <span class="bold">Copy</span> button.</p>
+
+<p>Select another Project, Dataset or image.</p>
+
+<p>Click the <span class="bold">Paste</span> button to add the copied key-value pairs to a new or existing table.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/managingAcquisition.jpg" class="align-center" src="images/managingAcquisition.jpg" style="width: 50%;" />
+<img alt="../images/keyvalueCopy.jpg" class="align-center" src="images/keyvalueCopy.jpg" style="width: 70%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -190,23 +417,293 @@ description: Using OMERO.insight to manage image data.
 
 </li>
 
-<li><p class="first">Use the <span class="bold">Preview</span> tab to change the rendering settings for the image.</p>
-
-<p>Click on <span class="bold">Apply to All</span> to apply the new rendering settings to all images in a dataset or plate, or to the selected images.</p>
-
-<p>Click on <span class="bold">Apply</span> to save the changes to the rendering settings.</p>
+<li><p class="first">To delete a key-value pair, select a row and click <span class="bold">Delete</span>.<p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/managingApply.jpg" class="align-center" src="images/managingApply.jpg" style="width: 100%;" />
+<img alt="../images/keyvalueDelete.jpg" class="align-center" src="images/keyvalueDelete.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Click on any key or value field to edit the text.<p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/keyvalueEdit.jpg" class="align-center" src="images/keyvalueEdit.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">To re-arrange the order of key-value pairs:</p>
+
+<p>OMERO.insight:<p>
+
+<ul class="simple">
+
+<p class="indent1">- drag and drop rows in the desired order.<p>
+
+</ul>
+
+<p>OMERO.web:</p>
+
+<ul class="simple">
+
+<p class="indent1">- copy the pair to be moved</p>
+<p class="indent1">- select the row above where you wish to move it and paste.<p>
+<p class="indent1">- delete the old copy.<p>
+
+</ul>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">In read-annotate and read-write groups, users can add key-value pairs to Projects, Datasets and Images belonging to other users.<p>
+
+<p>These appear as a separate table with a label indicating the user who added them.<p>
+
+<p>The owner of the object cannot edit or delete key-value pairs added by another user in read-annotate groups.<p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/keyvalueOther.jpg" class="align-center" src="images/keyvalueOther.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+	
+<h2><a class="anchor" id="rendering"></a>Rendering settings</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">Use the <span class="bold">Preview</span> tab to change the rendering settings for the image.</p>
+
+<p>This functionality is exactly the same in OMERO.insight and OMERO.web.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingRendering.jpg" class="align-center" src="images/managingRendering.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Click <span class="bold">Save</span> to save any changes you make to the image rendering settings.</p>
+
+<p>Click on the thumbnail under User Settings to view saved settings.</p>
+
+<p>Click on <span class="bold">Apply to All</span> to apply the new rendering settings to all images in a dataset or plate, or to the selected images.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingSave.jpg" class="align-left" src="images/managingSave.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="metadata"></a>Acquisition metadata</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p>Select the <span class="bold">Acquisition</span> tab in the right hand pane to see metadata and microscope details imported with the image.</p>
+
+<p>The original metadata can be downloaded as a file by clicking on the download <span class="bold">arrow</span> or <span class="bold">Download</span> button.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingAcquisition.jpg" class="align-left" src="images/managingAcquisition.jpg" style="width: 95%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="settings"></a>Managing user settings</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">Click on your user name to see the <span class="bold">User settings</span> in the right hand pane.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingUserInsight.jpg" class="align-center" src="images/managingUserInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Edit your settings in the various fields.</p>
+
+<p>If you belong to more than one group, set the group displayed when you log into OMERO.insight using the <span class="bold">Default group</span> drop-down.</p>
+
+<p>Click <span class="bold">Save</span> when done.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingDetailsInsight.jpg" class="align-center" src="images/managingDetailsInsight.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Use the bottom section to change your password.</p>
+
+<p>Click on <span class="bold">Change Password</span> to save the change.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingPasswordInsight.jpg" class="align-center" src="images/managingPasswordInsight.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">Click on your user name in the top right corner and select <span class="bold">User settings</span> from the drop-down.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingUserWeb.jpg" class="align-center" src="images/managingUserWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Edit your settings in the various fields.</p>
+
+<p>If you belong to more than one group, set the group displayed when you log into OMERO.web using the <span class="bold">Default group</span> drop-down.</p>
+
+<p>Click <span class="bold">Save</span> when done.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingDetailsWeb.jpg" class="align-center" src="images/managingDetailsWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Click on <span class="bold">Change Password</span> to change your password.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/managingPasswordWeb.jpg" class="align-center" src="images/managingPasswordWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
