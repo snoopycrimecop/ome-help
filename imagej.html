@@ -18,7 +18,8 @@ description: How to use OMERO.insight with ImageJ and Fiji to access data on an 
 <a href="#imagej5">Using ImageJ with OMERO version 5.1.x</a><br />
 <a href="#fiji5">Using Fiji with OMERO 5.1.x</a><br />
 <a href="#access">Accessing OMERO using ImageJ and Fiji</a><br />
-<a href="#rois">Saving ROIs drawn in ImageJ and Fiji back to OMERO.server</a><br />
+<a href="#save">Saving images from ImageJ and Fiji to OMERO</a><br />
+<a href="#rois">Saving ROIs drawn in ImageJ and Fiji to OMERO</a><br />
 <a href="#upgradeimagej">Upgrading ImageJ from 4.4.x to 5.1.x</a><br />
 <a href="#imagej4">Using ImageJ with OMERO version 4.4.x</a><br />
 <a href="#fiji4">Using Fiji with OMERO 4.4.x</a><br /></p>
@@ -444,25 +445,55 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line"><br /></div>
 </div>
 
+<p><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="save"></a>Saving images from ImageJ and Fiji to OMERO</h2>
+
+<p class="first">With OMERO version 5.1, it is possible to save images directly from ImageJ or Fiji to your OMERO server.</p>
+
+<p>Use ImageJ or Fiji to open an image from a local disk.</p>
+
+<p>Select:</p>
+
+<p class="indent1"> <span class="bold">Plugins > OMERO > Upload and Save to OMERO</span>.</p>
+
+<p>A version of OMERO.insight will open automatically.</p>
+
+<p>The image will be imported into OMERO</p>
+
+<p>If the image has been modified, e.g. a cropped image, it will be imported as an OME-TIFF.</p>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../images/imagejInsightSave.jpg" class="align-center" src="images/imagejInsightSave.jpg" style="width: 100%;" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a class="anchor" id="rois"></a>Saving ROIs drawn in ImageJ and Fiji back to OMERO.server</h2>
+<h2><a class="anchor" id="rois"></a>Saving ROIs drawn in ImageJ and Fiji to OMERO</h2>
 
-<ol class="step">
-
-<li>
-<p class="first">Open an image from a local disc or from the OMERO.server as described above.</p>
-<p>Draw ROIs in ImageJ or Fiji as normal.</p>
+<p>Use ImageJ or Fiji to open an image from a local disk or from the OMERO server as described above.</p>
 
 <p>If the image is from a local disc select:</p>
 
 <p class="indent1"> <span class="bold">Plugins > OMERO > Upload and Save to OMERO</span>.</p>
 
-<p class="indent1">- a version of OMERO.insight will open automatically.</p>
+<p>A version of OMERO.insight will open automatically and the image will be imported.</p>
+
+<p>Any other ROIs on the image already will be imported as well.</p>
 
 <p>If the image is from the OMERO.server select:</p>
 
 <p class="indent1"> <span class="bold">Plugins > OMERO > Save to OMERO</span>.</p>
+
+<p>Any other ROIs the image already has will be unaffected.</p>
 
 <p>Once saved to the OMERO.server the ROIs become standard OMERO ROIs and can be used as normal.</p>
 
@@ -473,9 +504,10 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</li>
 
-</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
