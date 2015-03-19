@@ -18,9 +18,8 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <a href="#viewing">Viewing data by groups</a><br />
 <a href="#moving">Moving data between groups</a><br />
 <a href="#default">Changing your default group</a>
-<a href="#admin">Admin Tasks</a>
-<a href="#admin">Admin Tasks</a>
-<a href="#admin">Admin Tasks</a>
+<a href="#owner">Managing groups as a Group Owner</a>
+<a href="#admin">Managing groups as an OMERO system Administrator</a>
 
 </p>
 
@@ -300,19 +299,15 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/sharingDataGroupInsight.jpg" class="align-center" src="images/sharingDataGroupInsight.jpg" style="width: 90%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/sharingDataMoveWeb.jpg" class="align-center" src="images/sharingDataMoveWeb.jpg" style="width: 100%;" />
+<img alt="../images/sharingDataGroupInsight.jpg" class="align-center" src="images/sharingDataGroupInsight.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 </li>
+
+</ol>
 
 <h3>In OMERO.web:</span></h3>
 
@@ -354,21 +349,11 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a class="anchor" name="moving" id="moving"></a>Moving data between groups</h2>
-
-<ul>
+<h2><a class="anchor" id="moving"></a>Moving data between groups</h2>
 
 <p>If you are a member of more than one group, you can move data between groups.</p>
-<p>Right-click on a Project, Dataset or one or more Images and select <span class="bold">Move to</span> from the menu.</p>
-<p>Select the destination group from the options.</p>
-<p>Select an existing Project and/or Dataset as the destination.</p>
-<p>Click <span class="bold">OK</span> when done.</p>
-<p>If no destination is selected the images will be placed in <span class="bold">Orphaned</span> in the destination group.</p>
-</ul>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+<ul>
 
 <div class="warning">
 <p class="warning-title">Warning!</p>
@@ -378,7 +363,18 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <p class="indent1">- the owners of the annotations are in the one group but not the other.</p>
 </ul>
 </p>
+
 </div><!-- End warning -->	
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>Right-click on a Project, Dataset or one or more Images and select <span class="bold">Move to</span> from the menu.</p>
+<p>Select the destination group from the options.</p>
+<p>Select an existing Project and/or Dataset as the destination.</p>
+<p>Click <span class="bold">OK</span> when done.</p>
+<p>If no destination is selected the images will be placed in <span class="bold">Orphaned</span> in the destination group.</p>
+</ul>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -500,6 +496,8 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <h3>OMERO.insight</h3>
 
+<ul>
+	
 <p>Right-click on the group in the <span class="bold">Administration</span> tab.</p>
 
 <p>Select <span class="bold">Edit group membership...</span>.</p>
@@ -511,6 +509,8 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <p>To remove a user from a group, select them in the Selected list and click the left arrow.</p>
 
 <p>Click <span class="bold">Save</span> to make the changes and close the window.</p>
+
+</ul>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -537,6 +537,8 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <h3>OMERO.web</h3>
 
+<ul>
+
 <p>Select <span class="bold">User settings</span> from the drop-down menu in the top right-hand corner.</p>
 
 <p>Click on the <span class="bold">My Groups</span> tab.</p>
@@ -555,6 +557,8 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <p>Click <span class="bold">Save</span> to make the changes and close the window.</p>
 
+</ul>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
@@ -565,9 +569,7 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<li><p class="first">Disk space statistics</p>
-
-<p>Group owners can see the statistics for data usage in their groups.</p>
+<li><p class="first">Group owners can use OMERO.web to see the disc space statistics for data usage in their groups.</p>
 
 <p>Click on the <span class="bold">Statistics</span> tab in the User Settings window.</p>
 
