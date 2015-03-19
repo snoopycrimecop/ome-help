@@ -449,7 +449,9 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 <h2><a class="anchor" id="save"></a>Saving images from ImageJ and Fiji to OMERO</h2>
 
-<p class="first">With OMERO version 5.1, it is possible to save images directly from ImageJ or Fiji to your OMERO server.</p>
+<p>With OMERO version 5.1, it is possible to save images directly from ImageJ or Fiji to your OMERO server.</p>
+
+<ul>
 
 <p>Use ImageJ or Fiji to open an image from a local disk.</p>
 
@@ -463,6 +465,8 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 <p>If the image has been modified, e.g. a cropped image, it will be imported as an OME-TIFF.</p>
 
+</ul>
+
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -475,17 +479,34 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line"><br /></div>
 </div>
 
+<div class="note">
+<p class="note-title">Note</p>
+<p>Normal ImageJ conventions with respect to overlays and ROIs are respected when saving to the OMERO server.</p>
+</div>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="rois"></a>Saving ROIs drawn in ImageJ and Fiji to OMERO</h2>
 
+<ul>
+
 <p>Use ImageJ or Fiji to open an image from a local disk or from the OMERO server as described above.</p>
+
+<p>Draw ROIs in ImageJ or Fiji as normal.</p>
 
 <p>If the image is from a local disc select:</p>
 
 <p class="indent1"> <span class="bold">Plugins > OMERO > Upload and Save to OMERO</span>.</p>
 
-<p>A version of OMERO.insight will open automatically and the image will be imported.</p>
+<p>A version of OMERO.insight will open automatically and the image, including the ROIs, will be imported.</p>
 
 <p>Any other ROIs on the image already will be imported as well.</p>
 
@@ -493,16 +514,23 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 <p class="indent1"> <span class="bold">Plugins > OMERO > Save to OMERO</span>.</p>
 
-<p>Any other ROIs the image already has will be unaffected.</p>
-
 <p>Once saved to the OMERO.server the ROIs become standard OMERO ROIs and can be used as normal.</p>
+
+<p>Any existing ROIs on an image in the OMERO server will be displayed and can be manipulated as normal in ImageJ.</p>
+
+</ul>
 
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<img alt="../images/imagejInsightROI.jpg" class="align-center" src="images/imagejInsightROI.jpg" style="width: 100%;" />
+<img alt="../images/imagejInsightROI.jpg" class="align-center" src="images/imagejInsightROI.jpg" style="width: 80%;" />
 <div class="line-block">
 <div class="line"><br /></div>
+</div>
+
+<div class="note">
+<p class="note-title">Note</p>
+<p>There is no duplication of data, new or existing ROIs are saved back to the original image on the OMERO server.</p>
 </div>
 
 <div class="line-block">
