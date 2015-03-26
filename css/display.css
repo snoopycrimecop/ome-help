@@ -262,6 +262,10 @@ img.header-right {
 	font-weight: bold;
 }
 
+#page-body .indent1 {
+	padding-left: 20px;
+}
+
 /*Page end*/
 
 .page-end {
