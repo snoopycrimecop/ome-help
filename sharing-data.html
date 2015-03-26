@@ -226,7 +226,8 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">Permission levels on groups can be changed by group Owner or Admin users. There is a danger however, that some annotations such as tags and attachments associated with data in the group might be lost if the permission levels are changed. This is particularly pertinent to changing a group from Private to a higher level of access.</p>
+<p class="note-text">Permission levels on groups can be changed by Group Owner or Admin users, therefore possibly making your data accessible to other users.</p>
+<p class="note-text">There is also a danger that some annotations such as tags, attachments and key-value pairs associated with data in the group might be lost if the permission levels are changed. This is more likely to occur when changing a group to a more restricted access level, e.g. from Read-annotate to Private.</p>
 </div><!-- End note -->	
 
 <div class="line-block">
@@ -291,9 +292,9 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 </li>
 
-<li><p>Use the <span class="bold">Display Users</span> checkbox to see the group's data irrespective of owner.</p>
+<li><p class="first">By default, data is shown according to the owner of the data.</p>
 
-<p>Checking <span class="bold">Display Users</span> shows the data according to owner.</p>
+<p>Uncheck the <span class="bold">Display Users</span> checkbox to see all data from the group combined,  irrespective of the owner.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -327,7 +328,7 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 </li>
 
-<li><p>Select <span class="bold">All members</span> to display all the data from all users in that group.</p>
+<li><p>Select <span class="bold">All Members</span> to display all the data belonging to all users in that group.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -357,12 +358,8 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <div class="warning">
 <p class="warning-title">Warning!</p>
-<p class="warning-text">There is a danger that some annotations such as tags and attachments on data being moved between groups could be lost if:
-<ul>
-<p class="indent1">- the groups have different permission levels or </p>
-<p class="indent1">- the owners of the annotations are in the one group but not the other.</p>
-</ul>
-</p>
+
+<p class="warning-text">It is likely that any tags, attachments, key-value pairs, comments or other annotations will not be moved to the new group and will be lost.</p>
 
 </div><!-- End warning -->	
 <div class="line-block">
@@ -420,9 +417,7 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <ul>
 
-<p>To change your default group, the group that's shown when you log in, go to the <span class="bold">Administration</span> tab.</p>
-
-<p>Select your name in the list of users.</p>
+<p>To change your default group, the group that’s shown when you log in, select your name in the <span class="bold">Projects</span> tab</p>
 
 <p>In the <span class="bold">User</span> pane on the right-hand side, select the new default group from the drop-down list.</p>
 
@@ -442,7 +437,7 @@ description: OMERO allows controlled sharing of data using groups with varying l
 
 <ul>
 
-<p>To change your default group, the group thats shown when you log in, select <span class="bold">User settings</span> from the drop-down menu in the top right-hand corner.</p>
+<p>To change your default group, the group that's shown when you log in, select <span class="bold">User settings</span> from the drop-down menu in the top right-hand corner.</p>
 
 <p>In the <span class="bold">User</span> tab, select the new default group from the drop-down list.</p>
 
@@ -477,7 +472,6 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <ul>
 
 <p class="indent1">- manage the membership of that group</p>
-<p class="indent1">- import data on behalf of group members</p>
 <p class="indent1">- view disk space usage for the group and members.</p>
 
 </ul>
