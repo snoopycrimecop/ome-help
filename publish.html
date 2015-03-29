@@ -11,7 +11,7 @@ description: How to create figures and movies from data on OMERO, and publically
 <p>
 <a href="#introduction">Introduction</a><br />
 <a href="#figures">Creating Figures</a><br />
-<a href="#batch">Using the Batch Image Export script</a><br />
+<a href="#public">Using the Public Group</a><br />
 
 </p>
 </div><!-- End Page Navigation -->
@@ -97,11 +97,13 @@ description: How to create figures and movies from data on OMERO, and publically
 
 <img alt="../images/publishAll.jpg" class="align-center" src="images/publishAll.jpg" style="width: 100%;" />
 
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
-
-</li>
 
 <li><p class="first">Select <span class="bold">Split View Figure...</span> from the dropdown menu to create a figure with a thumbnail for each channel and one for the full image.</p>
 
@@ -139,37 +141,19 @@ description: How to create figures and movies from data on OMERO, and publically
 
 </li>
 
-</ol>
-
-
-
-
-
-<div class="note">
-<p class="note-title">Note</p>
-<p class="note-text"></p>
-</div><!-- End note -->
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<li><p class="first">Select <span class="bold">Thumbnail Figure...</span> from the dropdown menu to create a figure with a thumbnail for each image.</p>
 
+<p>Select the size from the <span class="bold">Thumbnail Size</span> drop-down.</p>
 
+<p>Enter the number of thumbnails in a row.</p>
 
-<div class="line-block">
-  <div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<h2><a class="anchor" id="download"></a>xxx</h2>
-
-<ol class="step">
-
-<li><p class="first">xxx <span class="bold">xxx</span> xxx.</p>
-
-<p></p>
+<p>Images to be included can be selected according to tags linked to them.</p>
 
 <h3>OMERO.insight</h3>
 
@@ -177,7 +161,7 @@ description: How to create figures and movies from data on OMERO, and publically
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/exportDropdownInsight.jpg" class="align-left" src="images/exportDropdownInsight.jpg" style="width: 75%;" />
+<img alt="../images/publishThumbnailInsight.jpg" class="align-left" src="images/publishThumbnailInsight.jpg" style="width: 85%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -189,7 +173,49 @@ description: How to create figures and movies from data on OMERO, and publically
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/exportDropdownWeb.jpg" class="align-center" src="images/exportDropdownWeb.jpg" style="width: 80%;" />
+<img alt="../images/publishThumbnailWeb.jpg" class="align-center" src="images/publishThumbnailWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select <span class="bold">Make Movie...</span> from the dropdown menu to create a movie from an image.</p>
+
+<p>Select the format from the <span class="bold">Format</span> drop-down.</p>
+
+<p>Use the <span class="bold">Frame Rate</span> drop-down to select the frame rate.</p>
+
+<p>Set the desired time interval if appropriate.</p>
+
+<p>Set the desired Z-section interval if appropriate.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishMovieInsight.jpg" class="align-left" src="images/publishMovieInsight.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishMovieWeb.jpg" class="align-left" src="images/publishMovieWeb.jpg" style="width: 80%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -199,27 +225,95 @@ description: How to create figures and movies from data on OMERO, and publically
 
 </ol>
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="public"></a>Using the Public Group</h2>
+
+<p>OMERO.web has the facility to allow public access to selected data without the need to log in. This functionality allows images to be made publically accessible for embedding in web pages or use in other publishing modalities.</p>
+
+<p>A group is made publically accessible by the addition of a Public User to the group by the OMERO system Admininistrator. Any group can therefore be made public, but it is usual to create groups specifically and give them the desired level of permissions, which is usually read-only.</p>
+
+<p>Any data which is moved into a group that Public User is also a member of, can then be viewed by anybody without any need to log in.</p>
+
+<p>This is not a default configuration of OMERO, so the OMERO system administrator must enable it for it to be available on your server.</p>
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">There are a number of safeguards to avoid inadvertant publication of data:</p>
+
+<ul>
+
+<li>the OMERO server must be specifically configured to create the Public User</li>
+
+<li>the OMERO system administrator must add the Public User to a group</li>
+
+<li>any OMERO user must request to be added to a public group to be able to make data publically accessible</li>
+
+<li>a user who is a member of the public group must deliberately move or import any data they want to make accessible into a group that is public.</li>
+
+</ul>
+
+</div><!-- End note -->
+
+<p>Once in a public group, selected images can then be made accessible to non-OMERO users, via a web URL</p>
+
+<p>Before you proceed with using a public group, please note the following points:</p>
+
+<ul>
+
+<li>Once your data is placed in the public group it is effectively visible to the whole world without any log-in required to view it.</li>
+
+<li>As usually configured, only ROIs associated with data in the public group will be visible to the Public User, tags, attachments, comments or ratings will not be visible.</li>
+
+<li>Public Users will be able to download a JPEG version of your images via their web browser but will not have access to the data in the original format.</li>
+
+<li>Public Users will be able to alter the rendering settings while viewing, but any changes will not be saved.</li>
+
+<li>Other registered OMERO users who are also members of the public group will be able to access your data and annotations in the Public Group according to the permissions of the group.</li>
+
+<li>Data moved from other groups into the Public Group will no longer be visible in the original group. You will be able to move it back at any stage, but you should consider importing a new copy of the data into the Public Group if you wish to retain the original copy in its original group.</li>
+
+</ul>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <ol class="step">
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<li><p class="first">You need to be made a member of the public group by the system administrator of your OMERO server before you can share data.</p>
+
+</li>
+
+<li><p class="first">Once you are a public group member, log into your OMERO account as usual via OMERO.insight or OMERO.web.</p>
+
+<p>Select the public group in the <span class="bold">Display Groups</span> menu.</p>
+
+<p>Ensure your name is checked.</p>
+
+<h3>OMERO.insight</h3>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<li><p class="first">xxx <span class="bold">xxx</span> xxx.</p>
-
-<p>xxx</p>
-
-<p>xxx</p>
+<img alt="../images/publishPublicInsight.jpg" class="align-left" src="images/publishPublicInsight.jpg" style="width: 75%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/exportDownloadInsight.jpg" class="align-center" src="images/exportDownloadInsight.jpg" style="width: 100%;" />
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishPublicWeb.jpg" class="align-left" src="images/publishPublicWeb.jpg" style="width: 80%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -227,14 +321,246 @@ description: How to create figures and movies from data on OMERO, and publically
 
 </li>
 
-</ol>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
+<li><p class="first">For images visible to the public, the data must be in the public group.</p>
 
+<p>You remain the owner of any images in the public group, and can still change rendering settings, add ROIs or annotate them.</p>
 
+<p>You can either move data from an existing group into the public group, or you can import data directly into the public group.</p>
 
+</li>
+
+<li><p class="first">Select the project, dataset or images to be moved to the public group in the data tree in left hand pane.</p>
+
+<p>Right-click and select <span class="bold">Move to Group ...</span> in the menu.</p>
+
+<p>Select a destination for the data in terms of Group, Project and Dataset.</p>
+
+<p>The progress of the move will show in the <span class="bold">Activities</span> window.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishMoveInsight.jpg" class="align-left" src="images/publishMoveInsight.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishMoveWeb.jpg" class="align-left" src="images/publishMoveWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+</li>
+
+<li><p class="first">To import data directly into the public group, in the Import Location window choose the public group from the <span class="bold">Group</span> drop-down menu.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishImport.jpg" class="align-center" src="images/publishImport.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Image IDs, shown in the right pane, are used to link to images in the PUBLIC group.</p>
+
+<p>These can be copied and pasted into an HTML link as described below.</p>
+
+<p>In OMERO.web click on the <span class="bold">Link</span> button and copy the the URL.</p>
+
+<p>or open the image in the full viewer and copy the URL in the browser address field</p>
+
+<p>or click the <span class="bold">Image Link</span> text and copy the URL from the pop-up.</p>
+
+<p>This URL can then be emailed or used as a permanent link to the image.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishIDInsight.jpg" class="align-left" src="images/publishIDInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishIDWeb.jpg" class="align-left" src="images/publishIDWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishLink.jpg" class="align-left" src="images/publishLink.jpg" style="width: 90%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishViewer.jpg" class="align-left" src="images/publishViewer.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">To create an HTML link to the thumbnail or the full viewer display of the image, use the following syntax where <span class="bold">1234</span> represents the image ID:</p>
+
+<p>thumbnail (default size - 96px wide):</p>
+
+<p class="code-example">https://nightshade.openmicroscopy.org/webgateway/render_thumbnail<span class="bold">1234</span>/</p>
+
+<p>thumbnail (size 200px wide):</p>
+
+<p class="code-example">https://nightshade.openmicroscopy.org/webgateway/render_thumbnail<span class="bold">1234</span>/200/</p>
+
+<p>image viewer:</p>
+
+<p class="code-example">https://nightshade.openmicroscopy.org/webgateway/img_detail<span class="bold">1234</span>/</p>
+
+<p>The following example HTML code gives the page shown.</p>
+
+</li>
+
+<form>
+
+<textarea class="code-example" rows="15" cols="75">
+<body>
+
+<p>
+Default thumbnail for:<br/>
+Wild type lamin-B envelope<br/>
+</p>
+
+<p>
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925540" target="_blank">
+<img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925540/"/></a>
+</p>
+
+<p>
+Click on thumbnail or
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925540" target="_blank">link</a> to see the image in the full viewer (opens in a new tab/window).
+</p>
+
+<p>
+200 px thumbnail for:<br/>
+Wild type lamin-B envelope<br/>
+<p>
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925540" 	target="_blank">
+<img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925540/200/"/></a>
+</p>
+
+<p>
+Click on thumbnail or
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925540" target="_blank">link</a> to see the image in the full viewer (opens in a new tab/window).
+</p>
+
+</body>
+</textarea>
+
+<form>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishHTML.jpg" class="align-left" src="images/publishHTML.jpg" style="width: 100%;" />
+
+<p>Data from JCB: Civelekoglu-Scholey et al., JCB, doi: 10.1083/jcb.200908150</p>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Viewing an image in the full viewer, the public user can zoom, scroll, step through Z or T sections, adjust rendering settings and view ROIs and basic image details.</p>
+
+<p>Any changes made by Public User will not be saved.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishPublicViewer.jpg" class="align-left" src="images/publishPublicViewer.jpg" style="width: 100%;" />
+
+<p>Data from JCB: Civelekoglu-Scholey et al., JCB, doi: 10.1083/jcb.200908150</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">The OMERO WebGateway is a Django app that enables images in the PUBLIC group to be viewed in a number of other ways.</p>
+
+<p>Details can be found at: <a href="https://www.openmicroscopy.org/site/support/omero4/developers/Web/WebGateway.html" target="_blank" class="external-url">WebGateway</a></p>
+
+</li>
+
+</ol>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
