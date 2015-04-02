@@ -1,0 +1,288 @@
+---
+layout: default
+title: Exporting Images
+menu-id: l1-workflow
+pdfs:
+    - export.pdf
+description: How to export any image as an OME-TIFF file, save it as a JPEG, PNG or TIFF or if it was archived at import, download it in the original image format.
+---
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#introduction">Introduction</a><br />
+<a href="#download">Using the Download menu</a><br />
+<a href="#batch">Using the Batch Image Export script</a><br />
+
+</p>
+</div><!-- End Page Navigation -->
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
+
+<p>In OMERO you are able to download any image in its original format, or export it as an OME-TIFF, JPEG, PNG or TIFF image.</p>
+
+<p>The following matrix details the levels at which the different export formats are enabled.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportMatrix.jpg" class="align-center" src="images/exportMatrix.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">If an image was imported before OMERO version 5.0 it can only be downloaded in the original format if it was archived at import.</p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+  <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="download"></a>Using the Download menu</h2>
+
+<ol class="step">
+
+<li><p class="first">Click on the <span class="bold">Export</span> icon in the toolbar.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportDropdownInsight.jpg" class="align-left" src="images/exportDropdownInsight.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportDropdownWeb.jpg" class="align-center" src="images/exportDropdownWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select <span class="bold">Download</span> from the drop-down to download the image in its original format.</p>
+
+<p>In OMERO.insight, choose the destination folder in the Download window and click <span class="bold">Download</span>.</p>
+
+<p>In OMERO.web the file will be downloaded according to your browser convention.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportDownloadInsight.jpg" class="align-center" src="images/exportDownloadInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select <span class="bold">Export as OME-TIFF</span> from the drop-down menu to export the image in OME-TIFF format.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportOMETIFFExport.jpg" class="align-center" src="images/exportOMETIFFExport.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<p>Use the file finder in the Export window to choose the destination.</p>
+
+<p>Select the OME-TIFF version to export, from the drop-down in the bottom left.
+</p>
+
+<p>Click <span class="bold">Export</span> to create and download the OME-TIFF as a ZIP archive.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportOMETIFFInsight.jpg" class="align-left" src="images/exportOMETIFFInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<p>Click <span class="bold">Create</span> to generate the OME-TIFF using the latest version.</p>
+
+<p>The OME-TIFF is attached to the image as a ZIP archive.</p>
+
+<p>Click <span class="bold">Download</span> in the Activity Window to download the archive.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportOMETIFFWeb.jpg" class="align-center" src="images/exportOMETIFFWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select the appropriate format to export the image as a JPEG, PNG or TIFF.</p>
+
+<p>In OMERO.insight, use File Finder in the Download window to select the destination.</p>
+
+<p>In OMERO.web the file will be downloaded according to your browser convention.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportFormatsInsight.jpg" class="align-left" src="images/exportFormatsInsight.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportFormatsWeb.jpg" class="align-center" src="images/exportFormatsWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">When an image or dataset is downloaded as a JPEG, PNG or TIFF, individual images for each channel and a combined-channel image are generated for the selected Z section or time point for the image(s). All generated images are contained in a ZIP archive.</p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</ol>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<h2><a class="anchor" id="batch"></a>Using the Batch Image Export script</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">An alternative way to export multiple selected images or an entire dataset is to use the <span class="bold">Batch Image Export</span> script.</p>
+
+<p>This script enables a wide range of parameters to be configured before batch exporting.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportBatchInsight.jpg" class="align-left" src="images/exportBatchInsight.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/exportBatchWeb.jpg" class="align-center" src="images/exportBatchWeb.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="page-end">
+	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
+	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+</div> <!-- end page-end -->
+
+</li><!-- end page list item -->
+
+</ol> <!-- end page list -->
