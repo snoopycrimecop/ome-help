@@ -70,7 +70,7 @@ because this is the only way to maintain the desired order with Jekyll.
 
 Individual files for the pages contain the variables to be inserted in the
 appropriate field in default.html for: page title, menu ID, PDF name and
-description metadata and text. Pages and can be written in HTML or Markdown.
+description metadata and text. Pages can be written in HTML or Markdown.
 They have a short header and then the page content in the form:
 
 /---
@@ -148,11 +148,11 @@ The following elements need to be changed to the new version number:
 
 For all:
 
-- the index.html page (currently 3 occurrences in page text)
-- the appropriate menu entry(s) in default.html
+- the index.html page (currently 1 occurrence in page text)
+- the appropriate menu entry(s) in default.html (only number releases i.e. 5 -> 6)
 - the “title:" in relevant HTML pages - getting-started-5.html and 
-  importing-5.html or getting-started-4.html and importing-4.html
-- the heading in the relevant Word .doc file
+  importing-5.html (only point releases)
+- the heading in the relevant Word .doc file (only point releases)
 - the version number in two screenshots in the relevant .graffle file -
   Downloads and Zips. Note: the version numbers are added as editable text in
   the Version 5.x Omnigraffle canvases. The new versions of the screenshots
@@ -160,14 +160,14 @@ For all:
 - the new versions of the screenshots need to be placed in the images/ folder.
 - new versions of the PDF need to be generated
 - a new ZIP archive file for all the PDFs for that version generated i.e one
-for  5.x or one for 4.4.x (with the appropriate sections for the  new versions
+for  5.x (with the appropriate sections for the  new versions
 included).
 - the previous version ZIP archive file becomes the reference archive for that
 version - linked to from the ”Previous” page.
 
 Note:
-Only the OMERO client and related workflow PDFs are included in this archive.
-Other PDFs such as virtual-microscope.pdf and editor.pdf are not included in
+Only the OMERO clients, OMERO.figure and related workflow PDFs are included in this archive.
+Other PDFs such as virtual-microscope.pdf are not included in
 the archive, so copies of previous versions should be archived as appropriate.
 
 **Specific Version Pages**
@@ -175,20 +175,17 @@ the archive, so copies of previous versions should be archived as appropriate.
 For Version 5.x:
 getting-started-5.html - the title and the description in the page header +
 Downloads and Zips screenshots
-importing-data-4.html- the title and the description in the page header
-
-For Version 4.4.x:
-getting-started-4.html- the title and the description in the page header +
+importing-5.html - the title and the description in the page header +
 Downloads and Zips screenshots
-importing-data-4.html- the title and the description in the page header
 
-index page - latest release version number (forth paragraph), and two
+
+index page - latest release version number (forth paragraph), and any
 references in the “New Features” section
 
 Links need to be updated in:
 
 resources.html - version number and size updated
-previous.html - links to previous version ZIP archive added
+previous.html - links to previous version ZIP archive added (can be pasted from previous version listed in resources.html)
 
 **Licensing**
 
