@@ -31,17 +31,17 @@ description: OMERO allows controlled sharing of data using groups with varying l
  
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>Groups are used in OMERO to enable sharing of data between users. Groups are created by the OMERO system administrator and usually have one or more group owners. Group owners and admins can add or remove users.</p>
+<p>Groups are used in OMERO to enable sharing of data between users. Groups are created by the OMERO system administrator and usually have one or more group owners. Group owners and admins can add or remove members.</p>
 
-<p>There are four levels of group permissions allowing members different degrees of interaction with the data owned by other users in the group. In all groups, you retain ownership of your own data, and there are no limitations on the operations and actions you can perform on your own data.</p>
+<p>There are four levels of group permissions allowing members different degrees of interaction with the data owned by other members in the group. In all groups, you retain ownership of your own data, and there are no limitations on the operations and actions you can perform on your own data. You can be in many groups, each with different permissions.</p>
 
-<p>As group permissions are set at a server level, they apply to OMERO.insight, OMERO.web or any other application or script being used to access the data.</p>
+<p>As group permissions are set at a server level, they apply to OMERO.insight, OMERO.web or any other application or script being used to access the data. Data can only be in one group, but can be moved between groups.</p>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="roles"></a>User roles</h2>
 
@@ -58,130 +58,37 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <li>groups can have more than one owner</li>
 <li>can manage group membership</li>
 <li>can increase the permissions level on a group</li>
-<li>can view, annotate, edit and delete data belonging to other members in the group
-</li>
+<li>can view, annotate, edit and delete data belonging to other members in the group (except annotate in Private groups)</li>
 <li>other interactions with data belonging to other group members depends on group type.</li>
 </ul>
 
-<p><span class="bold">Administrator</span> - this role is typically reserved for the OMERO server administrator:</p>
+<p><span class="bold">Admin</span> - this role is typically reserved for the OMERO server administrator:</p>
 <ul class="bullet-list">
-<li>practically speaking, Administrators can do anything they like to any user’s data, in any group.</li>
+<li>practically speaking, Administrators can do anything they like to any user’s data, in any group (except annotate in Private groups).</li>
 </ul>
-
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="groups"></a>Group types</h2>
 
-<p>For the purposes of describing the actions permitted within each type of group, the following terms are used:</p>
-
-<p><span class="bold">Save rendering settings</span> means:</p>
-<ul class="bullet-list">
-<li>selecting channels</li>
-<li>setting pixel intensity range</li>
-<li>allocating channel colour</li>
-<li>these are saved under the user’s name and can be viewed by other group members</li>
-<li>the owner’s settings are not affected.</li>
-
-</ul>
-
-<p><span class="bold">Draw Regions of Interest (ROIs)</span> means:</p>
-<ul class="bullet-list">
-<li>add and save shapes or text drawn on images.</li>
-
-</ul>
-
-<p><span class="bold">Annotate</span> means adding:<p/>
-<ul class="bullet-list">
-<li>ratings</li>
-<li>tags</li>
-<li>file attachments</li>
-<li>key-value pairs</li>
-<li>comments.</li>
-
-</ul>
-
-<p><span class="bold">Edit</span> means:</p>
-<ul class="bullet-list">
-<li>change the name of an Project, Dataset and Image</li>
-<li>add or edit a description</li>
-<li>remove annotations added by other users including you</li>
-<li>delete data.</li>
-
-</ul>
-
-<p><span class="bold">Change group</span> means:</p>
-<ul class="bullet-list">
-<li>move images from one group to another.</li>
-
-</ul>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p>There are <!-- commented out for 5.1- four --> three types of group in OMERO:</p>
-
-<p><span class="bold">Private</span></p>
-<ul class="bullet-list">
-<li>only you and group owners can see or interact with your data</li>
-<li>a group owner can view your data, change rendering settings and draw their own ROIs, but these will not be saved</li>
-<li>they can also edit the names of your images and remove any ROIs or annotations you have added to your data and delete your data.</li>
-</ul>
-
-<p><span class="bold">Read-Only</span></p>
-<ul class="bullet-list">
-<li>all other members of can see and interact with your data on a read-only basis</li>
-<li>all other members can see and interact with your data in a way which doesn't change anything you've saved</li>
-<li>a group owner can do anything they like with your data except delete it or move it out the group</li>
-
-</ul>
-
-<p><span class="bold">Read-Annotate</span></p>
-<ul class="bullet-list">
-<li>all other members of the group can see and interact with your data</li>
-<li>other members can change rendering settings which can all be viewed</li>
-<li>can draw ROIs and add annotations</li>
-<li>they cannot edit, delete or change group on your data</li>
-<li>a group owner can do anything to any member’s data except move it out of the group</li>
-</ul>
-
-<!-- commented out for 5.1 
-<p><span class="bold">Read-Write</span></p>
-<ul class="bullet-list">
-<li>all other members can see, interact with, edit and delete your data</li>
-<li>a group owner and all other members of the group can change rendering settings which can all be viewed</li>
-<li>they can all draw ROIs and add annotations, edit and delete your data</li>
-<li>they cannot change group.</li>
-</ul>
--->
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+<p>There are four types of group in OMERO: Private, Read-Only, Read-Annotate and Read-Write.</p>
 
 <p>The main points can be summarised as:</p>
 <ul class="bullet-list">
+<li>you can be in many groups, each with different permissions</li>
 <li>you always retain ownership of your data</li>
-<li>your rendering settings cannot be over-written by any other user</li>
-<li>you can remove any annotations, comments or ROIs added by other group members</li>
-<li>no other members can move your data between groups</li>
-<li>only you, a group owner or an Administrator can delete your data<!-- commented out for 5.1  except in a read-write group</li>
-<li>in a read-write group other group members can delete your data-->.</li>
+<li>your rendering settings cannot be overwritten by any other user</li>
+<li>only administrators can move your data between groups</li>
+<li>only you, a group owner or an Administrator can delete your data <span class="bold">except</span> in a Read-Write group.</li>
 </ul>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p><a class="anchor" name="permissions" id="permissions"></a>The following sections summarise how other members in each of the group types can interact with your data.</p>
 
-<h2><a class="anchor" name="permissions" id="permissions"></a>Summary of the roles and permissions in groups</h2>
-
-<span class="bold">Private Group</span>
+<p><span class="bold">Private Group</span> - your data is only shared with the Group Owner(s) and Administrators.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -193,7 +100,7 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<span class="bold">Read-Only Group</span>
+<p><span class="bold">Read-Only Group</span> - group members can view but not alter your data.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -205,7 +112,7 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<span class="bold">Read-Annotate Group</span>
+<p><span class="bold">Read-Annotate Group</span> - group members can add to your data but not remove anything.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -217,17 +124,30 @@ description: OMERO allows controlled sharing of data using groups with varying l
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<!-- commented out for 5.1 
-<span class="bold">Read-Write Group</span>
+<p><span class="bold">Read-Write Group</span> - group members are effectively co-owners of all the data except for moving data between groups.</p>
 
-Line block deleted from here
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <img alt="../images/sharingDataReadWrite.jpg" class="align-center" src="images/sharingDataReadWrite.jpg" style="width: 80%;" />
 
-Line block deleted from here
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
--->
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
+<div class="warning">
+<p class="warning-title">Warning:</p>
+
+<p class="warning-text">Data deleted from OMERO cannot be recovered.</p>
+
+<p class="warning-text">Read-Write groups allow <span class="bold">any</span> member to delete <span class="bold">any</span> data in that group.</p>
+
+</div><!-- End warning -->	
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
@@ -238,11 +158,11 @@ Line block deleted from here
 <p class="note-text">There is also a danger that some annotations such as tags, attachments and key-value pairs associated with data in the group might be lost if the permission levels are changed. This is more likely to occur when changing a group to a more restricted access level, e.g. from Read-annotate to Private.</p>
 </div><!-- End note -->	
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" name="viewing" id="viewing"></a>Viewing data by groups</h2>
 
@@ -318,6 +238,12 @@ Line block deleted from here
 
 </ol>
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
 <h3>In OMERO.web:</span></h3>
 
 <ol class="step">
@@ -352,11 +278,11 @@ Line block deleted from here
 
 </ol>
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="moving"></a>Moving data between groups</h2>
 
@@ -365,7 +291,7 @@ Line block deleted from here
 <ul>
 
 <div class="warning">
-<p class="warning-title">Warning!</p>
+<p class="warning-title">Warning:</p>
 
 <p class="warning-text">It is likely that any tags, attachments, key-value pairs, comments or other annotations will not be moved to the new group and will be lost.</p>
 
@@ -409,11 +335,11 @@ Line block deleted from here
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="default"></a>Changing your default group</h2>
 
@@ -425,7 +351,7 @@ Line block deleted from here
 
 <ul>
 
-<p>To change your default group, the group that’s shown when you log in, select your name in the <span class="bold">Projects</span> tab</p>
+<p>To change your default group, the group that’s shown when you log in, select your name in the <span class="bold">Projects</span> tab.</p>
 
 <p>In the <span class="bold">User</span> pane on the right-hand side, select the new default group from the drop-down list.</p>
 
@@ -463,11 +389,11 @@ Line block deleted from here
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="owner"></a>Managing groups as a Group Owner</h2>
 
@@ -538,6 +464,12 @@ Line block deleted from here
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
 <h3>OMERO.web</h3>
 
 <ul>
@@ -572,7 +504,13 @@ Line block deleted from here
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<li><p class="first">Group owners can use OMERO.web to see the disc space statistics for data usage in their groups.</p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Group owners can use OMERO.web to see the disk space statistics for data usage in their groups.</p>
 
 <p>Click on the <span class="bold">Statistics</span> tab in the User Settings window.</p>
 
@@ -607,11 +545,11 @@ Line block deleted from here
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="admin"></a>Managing groups as an OMERO system Administrator</h2>
 
@@ -666,6 +604,12 @@ Line block deleted from here
 
 </li>
 
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
 <li><p class="first">Click on the <span class="bold">Group</span> tab to create a new group.</p>
 
 <p>Click on the <span class="bold">Add New Group</span> button.</p>
@@ -692,7 +636,7 @@ Line block deleted from here
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/sharingDataAdminGroup.jpg" class="align-center" src="images/sharingDataAdminGroup.jpg" style="width: 100%;" />
+<img alt="../images/sharingDataAddGroup.jpg" class="align-center" src="images/sharingDataAddGroup.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -700,7 +644,13 @@ Line block deleted from here
 
 </li>
 
-<li><p class="first">Click on the <span class="bold">Statistics</span> tab to see the disc usage for all users and groups on the OMERO server.</p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Click on the <span class="bold">Statistics</span> tab to see the disk usage for all users and groups on the OMERO server.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -718,7 +668,7 @@ Line block deleted from here
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/sharingDataEmail.jpg" class="align-center" src="images/sharingDataEmail.jpg" style="width: 100%;" />
+<img alt="../images/sharingDataEmail.jpg" class="align-center" src="images/sharingDataEmail.jpg" style="width: 100%;"/>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
