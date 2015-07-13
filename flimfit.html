@@ -19,7 +19,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 <a href="#introduction">Introduction</a><br />
 <a href="#install">Installing FLIMfit</a><br />
 <a href="#using">Using FLIMfit with OMERO</a><br />
-<a href="#disk">Loading data from disc</a><br />
+<a href="#disk">Loading data from disk</a><br />
 <a href="#single">Fitting data - single image</a><br />
 <a href="#results">Viewing Results</a><br />
 <a href="#multiple">Fitting data - multiple images</a><br />
@@ -42,13 +42,13 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <p>To use the data with OMERO, download a Zip archive of the the files: <a href="http://downloads.openmicroscopy.org/help/resources/flimfit/example-files.zip" target="_blank" class="external-url">example-files.zip</a> (47.4 MB).</p>
 
-<p>Import the following folders to the OMERO server, letting OMERO name the datasets after the folder:</p>
+<p>Unzip the archive and import the following folders to the OMERO server, letting OMERO create new datasets from the folder, i.e. use default &quot;New from Folder&quot; for importing:</p>
 
 <ul>
 
-<li><span class="code-example">IRF-in-file</span> (contains the single data file)</li>
+<li><span class="code-example">IRF-in-file</span> (contains the single data file and the corresponding IRF file)</li>
 
-<li><span class="code-example">Multiple</span> (contains the multiple data files)</li>
+<li><span class="code-example">Multiple</span> (contains the multiple data files and the corresponding IRF file)</li>
 
 </ul>
 
@@ -130,7 +130,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <p class="code-example">/Applications/MATLAB/MATLAB_Compiler_Runtime/v84/runtime/maci64:/Applications/MATLAB/MATLAB_Compiler_Runtime/v84/sys/os/maci64:/Applications/MATLAB/MATLAB_Compiler_Runtime/v84/bin/maci64:”</p>
 
-<p class="warning-text"><span class="warning-title">Ignore this</span> - the application will do it for you in at run-time.</p>
+<p class="warning-text"><span class="warning-title">Ignore this</span> - the application will do it for you at run-time.</p>
 
 </div><!-- End warning -->	
 <div class="line-block">
@@ -196,7 +196,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<li><p class="first">Click on the <span class="bold">OMERO</span> menu and select <span class="bold">Load FLIMfit data</span>.</p>
+<li><p class="first">Click on the <span class="bold">OMERO</span> menu and select <span class="bold">Load FLIM data</span>.</p>
 
 <p>The OMERO data tree will be displayed in a pop-up window.</p>
 
@@ -222,7 +222,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a class="anchor" id="disk"></a>Loading data from disc</h2>
+<h2><a class="anchor" id="disk"></a>Loading data from disk</h2>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -262,11 +262,11 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <ol class="step">
 
-<li><p class="first">A B/W image of a pollen grain is visible in the central window.</p>
+<li><p class="first">A greyscale intensity image of a pollen grain is visible in the upper part of the left-hand pane.</p>
 
 <p>Click on any pixel.</p>
 
-<p>Click on the <span class="bold">Decay</span> tab to the right.</p>
+<p>The <span class="bold">Decay</span> tab to the right should be selected by default.</p>
 
 <p>A plot of the time-resolved data in that pixel can be seen.</p>
 
@@ -292,7 +292,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 <p class="note-title">Note</p>
 <p class="note-text">A brief aside on Instrument Response Function (IRF)</p>
 <p class="note-text">In order to fit a model, FLIMfit requires some information about the system on which the data was acquired. It can get this information from what is referred to as an IRF - the system’s response to a known input.</p>
-<p class="note-text">In this example the IRF is read from a second .sdt file acquired on the same system, on the same day, as the pollen grain image. This is an image of a sample of gold nano rods. These have the convenient property of re-emitting the laser excitation pulse across a wide range of wavelengths. They therefore provide a pulse of light at the correct wavelength to pass into the detection channel which is of known (very short) duration.</p>
+<p class="note-text">In this example the IRF is read from a second .sdt file acquired on the same system, on the same day, as the pollen grain image. This is an image of a sample of gold nano rods. These have the convenient property of re-emitting the laser excitation pulse across a wide range of wavelengths. They therefore provide a pulse of light, of known (very short) duration, at the correct wavelength to pass into the detection channel.</p>
 </div><!-- End note -->
 
 <div class="line-block">
@@ -349,7 +349,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/flimfitIRFDecay.jpg" class="align-center" src="images/flimfitIRFDecay.jpg" style="width: 100%;" />
+<img alt="../images/flimfitIRFNano.jpg" class="align-center" src="images/flimfitIRFNano.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -365,7 +365,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <p>Click <span class="bold">Fit Selected Decay</span>.</p>
 
-<p>A broken red line appears in the fitted model.</p>
+<p>A broken blue line appears in the fitted model.</p>
 
 <p>Normalised Residuals are displayed below data.</p>
 
@@ -391,11 +391,13 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <p>To try a bi-exponential fit, increase the <span class="bold">No Expo</span> to <span class="bold">2</span> and click <span class="bold">Fit Selected Decay</span>.</p>
 
-<p>The fit should then look acceptable.</p>
+<p>The fit of the broken blue line should then look acceptable.</p>
 
 <p>Confirm this by selecting a few different pixels.</p>
 
 <p>When confirmed, click <span class="bold">Fit Dataset</span>.</p>
+
+<p>The blue line becomes solid when the dataset has been fitted.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -600,7 +602,9 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<li><p class="first">From the <span class="bold">Image</span> menu, select <span class="bold">Export Image...</span> to save selected images to disk for use in publications.</p>
+<li><p class="first">From the <span class="bold">OMERO</span> menu, select <span class="bold">Export Image...</span> to save selected images to OMERO.</p>
+
+<p>From the <span class="bold">File</span> menu, select <span class="bold">Export Image...</span> to save selected images to disk.</p>
 
 <p>Select <span class="bold">Export Histograms...</span> to save the histogram data to disk as a CSV file.</p>
 
@@ -608,7 +612,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/flimfitExport.jpg" class="align-left" src="images/flimfitExport.jpg" style="width: 70%;" />
+<img alt="../images/flimfitExport.jpg" class="align-left" src="images/flimfitExport.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -652,7 +656,7 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <ol class="step">
 
-<li><p class="first">Click on the <span class="bold">OMERO</span> menu and select <span class="bold">Load FLIMfit data from a dataset</span>.</p>
+<li><p class="first">Click on the <span class="bold">OMERO</span> menu and select <span class="bold">Load FLIM data from a dataset</span>.</p>
 
 <p>The OMERO data tree will be displayed in a pop-up window.</p>
 
@@ -696,9 +700,11 @@ description: FLIMfit is a software tool from, Imperial College London, that is d
 
 <li><p class="first">To load the IRF for the multiple FOVs from the attachment on the dataset, select the <span class="bold">OMERO</span> menu and choose <span class="bold">Load IRF (Annotation)</span>.</p>
 
-<p>The IRF data will be visible as a red peak on the plot in the <span class="bold">Decay</span> tab.</p>
-
 <p>In the dialog box, select the folder: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">Multiple</span>.</p>
+
+<p>Click <span class="bold">Open</span> and then click <span class="bold">OK</span>.</p>
+
+<p>The IRF data will be visible as a red peak on the plot in the <span class="bold">Decay</span> tab.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
