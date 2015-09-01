@@ -3,9 +3,11 @@
 # http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
-addons:
-  apt_packages:
-    - tidy
+language: python
 
-script:
-  - tidy -qe *.html
+python: 2.7
+
+install:
+ - pip install html5validator
+
+script: "html5validator"
