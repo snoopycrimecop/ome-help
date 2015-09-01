@@ -1,13 +1,10 @@
-# This (sudo: false) is needed to "run on container-based infrastructure" on
-# which cache: is available
-# http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+language: ruby
 sudo: false
-
-language: python
-
-python: 2.7
-
-install:
- - pip install html5validator
-
-script: "html5validator"
+cache: bundler
+rvm:
+- 2.2.2
+install: bundle install
+script: bundle exec jekyll build && bundle exec htmlproof . --disable-external
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
