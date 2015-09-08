@@ -1,0 +1,5 @@
+name: OMERO User Help Website
+markdown: redcarpet
+highlighter: pygments
+baseurl: ''
+clsbaseurl: /cls
