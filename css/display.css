@@ -266,6 +266,15 @@ img.header-right {
 	padding-left: 20px;
 }
 
+#page-body .indent2 {
+	padding-left: 40px;
+}
+
+
+#page-body .indent3 {
+	padding-left: 60px;
+}
+
 /*Page end*/
 
 .page-end {
