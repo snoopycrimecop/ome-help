@@ -4,7 +4,7 @@
     {% else %}
     {% unless include.item.open == 'always' %}
     <span>
-        <img src="{{ site.baseurl }}{% if include.item.open or page.menu-id == include.item.id %}/images/arrow-open.gif{% else %}/images/arrow-closed.gif{% endif %}"/>
+        <img src="{{ site.baseurl }}{% if include.item.open or page.menu-id == include.item.id %}/images/arrow-open.gif{% else %}/images/arrow-closed.gif{% endif %}" alt="Navigation arrow"/>
     </span>
     {% endunless %}
     {{ include.item.name }}
