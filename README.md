@@ -69,8 +69,9 @@ because this is the only way to maintain the desired order with Jekyll.
 **Page Files**
 
 Individual files for the pages contain the variables to be inserted in the
-appropriate field in default.html for: page title, menu ID, PDF name and
-description metadata and text. Pages can be written in HTML or Markdown.
+appropriate field in default.html for: page title, menu ID, PDF name,
+description metadata and text and whether to display the Current OMERO Version number. 
+Pages can be written in HTML or Markdown.
 They have a short header and then the page content in the form:
 
 /---
@@ -80,6 +81,8 @@ menu-id: l1-quickstart
 pdfs:
     - getting-started-5.pdf
 description: Metadata header for each page.
+version:
+    - yes
 /---
 <page content>
 
