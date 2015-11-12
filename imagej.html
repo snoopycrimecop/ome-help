@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Using ImageJ with OMERO 5.1
+title: Using ImageJ with OMERO
 menu-id: l1-quickstart
 pdfs:
     - imagej.pdf
@@ -17,12 +17,11 @@ version:
 <a href="#downloadImageJ">Downloading and installing ImageJ</a><br />
 <a href="#downloadFuji">Downloading and installing Fiji</a><br />
 <a href="#plugins">Installing Plugins for ImageJ and Fiji</a><br />
-<a href="#imagej5">Using ImageJ with OMERO version 5.1.x</a><br />
-<a href="#fiji5">Using Fiji with OMERO 5.1.x</a><br />
+<a href="#imagej5">Using ImageJ with OMERO</a><br />
+<a href="#fiji5">Using Fiji with OMERO</a><br />
 <a href="#access">Accessing OMERO using ImageJ and Fiji</a><br />
 <a href="#save">Saving images from ImageJ to OMERO</a><br />
 <a href="#rois">Saving ROIs drawn in ImageJ to OMERO</a><br />
-<a href="#upgradeimagej">Upgrading ImageJ from 4.4.x to 5.1.x</a><br />
 </p>
 
 </div><!-- End Page Navigation -->
@@ -33,7 +32,7 @@ version:
 
 <h2><a class="anchor" id="using"></a>Using ImageJ and Fiji with OMERO</h2>
 
-<p>TThis initial section covers both OMERO version 5.1.x and version 5.0.x  and assumes you have never installed ImageJ or Fiji before.</p>
+<p>This covers all OMERO versions from 5.1.0 and newer and assumes you have never installed ImageJ or Fiji before.</p>
 
 <p>For OMERO version 4.4.x see: <a href="http://downloads.openmicroscopy.org/help/pdfs/imagej-4.pdf" target="_blank" class="reference external">Using ImageJ with OMERO 4.4</a></p>
 
@@ -46,8 +45,6 @@ version:
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-
-<p>Upgrading from OMERO version 4.4.x to OMERO version 5.1.x is dealt with in a later section.</p>
 
 <p>In order to connect to an OMERO server and use the data stored there directly in ImageJ and Fiji, plugins have to be installed. The following instructions guide you through the download, installation and use of ImageJ, Fiji and the plugins.</p>
 
@@ -184,7 +181,7 @@ version:
 
 <!-- ImageJ 5 -->
 
-<h2><a class="anchor" id="imagej5"></a>Using ImageJ with OMERO version 5.1.x</h2>		
+<h2><a class="anchor" id="imagej5"></a>Using ImageJ with OMERO</h2>		
 
 <p>Two plugins are required:</p>
 
@@ -229,15 +226,15 @@ version:
 </div>
 <li>
 
-<p class="first"><a class="anchor" id="screenshot2"></a>Download the latest 5.1.x version of the <span class="code-example">OMERO.insight-ij</span> plugin from:</p>
+<p class="first"><a class="anchor" id="screenshot2"></a>Download the latest 5.x.x version of the <span class="code-example">OMERO.insight-ij</span> plugin from:</p>
 
 <p><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="reference external">http://downloads.openmicroscopy.org/latest/omero5</a></p>
-<p>Check there is a &#8220;OMERO 5.1.x Downloads&#8221; heading on the page.</p>
+<p>Check there is a &#8220;OMERO 5.x.x Downloads&#8221; heading on the page.</p>
 
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<img alt="../images/imagejOmeroDownload5.jpg" class="align-center" src="images/imagejOmeroDownload5.jpg" style="width: 85%;" />
+<img alt="../images/imagejOmeroDownload.jpg" class="align-center" src="images/imagejOmeroDownload.jpg" style="width: 85%;" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -251,7 +248,7 @@ version:
 <div class="note">
 <p class="note-title">Note</p>
 <p class="note-text">Some Windows unzip apps create a double folder enclosing the plugin.<br />
-Check, and if this has happened, copy the inner <span class="code-example">OMERO.insight-ij-5.1.x</span> folder into the <span class="code-example">ImageJ &gt; plugins</span> folder.</p>
+Check, and if this has happened, copy the inner <span class="code-example">OMERO.insight-ij-5.x.x</span> folder into the <span class="code-example">ImageJ &gt; plugins</span> folder.</p>
 </div><!-- End note -->
 
 <div class="line-block">
@@ -262,7 +259,7 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line"><br /></div>
 </div>
 
-<p>The <span class="code-example">OMERO.insight-ij-5.1.x.zip</span> archive can be left in the plugins folder or deleted.</p>
+<p>The <span class="code-example">OMERO.insight-ij-5.x.x.zip</span> archive can be left in the plugins folder or deleted.</p>
 
 <div class="line-block">
 <div class="line"><br /></div>
@@ -279,11 +276,11 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 <!-- Fiji 5 -->
 
-<h2><a class="anchor" id="fiji5"></a>Using Fiji with OMERO version 5.1.x</h2>		
+<h2><a class="anchor" id="fiji5"></a>Using Fiji with OMERO version 5</h2>		
 
 <p>As Fiji comes bundled with the components of Bioformats Package, there is no need to download and install this plugin.</p>
 
-<p>Two actions are required for both a fresh installation and to upgrade from version 4.4.x:</p>
+<p>Two actions are required for an installation:</p>
 
 <ul class="bullet-list">
 <li>select the appropriate Bio-Formats jars using the update menu</li>
@@ -308,7 +305,6 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 <li>
 <p>In the Manage update site window, select <span class="bold">Bio-Formats 5</span>.</p>
-<p>If Bio-Formats 4 is checked, uncheck it.</p>
 <p>Click <span class="bold">Close</span>.</p>
 <p>Click <span class="bold">Apply Changes</span>.</p>
 <p>Fiji will fetch and install the updates.</p>
@@ -328,14 +324,14 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line"><br /></div>
 </div>
 
-<li><p class="first">Download the latest 5.1.x version of the <span class="code-example">OMERO.insight-ij</span> plugin from:</p>
+<li><p class="first">Download the latest 5.x.x version of the <span class="code-example">OMERO.insight-ij</span> plugin from:</p>
 <p><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="reference external">http://downloads.openmicroscopy.org/latest/omero5</a></p>
-<p>Check there is a &#8220;OMERO 5.1.x Downloads&#8221; heading on the page.</p>
+<p>Check there is a &#8220;OMERO 5.x.x Downloads&#8221; heading on the page.</p>
 
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<img alt="../images/imagejOmeroDownload5.jpg" class="align-center" src="images/imagejOmeroDownload5.jpg" style="width: 85%;" />
+<img alt="../images/imagejOmeroDownload.jpg" class="align-center" src="images/imagejOmeroDownload.jpg" style="width: 85%;" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -349,7 +345,7 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">Some Windows unzip apps create a double folder enclosing the plugin.<br />Check, and if this has happened, copy the inner <span class="code-example">OMERO.insight-ij-5.1.x</span> folder into the <span class="code-example">Fiji.app &gt; plugins</span> folder.</p>
+<p class="note-text">Some Windows unzip apps create a double folder enclosing the plugin.<br />Check, and if this has happened, copy the inner <span class="code-example">OMERO.insight-ij-5.x.x</span> folder into the <span class="code-example">Fiji.app &gt; plugins</span> folder.</p>
 </div><!-- End note -->
 
 <div class="line-block">
@@ -360,7 +356,7 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <div class="line"><br /></div>
 </div>
 
-<p>Delete the <span class="code-example">OMERO.insight-ij-5.1.x.zip</span> archive from the plugins folder.</p>
+<p>Delete the <span class="code-example">OMERO.insight-ij-5.x.x.zip</span> archive from the plugins folder.</p>
 
 <div class="line-block">
 <div class="line"><br /></div>
@@ -466,7 +462,7 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 
 <h2><a class="anchor" id="save"></a>Saving images from ImageJ to OMERO</h2>
 
-<p>With OMERO version 5.1, it is possible to save images directly from ImageJ or Fiji to your OMERO server.</p>
+<p>With OMERO version 5.1.0 and newer, it is possible to save images directly from ImageJ or Fiji to your OMERO server.</p>
 
 <ul>
 
@@ -557,75 +553,6 @@ Check, and if this has happened, copy the inner <span class="code-example">OMERO
 <p class="note-title">Note</p>
 <p>There is no duplication of data, new or existing ROIs are saved back to the original image on the OMERO server.</p>
 </div>
-
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-
-<h2><a class="anchor" id="upgradeimagej"></a>Upgrading ImageJ from 4.4.x to 5.1.x</h2>		
-
-<p>To upgrade ImageJ for use with an OMERO version 5 server, you need to:</p>
-
-<ol class="step">
-
-<li>
-<p class="first">Go to the <span class="code-example">ImageJ &gt; plugins</span> folder.</p>
-<p>Delete the <span class="code-example">loci_tools.jar</span> and the <span class="code-example">OMERO.insight-ij-4.4.x</span> folder.</p>
-</li>
-
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-
-<li>
-<p class="first">Download the latest 5.1.x version of the <span class="bold">Bioformats Package</span> plugin from:</p>
-
-<p><a href="http://downloads.openmicroscopy.org/latest/bio-formats5" target="_blank" class="reference external">http://downloads.openmicroscopy.org/latest/bio-formats5</a></p>
-
-<p>(See <a href="#screenshot1">screenshot</a> above)</p>
-<p>Check there is a &#8220;Bio-Formats 5.1.x Downloads&#8221; heading on the page.</p>
-<p>Save or move the downloaded file into the <span class="code-example">ImageJ &gt; plugins</span> folder.</p>
-</li>
-
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-
-<li>
-<p class="first">Download the latest 5.1.x version of the <span class="code-example">OMERO.insight-ij</span> plugin from:</p>
-
-<p><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="reference external">http://downloads.openmicroscopy.org/latest/omero5</a></p>
-
-<p>(See <a href="#screenshot2">screenshot</a> above)</p>
-<p>Check there is a &#8220;OMERO 5.1.x Downloads&#8221; heading on the page.</p>
-<p>Save or move the downloaded file into the <span class="code-example">ImageJ &gt; plugins</span> folder.</p>
-
-
-<div class="note">
-<p class="note-title">Note</p>
-<p class="note-text">The <span class="code-example">bioformats_package.jar</span> you need, to use ImageJ with OMERO version 5.1.x, is incompatible with <span class="code-example">loci_tools.jar</span>, and ImageJ will not work with OMERO if both are in the plugins folder.</p>
-</div><!-- End note -->
-
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-
-<p>We suggest that if you wish to access both 4.4.x and 5.1.x versions of OMERO from ImageJ that you run two appropriately named copies of ImageJ each with the appropriate plugins for the version.</p>
-
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-
-<p>For more information on OMERO version 4.4.x see: <a href="http://downloads.openmicroscopy.org/help/pdfs/imagej-4.pdf" target="_blank" class="reference external">Using ImageJ with OMERO 4.4</a></p>
-</li>
-
-</ol>
 
 <div class="line-block">
 <div class="line"><br /></div>
