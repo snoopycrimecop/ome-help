@@ -444,7 +444,7 @@ img.header-right {
 	font-size: 75%;
 	text-align: left; 
 	width: 80%;
-	background-color: #e3ebf3;
+	background-color: transparent;
 	padding-top: 25px;
 	margin-left: 15px;
 }
