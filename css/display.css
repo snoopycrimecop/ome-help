@@ -15,7 +15,7 @@ html{
 	font: small/1.5em "Open Sans", Verdana, sans-serif;
 	text-align: left;
 	height: 100%;
-	background-color: #dce7ed;
+	background-color: #e3ebf3;
 }
 
 body {
@@ -239,7 +239,7 @@ img.header-right {
 #page-body .note {
 	border-style: dotted;
 	border-width: 1px;
-	background-color: #e8f2fd;
+	background-color: #e3ebf3;
 	width: 95%;
 	padding-left: 5px;
 	color: #06436b;
@@ -444,7 +444,7 @@ img.header-right {
 	font-size: 75%;
 	text-align: left; 
 	width: 80%;
-	background-color: #dce7ed;
+	background-color: #e3ebf3;
 	padding-top: 25px;
 	margin-left: 15px;
 }
