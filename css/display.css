@@ -12,10 +12,10 @@ All material is covered by the Creative Commons Attribution 3.0 Unported License
 }
 
 html{
-	background: #00426d;
 	font: small/1.5em "Open Sans", Verdana, sans-serif;
 	text-align: left;
 	height: 100%;
+	background-color: #e3ebf3;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 	width: 100%;
 	float: left;
 	height: auto;
-	color: #eeedef;
+	color: #1c4a87;
 	text-align: center;
 	font-size: 110%;
 	line-height: 1em;
@@ -88,7 +88,7 @@ body {
 
 #page-header .version-flag {
 	float: left;
-	color: #00416d;
+	color: #003c65;
 	font-size: 105%;
 	position: relative;
 	bottom: 10px;
@@ -239,7 +239,7 @@ img.header-right {
 #page-body .note {
 	border-style: dotted;
 	border-width: 1px;
-	background-color: #e8f2fd;
+	background-color: #e3ebf3;
 	width: 95%;
 	padding-left: 5px;
 	color: #06436b;
@@ -373,7 +373,7 @@ img.header-right {
 	top: 0;
 	left: 4px;
 	clear: left;
-	color: #f4f4f4;
+	color: #1f5398;
 	text-align: left;
 	font-size: 110%;
 	font-weight: 500;
@@ -382,63 +382,69 @@ img.header-right {
 #navigation ul {
 	list-style-type: none;
 	margin-left: -25px;
+	color: #1f5398;
 }
 
 #navigation ul ul {
-
+	color: #1f5398;
 }
 	
 #navigation ul ul ul {
+	color: #1f5398;
 }
 
 #navigation ul a {
-	color: #d8e4f6;
+	color: #1f5398;
 	line-height: 2.2em;
 }
 
 #navigation ul ul a {
-	color: #d8e4f6;
+	color: #1f5398;
 	font-size: 90%;
 	line-height: 2.2em;
 }
 
 #navigation ul ul ul a {
-	color: #d8e4f6;
+	color: #1f5398;
 	line-height: 2.2em;
 }
 	
 #navigation li {
-	
+	color: #1f5398;
 }
 	
 #navigation ul li {
 	line-height: 2em;
 	background: none;
 	border-top-style: solid 1px;
+	color: #1f5398;
 }
 	
 #navigation ul ul li {
 	padding-left: 10px;
 	border: none;
+	color: #1f5398;
 }
 
 #navigation ul ul ul li {
 	background: none;
 	padding-left: 0;
+	color: #1f5398;
 }
 
 #navigation span {
 	padding-right: 4px;
+	color: #1f5398;
 }
 
 /*Footer*/
 
 #footer {
-	color: white;
+	color: #1c4a87;
 	font-size: 75%;
 	text-align: left; 
 	width: 80%;
-	background-color: #00426d;
+	background-color: transparent;
 	padding-top: 25px;
 	margin-left: 15px;
 }
