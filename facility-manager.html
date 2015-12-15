@@ -44,7 +44,7 @@ version:
 
 <p>Apart from basic CPU number, speed and physical disk size, here are a number of other issues to be taken into account, including the nature of the storage being used for the data, the connection type, and the speed of the network used to access the server.</p>
 
-<p>Examples of system specifications and setups for production OMERO servers have kindly been provided by a number of institutes to serve as illustrations of working systems. These are shown in the <a href="http://www.openmicroscopy.org/site/support/omero5.2-staging/sysadmins/server-setup-examples.html" target="_blank" class="external-url">Example production server set-ups</a> page on the OME website.</p>
+<p>Examples of system specifications and set-ups for production OMERO servers have kindly been provided by a number of institutes to serve as illustrations of working systems. These are shown in the <a href="http://www.openmicroscopy.org/site/support/omero5.2-staging/sysadmins/server-setup-examples.html" target="_blank" class="external-url">Example production server set-ups</a> page on the OME website.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
@@ -82,7 +82,7 @@ version:
 
 <p>See the documentation for <a href="http://www.openmicroscopy.org/site/support/omero5.2/sysadmins/server-ldap.html" target="_blank" class="external-url">LDAP configuration</a> for details. Instructions for using Active Directory are at the bottom of this page.</p>
 
-<p>Using LDAP authentication means new user accounts are created the first time a user logs in, substantially reducing the administration load. Any change in the LDAP password by the user will then be reflected in the OMERO login.</p>
+<p>Using LDAP authentication means new user accounts are created, and the user placed in the default group, the first time a user logs in, substantially reducing the administration load. Any change in the LDAP password by the user will then be reflected in the OMERO login.</p>
 
 <p>With LDAP authentication configured, an administrator can still create new accounts for non-LDAP users. In general, OMERO.web offers the best interface for Administrative tasks.</p>
 
@@ -114,7 +114,7 @@ version:
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">If permissions are reduced to Private when one member has made a projection of another members image in the group, the permissions change will fail.</p>
+<p class="note-text">If permissions are reduced to Private when one member has created output from another member's image in the group using a script, e.g. made a projection, the permissions change will fail.</p>
 </div><!-- End note -->
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
@@ -132,6 +132,11 @@ version:
 <p>For details on how users can change their default group see Changing your default group in the <a href="http://help.openmicroscopy.org/sharing-data.html#default" target="_blank" class="external-url">Sharing Data</a> section of User Help.</p>
 
 <p>Administrators can set or change the default group for a user through the Admin tab in OMERO.web or the Administration tab in OMERO.insight.</p>
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">Although the Administration functions are shown for both OMERO.web and OMERO.insight, the OMERO.web Admin tools are recommended for ease of use over the OMERO.insight Administration tools.</p>
+</div><!-- End note -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -181,7 +186,7 @@ version:
 
 <p>Select the <span class="bold">Administrator</span> tab in the left hand pane.</p>
 
-<p>Select a group that the user is already a member of.</p>
+<p>Select a group of which the user is already a member.</p>
 
 <p>Select the user from the group members.</p>
 
@@ -560,7 +565,7 @@ or
 
 <h2><a class="anchor" id="dropbox"></a>OMERO.dropbox</h2>
 
-<p>OMERO.dropbox monitors designated folders on a storage system, detects newly uploaded files and runs a fully automatic import of those files to the OMERO server if possible. User Help for OMERO.dropbox are in the <a href="http://help.openmicroscopy.org/dropbox.html" target="_blank" class="external-url">Using OMERO.dropbox</a> page.</p>
+<p>OMERO.dropbox monitors designated folders on a storage system, detects newly uploaded files and runs a fully automatic import of those files to the OMERO server if possible. User Help for OMERO.dropbox is in the <a href="http://help.openmicroscopy.org/dropbox.html" target="_blank" class="external-url">Using OMERO.dropbox</a> page.</p>
 
 <p>OMERO.dropbox runs on the same machine as the OMERO server and is started automatically when the OMERO.server starts and it will run subject to prerequisites being met. Full details on configuring and using OMERO.dropbox are in the developer documentation <a href="https://www.openmicroscopy.org/site/support/omero5.2/sysadmins/dropbox.html" target="_blank" class="external-url">OMERO.dropbox</a> page.</p>
 
@@ -689,7 +694,7 @@ or
 
 <h2><a class="anchor" id="disk"></a>Disk usage</h2>
 
-<p>System admins can view disk usage using the OMERO.web Admin tab. The disc usage reported reflects only data owned by the users or groups. Files that are uploaded to the server, or created in situ, and attached to Projects, Datasets or Images, are not included in the disc usage statistics.</p>
+<p>System administrators can view disk usage using the OMERO.web Admin tab. The disk usage reported reflects only data owned by the users or groups. Files that are uploaded to the server, or created in situ, and attached to Projects, Datasets or Images, are not included in the disk usage statistics.</p>
 
 <ol>
 
@@ -763,7 +768,7 @@ or
 
 <p>Public groups can be used to make data accessible without the need for authentication. The permissions on the public group are usually set to Read-Only. In order for a user to be able to place data in the public group, they must ask the Administrator to make them a member of the group. Details on how to configure public groups and make them publically accessible on the OMERO server are in the <a href="https://www.openmicroscopy.org/site/support/omero5.2/sysadmins/public.html#public-user" target="_blank" class="external-url">Public user</a> section of the system administrator documentation.</p>
 
-<p>As data in a public group is accessible without login credentials, this enables image thumbnails, from the OMERO server, and links to open images in the full OMERO.web viewer, to be embedded in any HTML-based page. Details of how to embed thumbnails and links in web pages or Wikis are in the User Help Publishing with OMERO section.</p>
+<p>As data in a public group is accessible without login credentials, this enables image thumbnails, from the OMERO server, and links to open images in the full OMERO.web viewer, to be embedded in any HTML-based page. Details of how to embed thumbnails and links in web pages or Wikis are in the User Help <a href="http://help.openmicroscopy.org/publish.html" target="_blank" class="external-url">Publishing with OMERO</a> section.</p>
 
 <p>The full OMERO.web viewer can be embedded in pages as a customisable OMERO viewport. The level of interactivity can be set by adding buttons, links or scalebars etc. as desired. Details on the viewport can be seen in <a href="https://www.openmicroscopy.org/site/support/omero5.2/developers/Web/ViewPort.html#embedding-web-viewport" target="_blank" class="external-url">Customizing the content of the embedded OMERO.web viewport</a>.</p>
 
