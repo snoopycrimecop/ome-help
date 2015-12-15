@@ -12,7 +12,7 @@ version:
 <h2>Contents</h2>
 <p>
 <a href="#introduction">Introduction</a><br />
-<a href="#using">Using the OMERO server</a><br />
+<a href="#using">Using OMERO</a><br />
 <a href="#permissions">Permissions on OMERO</a><br />
 <a href="#access">Access control, authentication, user accounts</a><br />
 <a href="#manage">Managing Groups</a><br />
@@ -32,7 +32,7 @@ version:
 
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>This section brings together descriptions of common workflows for Facility Managers and links to useful sections of User Help and Developer documentation.</p>
+<p>This section brings together descriptions of common workflows for Facility Managers and links to useful sections of User Help and technical documentation.</p>
 
 <h2><a class="anchor" id="install"></a>Installation and configuration</h2>
 
@@ -42,7 +42,7 @@ version:
 
 <p>This is a frequently asked question, and the simplistic (if slightly unhelpful) answer is the best you can manage.</p>
 
-<p>Apart from basic CPU number, speed and physical disk size, here are a number of other issues to be taken into account, including the nature of the storage being used for the data, the connection type, and the speed of the network used to access the server.</p>
+<p>Apart from basic CPU number, speed and physical disk size, there are a number of other issues to be taken into account, including the nature of the storage being used for the data, the connection type, and the speed of the network used to access the server.</p>
 
 <p>Examples of system specifications and set-ups for production OMERO servers have kindly been provided by a number of institutes to serve as illustrations of working systems. These are shown in the <a href="http://www.openmicroscopy.org/site/support/omero5.2-staging/sysadmins/server-setup-examples.html" target="_blank" class="external-url">Example production server set-ups</a> page on the OME website.</p>
 
@@ -52,7 +52,7 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<h2><a class="anchor" id="using"></a>Using the OMERO server</h2>
+<h2><a class="anchor" id="using"></a>Using OMERO</h2>
 
 <p>Details on downloading the OMERO clients and accessing the OMERO server are in <a href="http://help.openmicroscopy.org/getting-started-5.html" target="_blank" class="external-url">Getting Started with OMERO</a> in User Help.</p>
 
@@ -66,9 +66,9 @@ version:
 
 <h2><a class="anchor" id="permissions"></a>Permissions on OMERO</h2>
 
-<p>There are three levels of user permission in OMERO, Administrator, Group Owner and User. Each level of permission allows different actions to be performed on users own or other users data, and certain administrative tasks.</p>
+<p>There are three levels of user permission in OMERO, Administrator, Group Owner and Member. Each level of permission allows different actions to be performed on a user's own, or other user's data, and certain administrative tasks.</p>
 
-<p>In brief, and practically speaking, Administrators can do anything they like to any users data, in any group (except annotate in Private groups) and Group Owners can do anything to any users data in the groups they own.</p>
+<p>In brief, and practically speaking, Administrators can do anything they like to any user's data, in any group (except annotate in Private groups) and Group Owners can do anything to any user's data in the groups they own.</p>
 
 <p>Full details of the permissions for each level of user are shown in the <a href="http://help.openmicroscopy.org/sharing-data.html#roles" target="_blank" class="external-url">User Roles</a> table in the Sharing data section of User Help.</p>
 
@@ -78,7 +78,7 @@ version:
 
 <h2><a class="anchor" id="access"></a>Access control, authentication, user accounts</h2>
 
-<p>The recommended way to control access to the OMERO server is to configure integration with your institutes authentication system (most commonly LDAP).</p>
+<p>The recommended way to control access to the OMERO server is to configure integration with your institute's authentication system (most commonly LDAP).</p>
 
 <p>See the documentation for <a href="http://www.openmicroscopy.org/site/support/omero5.2/sysadmins/server-ldap.html" target="_blank" class="external-url">LDAP configuration</a> for details. Instructions for using Active Directory are at the bottom of this page.</p>
 
@@ -378,7 +378,7 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/facilityManagerRemoveUser.jpg" class="align-center" src="images/facilityManagerRemoveUser.jpg" style="width: 100%;" />
+<img alt="../images/facilityManagerRemoveGroup.jpg" class="align-center" src="images/facilityManagerRemoveGroup.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -398,21 +398,17 @@ or
 
 <p class="first">Click on the <span class="bold">Users</span> tab.</p>
 
-<p>Click on the <span class="bold">Add new User</span> button.</p>
+<p>Click on the <span class="bold">Edit User</span> button.</p>
 
-<p>Fill in the details.</p>
+<p>Click on the <span class="bold">x</span> to the right of the user's name in the Groups list.</p>
 
-<p>Add a group to make the user a member.</p>
-
-<p>Select the users default group in the drop-down list.</p>
-
-<p>Click <span class="bold">Save</span> to save the new default group.</p>
+<p>Click <span class="bold">Save</span> to complete the change.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/facilityManagerRemoveGroup.jpg" class="align-center" src="images/facilityManagerRemoveGroup.jpg" style="width: 100%;" />
+<img alt="../images/facilityManagerRemoveUser.jpg" class="align-center" src="images/facilityManagerRemoveUser.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -423,6 +419,16 @@ or
 </ol>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2>Moving Data</h2>
+
+<p>When a user is removed from a group, any data they have in the group remains in the group, and is still owned by the user.</p>
+
+<p>Data can be moved to another group by the user before they are removed, or by the group owner or administrator at any time.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -444,11 +450,7 @@ or
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/facilityManagerRemoveUser.jpg" class="align-center" src="images/facilityManagerRemoveUser.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+<img alt="../images/facilityManagerMoveWeb.jpg" class="align-center" src="images/facilityManagerMoveWeb.jpg" style="width: 100%;" />
 
 </li>
 
