@@ -495,9 +495,9 @@ or
 
 <ul>
 
-<li>view and move data owned by users no longer a member of a group</li>
+<li>list and <a href="https://www.openmicroscopy.org/site/support/omero/users/cli/chgrp.html" target="_blank" class="external-url">move data</a> owned by users no longer a member of a group</li>
 
-<li>change ownership of data.</li>
+<li>change ownership of data</li>
 
 </ul>
 
@@ -542,7 +542,7 @@ or
 
 <p>In the Import Location window select from the <span class="bold">Group</span> drop-down box.</p>
 
-<p>Select the user to from the <span class="bold">Import For</span> drop-down box.</p>
+<p>Select the user to import for from the <span class="bold">Import For</span> drop-down box.</p>
 
 <p>The <span class="bold">Project</span> and <span class="bold">Dataset</span> drop-down boxes will list the projects and datasets available for the selected user.</p>
 
@@ -570,7 +570,7 @@ or
 
 <p>OMERO.dropbox monitors designated folders on a storage system, detects newly uploaded files and runs a fully automatic import of those files to the OMERO server if possible. User Help for OMERO.dropbox is in the <a href="http://help.openmicroscopy.org/dropbox.html" target="_blank" class="external-url">Using OMERO.dropbox</a> page.</p>
 
-<p>OMERO.dropbox runs on the same machine as the OMERO server and is started automatically when the OMERO.server starts and it will run subject to prerequisites being met. Full details on configuring and using OMERO.dropbox are in the developer documentation <a href="https://www.openmicroscopy.org/site/support/omero/sysadmins/dropbox.html" target="_blank" class="external-url">OMERO.dropbox</a> page.</p>
+<p>OMERO.dropbox runs on the same machine as the OMERO server and is started automatically when the OMERO.server starts and it will run subject to prerequisites being met. Full details on configuring and using OMERO.dropbox are in the sysadmin documentation <a href="https://www.openmicroscopy.org/site/support/omero/sysadmins/dropbox.html" target="_blank" class="external-url">OMERO.dropbox</a> page.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -673,7 +673,7 @@ or
 
 <p>More complex analysis can be done using the OMERO API that allows scripts written in Python, Matlab and other languages to use data from the OMERO server and save results back to the server.</p>
 
-<p>Further details on writing and installing scripts, the OMERO script repository and where to find other scripts are in <a href="http://www.openmicroscopy.org/site/community/scripts" target="_blank" class="external-url">Script Sharing</a> section  of the developer documentation.</p>
+<p>Further details on writing and installing scripts, the OMERO script repository and where to find other scripts are in <a href="http://www.openmicroscopy.org/site/community/scripts" target="_blank" class="external-url">Script Sharing</a> page.</p>
 
 <p>Further details of using MATLAB and Python in conjunction with OMERO are in the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/matlab-scripts.html" target="_blank" class="external-url">Matlab and Python</a> section of the developer documentation.</p>
 
@@ -697,7 +697,7 @@ or
 
 <h2><a class="anchor" id="disk"></a>Disk usage</h2>
 
-<p>System administrators can view disk usage using the OMERO.web Admin tab. The disk usage reported reflects only data owned by the users or groups. Files that are uploaded to the server, or created in situ, and attached to Projects, Datasets or Images, are not included in the disk usage statistics.</p>
+<p>System administrators can view disk usage using the OMERO.web Admin tab. The disk usage reported reflects only the image data owned by the users or groups. Files that are uploaded, or created in situ, and attached to Projects, Datasets or Images, are not included in the disk usage statistics.</p>
 
 <ol>
 
@@ -726,7 +726,7 @@ or
 
 <h2><a class="anchor" id="email"></a>Emailing users</h2>
 
-<p>The OMERO server can be configured so that administrators can use the OMERO.web Admin screen to email users through the OMERO system. Details on the configuration properties for mail are on <a href="https://www.openmicroscopy.org/site/support/omero/sysadmins/config.html#mail" target="_blank" class="external-url">Configuration properties glossary</a> in the developer documentation.</p>
+<p>The OMERO server can be configured so that administrators can use the OMERO.web Admin screen to email users through the OMERO system. Details on the configuration properties for mail are on <a href="https://www.openmicroscopy.org/site/support/omero/sysadmins/config.html#mail" target="_blank" class="external-url">Configuration properties glossary</a> in the sysadmin documentation.</p>
 
 <p>Recipients can be selected from all users, specific users or specific groups.</p>
 
@@ -759,7 +759,7 @@ or
 
 <p>OMERO and Bio-Formats are developed and released independently, so new releases of Bio-Formats that address bugs or enable new data type handling are not held up by OMERO development and vice versa.</p>
 
-<p>OMERO point releases i.e. 5.2.x occur approximately quarterly, and breaking releases i.e. 5.x roughly bi-annually. Clients and servers are backwardly compatible for point releases, but not for breaking releases.</p>
+<p>OMERO point releases, i.e. 5.2.x, occur regularly, and clients and servers are backwardly compatible for these. This is not the case for breaking releases, i.e. 5.x.</p>
 
 <p>Given the number of server operating systems, clients and components involved in OMERO, the matrix of versions and compatibility is large. If you are in any doubt about the suitability for upgrade of your particular installation, draw on the wide experience of the OMERO community via the <a href="http://www.openmicroscopy.org/community/" target="_blank" class="external-url">OME Forums</a> or <a href="http://www.openmicroscopy.org/site/community/mailing-lists" target="_blank" class="external-url">OME Mailing Lists</a>, giving as much detail as you can.</p>
 
@@ -775,7 +775,7 @@ or
 
 <p>The full OMERO.web viewer can be embedded in pages as a customisable OMERO viewport. The level of interactivity can be set by adding buttons, links or scalebars etc. as desired. Details on the viewport can be seen in <a href="https://www.openmicroscopy.org/site/support/omero/developers/Web/ViewPort.html#embedding-web-viewport" target="_blank" class="external-url">Customizing the content of the embedded OMERO.web viewport</a>.</p>
 
-<p>OMERO is widely used as the basis for public data repositories. OMERO.gallery provides a basic gallery front end based on the Group-Project-Dataset-Image, and is a good starting point to develop a bespoke front end. Full documentation on how to set up OMERO as a public repository and details of customisation options can be found in the OMERO Repository documentation.</p>
+<p>OMERO is widely used as the basis for public data repositories. OMERO.gallery provides a basic gallery front end based on the Group-Project-Dataset-Image, and is a good starting point to develop a bespoke front end. Full documentation on how to set up OMERO as a public repository and details of customisation options can be found in the <a href="https://www.openmicroscopy.org/site/support/omero/sysadmins/index.html#optimizing-omero-as-a-data-repository" target="_blank" class="external-url">OMERO Repository</a> documentation.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -783,7 +783,7 @@ or
 
 <h2><a class="anchor" id="training"></a>Getting users started</h2>
 
-<p>Experience has indicated that an effective way of getting users started with OMERO is by including a short introduction to OMERO when users are given their introduction to the microscopy facilities. As this is when the users are establishing their data workflows, and establishing file storage systems, ensuring log-ins working and the user is in the correct groups and knows which group to save data to at this stage saves confusion at a later stage.</p>
+<p>Experience indicates that including a short introduction to OMERO when users have their induction to the microscopy facility is a very effective way of getting them started. This helps avoid confusion when the users are establishing their data workflows and setting up file storage systems. It also ensures that the OMERO server names are correctly entered, login works, and they are members of the appropriate groups and can import data into these from the start.</p>
 
 <p>There are a number of training resources available on the User Help website, including printable “Getting Started” sections, which can be customised with URLs and server names. Details are on the <a href="http://help.openmicroscopy.org/resources.html" target="_blank" class="external-url">Training Course Material</a> page.</p>
 
