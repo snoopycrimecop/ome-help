@@ -229,6 +229,13 @@ img.header-right {
 	margin-right: 3px;
 }
 
+img.flag-left {
+	float: left;
+	margin-left: -4px;
+	padding-right: 10px;
+}
+}
+
 /*Caption*/
 
 #page-body .caption {
