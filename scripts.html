@@ -61,19 +61,13 @@ version:
 
 <h2><a class="anchor" id="metadata"></a>Populate Metadata Script</h2>
 
-<p>The Populate Metadata script allows the upload of metadata associated with High Content Screening (HCS) data.</p>
+<p>The Populate Metadata script allows the upload of metadata or analysis results associated with High Content Screening (HCS) data.</p>
 
-<p>The metadata to be uploaded must be in Comma Separated Values format (<span class="code-example">.csv</span>) with a line of entries for each Well in the Plate. The data in the <span class="code-example">.csv</span> must be formatted appropriately, depending on whether it is being used to populate a Screen or a Plate with metadata. Detailed guidelines can be seen on the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page. Example metadata files for a Screen, <span class="code-example">populateMetadata_example_Screen.csv</span>, and a Plate, <span class="code-example">populateMetadata_example_Plate.csv</span>, can be downloaded from the OME <a href="http://downloads.openmicroscopy.org/resources/" target="_blank" class="external-url">resources</a> page.</p>
+<p>The metadata to be uploaded must be in Comma Separated Values format (<span class="code-example">.csv</span>) with a line of entries for each Well in a Plate. The data in the <span class="code-example">.csv</span> must be formatted appropriately, depending on whether it is being used to populate a Screen or a Plate with metadata.</p>
 
+<p>Detailed guidelines can be seen on the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
 
-<p>After metadata population, in OMERO.web the metadata will appear in the Table accordion tab in the right-hand pane, for each Well in the Plate(s). In OMERO.insight the table is shown next to the Plate map at the bottom of the Screens tab in the left-hand pane.</p>
- 
-<p>The column headers from the <span class="code-example">.csv</span> become the row titles and the values in each row are read from the row in the <span class="code-example">.csv</span> corresponding with that Well. 
-</p>
-
-<p>To illustrate, a <span class="code-example">.csv</span> file with the contents shown would give a Table on Well A1 as follows (viewed in OMERO.web):</p>
-
-<img alt="../images/scriptsPopulateMetadata.jpg" class="align-center" src="images/scriptsPopulateMetadata.jpg" style="width: 100%;" />
+<p>Example metadata files for a Screen, <span class="code-example">populateMetadata_example_screen.csv</span>, and a Plate, <span class="code-example">populateMetadata_example_plate.csv</span>, can be downloaded from the OME <a href="http://downloads.openmicroscopy.org/resources/" target="_blank" class="external-url">resources</a> page.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -81,9 +75,27 @@ version:
 
 <ol class="step">
 
-<li><p class="first">Select the Screen or Plate and attach the metadata <span class="code-example">.csv</span> file to it.</p>
+<li><p class="first">Select the Screen or Plate and attach the metadata <span class="code-example">.csv</span> file to it using the <span class="bold">+</span> button under the Attachments tab.</p>
 
-<p>If there is more than one <span class="code-example">.csv</span> file attached to the Screen or Plate, click on the <span class="bold">Select for Script</span> button above the attachments.</p>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsAddAttachment.jpg" class="align-center" src="images/scriptsAddAttachment.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">If there is more than one <span class="code-example">.csv</span> file attached to the Screen or Plate, click on the <span class="bold">Select for Script</span> button above the attachments.</p>
 
 <p>Check the checkbox on the <span class="code-example">.csv</span> attachment containing the metadata to be imported.</p>
 
@@ -197,7 +209,7 @@ version:
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">A file called <span class="code-example">bulk_annotations</span> will be attached to the Screen or Plate the script was run against. This is the PyTable that contains the annotations for the Wells and must not be removed or deleted.</p>
+<p class="note-text">A file called <span class="code-example">bulk_annotations</span> will be attached to the Screen or Plate the script was run against. This is the OMERO.table file (PyTable) that contains the annotations for the Wells and must not be removed or deleted.</p>
 </div><!-- End note -->
 
 <div class="line-block">
