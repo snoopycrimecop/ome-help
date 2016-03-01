@@ -4,16 +4,262 @@ title: Using Scripts
 menu-id: l1-workflow2
 pdfs:
     - scripts.pdf
-description: Scripts allow users to add server-side functionality to the OMERO clients.
+description: Scripts allow additional server-side functionality to be added by users to the OMERO clients.
 version:
     - yes
+redirect_from:
+  - /utility-scripts.html
 ---
-<p>As well as scripts for exporting images and figures, OMERO.insight also
-includes &#8216;Util Scripts&#8217; to add other functionality.</p>
 
-<div class="section" id="channel-offsets">
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#introduction">Introduction</a><br />
+<a href="#metadata">Populate Metadata Script</a><br />
+<a href="#utility">Utility Scripts</a><br />
 
-<h2>Channel offsets</h2>
+</p>
+</div><!-- End Page Navigation -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
+
+<p>As well as scripts for exporting images and figures, OMERO.insight and OMERO.web also include a scripts menu for additional scripts. OMERO comes with some scripts pre-installed, to add functionality such as the Populate Metadata (under the &#8216;import_scripts&#8217; item in the menu) and &#8216;utility scripts&#8217;. Custom scripts can be installed on the server by the system administrator so they are available to all users. For details see the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
+
+<p>Click on the <span class="bold">Scripts</span> menu button and select the script to be run from the sub-menu.</p>
+
+<h2>OMERO.insight:</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsMenuInsight.jpg" class="align-left" src="images/scriptsMenuInsight.jpg" style="width: 68%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2>OMERO.web:</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsMenuWeb.jpg" class="align-center" src="images/scriptsMenuWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="metadata"></a>Populate Metadata Script</h2>
+
+<p>The Populate Metadata script allows the upload of metadata or analysis results associated with High Content Screening (HCS) data.</p>
+
+<p>The metadata to be uploaded must be in Comma Separated Values format (<span class="code-example">.csv</span>) with a line of entries for each Well in a Plate. The data in the <span class="code-example">.csv</span> must be formatted appropriately, depending on whether it is being used to populate a Screen or a Plate with metadata (see below).</p>
+
+<p>Detailed guidelines can be seen on the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
+
+<p>Example metadata files for a Screen, <span class="code-example">populateMetadata_example_screen.csv</span>, and a Plate, <span class="code-example">populateMetadata_example_plate.csv</span>, can be downloaded from the OME <a href="http://downloads.openmicroscopy.org/resources/" target="_blank" class="external-url">resources</a> page.</p>
+
+<p>The column headers from the <span class="code-example">.csv</span> become the row titles and the values in each row are read from the row in the <span class="code-example">.csv</span> corresponding with that Well.</p>
+
+<p>To illustrate, a <span class="code-example">.csv</span> file with the contents shown would give a Table on Well A1 as follows (viewed in OMERO.web):</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsPopulateMetadata.jpg" class="align-center" src="images/scriptsPopulateMetadata.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Populating a Plate with Metadata or Analysis Results</h3>
+
+<ol class="step">
+
+<li><p class="first">Select the Screen or Plate and attach the metadata <span class="code-example">.csv</span> file to it using the <span class="bold">+</span> button under the Attachments tab.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsAddAttachment.jpg" class="align-center" src="images/scriptsAddAttachment.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">If there is more than one <span class="code-example">.csv</span> file attached to the Screen or Plate, click on the <span class="bold">Select for Script</span> button above the attachments.</p>
+
+<p>Check the checkbox on the <span class="code-example">.csv</span> attachment containing the metadata to be imported.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsAttachmentWeb.jpg" class="align-center" src="images/scriptsAttachmentWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsAttachmentInsight.jpg" class="align-center" src="images/scriptsAttachmentInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Click on the <span class="bold">Scripts</span> menu button and select <span class="bold">import_scripts > Populate Metadata</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsRunWeb.jpg" class="align-center" src="images/scriptsRunWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsRunInsight.jpg" class="align-center" src="images/scriptsRunInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">In the Populate Metadata script window the ID number of the selected Screen or Plate should be in the <span class="bold">IDs</span> text box.</p>
+
+<p>Click <span class="bold">Run Script</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsWindow.jpg" class="align-center" src="images/scriptsWindow.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">When the script has run, in OMERO.web, click on the <span class="bold">Tables</span> accordion tab in the right-hand General pane to view the metadata attached to each Well.</p>
+
+<p>In OMERO.insight the table is shown next to the Plate map at the bottom of the Screens tab in the left-hand pane.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/scriptsMetadata.jpg" class="align-center" src="images/scriptsMetadata.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">A file called <span class="code-example">bulk_annotations</span> will be attached to the Screen or Plate the script was run against. This is the OMERO.table file (PyTable) that contains the annotations for the Wells. This attachment must not be removed or deleted unless you want to remove all the annotations..</p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Populating a Screen with Metadata or Analysis Results
+</h3>
+
+<p>This is exactly the same procedure as described for the Plate above, but the metadata <span class="code-example">.cvs</span> file is attached to a Screen and then used by the script.</p>
+
+<p>If metadata is to be added to several or all Plates in a Screen then a column with the Plate name should be included in the .csv and the metadata will be attached to the Screen.</p>
+
+<p>If metadata is to be added to a single Plate, then the Plate name column can be omitted, and the metadata will be attached to the Plate the metadata <span class="code-example">.cvs</span> file is attached to when the script is run.</p>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="utility"></a>Utility Scripts</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Channel offsets</h3>
 
 <p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/ChannelOffsets-4.3.mov">MOVIE: channel offsets demo</a></p>
 
@@ -25,11 +271,12 @@ several images at once, placing the new images in the same Dataset as
 the source images by default, or in a new Dataset if the &#8220;New Dataset
 Name&#8221; parameter is filled out.</p>
 
-</div><!-- End section -->
 
-<div class="section" id="dataset-to-plate">
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<h2>Dataset to Plate</h2>
+<h3>Dataset to Plate</h3>
 
 <p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/Dataset_To_Plate-4.3.2.mov">MOVIE: Dataset to Plate demo</a></p>
 
@@ -40,11 +287,11 @@ size of the row or column and how they are named.</p>
 
 <p>View the movie above to see a demonstration of this script.</p>
 
-</div><!-- End section -->
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<div class="section" id="combine-images">
-
-<h2>Combine images</h2>
+<h3>Combine images</h3>
 
 <div class="figure align-center">
 <img alt="Combine\_Images screen-shot" src="images/Combine_Images.png" style="width: 55%;" />
@@ -70,10 +317,7 @@ dimensions are (see below).</p>
 <p>Optionally you can specify colors and names for the channels in the new
 image.</p>
 
-</div><!-- End section -->
-
-<div class="section" id="auto-define-dimensions">
-<h3>Auto define dimensions</h3>
+<h4>Auto define dimensions</h4>
 
 <p>This option is chosen by default. This method uses the names of each
 image to try and identify the Z, T or C index. The user should choose
@@ -98,10 +342,11 @@ ignored and the Z-size of the first image will be used instead.</p>
 
 </div><!-- End note -->
 
-</div><!-- End section -->
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<div class="section" id="manually-define-dimensions">
-<h3>Manually define dimensions</h3>
+<h4>Manually define dimensions</h4>
 
 <p>With this option, the images are combined in the same order that they
 appear when sorted alphabetically (default in OMERO.insight). If you want to
@@ -149,10 +394,6 @@ calculated by the script.</p>
 
 <p>If the input images are Z stacks, you do not need to specify a Z
 dimension (it will be ignored if you do).</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
