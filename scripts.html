@@ -7,6 +7,8 @@ pdfs:
 description: Scripts allow additional server-side functionality to be added by users to the OMERO clients.
 version:
     - yes
+redirect_from:
+  - /utility-scripts.html
 ---
 
 <div class="page-navigation">
@@ -25,7 +27,7 @@ version:
 
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>As well as scripts for exporting images and figures, OMERO.insight and OMERO.web also include a scripts menu for additional scripts. OMERO comes with some scripts pre-installed, to add functionality such as the Populate Metadata and &#8216;utility scripts&#8217;. Custom scripts can be installed on the server by the system administrator so they are available to all users. For details see the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
+<p>As well as scripts for exporting images and figures, OMERO.insight and OMERO.web also include a scripts menu for additional scripts. OMERO comes with some scripts pre-installed, to add functionality such as the Populate Metadata (under the &#8216;import_scripts&#8217; item in the menu) and &#8216;utility scripts&#8217;. Custom scripts can be installed on the server by the system administrator so they are available to all users. For details see the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
 
 <p>Click on the <span class="bold">Scripts</span> menu button and select the script to be run from the sub-menu.</p>
 
@@ -63,15 +65,31 @@ version:
 
 <p>The Populate Metadata script allows the upload of metadata or analysis results associated with High Content Screening (HCS) data.</p>
 
-<p>The metadata to be uploaded must be in Comma Separated Values format (<span class="code-example">.csv</span>) with a line of entries for each Well in a Plate. The data in the <span class="code-example">.csv</span> must be formatted appropriately, depending on whether it is being used to populate a Screen or a Plate with metadata.</p>
+<p>The metadata to be uploaded must be in Comma Separated Values format (<span class="code-example">.csv</span>) with a line of entries for each Well in a Plate. The data in the <span class="code-example">.csv</span> must be formatted appropriately, depending on whether it is being used to populate a Screen or a Plate with metadata (see below).</p>
 
 <p>Detailed guidelines can be seen on the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
 
 <p>Example metadata files for a Screen, <span class="code-example">populateMetadata_example_screen.csv</span>, and a Plate, <span class="code-example">populateMetadata_example_plate.csv</span>, can be downloaded from the OME <a href="http://downloads.openmicroscopy.org/resources/" target="_blank" class="external-url">resources</a> page.</p>
 
+<p>The column headers from the <span class="code-example">.csv</span> become the row titles and the values in each row are read from the row in the <span class="code-example">.csv</span> corresponding with that Well.</p>
+
+<p>To illustrate, a <span class="code-example">.csv</span> file with the contents shown would give a Table on Well A1 as follows (viewed in OMERO.web):</p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+
+<img alt="../images/scriptsPopulateMetadata.jpg" class="align-center" src="images/scriptsPopulateMetadata.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Populating a Plate with Metadata or Analysis Results</h3>
 
 <ol class="step">
 
@@ -209,12 +227,25 @@ version:
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">A file called <span class="code-example">bulk_annotations</span> will be attached to the Screen or Plate the script was run against. This is the OMERO.table file (PyTable) that contains the annotations for the Wells and must not be removed or deleted.</p>
+<p class="note-text">A file called <span class="code-example">bulk_annotations</span> will be attached to the Screen or Plate the script was run against. This is the OMERO.table file (PyTable) that contains the annotations for the Wells. This attachment must not be removed or deleted unless you want to remove all the annotations..</p>
 </div><!-- End note -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Populating a Screen with Metadata or Analysis Results
+</h3>
+
+<p>This is exactly the same procedure as described for the Plate above, but the metadata <span class="code-example">.cvs</span> file is attached to a Screen and then used by the script.</p>
+
+<p>If metadata is to be added to several or all Plates in a Screen then a column with the Plate name should be included in the .csv and the metadata will be attached to the Screen.</p>
+
+<p>If metadata is to be added to a single Plate, then the Plate name column can be omitted, and the metadata will be attached to the Plate the metadata <span class="code-example">.cvs</span> file is attached to when the script is run.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
