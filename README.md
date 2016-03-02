@@ -74,17 +74,29 @@ description metadata and text and whether to display the Current OMERO Version n
 Pages can be written in HTML or Markdown.
 They have a short header and then the page content in the form:
 
-/---
-layout: default
-title: Getting Started with OMERO.insight Version 5.0.3
-menu-id: l1-quickstart
-pdfs:
-    - getting-started-5.pdf
-description: Metadata header for each page.
-version:
-    - yes
-/---
-<page content>
+    /---
+    layout: default
+    title: Getting Started with OMERO.insight
+    menu-id: l1-quickstart
+    pdfs:
+        - getting-started-5.pdf
+    description: Metadata header for each page.
+    version:
+        - yes
+    redirect_from:
+      - /old-page.html
+    /---
+    <page content>
+
+These are used as follows:
+
+- layout: indicates the .html layout file to be used for the page.
+- title: appears in the banner at the top of the page.
+- menu-id: indicates the level and place in the navigation structure.
+- pdfs: the PDF file generated from the Word document on OME downloads site.
+- description: Metadata header for each page.
+- version: flag to show/not show the OMERO version number bottom left in the page header banner.
+- redirect_from: /name of page - allows redirect to this page from page that has been superceded/replaced by this one. 
 
 **CSS**
 
@@ -153,20 +165,14 @@ For all:
 
 - the index.html page (currently 1 occurrence in page text)
 - the appropriate menu entry(s) in default.html (only number releases i.e. 5 -> 6)
-- the “title:" in relevant HTML pages - getting-started-5.html and 
-  importing-5.html (only point releases)
-- the heading in the relevant Word .doc file (only point releases)
 - the version number in two screenshots in the relevant .graffle file -
   Downloads and Zips. Note: the version numbers are added as editable text in
   the Version 5.x Omnigraffle canvases. The new versions of the screenshots
   are saved with the same name over-writing the previous version.
 - the new versions of the screenshots need to be placed in the images/ folder.
-- new versions of the PDF need to be generated
-- a new ZIP archive file for all the PDFs for that version generated i.e one
-for  5.x (with the appropriate sections for the  new versions
-included).
-- the previous version ZIP archive file becomes the reference archive for that
-version - linked to from the ”Previous” page.
+- a new ZIP archive file for all the PDFs for that version generated i.e one for  5.x (with the appropriate sections for the  new versions included).
+- add last version of archive - the previous version of ZIP archive file becomes the reference archive for that version - linked to from previous.html page.
+- update version number and link on Training Course Material page - resources.html.
 
 Note:
 Only the OMERO clients, OMERO.figure and related workflow PDFs are included in this archive.
@@ -176,23 +182,22 @@ the archive, so copies of previous versions should be archived as appropriate.
 **Specific Version Pages**
 
 For Version 5.x:
-getting-started-5.html - the title and the description in the page header +
-Downloads and Zips screenshots
-importing-5.html - the title and the description in the page header +
-Downloads and Zips screenshots
 
-
-index page - latest release version number (forth paragraph), and any
+- getting-started-5.html - the title and the description in the page header +
+Downloads and Zips screenshots
+- importing-5.html - the title and the description in the page header +
+Downloads and Zips screenshots
+- index page - latest release version number (forth paragraph), and any
 references in the “New Features” section
 
 Links need to be updated in:
 
-resources.html - version number and size updated
-previous.html - links to previous version ZIP archive added (can be pasted from previous version listed in resources.html)
+- resources.html - version number and size updated
+- previous.html - links to previous version ZIP archive added (can be pasted from previous version listed in resources.html)
 
 **Licensing**
 
-© Copyright Open Microscopy Environment 2000 - 2014.
+© Copyright Open Microscopy Environment 2000 - 2016.
 All material is covered by the
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 You are free to share or adapt content as long as you credit the Open
