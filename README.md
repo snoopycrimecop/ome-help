@@ -182,19 +182,18 @@ the archive, so copies of previous versions should be archived as appropriate.
 **Specific Version Pages**
 
 For Version 5.x:
-getting-started-5.html - the title and the description in the page header +
-Downloads and Zips screenshots
-importing-5.html - the title and the description in the page header +
-Downloads and Zips screenshots
 
-
-index page - latest release version number (forth paragraph), and any
+- getting-started-5.html - the title and the description in the page header +
+Downloads and Zips screenshots
+- importing-5.html - the title and the description in the page header +
+Downloads and Zips screenshots
+- index page - latest release version number (forth paragraph), and any
 references in the “New Features” section
 
 Links need to be updated in:
 
-resources.html - version number and size updated
-previous.html - links to previous version ZIP archive added (can be pasted from previous version listed in resources.html)
+- resources.html - version number and size updated
+- previous.html - links to previous version ZIP archive added (can be pasted from previous version listed in resources.html)
 
 **Licensing**
 
