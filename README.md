@@ -74,28 +74,29 @@ description metadata and text and whether to display the Current OMERO Version n
 Pages can be written in HTML or Markdown.
 They have a short header and then the page content in the form:
 
-/---
-layout: default
-title: Getting Started with OMERO.insight
-menu-id: l1-quickstart
-pdfs:
-    - getting-started-5.pdf
-description: Metadata header for each page.
-version:
-    - yes
-redirect_from:
-  - /old-page.html
-/---
-<page content>
+    /---
+    layout: default
+    title: Getting Started with OMERO.insight
+    menu-id: l1-quickstart
+    pdfs:
+        - getting-started-5.pdf
+    description: Metadata header for each page.
+    version:
+        - yes
+    redirect_from:
+      - /old-page.html
+    /---
+    <page content>
 
 These are used as follows:
-layout: indicates the .html layout file to be used for the page.
-title: appears in the banner at the top of the page.
-menu-id: indicates the level and place in the navigation structure.
-pdfs: the PDF file generated from the Word document on OME downloads site.
-description: Metadata header for each page.
-version: flag to show/not show the OMERO version number bottom left in the page header banner.
-redirect_from: /name of page - allows redirect to this page from page that has been superceded/replaced by this one. 
+
+- layout: indicates the .html layout file to be used for the page.
+- title: appears in the banner at the top of the page.
+- menu-id: indicates the level and place in the navigation structure.
+- pdfs: the PDF file generated from the Word document on OME downloads site.
+- description: Metadata header for each page.
+- version: flag to show/not show the OMERO version number bottom left in the page header banner.
+- redirect_from: /name of page - allows redirect to this page from page that has been superceded/replaced by this one. 
 
 **CSS**
 
