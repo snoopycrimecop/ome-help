@@ -198,7 +198,7 @@ previous.html - links to previous version ZIP archive added (can be pasted from 
 
 **Licensing**
 
-© Copyright Open Microscopy Environment 2000 - 2014.
+© Copyright Open Microscopy Environment 2000 - 2016.
 All material is covered by the
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 You are free to share or adapt content as long as you credit the Open
