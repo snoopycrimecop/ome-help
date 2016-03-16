@@ -5,7 +5,7 @@ rvm: 2.2.2
 install: bundle install
 script:
     - bundle exec jekyll build --config _config_dev.yml
-    - bundle exec htmlproof ./_site --disable-external --alt-ignore "\/images\/.*.gif"
+    - bundle exec htmlproofer ./_site --disable-external --alt-ignore "\/images\/.*.gif"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
