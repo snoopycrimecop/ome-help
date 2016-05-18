@@ -1,6 +1,15 @@
 ---
 navigation:
     - id: l1-home
+      name: SLS OMERO Server - Nightshade
+      href: sls-index.html
+    - id: l1-start
+      name: SLS OMERO Server Getting Started
+      href: sls-getting-started.html
+    - id: l1-public
+      name: Publishing Data using Nightshade
+      href: sls-public-demo.html
+    - id: l1-ome
       name: OMERO User Help Home Page
       href: http://www.help.openmicroscopy.org" target="_blank
 ---
@@ -54,32 +63,45 @@ navigation:
 
                     <div id="banner">
                         <p><img src="{{ site.baseurl }}/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+                        
                         <h1>User Help</h1>
+                        
+                        <div class="line-block">
+                        <div class="line"><br /></div> <!-- end #line -->
+                        </div> <!-- end #line-block -->
+                        
+                        <h2>School of</h2>
+                        
+                        <h2>Life Sciences</h2>
+                        
+                        <p><img src="{{ site.baseurl }}/images/uni-logo-grey.png" alt="UoD logo" /></p>
+                        
+                        <div class="line-block">
+                        <div class="line"><br /></div> <!-- end #line -->
+                        </div> <!-- end #line-block -->
+                        
                     </div> <!-- banner -->
 
-<!-- Level 1 List -->
-
+                    <!-- Level 1 List -->
+                    <ul class="level1" id="toggle-1">
+                    
+                    <ul class="level1"><a href="sls-index.html">SLS OMERO Home</a></ul>
+                    
+                    <ul class="level1"><a href="sls-getting-started.html">SLS OMERO Getting Started</a></ul>
+                    
+                    <ul class="level1"><a href="sls-public-demo.html">Publishing Data using Nightshade</a></ul>
+                    
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+                    
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+                    
                     <ul class="level1"><a href="http://help.openmicroscopy.org/" target="_blank">Main OMERO User Help Site</a></ul>
 
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
+                    </ul><!-- End Level 1 List -->
 
                     <div id="footer">
 
@@ -98,6 +120,10 @@ navigation:
                         {% endfor %}
                         
                          <h1>{{ page.title }}</h1>
+                         
+                        {% for yes in page.version %}
+                        <div class="version-flag">Current OMERO Version:&nbsp;&nbsp;&nbsp;5.2.3</div>
+                        {% endfor %}
                          
                     </div> <!-- End page-header -->
                     <div id="page-body">
