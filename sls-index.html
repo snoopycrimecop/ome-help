@@ -2,406 +2,75 @@
 layout: sls
 title: Getting Started with SLS OMERO
 pdfs:
-    - sls-omero.pdf
 description: The University of Dundee School of Life Sciences (SLS) has an OMERO server enabling students and staff to store image data centrally. The OMERO.insight client enables uploading, viewing and downloading of data from any computer or laptop on or off-campus.
 version:
     - yes
-redirect_from:
-  - /cls-getting-started.html
 ---
-<div class="page-navigation">
-<h2>Contents</h2>
-<p>
-<a href="#introduction">Introduction</a><br />
-<a href="#insight">Installing OMERO.insight</a><br />
-<a href="#login">Entering server name and logging in</a><br />
-<a href="#groups">Joining groups</a><br />
-<a href="#importing">Importing image data</a><br />
-<a href="#web">Using OMERO.web</a><br />
-<a href="#help">Help and support</a><br />
-</p>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-</div><!-- End Page Navigation -->
+<h2>SLS OMERO Server - Nightshade</h2>
+
+<p>The School of Life Sciences in Dundee has an OMERO server called Nightshade for the use of all staff and students with a Life Sciences Computing login. OMERO is a system that allows you to store your image data centrally and then access if from on or off campus.</p>
+
+<p>There are two OMERO clients, OMERO.insight, a Java-based desktop client, and OMERO.web, a browser based client. Either of these can be used to view and download data on-campus or remotely. OMERO.insight is used for uploading and analysing data.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<h2><a class="anchor" id="introduction"></a>Introduction</h2>
-
-<p>School of Life Sciences has an OMERO server called Nightshade that allows you to store image data centrally. You can use the OMERO.insight client to upload, view and download data from any computer or laptop on or off-campus.</p>
-
-<p>Your SLS username and password are used to log into the OMERO server, using the URLs given below. Your OMERO account is automatically created the first time you log in and if you change your SLS password, OMERO will automatically reflect this update.</p>
+<img alt="../images/slsClients.jpg" class="align-center" src="images/slsClients.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<h2><a class="anchor" id="insight"></a>Installing OMERO.insight</h2>
+<p>Your SLS username and password are used to log into the OMERO server, and your OMERO account is automatically created the first time you log in. If you subsequently change your SLS password, OMERO will automatically reflect this update.</p>
 
-<p>For Windows machines, or Apple Macs where the user has administrative privileges, follow the instructions for downloading and installing in steps 1 and 2 below.</p>
+<p>The <a href="http://help.openmicroscopy.org/sls-getting-started.html">SLS OMERO Getting Started</a> page has full details of how to log in and use Nightshade</p>
 
-<p>For Apple Mac machines with the standard SLS disc image, where users do not have administrative privileges, use the Self Service app to download OMERO as described in step 3.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<ol class="step">
-
-<li>
-
-<p class="first">Download the OMERO.insight client for your operating system from:</p>
-
-<p><span class="bold"><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="external-url">http://downloads.openmicroscopy.org/latest/omero5</a></span></p>
+<p>Once your data is on the OMERO server, you can also use any of your ImageJ, Fiji, Matlab or Python workflows or scripts to view and analyse the data.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/gettingStarted5Downloads.jpg" class="align-center" src="images/gettingStarted5Downloads.jpg" style="width: 100%;" />
+<img alt="../images/slsIntegration.jpg" class="align-center" src="images/slsIntegration.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-</li>
-
-<li><p class="first">Expand OMERO.insight client archive and move it to your home directory.</p>
+<p>OMERO.figure enables you to draw fully editable figures for publications or presentationa using data from the OMERO server in a very similar way to commonly used desktop illustration and drawing packages.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="bold">Windows:</p>
-
-<img alt="../images/gettingStarted5ZipsWin.jpg" src="images/gettingStarted5ZipsWin.jpg" style="width: 100%; class="align-center" " />
-
-<p class="bold">Mac OS X:</p>
-
-<img alt="../images/gettingStarted5ZipsMac.jpg" src="images/gettingStarted5ZipsMac.jpg" style="width: 100%; class="align-center" " />
+<img alt="../images/slsFigure.jpg" class="align-center" src="images/slsFigure.jpg" style="width: 45%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="bold">Linux:</p>
 
-<img alt="../images/gettingStarted5ZipsLinux.jpg" src="images/gettingStarted5ZipsLinux.jpg" style="width: 100%; class="align-center" " />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<div class="note">
-<p><span class="bold">Note</span></p>
-<p class="note-text">As OMERO.insight is a stand-alone Java application, and does not require installation as such, you do not need administrator privileges to install it.</p>
-<p class="note-text">On Windows, expand the .zip archive and move the OMERO.clients folder to your Documents or home directory, or the Programs folder if you have the permissions.</p>
-<p class="note-text">On a Mac move the OMERO.clients folder to your Applications folder.</p>
-<p class="note-text">Mac users on machines where they are an administrator may be blocked by a warning that OMERO.insight has been prevented from opening as it is from an unidentified developer.</p>
-<p class="note-text">Follow these instructions to adjust the security settings so OMERO.insight can run on your Mac:</p>
-
-<p><a href="https://support.apple.com/kb/PH14369?" target="_blank" class="external-url">OS X Mavericks: Open an app from an unidentified developer</a></p>
-
-</div><!-- End note -->
-
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-
-<li><p class="first">For Mac users with standard SLS disc images installed (no administrative privileges).</p>
-
-<p>Open the <span class="bold">Self Service.app</span> in the Applications folder.</p>
-
-<p>Select the <span class="bold">Scientific</span> section from the menu on the right.</p>
-
-<p>Click the <span class="bold">Install</span> button for OMERO.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/slsOmeroSelfService.jpg" src="images/slsOmeroSelfService.jpg" style="width: 100%; class="align-center" " />
-
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-
-</li>
-
-<li>
-
-<p class="first">Open the OMERO.insight client.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/gettingStarted5Apps.jpg" class="align-center" src="images/gettingStarted5Apps.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-</ol>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<h2><a class="anchor" id="login"></a>Adding server name and logging in</h2>
-
-<p>Adding the server is only required the first time an OMERO server is accessed from the computer.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<ol class="step">
-
-<li>
-
-<p class="first">Click on the <span class="bold">Spanner</span> icon.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/gettingStarted5Spanner.jpg" class="align-center" src="images/gettingStarted5Spanner.jpg" style="width: 75%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<li>
-<p class="first">In the <span class="bold">Add Server</span> dialog box, click on the <span class="bold">+</span> icon.</p>
-<p>Enter the server address:</p>
-<p><span class="bold">nightshade.openmicroscopy.org</span></p>
-<p>Click on <span class="bold">Apply</span>.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="images/slsServer.jpg" class="align-center" src="images/slsServer.jpg" style="width: 85%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<li>
-<p class="first">Enter your SLS <span class="bold">Username</span> and <span class="bold">Password</span>.</p>
-
-<p>Click on <span class="bold">Login</span>.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="images/slsLogin.jpg" class="align-center" src="images/slsLogin.jpg" style="width: 85%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<h2><a class="anchor" id="groups"></a>Joining Groups</h2>
-
-<li>
-
-<p class="first">When you log into OMERO for the first time, you will be in a "default" group, My Data, which is Private, so only you can see data you place in that group.</p> <p>Being a member of a read-only or read-annotate group in OMERO allows you to share data with other members of the group.</p>
-<p>Your lab or PI may have a group you wish to use for collaborating with colleagues.</p>
-<p>Ask your PI to add you to their group or send an email to the Nightshade 
- <!-- This code generates the email link -->
-  <!-- xxx link cut xxx -->
-  <script language="JavaScript" type="text/javascript">
-					<!-- 
-					document.write("<a href='#' onClick='get_edress();return false;'>sysadmin</a>");
-					// --> 
-				</script>
-	  <noscript>
-			  Email address protected against spammers
-	  </noscript>
-giving the names of the groups you wish to be added to.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p>More details on using groups and sharing data is on the Help page:</p>
-
-<p><a href="http://help.openmicroscopy.org/sharing-data.html" target="_blank">http://help.openmicroscopy.org/sharing-data.html</a></p>
-
-</li>
-
-</ol>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<h2><a class="anchor" id="importing"></a>Importing image data</h2>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<ol class="step">
-
-<li>
-
-<p class="first">Click the <span class="bold">Importer</span> icon to add image data.</p>
-<p>Use the <span class="bold">File Chooser</span> in the Importer window to select and queue data for import.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/gettingStarted5DataManager.jpg" class="align-center" src="images/gettingStarted5DataManager.jpg" style="width: 85%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<li>
-
-<p class="first">Specify a location for saving imported data:</p>
-
-<p class="indent1">- select a group if you are a member of more than one</p>
-
-<p class="indent1">- a new project and/or dataset can be created</p>
-
-<p class="indent1">- an existing project and/or dataset can be selected from the drop-downs</p>
-
-<p class="indent1">- a new dataset can be automatically created from the source folder</p>
-
-<p class="indent1">- click <span class="bold">Add to the Queue</span></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/gettingStarted5Project.jpg" class="align-center" src="images/gettingStarted5Project.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<li><p class="first">Data to be imported appears in queue pane.</p>
-
-<p>When ready click on <span class="bold">Import</span>.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/gettingStarted5Import.jpg" class="align-center" src="images/gettingStarted5Import.jpg" style="width: 90%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-</ol>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<h2><a class="anchor" id="web"></a>Using OMERO.web</h2>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<ol class="step">
-
-<li>
-
-<p class="first">OMERO.web allows you to view your data from any web browser with the URL:</p>
-<p><span class="bold"><a href="http://nightshade.openmicroscopy.org" target="_blank">nightshade.openmicroscopy.org</a></span></p>
-<p>You do not have to enter a server name.</p>
-<p>OMERO.web uses the same login, and has the same functionality, as OMERO.insight, except OMERO.web cannot import data or create Regions of Interest (ROIs).</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="images/slsWeb.jpg" class="align-center" src="images/slsWeb.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-</ol>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<h2><a class="anchor" id="help"></a>Help and Support</h2>
-
-<ol>
-
-<p><a class="anchor" name="help" id="help"></a>Detailed User Guides for common workflows using OMERO.insight and OMERO.web are available online and for download at:</p>
-
-<p><span class="bold"><a href="http://help.openmicroscopy.org" target="_blank">help.openmicroscopy.org</a></span></p>
-
-<p>For help to get started using OMERO or any other questions please email us at:</p>
-
-<p><span class="bold">
- <!-- This code generates the email link -->
-  <!-- xxx link cut xxx -->
-  <script language="JavaScript" type="text/javascript">
-					<!-- 
-					document.write("<a href='#' onClick='get_xdress();return false;'>Nightshade Support</a>");
-					// --> 
-				</script>
-	  <noscript>
-			  Email address protected against spammers
-	  </noscript>
-</span></p>
-
-
-</ol> <!-- end page list -->
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+<p>The OMERO <a href="http://help.openmicroscopy.org" target="_blank" class="external-url">User Help</a> web site has sections for all common OMERO workflows and for associated applications including <a href="http://help.openmicroscopy.org/figure.html" target="_blank" class="external-url">OMERO.figure</a>, <a href="http://help.openmicroscopy.org/flimfit.html" target="_blank" class="external-url">FLIMfit</a> and <a href="http://help.openmicroscopy.org/imagej.html" target="_blank" class="external-url">ImageJ/Fiji</a>.
+
+<h2>Speak to Us</h2>
+
+<p>For help with any problems speak to any member of the <a href="https://www.openmicroscopy.org/site/about/development-teams/jason" target="_blank" class="external-url">OME Team</a>, based in Jason Swedlow's lab, WTB Mezz North, and the CTIR Building Level 2, email 
+<!-- This code generates the email link -->
+<!-- xxx link cut xxx -->
+<script language="JavaScript" type="text/javascript">
+<!-- 
+document.write("<a href='#' onClick='get_edress();return false;'>Nightshade Support</a>");
+// --> 
+</script>
+<noscript>
+Email address protected against spammers
+</noscript>
+ , or speak to anyone in the Dundee Imaging Facility.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
