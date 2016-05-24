@@ -26,6 +26,14 @@ in subfolders: pdfs, archives and resources.
 To do any editing or updating you will need to install and use Jekyll with any
 dependencies required. Instructions are on the Jekyll site.
 
+**Jekyll version**
+
+Jekyll 3 [changed the way layout metadata is handled](http://jekyllrb.com/docs/upgrading/2-to-3/#layout-metadata).
+As of version 3.1.2, support for the former behaviour was withdrawn, breaking
+the website menu and requiring a fix which was not backwards compatible.
+Therefore, you should ensure you have Jekyll version 3.1.2+ to work with this
+repository.
+
 **GitHub**
 
 Clone this repository and create a branch to use for your work. You should use
