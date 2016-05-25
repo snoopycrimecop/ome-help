@@ -45,13 +45,13 @@ version:
 
 <h2><a class="anchor" id="auto"></a>Using Auto-Tagger</h2>
 
-<p>When an image is uploaded to OMERO, the original filename, including extensions and the path from which it was uploaded, can be preserved. It is common for useful metadata to be encoded into the filename and paths of data. Auto-tagger enables this metadata to be used for searching and organising the data, by the addition of annotations in the form of tags.</p>
+<p>When an image is uploaded to OMERO, the original filename, including extensions and the path from which it was uploaded, is preserved. It is common for useful metadata to be encoded into the filenames and paths of data. Auto-tagger enables this metadata to be used for searching and organising the data, by the addition of annotations in the form of tags.</p>
 
 <h3>Terminology</h3>
 
 <ul>
 
-<li>Token: a section of text which has been automatically parsed from the filename after splitting up the filename by underscore. e.g. token1_token2_token3.dv</li>
+<li>Token: a section of text which has been automatically parsed from the filename after splitting up the filename by space, period or underscore. e.g. token1_token2_token3.dv or token3 token4.dv or token5.token6.dv</li>
 
 <li>Mapping: selecting a certain tag to correspond to a certain token, e.g. the tag &#34;Deconvolved&#34; might be created from a token &#34;Deconvolved&#34;.</li>
 
