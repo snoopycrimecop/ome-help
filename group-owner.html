@@ -14,7 +14,7 @@ version:
 <p>
 <a href="#introduction">Introduction</a><br />
 <a href="#add">Adding a user to your group</a><br />
-<a href="#remove">Remove a user from your group</a><br />
+<a href="#remove">Removing a user from your group</a><br />
 <a href="#move">Moving data</a><br />
 <a href="#import">Importing data for other users</a><br />
 </p>
@@ -63,7 +63,17 @@ version:
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">If permissions are reduced to Private when one member has created output from another member's image in the group using a script, e.g. made a projection, the permissions change will fail.</p>
+<p class="note-text">The following issues will arise if the permissions of a group are reduced to Private:</p>
+
+<ul class="bullet-list">
+<li>when one member has created output from another member's image in the group using a script, e.g. made a projection, the permissions change will fail</li>
+<li>any annotations, such as ratings, tags, attachments, key-value pairs or comments, created by a member on another member’s data will be lost.</li>
+</ul>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
 </div><!-- End note -->
 
 <div class="line-block">
@@ -102,7 +112,7 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/groupOwnerEditGroup.jpg" class="align-center" src="images/groupOwnerEditGroup.jpg" style="width: 100%;" />
+<img alt="../images/groupOwnerSettings.jpg" class="align-center" src="images/groupOwnerSettings.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -120,7 +130,7 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/groupOwnerSettings.jpg" class="align-center" src="images/groupOwnerSettings.jpg" style="width: 100%;" />
+<img alt="../images/groupOwnerEditGroup.jpg" class="align-center" src="images/groupOwnerEditGroup.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -150,7 +160,7 @@ version:
 
 <p>Click on the <span class="bold">Edit Group</span> button.</p>
 
-<p>Click on the <span class="bold">X</span> to the right of the users name in the members or owners list.</p>
+<p>Click on the <span class="bold">X</span> to the right of the user&#8217s name in the members or owners list.</p>
 
 <p>Click <span class="bold">Save</span> to complete the change.</p>
 
@@ -159,7 +169,7 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/facilityManagerRemoveUser.jpg" class="align-center" src="images/facilityManagerRemoveUser.jpg" style="width: 100%;" />
+<img alt="../images/groupOwnerRemoveUser.jpg" class="align-center" src="images/groupOwnerRemoveUser.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -167,16 +177,21 @@ version:
 
 </li>
 
+</ol>
+
 <div class="note">
 <p class="note-title">Note</p>
 <p class="note-text">If a user is not a member of any other group, their name will be in a red box, and they cannot be removed from the group.</p>
-</div><!-- End note -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-</ol>
+</div><!-- End note -->
+
+<div class="line-block">
+  <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
@@ -212,22 +227,21 @@ version:
 
 </li>
 
+</ol>
+
 <div class="line-block">
   <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">Using the Command Line Interface (CLI), group owners (for data in their groups) and administrators can:</p>
+<p class="note-text">Using the Command Line Interface (CLI), group owners (for data in their groups) and administrators (who are members of the groups) can:</p>
 
-<ul>
-<li>view and move data owned by users no longer a member of a group - <a href="https://www.openmicroscopy.org/site/support/omero/users/cli/chgrp.html" target="_blank" class="external-url">chgrp</a>
-</li>
-<li>change ownership of data.
-</li>
+<ul class="bullet-list">
+<li>view and move data owned by users no longer a member of a group - <a href="https://www.openmicroscopy.org/site/support/omero/users/cli/chgrp.html" target="_blank" class="external-url">chgrp</a></li>
+<li>change ownership of data.</li>
 </ul>
 
-</ol>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -249,9 +263,7 @@ version:
 
 <p>Any data imported by a user will be owned by them and will be in a group of which they are a member. For details on importing see <a href="http://help.openmicroscopy.org/importing-data-5.html" target="_blank" class="external-url">Importing Data</a>.
 
-<p>Administrators can import data to any group for any user i.e. the data will belong to that user.</p>
-
-<p>Similarly a Group Owner can import for other members of their group.</p>
+<p>Group Owners and Administrators, who are members of the group, can import data for any user in the group i.e. the data will belong to that user.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -267,7 +279,9 @@ version:
 
 <p>Select the user to import for from the <span class="bold">Import For</span> drop-down box.</p>
 
-<p>The <span class="bold">Project</span> and <span class="bold">Dataset</span> drop-down boxes will list the projects and datasets available for the selected user.</p>
+<p>The <span class="bold">Project</span> and <span class="bold">Dataset</span> drop-down boxes will list the projects and datasets the selected user is able to import into.</p>
+
+<p>Any new projects and datasets created during the importing will belong to the user.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
