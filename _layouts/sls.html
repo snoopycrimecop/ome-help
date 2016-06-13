@@ -1,6 +1,15 @@
 ---
 navigation:
     - id: l1-home
+      name: SLS OMERO Server - Nightshade
+      href: sls-index.html
+    - id: l1-start
+      name: SLS OMERO Server Getting Started
+      href: sls-getting-started.html
+    - id: l1-public
+      name: Publishing Data using Nightshade
+      href: sls-public.html
+    - id: l1-ome
       name: OMERO User Help Home Page
       href: http://www.help.openmicroscopy.org" target="_blank
 ---
@@ -12,7 +21,11 @@ navigation:
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
-        
+
+        <meta name="keywords" content="OME, OMERO, ome, omero, OMERO.insight, OMERO.web, microscopy images, user guide, user guides" />
+
+        <meta name="description" content="{{ page.description }}" />
+
         <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" >
 
         <!-- Custom CSS -->
@@ -21,7 +34,7 @@ navigation:
         <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.js"></script>
 
         <script language="JavaScript" type="text/javascript">
-		var edress = 'nightshade-support_at_lists_dot_openmicroscopy_dot_org_dot_uk';
+        var edress = 'nightshade-support_at_lists_dot_openmicroscopy_dot_org_dot_uk';
                function get_edress(){
                   var re= /_at_/gi;
                   edress = edress.replace(re,'@');
@@ -32,19 +45,6 @@ navigation:
                }
         </script>
 
-        <script language="JavaScript" type="text/javascript">
-               var xdress = 'nightshade-support_at_lists_dot_openmicroscopy_dot_org_dot_uk';
-               function get_xdress(){
-                  var re= /_at_/gi;
-                  xdress = xdress.replace(re,'@');
-                  var re= /_dot_/gi;
-                  xdress = xdress.replace(re,'.');
-                  var the_link="mai" + "lto" +":"+xdress+"?subject=Nightshade%20Feedback" ;
-                  window.location=the_link;
-               }
-        </script>
-
-
     </head>
 
     <body>
@@ -53,33 +53,42 @@ navigation:
                 <div id="navigation">
 
                     <div id="banner">
-                        <p><img src="{{ site.baseurl }}/images/omero-logo-on-white-220.png" alt="OMERO logo" /></p>
+                        <p><img src="{{ site.baseurl }}/images/omero-logo-transparent.png" alt="OMERO logo" /></p>
+                        
                         <h1>User Help</h1>
-                    </div> <!-- banner -->
+                        
+                        <p><img src="{{ site.baseurl }}/images/uni-logo-grey.png" alt="UoD logo" /></p>
+                        
+                        <h2>School of</h2>
+                        
+                        <h2>Life Sciences</h2>
+                        
+                        <div class="line-block">
+                        <div class="line"><br /></div> <!-- end #line -->
+                        </div> <!-- end #line-block -->
+                        
+                    </div> <!-- end of banner -->
 
-<!-- Level 1 List -->
-
+                    <!-- Level 1 List -->
+                    <ul class="level1" id="toggle-1">
+                    
+                    <ul class="level1"><a href="sls-index.html">SLS OMERO Home</a></ul>
+                    
+                    <ul class="level1"><a href="sls-getting-started.html">SLS OMERO Getting Started</a></ul>
+                    
+                    <ul class="level1"><a href="sls-public.html">Publishing Data using Nightshade</a></ul>
+                    
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+                    
+                    <div class="line-block">
+                    <div class="line"><br /></div> <!-- end #line -->
+                    </div> <!-- end #line-block -->
+                    
                     <ul class="level1"><a href="http://help.openmicroscopy.org/" target="_blank">Main OMERO User Help Site</a></ul>
 
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
-
-                    <div class="line-block">
-                    <div class="line"><br /></div> <!-- end #line -->
-                    </div> <!-- end #line-block -->
+                    </ul><!-- End Level 1 List -->
 
                     <div id="footer">
 
@@ -97,7 +106,11 @@ navigation:
                         <a href="http://downloads.openmicroscopy.org/help/pdfs/{{ pdf }}" target="_blank"> <img src="{{ site.baseurl }}/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
                         {% endfor %}
                         
-                         <h1>{{ page.title }}</h1>
+                        <h1>{{ page.title }}</h1>
+                         
+                        {% for yes in page.version %}
+                        <div class="version-flag">Current OMERO Version:&nbsp;&nbsp;&nbsp;5.2.3</div>
+                        {% endfor %}
                          
                     </div> <!-- End page-header -->
                     <div id="page-body">

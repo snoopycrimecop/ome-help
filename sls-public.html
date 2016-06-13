@@ -1,0 +1,371 @@
+---
+layout: sls
+title: Publishing Data using Nightshade
+pdfs:
+- sls-public.pdf
+description: This page demonstrates the use of the School of Life Sciences (SLS) OMERO server to make images on the server viewable by people who are not registered users, for example on a web page.
+redirect_from:
+  - /cls-public-demo.html
+  - /sls-public-demo.html
+---
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#introduction">Introduction</a><br />
+<a href="#publish">Publishing Data</a><br />
+<a href="#syntax">Syntax for Links</a><br />
+<a href="#demo">Demonstration</a><br />
+<a href="#gateway">OMERO WebGateway</a><br />
+</p>
+
+</div><!-- End Page Navigation -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
+
+<p>The Public feature has been made available on the School of Life Sciences OMERO server, Nightshade.</p>
+
+<p>Selected images can be made accessible to non-OMERO account holders, via a web URL, by placing the images in the PUBLIC group in OMERO.</p>
+
+<p>Instructions on how to make data publicly available are below.</p>
+
+<p>Before you proceed, please note the following points:</p>
+
+<ul class="bullet-list">
+
+<li>Once your data is placed in the PUBLIC group it is effectively visible to the whole world without any log-in required to view it.</li>
+
+<li>As currently configured, only ROIs associated with data in the PUBLIC group will be visible to the Public User, tags, attachments, comments or ratings will not be visible.</li>
+
+<li>Public Users will be able to download a JPEG version of your images via their web browser but will not have access to the data in the original format.</li>
+
+<li>Public Users will be able to alter the rendering settings while viewing, but any changes will not be saved.</li>
+
+<li>PUBLIC group is Read-Only, so other OMERO users who are also members of the PUBLIC group will be able to access your data and annotations in the PUBLIC group on a Read-Only basis.</li>
+
+<li>Data moved from other groups into the PUBLIC group will no longer be visible in the original group. You will be able to move it back at any stage, but you should consider importing a new copy of the data into the PUBLIC group if you wish to retain the original copy in its original group.</li>
+
+</ul>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="publish"></a>Publishing Data</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li>
+
+<p class="first">You need to be made a member of the PUBLIC group on Nightshade, the SLS OMERO server before you can share data.</p>
+
+<p>To do this please email your SLS-Dundee University LDAP username to the OMERO administrator at:</p>
+ 
+<!-- This code generates the email link -->
+<!-- xxx link cut xxx -->
+<script language="JavaScript" type="text/javascript">
+<!-- 
+document.write("<a href='#' onClick='get_edress();return false;'>Nightshade Support</a>");
+// --> 
+</script>
+<noscript>
+Email address protected against spammers
+</noscript>
+
+<p>or speak to anyone in the OME team.</p>
+
+<li>
+
+<p class="first">Once you are a PUBLIC group member, log into your OMERO account as usual via OMERO.insight or OMERO.web</p>
+
+<p>If you were formerly a member of just one group on OMERO you will not have seen the <span class="bold">Group > User</span> selection menu.</p>
+
+<p>As a member of the PUBLIC group this will now be visible as shown.</p>
+
+<p>Select yourself to show your data in the PUBLIC group</p>
+
+<h3>In OMERO.insight:</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/slsPublicMenuInsight.jpg" class="align-center" src="images/slsPublicMenuInsight.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>In OMERO.web:</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/slsPublicMenuWeb.jpg" class="align-center" src="images/slsPublicMenuWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li>
+
+<p class="first">For images to be visible to the public, the data must be in the PUBLIC group.</p>
+
+<p>You remain the owner of any of your images in the PUBLIC group, and can still change rendering settings, add ROIs or annotate them.</p>
+
+<p>You can either move data from an existing group into the PUBLIC group, or you can import data directly into the PUBLIC group.</p>
+
+</li>
+
+<li>
+
+<p class="first">To move data into the PUBLIC group, select the project, dataset or images in the left hand pane.</p>
+
+<p>Right-click and select <span class="bold">PUBLIC</span> from <span class="bold">Move to ...</span> or <span class="bold">Move to Group ...</span> in the menu.</p>
+
+<p>After a confirmatory dialogue, the progress of the move will show in the <span class="bold">Activities</span> window.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/slsPublicMove.jpg" class="align-center" src="images/slsPublicMove.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li>
+
+<p class="first">To import data directly into the PUBLIC group, in the Import Location window choose <span class="bold">PUBLIC</span> from the <span class="bold">Group</span> drop-down menu.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/slsPublicImport.jpg" class="align-center" src="images/slsPublicImport.jpg" style="width: 70%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li>
+
+<p class="first">Images IDs, shown in the right pane, are used to link to images in the PUBLIC group.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/slsPublicID.jpg" class="align-center" src="images/slsPublicID.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3><a class="anchor" id="syntax"></a>Syntax for Links</h3>
+
+<li>
+
+<p class="first">To create an HTML link to the thumbnail or the full viewer display of the image, use the following syntax where <span class="red">1234</span> represents the image ID:</p>
+
+<p>HTML to embed the thumbnail:</p>
+<p class="code-example">src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/<span class="red">1234<span>/"</p>
+
+<p>Thumbnails have a default width of 64 px but can be displayed at any width by customising the thumbnail URL with the required size in pixels at the end of the URL:</p>
+
+<p class="code-example">src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/<span class="red">1234<span>/200/"</p>
+
+<p>HTML for the link to the full image in the image viewer:</p>
+
+<p class="code-example">src="https://nightshade.openmicroscopy.org/webgateway/img_detail/<span class="red">1234<span>"</p>
+
+</li>
+
+<li>
+
+<p class="first">Viewing an image in the full viewer, the public user can zoom, scroll, step through Z or T sections, adjust rendering settings and view ROIs and basic image details.</p>
+
+<p>Any changes made will not be saved.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/slsPublicViewer.jpg" class="align-center" src="images/slsPublicViewer.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>Data from JCB: Civelekoglu-Scholey et al., JCB, doi: 10.1083/jcb.200908150</p>
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li>
+
+<p class="first">Nightshade also allows file attachments on images to be downloaded using a URL.</p>
+
+<p>Attach the file to the image in PUBLIC group.</p>
+
+<p>Expand the <span class="bold">Attachments</span> tab in the right-hand pane, hover the cursor over the attachment and make a note of the Annotation ID shown.</p>
+
+<p>To create an HTML link to download the file, use the following syntax, where <span class="red">56789</span> represents the Annotation ID of the attachment:</p>
+
+<p class="code-example">https://nightshade.openmicroscopy.org/webclient/annotation/<span class="red">56789</span>/"</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/slsPublicAttachment.jpg" class="align-center" src="images/slsPublicAttachment.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="demo"></a>Demonstration</h2>
+
+<p>The section below demonstrates the use of the School of Life Sciences OMERO server Nightshade to make images on the server viewable by people who are not registered users, for example on a web lab page.</p>
+
+<p>Clicking on the thumbnail will open the image in the full viewer. The image can be zoomed and scrolled, rendering settings changed and ROI's viewed. Changes to settings will not be saved.</p>
+
+<p>View the page source to see the HTML for the gallery.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2>Thumbnail Gallery</h2>
+
+<p>Click on a thumbnail to see the image in the full OMERO.web viewer (opens in a new tab).</p>
+
+<div class="gallery">
+
+<div class="gallery-image">
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925540" target="_blank" ><img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925540/200/" alt="Thumbnail of ID:3925540"/></a>
+  
+<div class="desc">Wild type lamin-B envelope</div>
+<div class="attribute">Data from JCB: Civelekoglu-Scholey et al.,<br/>JCB, doi: <a href="http://jcb.rupress.org/content/188/1/49">10.1083/jcb.200908150</a></div>
+</div>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-image">
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925541" target="_blank"><img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925541/96/" alt="Thumbnail of ID:3925541"/></a>
+  
+<div class="desc">P-TRE_12_R3D_D3D</div>
+
+</div>
+
+<div class="gallery-image">
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925542" target="_blank"><img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925542/96/" alt="Thumbnail of ID:3925542"/></a>
+  
+<div class="desc">P-TRE_15_R3D_D3D</div>
+
+</div>
+
+<div class="gallery-image">
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925543" target="_blank"><img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925543/96/" alt="Thumbnail of ID:3925543"/></a>
+
+<div class="desc">P-TRE_19_R3D_D3D</div>
+
+</div>
+
+<p>Download the <a href="https://nightshade.openmicroscopy.org/webclient/annotation/358508/">intensity results</a> for P-TRE_19_R3D_D3D as a spreadsheet.</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-image">
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925545" target="_blank"><img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925545/96/" alt="Thumbnail of ID:3925545"/></a>
+
+<div class="desc">P-TRE_23_R3D_D3D</div>
+
+</div>
+
+<div class="gallery-image">
+<a href="https://nightshade.openmicroscopy.org/webgateway/img_detail/3925546" target="_blank"><img src="https://nightshade.openmicroscopy.org/webgateway/render_thumbnail/3925546/96/" alt="Thumbnail of ID:3925546"/></a>
+
+<div class="desc">P-TRE_22_R3D_D3D</div>
+
+</div>
+
+</div>
+
+<li>
+
+<p class="first"><a class="anchor" id="gateway"></a>The OMERO WebGateway is a Django app that enables images in the PUBLIC group to be viewed in a number of other ways.</p>
+
+<p>Details can be found at OMERO <a href="https://www.openmicroscopy.org/site/support/omero/developers/Web/WebGateway.html" target="_blank" class="external-url">WebGateway.</p>
+
+</li>
+
+</ol>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
