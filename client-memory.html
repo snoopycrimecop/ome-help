@@ -28,7 +28,7 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p>By default, the OMERO clients allocate a certain amount of memory for themselves during the start-up process which should be sufficient for most uses.</p>
+<p>By default, the OMERO desktop clients allocate a certain amount of memory for themselves during the start-up process which should be sufficient for most uses.</p>
 
 <p>However, when dealing with very large images, you may encounter out of memory exceptions while trying to import or display these large images. In these situations, it is beneficial to increase the memory allocation to the clients as outlined below.</p>
 
@@ -60,7 +60,7 @@ version:
 
 <ol>
 
-<li><p class="first">Locate the <span class="bold">OMERO.insight.app</span> in Finder and right click (or control-click) on it.</p>
+<li><p class="first">Locate the <span class="bold">OMERO.insight.app</span> in Finder and right-click (or control-click) on it.</p>
 
 <p>Choose <span class="bold">Show Package Contents</span> from the contextual menu.</p>
 
@@ -78,33 +78,7 @@ version:
 
 <li><p class="first">Navigate to the <span class="bold">Contents</span> folder.</p>
 
-<p>Right-click on the <span class="bold">Info.plist</span> file, and select to open it in either Xcode (if installed) or the your default text editor.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/clientMemoryPackage.jpg" class="align-center" src="images/clientMemoryPackage.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<li><p class="first">Navigate to the <span class="bold">Contents</span> folder.</p>
-
-<p>Right-click on the <span class="bold">Info.plist</span> file, and select to open it in either Xcode (if installed) or the your default text editor.</p>
+<p>Right-click on the <span class="bold">Info.plist</span> file, and select to open it in either Xcode (if installed) or your default text editor.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -132,13 +106,15 @@ version:
 
 <p>Under <span class="bold">Xmx</span>, you will see a value such as:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">-Xmx1024M</span>&nbsp;&nbsp;&nbsp;&nbsp;indicating you currently have 1024 Megabytes reserved for the application to use.</p>
 
-<p>Increase this to something like <span class="code-example">-Xmx2048M</span> if you wish to increase the allocated memory to 2048 Megabytes.</p>
+<p>Increase this to something like <span class="code-example">-Xmx2048M</span> if you wish to allocate 2048 Megabytes of memory.</p>
 
-<p>In a text editor, line <span class="bold">54</span>, has the value set as:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">&lt;string&gt;-Xmx1024M&lt;/string&gt;</span> .</p>
+<p>Viewing the file in a text editor, line <span class="bold">54</span>, has the value set as:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">&lt;string&gt;-Xmx1024M&lt;/string&gt;</span> .</p>
 
 <p>Edit the value to:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">&lt;string&gt;-Xmx2048M&lt;/string&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp;to increase the allocated memory to 2048 Megabytes.</p>
 
 <p>Save the file and close.</p>
+
+<p>Restart OMERO.insight to load the new setting.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -180,11 +156,11 @@ version:
 
 <h2><a class="anchor" id="linux"></a>OMERO.insight on Unix/Linux</h2>
 
-<p>Changing OMERO.insight memory allocation under Unix requires you to edit the start-up script located with the clients, the <span class="code-example">OMEROinsight_unix.sh</span> file.</p>
+<p>Changing OMERO.insight memory allocation under Unix requires you to edit the start-up script file, <span class="code-example">OMEROinsight_unix.sh</span> located with the clients.</p>
 
-<p>You will need to edit the <span class="code-example">OMEROinsight_unix.sh</span> file  and change the <span class="code-example">java -Xms256000000 -Xmx1024000000 -jar omero.insight.jar</span> line with new minimum and preferred memory options.</p>
+<p>In the <span class="code-example">OMEROinsight_unix.sh</span> file, edit the <span class="code-example">java -Xms256000000 -Xmx1024000000 -jar omero.insight.jar</span> line with new minimum and preferred memory options.</p>
 
-<p>See the <a class="reference external" href="http://docs.oracle.com/javase/6/docs/technotes/tools/solaris/java.html">Java online documentation</a> for a full description of these options).</p>
+<p>See the <a class="reference external" href="http://docs.oracle.com/javase/6/docs/technotes/tools/solaris/java.html">Java online documentation</a> for a full description of these options.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
