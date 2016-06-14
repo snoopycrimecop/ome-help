@@ -160,7 +160,9 @@ version:
 
 <p>Changing OMERO.insight memory allocation under Unix requires you to edit the start-up script file, <span class="code-example">OMEROinsight_unix.sh</span> located with the clients.</p>
 
-<p>In the <span class="code-example">OMEROinsight_unix.sh</span> file, edit the <span class="code-example">java -Xms256000000 -Xmx1024000000 -jar omero.insight.jar</span> line with new minimum and preferred memory options.</p>
+<p>In the <span class="code-example">OMEROinsight_unix.sh</span> file, edit the minimum and maximum values for allocated memory in the line:</p>
+
+<p><span class="code-example">java -Xms256000000 -Xmx1024000000 -jar omero.insight.jar</span>.</p>
 
 <p>See the <a class="reference external" href="http://docs.oracle.com/javase/6/docs/technotes/tools/solaris/java.html">Java online documentation</a> for a full description of these options.</p>
 
