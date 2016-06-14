@@ -30,7 +30,7 @@ version:
 
 <p>By default, the OMERO desktop clients allocate a certain amount of memory for themselves during the start-up process which should be sufficient for most uses.</p>
 
-<p>However, when dealing with very large images, you may encounter out of memory exceptions while trying to import or display these large images. In these situations, it is beneficial to increase the memory allocation to the clients as outlined below.</p>
+<p>However, you may encounter out of memory exceptions while trying to import or display very large images. In these situations, it is beneficial to increase the memory allocation to the clients as outlined below.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -106,11 +106,13 @@ version:
 
 <p>Under <span class="bold">Xmx</span>, you will see a value such as:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">-Xmx1024M</span>&nbsp;&nbsp;&nbsp;&nbsp;indicating you currently have 1024 Megabytes reserved for the application to use.</p>
 
-<p>Increase this to something like <span class="code-example">-Xmx2048M</span> if you wish to allocate 2048 Megabytes of memory.</p>
+<p>Increase this to the amount of memory you wish to allocate, <span class="code-example">-Xmx2048M</span> if you wish to allocate 2048 Megabytes of memory, for example.</p>
 
 <p>Viewing the file in a text editor, line <span class="bold">54</span>, has the value set as:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">&lt;string&gt;-Xmx1024M&lt;/string&gt;</span> .</p>
 
 <p>Edit the value to:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">&lt;string&gt;-Xmx2048M&lt;/string&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp;to increase the allocated memory to 2048 Megabytes.</p>
+
+<p>The -Xms value can be edit to increase the minimum memory allocated to the application.</p>
 
 <p>Save the file and close.</p>
 
