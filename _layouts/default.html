@@ -97,6 +97,8 @@ navigation:
         <link rel="stylesheet" href="{{ site.baseurl }}/css/display.css">
 
         <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.js"></script>
+        
+        <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.js"></script>
 
         <script type="text/javascript">
             $(document).ready(function () {
@@ -152,7 +154,7 @@ navigation:
                     <div id="page-header">
 
                         {% for pdf in page.pdfs %}
-                        <a href="http://downloads.openmicroscopy.org/help/pdfs/{{ pdf }}" target="_blank"> <img src="{{ site.baseurl }}/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
+                        <a href="http://downloads.openmicroscopy.org/help/pdfs/{{ pdf }}" data-toggle="tooltip" title="Download the PDF version of this section for printing." data-placement="left" target="_blank"> <img src="{{ site.baseurl }}/images/pdf_download.png" width="32" height="41" alt="Download PDF" class="header-right" /></a>
                         {% endfor %}
                         
                         <h1>{{ page.title }}</h1>
