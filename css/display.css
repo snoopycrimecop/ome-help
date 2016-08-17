@@ -281,6 +281,12 @@ img.flag-left {
 #page-body .warning-title {
 }
 
+#page-body .error {
+	width: 85%;
+	padding-left: 5px;
+	border: 2px solid #ff2600;
+}
+
 #page-body .page-navigation {
 	font-weight: bold;
 }
