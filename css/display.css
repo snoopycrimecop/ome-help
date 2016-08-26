@@ -281,6 +281,15 @@ img.flag-left {
 #page-body .warning-title {
 }
 
+#page-body .error {
+	width: 85%;
+	padding-left: 15px;
+	border: 1px solid #5e5e5e;
+	background-color: #d5d5d5;
+	padding-right: 10px;
+	margin: 15px;
+}
+
 #page-body .page-navigation {
 	font-weight: bold;
 }
