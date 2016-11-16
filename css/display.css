@@ -271,6 +271,7 @@ img.flag-left {
 	width: 95%;
 	padding-left: 5px;
 	border: 2px solid #ff2600;
+	padding-right: 10px;
 }
 
 #page-body .warning-title {
