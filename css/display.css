@@ -355,6 +355,11 @@ img.flag-left {
 	  color: #ff2600;
 }
 
+#page-body ul li{
+	font-weight: normal;
+	font-style: normal;
+}
+
 /*Line spacers*/
 
 #line-block {
