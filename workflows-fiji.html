@@ -1,0 +1,507 @@
+---
+layout: default
+title: Fiji-OMERO Workflows
+menu-id: l1-workflow2
+pdfs:
+    - workflows-fiji.pdf
+description: How to use Fiji to connect to an OMERO server and run scripts against data on the server.
+version:
+    - yes
+---
+
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#introduction">Introduction</a><br />
+<a href="#manual">Manual workflow</a><br />
+<a href="#script">Scriping workflow</a><br />
+<a href="#resources">Other resources</a><br />
+</p>
+
+</div><!-- End Page Navigation -->
+
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
+
+<p>This is a step-by-step guide to the workflows used in OMERO training sessions and the videos produced to illustrate the basic Fiji-OMERO image analysis workflows. Links to the videos are in the <a href="#resources">Other resources</a> section at the bottom of the page.</p>
+
+<p>Instructions on downloading and installing the OMERO.insight-ij plugin for Fiji and ImageJ are in the <a href="http://help.openmicroscopy.org/imagej.html" target="_blank" class="external-url">Using ImageJ with OMERO</a> section.
+
+<h2><a class="anchor" id="manual"></a>Manual workflow</h2>
+
+<ol>
+
+<li><p class="first">Open the Fiji application.</p>
+
+<p>Select&nbsp;&nbsp;&nbsp;<span class="bold">Plugins > OMERO > Connect to OMERO</span>.</p>
+
+<p>A version of OMERO.insight will open and can be used as normal.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/imagejInsightLaunch.jpg" class="align-center" src="images/imagejInsightLaunch.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">As ImageJ needs to load the plugin software, it can take a minute or two for the OMERO login screen to appear, and then another minute for the progress bar to start moving and complete.</p>
+
+<p>If you have not previously connected to OMERO, enter the server address.</p>
+
+<p>Enter your OMERO <span class="bold">Username</span> and <span class="bold">Password</span>.</p>
+
+<p>Click <span class="bold">Login</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/imagejLogin.jpg" class="align-center" src="images/imagejLogin.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">In the OMERO.insight window, select the image you wish to work with.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiImage.jpg" class="align-center" src="images/workflowsFijiImage.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Right-click on the image and select <span class="bold">View in ImageJ...</span>.</p>
+
+<p>In the Bio-Formats Import Options dialog, click <span class="bold">OK</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiView.jpg" class="align-center" src="images/workflowsFijiView.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">In Fiji, select&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold">Image > Adjust > Threshold</span>.</p>
+
+<p>Click on the <span class="bold">Auto</span> button, which should bring up the default for the image.</p>
+
+<p>If necessary use the sliders to adjust the threshold values to obtain the desired thresholding.</p>
+
+<p>Select the <span class="bold">Dark Background</span> checkbox.</p>
+
+<p>Click <span class="bold">Apply</span> and close the dialog.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiThreshold.jpg" class="align-center" src="images/workflowsFijiThreshold.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+
+<li><p class="first">Select&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold">Analyze > Analyze Particles</span>.</p>
+
+<p>In the Analyze Particles dialog, check the values are as shown below, ensuring the <span class="bold">Display Results</span>, <span class="bold">Clear Results</span> and <span class="bold">Add to Manager</span> checkboxes are selected.</p>
+
+<p>Click <span class="bold">OK</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiAnalyze.jpg" class="align-center" src="images/workflowsFijiAnalyze.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">The following dialogs should be visible:</p>
+
+<ul>
+<li>the image with ROIs highlighted</li>
+<li>Results table</li>
+<li>ROI Manager</li>
+</ul>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiROIs.jpg" class="align-center" src="images/workflowsFijiROIs.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">In Fiji, select <span class="bold">Plugins > OMERO > Save Results to OMERO</span>.</p>
+
+<p><span class="bold">Note:</span>&nbsp;&nbsp;&nbsp;If you are not logged into the OMERO server you will be prompted to log in.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiSave.jpg" class="align-center" src="images/workflowsFijiSave.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">In the <span class="bold">Save ImageJ Results</span> dialog select the <span class="bold">Image from Current Window</span> radio button.</p>
+
+<p>Check the <span class="bold">ROI and Measurements</span> checkboxes.</p>
+
+<p>Click <span class="bold">Save</span>.</p>
+
+<p>Click <span class="bold">Yes</span> in the <span class="bold">Import Images</span> dialog.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiYes.jpg" class="align-center" src="images/workflowsFijiYes.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">In the <span class="bold">Import Location</span> dialog, select the <span class="bold">Project</span> and/or <span class="bold">Dataset</span> from the drop-downs to save the results to.</p>
+
+<p>Click <span class="bold">Add to the Queue</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiQueue.jpg" class="align-center" src="images/workflowsFijiQueue.jpg" style="width: 95%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Once the import is completed, the OMERO server takes a little time to generate the ROIs in OMERO form.</p>
+
+<p>Once the ROI generation process is complete, select the imported image to show the ROIs attached.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiRHP.jpg" class="align-center" src="images/workflowsFijiRHP.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol><!-- End of list -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+  <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="script"></a>Scripting workflow</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Additional setup</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol>
+
+<li><p class="first">Download the <span class="code-example">OMERO.matlab</span> plugin from:</p>
+
+<p><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="external-url">http://downloads.openmicroscopy.org/latest/omero5</a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiMatlab.jpg" class="align-center" src="images/workflowsFijiMatlab.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Unzip the archive.</p>
+
+<p>Drag-and-drop or copy the <span class="code-example">libs > omero_client.jar</span> file into the jars folder of Fiji .</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiMatlabPlugin.jpg" class="align-center" src="images/workflowsFijiMatlabPlugin.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Download the example script and related files from:</p>
+
+<p><a href="https://github.com/bramalingam/Omero-Imagej-Scripts" target="_blank" class="external-url">https://github.com/bramalingam/Omero-Imagej-Scripts</a></p>
+
+<p>Links to individual files:</p>
+
+<p><a href="https://github.com/bramalingam/Omero-Imagej-Scripts/blob/master/bg_subtract.ijm" target="_blank" class="external-url">bg_subtract.ijm</a></p>
+
+<p><a href="https://github.com/bramalingam/Omero-Imagej-Scripts/blob/master/credentialsTemplate.txt" target="_blank" class="external-url">credentialsTemplate.txt</a></p>
+
+<p><a href="https://github.com/bramalingam/Omero-Imagej-Scripts/blob/master/omero_batch_analysis.py" target="_blank" class="external-url">omero_batch_analysis.py</a></p>
+
+</li>
+
+</ol>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+<h3>Editing scripts</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol>
+
+<li><p class="first">Open Fiji.</p>
+
+<p>Use <span class="bold">File &#62; Open...</span> to select and open the <span class="code-example">omero_batch_analysis.py</span> file.</p>
+
+<p>The jython script will open in the script window.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiScript.jpg" class="align-center" src="images/workflowsFijiScript.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Edit the following:</p>
+
+<p><span class="bold">Line 131:</span><br/>
+From:&nbsp;&nbsp;&nbsp;<span class="code-example">HOST = &#34;omero-latest-analysis.docker.openmicroscopy.org&#34;</span><br/>
+To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">HOST = &#34;your.omero.server.url&#34;</span></p>
+
+<p><span class="bold">Line 133:</span><br/>
+From:&nbsp;&nbsp;&nbsp;<span class="code-example">datasetId = &#34;1&#34;</span><br/>
+To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">datasetId = &#34;x&#34;</span></p>
+
+<p>Where <span class="code-example">&#34;x&#34;</span> is an OMERO Dataset ID of your choice.</p>
+
+<p><span class="bold">Line 139:</span><br/>
+From:&nbsp;&nbsp;&nbsp;<span class="code-example">CREDENTIALS = &#34;/Users/bramalingam/Desktop/FijiDemonstration/credentials.txt&#34;</span><br/>
+To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">CREDENTIALS = &#34;PATH_TO/credentials.txt&#34;</span></p>
+
+<p><span class="bold">Line 142:</span><br/>
+From:&nbsp;&nbsp;&nbsp;<span class="code-example">macroFilePath = &#34;/Users/bramalingam/Desktop/FijiDemonstration/bg_subtract.ijm&#34;</span><br/>
+To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">macroFilePath = &#34;PATH_TO/bg_subtract.ijm&#34;</span></p>
+
+<p><span class="bold">Line 145:</span><br/>
+From:&nbsp;&nbsp;&nbsp;<span class="code-example">paths = &#34;Users/bramalingam/Desktop/FijiDemonstration&#34;</span><br/>
+To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">paths = &#34;PATH_TO&#34;</span></p>
+
+<p>Where <span class="code-example">&#34;PATH_TO&#34;</span> is the file path on your system to the files you downloaded previously.</p>
+
+</li>
+
+<li><p class="first">Use <span class="bold">File &#62; Save</span> to save the script file.</p>
+
+</li>
+
+<li><p class="first">Use <span class="bold">File &#62; Open...</span> to select and open the <span class="code-example">credentialsTemplate.txt</span> file.</p>
+
+</li>
+
+<li><p class="first">Enter the following using the OMERO login credentials you have been given:</p>
+
+<p><span class="bold">Line 1:</span></span><br/>
+From:&nbsp;&nbsp;&nbsp;<span class="code-example">USERNAME = &#60;OMERO USERNAME&#62;</span><br/>
+To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">USERNAME = &#60;your_username&#62;</span></p>
+
+<p><span class="bold">Line 2:</span><br/>
+From:&nbsp;&nbsp;&nbsp;<span class="code-example">PASSWORD = &#60;OMERO PASSWORD&#62;</span><br/>
+To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">PASSWORD = &#60;your_password&#62;</span></p>
+
+</li>
+
+<li><p class="first">Use <span class="bold">File &#62; Save As &#62; Text...</span> to save the credentials file as <span class="code-example">credentials.txt</span> in the same directory.</p>
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Click the <span class="bold">Run</span> button to run the script.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsFijiRun.jpg" class="align-center" src="images/workflowsFijiRun.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Once the script is completed, use OMERO to check the processed images which should be found in the dataset with the ID used in Step 2, Line 133.</p>
+
+<p>Repeat Steps 5 - 7.</p>
+
+</li>
+
+<li><p class="first">To run the same macro on a different set of Images, in Step 2 Line 133, enter a different Dataset ID number.</p>
+
+<p>Repeat Steps 5 - 7.</p>
+
+</li>
+
+<li><p class="first">To run a different macro on the same set of Images, in Step 2 Line 142, enter a different <span class="code-example">.ijm</span> file name.</p>
+
+<p>Repeat Steps 5 - 7.</p>
+
+</li>
+
+</ol><!-- End of list -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="resources"></a>Other resources</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Videos of these workflows:</h3>
+
+<p><a href="http://downloads.openmicroscopy.org/movies/omero-5-2/mov/fiji_omero_manual_workflow.mov" target="_blank" class="external-url">fiji_omero_manual_workflow.mov</a></p>
+
+
+<p><a href="http://downloads.openmicroscopy.org/movies/omero-5-2/mov/fiji_scripting_demo.mov" target="_blank" class="external-url">fiji_scripting_demo.mov</a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>FIJI scripting tutorials:</h3>
+
+<p><a href="http://imagej.net/Jython_Scripting" target="_blank" class="external-url">http://imagej.net/Jython_Scripting</a></p>
+
+<p><a href="https://www.ini.uzh.ch/%7Eacardona/fiji-tutorial/" target="_blank" class="external-url">https://www.ini.uzh.ch/&#126;cardona/fiji-tutorial/</a></p>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="page-end">
+	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
+	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+</div> <!-- end page-end -->

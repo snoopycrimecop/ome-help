@@ -10,8 +10,9 @@ version:
 <h2>Contents</h2>
 <p>
 <a href="#introduction">Introduction</a><br />
-<a href="#insight">Using the OMERO.insight client</a><br />
 <a href="#web">Using the OMERO.web client</a><br />
+<a href="#insight">Using the OMERO.insight client</a><br />
+<a href="#troubleshooting">Troubleshooting</a><br />
 </p>
 </div><!-- End Page Navigation -->
 
@@ -49,38 +50,110 @@ version:
 
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>A free account on our demo server enables you to explore the OMERO platform using examples of your own data.</p>
-
-<p>To register for a free demo account, go to the 
+<p>A free account on our demo server enables you to explore the OMERO platform using examples of your own data. To register for a free demo account, go to the 
 <a class="reference external" href="http://qa.openmicroscopy.org.uk/registry/demo_account/" target="_blank">registration page</a>.</p>
 
-<p>We will email you with the server name and your username and password.</p>
-
-<p>Please be patient as it may take a few days to process your application after we receive it.</p>
+<p>We will email you with the server name and your username and password. Please be patient as it may take a few days to process your application after we receive it.</p>
 
 <p>Once you have received the email with your account details, follow the instructions below.</p>
 
-<p>You have three options for logging on and using your demo account. Click on the links for details.</p>
+<p>You can use either of the two OMERO clients to log on and use your demo account.</p>
 
-<p><a href="#insight">Using the OMERO.insight client</a>
+<p>OMERO.web</p>
 <ul class="bullet-list">
-<li>runs as a stand-alone application</li>
-<li>you need to have the permissions to install software on your computer</li>
-<li>you will need to update OMERO.insight on your computer if the demo server is upgraded (we will email you to inform you)</li>
-</ul>
-
-<a href="#web">Using the OMERO.web client</a>
-<ul class="bullet-list">
-<li>you can access your demo server account through your web browser</li>
+<li>accesses your demo server account through your web browser</li>
+<li>use <a href="http://help.openmicroscopy.org/figure.html" target="_blank">OMERO.figure</a> to create figures from your data for publication or presentations</li>
 <li>OMERO.web does not allow you to import data or use the measurement tools.</li>
 </ul>
 </p>
+
+<p>OMERO.insight</p>
+<ul class="bullet-list">
+<li>runs as a stand-alone application</li>
+<li>you need to have software install permissions on your computer</li>
+<li>import your data onto the OMERO demo server</li>
+<li>you will need to update OMERO.insight on your computer if the demo server is upgraded (we will email you to inform you)</li>
+</ul>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<h2><a class="anchor" name="web" id="web"></a>Using the OMERO.web client</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol class="step">
+
+<li><p class="first">To use the OMERO.web client click on the following link:</p>
+
+<p class="indent3"><a class="reference external" href="http://demo.openmicroscopy.org/webclient/login" target="_blank">OMERO.web demo server</a></p>
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Enter the username and password you have been sent.</p>
+
+<p>Click <span class="bold">Login</span></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/demoServerWebLogin.jpg" class="align-center" src="images/demoServerWebLogin.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li>
+
+<p class="first">Please change your password as soon as you have logged in.</p>
+
+<p>The easiest way to do this is via:</p>
+
+<p class="indent3"><a class="reference external" href="http://demo.openmicroscopy.org/webadmin/myaccount/edit/" target="_blank">Web Admin</a></p>
+
+<p>Click on the <span class="bold">Change Password</span> button.</p>
+
+<p>Follow the instructions.</p>
+
+<p>When you have finished, click <span class="bold">Save</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/demoServerPassword.jpg" class="align-center" src="images/demoServerPassword.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>The <a href="http://help.openmicroscopy.org/web-client.html" target="_blank">Using OMERO.web</a> section has more details on getting started with the web browser client.
+
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <h2><a class="anchor" id="insight"></a>Using the OMERO.insight client</h2>
 
@@ -88,23 +161,36 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p>Download the <span class="bold">OMERO.insight</span> client for your platform by clicking on the appropriate link on the <a class="reference external" href="http://downloads.openmicroscopy.org/latest/omero5/" target="_blank">downloads page</a>.</p>
+<ol class="step">
+
+<li><p class="first">Download the <span class="bold">OMERO.insight</span> client for your platform by clicking on the appropriate link on the <a class="reference external" href="http://downloads.openmicroscopy.org/latest/omero5/" target="_blank">downloads page</a>.</p>
 
 <p>After download, unzip and install the OMERO.insight client as you would for any other application.</p>
-<p>Launch OMERO.insight, and you will see the login screen.</p>
+
+<p>If you are using Windows and do not have administration privileges on your machine, install the OMERO.insight folder in your Documents folder or any other folder for which you have write permissions.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Launch OMERO.insight, and you will see the login screen.</p>
 <p>Click the <span class="bold">Spanner</span> icon.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/gettingStarted5Spanner.jpg" class="align-center" src="images/gettingStarted5Spanner.jpg" style="width: 80%;" />
+<img alt="../images/demoServerSpanner.jpg" class="align-center" src="images/demoServerSpanner.jpg" style="width: 80%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p>Enter the <span class="bold">Server Address</span>: demo.openmicroscopy.org</p>
+</li>
+
+<li><p class="first">Enter the <span class="bold">Server Address</span>: demo.openmicroscopy.org</p>
 
 <p>The port will automatically be set to 4064.</p>
 
@@ -116,13 +202,15 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/gettingStartedSpanner.jpg" class="align-center" src="images/demoServerApply.jpg" style="width: 100%;" />
+<img alt="../images/demoServerApply.jpg" class="align-center" src="images/demoServerApply.jpg" style="width: 90%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p>Enter the username and password provided.</p>
+</li>
+
+<li><p class="first">Enter the username and password provided.</p>
 
 <p>Click <span class="bold">Login</span></p>
 
@@ -130,11 +218,15 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/gettingStartedSpanner.jpg" class="align-center" src="images/demoServerLogin.jpg" style="width: 100%;" />
+<img alt="../images/demoServerInsightLogin.jpg" class="align-center" src="images/demoServerInsightLogin.jpg" style="width: 100%;" />
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+
+</li>
+
+</ol>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
@@ -142,32 +234,61 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<h2><a class="anchor" name="web" id="web"></a>Using the OMERO.web client</h2>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<p>To use the OMERO.web client click on the following link:</p>
+<p>The <a href="http://help.openmicroscopy.org/getting-started-5.html" target="_blank">Getting Started with OMERO.insight</a> section has more details to help you get going with the desktop client.
 
-<p><a class="reference external" href="http://demo.openmicroscopy.org/webclient/login" target="_blank">OMERO.web</a></p>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<p>The server name is entered automatically, and you enter your demo account username and password as described above.</p>
+<h2>User Help</h2>
 
-<p>Please change your password as soon as you have logged in. The easiest way to do this is via:</p>
+<p>All the workflow-based guides available on this User Help website apply to the demo server. Screenshots are used to illustrate how to perform common tasks such as importing, managing and viewing data, and using the measurement tool.</p>
 
-<p><a class="reference external" href="http://demo.openmicroscopy.org/webadmin/myaccount/edit/" target="_blank">Web Admin</a></p>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<p>The workflow-based guides available on this website are applicable to the demo server, using screenshots
-to illustrate how to perform common tasks such as importing and viewing data, and using the measurement tool.</p>
+<h2><a class="anchor" id="troubleshooting"></a>Troubleshooting</h2>
 
-<p>An overview of some OMERO’s features is available in a short showcase video at:</p>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
-<p><a class="reference external" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-4/mov/OMERO-Showcase.mov" target="_blank">Showcase Video</a></p>
+<ol class="step">
 
-<p>If you have any questions, suggestions, comments or proposals, please take advantage of the OME community&#8217;s expertise and join our forums or mailing lists:</p>
-<p><a class="reference external" href="http://www.openmicroscopy.org/community/" target="_blank">Forums</a></p>
-<p><a class="reference external" href="http://www.openmicroscopy.org/site/community/mailing-lists/" target="_blank">Mailing Lists</a></p>
+<li><h3>Unable to connect to the Demo Server using OMERO.insight</h3>
+
+<p>If you are able to log into the Demo Server using the OMERO.web client at <a class="reference external" href="http://demo.openmicroscopy.org" target="_blank">https://demo.openmicroscopy.org</a>, but the OMERO.insight client won't connect, it's likely that your institution is blocking the network ports OMERO.insight needs to communicate over.</p>
+
+<p>Please refer your IT department to the following documentation for the information they need to fix the issue for you:</p>
+
+<p class="indent3"><a class="reference external" href="http://www.openmicroscopy.org/site/support/omero/sysadmins/server-security.html" target="_blank">http://www.openmicroscopy.org/site/support/omero/sysadmins/server-security.html</a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol>
+
+<h3>Contact us if you have any problems</h3>
+
+<p>If you have any problems, questions, suggestions, comments or proposals, please take advantage of the OME community&#8217;s expertise and join our forums or mailing lists:</p>
+<p class="indent3"><a class="reference external" href="http://www.openmicroscopy.org/community/" target="_blank">Forums</a></p>
+<p class="indent3"><a class="reference external" href="http://www.openmicroscopy.org/site/community/mailing-lists/" target="_blank">Mailing Lists</a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
 
 <p class="first">For more information on OME and OMERO visit our main site:</p>
 
-<p><a class="reference external" href="http://www.openmicroscopy.org/site" target="_blank">Open Microscopy Environment</a></p>
+<p class="indent3"><a class="reference external" href="http://www.openmicroscopy.org/site" target="_blank">Open Microscopy Environment</a></p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 

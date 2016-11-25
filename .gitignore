@@ -2,4 +2,5 @@ _site
 downloads/archives
 downloads/pdfs
 downloads/resources
+Gemfile.lock
 .DS_Store
