@@ -1,0 +1,545 @@
+---
+layout: default
+title: OMERO.mtools Workflow
+menu-id: l1-workflow2
+pdfs:
+    - workflows-mtools.pdf
+description: How to use OMERO.mtools to perform common image analysis tasks on images stored in an OMERO server.
+version:
+    - yes
+---
+
+<div class="page-navigation">
+<h2>Contents</h2>
+<p>
+<a href="#introduction">Introduction</a><br />
+<a href="#setup">Setup</a><br />
+<a href="#boxit">Box It</a><br />
+<a href="#intensity">Intensity Measure</a><br />
+<a href="#resources">Other resources</a><br />
+</p>
+
+</div><!-- End Page Navigation -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="introduction"></a>Introduction</h2>
+
+<p>OMERO.mtools is a suite of MATLAB-based tools which allow you to perform common image analysis tasks on images stored in an OMERO.server. OMERO.mtools has its own GUI and only requires an installation of the MATLAB Compiler Runtime (MCR) to run.</p>
+
+<p>A link to a video of a demonstration of the workflows can be found in the <a href="#resources">Other resources</a> section at the bottom of the page.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="setup"></a>Setup</h2>
+
+<ol>
+
+<li><p class="first">Download the appropriate OMERO.mtools for your operating system from:</p>
+
+<a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="external-url">http://downloads.openmicroscopy.org/mtools/1.2.0/</a>
+
+<p>If you are using Windows, it is recommended to also download the MCR for Windows.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsDownload.jpg" class="align-center" src="images/workflowsMtoolsDownload.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Install OMERO.mtools and MCR if you do not have a Matlab installation.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Windows:</h3>
+
+<p>It is recommended that you download the MCR from the downloads page above, and install it before running the OMERO.mtools installer to speed up the installation.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsMCRInstall.jpg" class="align-center" src="images/workflowsMtoolsMCRInstall.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">The OMERO.mtools installer will automatically download the Matlab Compiler Runtime (MCR) from Mathworks and install it, but slow server speeds makes this painful, hence the recommendation to install it separately first.</p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>Unzip the OMERO.mtools download and double-click on it, and follow the prompts to install.</p>
+
+<p>Click <span class="bold">Login</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsInstallWindows.jpg" class="align-center" src="images/workflowsMtoolsInstallWindows.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>Mac OSX:</h3>
+
+<p>Unzip the OMERO.mtools download and double-click on it, and follow the prompts to install.</p>
+
+<p>On Mac OS X, the MCR is bundled with OMERO.mtools, so no separate installation is needed.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsInstallMac.jpg" class="align-center" src="images/workflowsMtoolsInstallMac.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">If you have a Matlab installation and wish to use that, download and install the source code from Github: <a href="https://github.com/mporter-gre/mtools" target="_blank" class="external-url">https://github.com/mporter-gre/mtools</a></p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">In Windows click on the <span class="bold">Start</span> button and select <span class="bold">All Programmes > OMEROmtools</span>.</p>
+
+<p>In Mac in the Applications folder double click on <span class="bold">OMEROmtools > application > OMEROmtools.app</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsOpen.jpg" class="align-center" src="images/workflowsMtoolsOpen.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Enter your OMERO <span class="bold">User name</span>, <span class="bold">Password</span> and <span class="bold">Server</span> name.</p>
+
+<p>Click on the appropriate button to select the desired function.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsCredentials.jpg" class="align-center" src="images/workflowsMtoolsCredentials.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p>Following are illustrations of two of the functionalities covered by OMERO.mtools.</p>
+
+</ol>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">Images have to be organized in the Project-Dataset hierarchy to be accessed via OMERO.mtools. Datasets not in a Project or orphaned Images cannot be accessed via OMERO.mtools.</p>
+</div><!-- End note -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="boxit"></a>Box It</h2>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>Box It draws ROIs around structures through all of the planes in the Z-stack for use in subsequent analysis.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol>
+
+<li><p class="first">Click on the <span class="bold">Box It</span> button to start.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsBoxIt.jpg" class="align-center" src="images/workflowsMtoolsBoxIt.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Select the OMERO group you wish to access data from.</p>
+
+<p>Click <span class="bold">OK</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsGroup.jpg" class="align-center" src="images/workflowsMtoolsGroup.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select <span class="bold">Open Image...</span> from the <span class="bold">File</span> menu.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsOpenImage.jpg" class="align-center" src="images/workflowsMtoolsOpenImage.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">From the drop-down menus in the Image Chooser, select the project, dataset and image you wish to open.</p>
+
+<p>Click <span class="bold">OK</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsImageChooser.jpg" class="align-center" src="images/workflowsMtoolsImageChooser.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Click on the <span class="bold">ROI drawing tool</span> to draw an ROI around a structure.</p>
+
+<p>The first ROI drawn triggers the download of the data, which may take a minute or two.</p>
+
+<p>The dotted line should be drawn generously round the structure as it will resize automatically to minimally fit the structure.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsDrawROI.jpg" class="align-center" src="images/workflowsMtoolsDrawROI.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Click on the <span class="bold">Selection tool</span> to select an ROI, the selected ROI is green.</p>
+
+<p>If necessary, an ROI can be deleted by selecting it and clicking the <span class="bold">Delete</span> button.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsSelectROI.jpg" class="align-center" src="images/workflowsMtoolsSelectROI.jpg" style="width: 80%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select <span class="bold">File > Save ROIs</span> to save the ROIs to the OMERO server.</p>
+
+<p>Use the <span class="bold">Next Image</span> and <span class="bold">Previous Image</span> buttons to move to the other images in the dataset and repeat Step 5 to draw ROIs on other images in the Dataset.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsSaveROIs.jpg" class="align-center" src="images/workflowsMtoolsSaveROIs.jpg" style="width: 45%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol><!-- End of list -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="intensity"></a>Intensity Measure</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>Intensity Measure can be used to measure the signal from objects identified within ROIs, as well as background intensities around these objects. ROIs can be drawn using Box It or any other OMERO method.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<ol>
+
+<li><p class="first">Click on the <span class="bold">Intensity Measure</span> button to start.</p>
+
+<p><a href="http://downloads.openmicroscopy.org/latest/omero5" target="_blank" class="external-url">http://downloads.openmicroscopy.org/latest/omero5</a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsIntensityMeasure.jpg" class="align-center" src="images/workflowsMtoolsIntensityMeasure.jpg" style="width: 90%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<li><p class="first">Select the OMERO group you wish to access data from.</p>
+
+<p>Click <span class="bold">OK</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsGroup.jpg" class="align-center" src="images/workflowsMtoolsGroup.jpg" style="width: 90%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">From the <span class="bold">File</span> menu select the <span class="bold">Choose Datasets</span>.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsOpenIM.jpg" class="align-center" src="images/workflowsMtoolsOpenIM.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select the Project containing the data from the <span class="bold">Projects</span> drop-down menu.</p>
+
+<p>Select the required Datasets from the <span class="bold">Datasets</span> list box.<br/>
+
+<p>Click on the <span class="bold">+</span> button between the list boxes to add the required dataset.<br/>
+
+<p>Click <span class="bold">OK</span>.<br/>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsSelectIM.jpg" class="align-center" src="images/workflowsMtoolsSelectIM.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select the Image for analysis from the <span class="bold">Select Image</span> drop-down menu.</p>
+
+<p>Select the channel to be analysed from the drop-down menu in the <span class="bold">Segment</span> section.</p>
+
+<p>Use the slider to change the threshold for segmentation, if needed.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsAnalyseIMTop.jpg" class="align-center" src="images/workflowsMtoolsAnalyseIMTop.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Check the required channels in the <span class="bold">Measure directly</span> (measure signal within the ROIs) and <span class="bold">Measure around</span> (measure background around the ROIs) checkbox lists.</p>
+
+<p>Check the <span class="bold">Use</span> checkbox and enter the number of pixels for the annulus and pixel gap values in the text boxes.</p>
+
+<p>Select the <span class="bold">Save mask to server</span> checkbox.</p>
+
+<p>Click <span class="bold">OK</span>.<p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsAnalyseIMBottom.jpg" class="align-center" src="images/workflowsMtoolsAnalyseIMBottom.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Follow the prompts to save the results as <span class="code-example">.csv</span> files.
+
+<p>The results include intensity values and related statistics for all the Images within the dataset that contain ROIs.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/workflowsMtoolsResults.jpg" class="align-center" src="images/workflowsMtoolsResults.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="resources"></a>Other resources</h2>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>A video of this workflow can be seen at:</p>
+
+<p><a href="http://downloads.openmicroscopy.org/movies/omero-5-2/mov/OMEROmtools.mp4" target="_blank" class="external-url">OMEROmtools.mp4</a></p>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="page-end">
+	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
+	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+</div> <!-- end page-end -->
