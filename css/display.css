@@ -218,6 +218,7 @@ img.align-left {
 img.align-right {
 	display: block;
 	margin-right: 0;
+	margin-left: auto;
 }
 
 img.float-right {
