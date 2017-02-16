@@ -147,7 +147,7 @@ navigation:
                     
                     <div id="footer">
 
-                        <p>&copy; 2000-2016<br/>The Open Microscopy Environment</p>
+                        <p>&copy; 2000-2017<br/>The Open Microscopy Environment</p>
 
                     </div><!-- End Footer -->
 
@@ -157,10 +157,6 @@ navigation:
                     
                     <div id="page-header">
 
-                        {% for pdf in page.pdfs %}
-                        <a href="http://downloads.openmicroscopy.org/help/pdfs/{{ pdf }}" data-toggle="tooltip" data-placement="left" title="Download the PDF version of this section for printing." target="_blank"> <img src="{{ site.baseurl }}/images/pdf_download.png" alt="Download PDF" class="header-right" /></a>
-                        {% endfor %}
-                        
                         <h1>{{ page.title }}</h1>
 
                         {% for yes in page.version %}

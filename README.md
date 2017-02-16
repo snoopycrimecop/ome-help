@@ -6,20 +6,12 @@ OMERO User Help Guides
 The OME User Guides website consists of pages with user guides for clients or
 workflows.
 
-**Workflow**
-
-The standard workflow is to write and layout sections in Word using images
-generated from annotated screenshots in Omnigraffle. A PDF is then generated
-from the Word document and an HTML page constructed using the text from the
-Word document.
-
 **Platform**
 
 The web site is developed and maintained using Jekyll and GitHub.
 
 The HTML, configuration, layout and CSS files are in this repository. The
-PDFs, zipped PDF archives of previous versions and the Word and Omnigraffle
-resources are in the main OME Downloads repository:
+zipped PDF archives of previous versions and other resources are available from the OME Downloads site:
 [http://downloads.openmicroscopy.org/help/](http://downloads.openmicroscopy.org/help/)
 in subfolders: pdfs, archives and resources.
 
@@ -77,7 +69,7 @@ because this is the only way to maintain the desired order with Jekyll.
 **Page Files**
 
 Individual files for the pages contain the variables to be inserted in the
-appropriate field in default.html for: page title, menu ID, PDF name,
+appropriate field in default.html for: page title, menu ID,
 description metadata and text and whether to display the Current OMERO Version number. 
 Pages can be written in HTML or Markdown.
 They have a short header and then the page content in the form:
@@ -86,8 +78,6 @@ They have a short header and then the page content in the form:
     layout: default
     title: Getting Started with OMERO.insight
     menu-id: l1-quickstart
-    pdfs:
-        - getting-started-5.pdf
     description: Metadata header for each page.
     version:
         - yes
@@ -101,7 +91,6 @@ These are used as follows:
 - layout: indicates the .html layout file to be used for the page.
 - title: appears in the banner at the top of the page.
 - menu-id: indicates the level and place in the navigation structure.
-- pdfs: the PDF file generated from the Word document on OME downloads site.
 - description: Metadata header for each page.
 - version: flag to show/not show the OMERO version number bottom left in the page header banner.
 - redirect_from: /name of page - allows redirect to this page from page that has been superceded/replaced by this one. 
@@ -132,18 +121,11 @@ time to build, and then will be visible on GitHub at:
 
 [http://your-github-username.github.io/ome-help/](http://your-github-username.github.io/ome-help/)
 
-**Notes on Current Workflow**
-
-The Word and Omnigraffle files for the sections are all in the /resources folder at:
-[http://downloads.openmicroscopy.org/help/](http://downloads.openmicroscopy.org/help/)
-
 **Images**
 
 The screenshots/other images for each section are generated from the
 appropriate .graffle file (in resources/). The Omnigraffle canvas is exported
-as a JPEG, 75% scaled, at 150 dpi. In the Word document the images are
-generally resized to 16 cm width (if required) and centred. A small minority
-are scaled down further to balance them with other images.
+as a JPEG, 75% scaled, at 150 dpi.
 
 The Omnigraffle files are named for the section in the style of the screenshot
 image name - e.g. sharingData for the “Sharing Data” section and each canvas
@@ -152,18 +134,6 @@ generated from that canvas will be "sharingDataScreenShot1.jpg”.
 
 A few canvases have different, selectable layers allowing a number of images
 to be generated from the single canvas.
-
-**Word Documents**
-
-The Word documents have hidden text below each image identifying the image,
-size and alignment in Markdown syntax. In most cases bold type is also
-indicated in hidden text - **Text**. This helps when marking up the text from
-the Word document in HTML.
-
-**PDFs**
-
-The PDFs for each section are generated from the appropriate .doc file for
-that chapter (in resources/)
 
 **Process to update for version changes**
 
@@ -178,14 +148,6 @@ For all:
   the Version 5.x Omnigraffle canvases. The new versions of the screenshots
   are saved with the same name over-writing the previous version.
 - the new versions of the screenshots need to be placed in the images/ folder.
-- a new ZIP archive file for all the PDFs for that version generated i.e one for  5.x (with the appropriate sections for the  new versions included).
-- add last version of archive - the previous version of ZIP archive file becomes the reference archive for that version - linked to from previous.html page.
-- update version number and link on Training Course Material page - resources.html.
-
-Note:
-Only the OMERO clients, OMERO.figure and related workflow PDFs are included in this archive.
-Other PDFs such as virtual-microscope.pdf are not included in
-the archive, so copies of previous versions should be archived as appropriate.
 
 **Specific Version Pages**
 
@@ -205,7 +167,7 @@ Links need to be updated in:
 
 **Licensing**
 
-© Copyright Open Microscopy Environment 2000 - 2016.
+© Copyright Open Microscopy Environment 2000 - 2017.
 All material is covered by the
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 You are free to share or adapt content as long as you credit the Open
