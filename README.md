@@ -15,8 +15,7 @@ zipped PDF archives of previous versions and other resources are available from 
 [http://downloads.openmicroscopy.org/help/](http://downloads.openmicroscopy.org/help/)
 in subfolders: pdfs, archives and resources.
 
-To do any editing or updating you will need to install and use Jekyll with any
-dependencies required. Instructions are on the Jekyll site.
+For information on how to build the site locally, see below.
 
 **Jekyll version**
 
@@ -104,17 +103,21 @@ Straight forward CSS and (very minimal) inline styling is used.
 Jekyll inserts the page content into the template held in the default layout
 file and builds the site.
 
+To do any editing or updating you will need to install and use Jekyll with any
+dependencies required. Instructions are on the Jekyll site.
+
 Once the Ruby gem and Jekyll are installed, the local server needs to be
 started and set to watch for updates using:
 
-$ jekyll serve --watch
+    $ cd ome-help/
+    $ jekyll serve --watch
 
 You can then edit, added, commit and push as usual using your git repository.
 
 When a file has been edited locally, the new version will be instantly visible
 at:
 
-http://localhost:4000/ome-help/
+[http://localhost:4000/ome-help/](http://localhost:4000/ome-help/)
 
 Once changes have been pushed to your 'gh-pages' branch, they take a short
 time to build, and then will be visible on GitHub at:
