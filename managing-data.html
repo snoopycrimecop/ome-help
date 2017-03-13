@@ -14,9 +14,13 @@ version:
 		<a href="#editing">Editing names, descriptions and channel names</a><br />
 		<a href="#annotating">Using annotations</a><br />
 		&nbsp <a href="#tags">Adding Tags</a><br />
-		&nbsp <a href="#filter">Filtering images using Tags</a><br />
 		&nbsp <a href="#keyvalue">Using Key-Value pairs</a><br />
 		&nbsp <a href="#attach">Attach files</a><br />
+		&nbsp <a href="#rate">Adding Ratings</a><br />
+		<a href="#filter">Filtering images</a><br />
+		&nbsp <a href="#filtername">Filter by Name</a><br />
+		&nbsp <a href="#filtertag">Filter by Tag</a><br />
+		&nbsp <a href="#filterrating">Filter by Rating</a><br />
 		<a href="#rendering">Rendering settings</a><br />
 		<a href="#metadata">Acquisition metadata</a><br />
 		<a href="#settings">Managing user settings</a><br />
@@ -262,39 +266,6 @@ version:
 	<div class="line"><br /></div>
 </div>
 
-<h3><a class="anchor" id="filter"></a>Filtering images using Tags</h3>
-
-<ol>
-	<li>
-
-		<p class="first">To filter images, select an expanded dataset and use the <span class="bold">Filter images</span> drop-down menu to select attributes to filter by, such as <span class="bold">Tags</span>.</p>
-
-		<p>Type in the name of a tag and select from autocomplete.</p>
-
-		<p><span class="bold">Return</span> will filter the image thumbnails shown in the centre pane according to the tag selected.</p>
-
-		<div class="line-block">
-			<div class="line"><br /></div>
-		</div>
-
-		<img alt="../images/managingFilter.jpg" class="align-center" src="images/managingFilter.jpg" style="width: 100%;" />
-
-		<div class="line-block">
-			<div class="line"><br /></div>
-		</div>
-
-	</li>
-</ol>
-
-<p class="top_link">
-	<a href="#top">
-		<img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/>
-	</a>
-</p>
-
-<div class="line-block">
-	<div class="line"><br /></div>
-</div>
 
 <h3>
 	<a class="anchor" id="keyvalue"></a>
@@ -554,6 +525,129 @@ version:
 	</li>
 
 </ol>
+
+<p class="top_link">
+	<a href="#top">
+		<img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/>
+	</a>
+</p>
+
+<div class="line-block">
+	<div class="line"><br /></div>
+</div>
+
+
+
+<h2>
+	<a class="anchor" id="filter"></a>
+	Filtering images
+</h2>
+
+<p>
+	You can filter images in a Dataset, to only show thumbnails that match by name or annotations.
+</p>
+
+<div class="line-block">
+	<div class="line"><br /></div>
+</div>
+
+
+<h3>
+	<a class="anchor" id="filtername"></a>
+	Filter by Name
+</h3>
+
+<ol>
+	<li>
+		<p>OMERO.insight:</p>
+
+		<p class="indent3">- click on the <span class="bold">Filter images</span> drop-down menu to select <span class="bold">Name</span>.</p>
+		<p class="indent3">- type the text to filter by and hit Enter to filter.</p>
+
+		<p>OMERO.web:</p>
+
+		<p class="indent3">- click on the <span class="bold">Add filter</span> drop-down menu and select <span class="bold">Name</span>.</p>
+		<p class="indent3">- filtering will be performed as you enter the filter text.</p>
+
+		<h3>OMERO.insight</h3>
+		<img alt="../images/managingFilterName.jpg" class="align-center" src="images/managingFilterName.jpg" style="width: 100%;" />
+
+
+		<div class="line-block">
+			<div class="line"><br /></div>
+		</div>
+
+		<h3>OMERO.web</h3>
+		<img alt="../images/managingFilterNameWeb.png" src="images/managingFilterNameWeb.png" style="width: 80%;" />
+
+	</li>
+</ol>
+
+
+<div class="line-block">
+	<div class="line"><br /></div>
+</div>
+
+<h3>
+	<a class="anchor" id="filtertag"></a>
+	Filter by Tag
+</h3>
+
+<ol>
+	<li>
+
+		<p class="first">To filter by Tag (Insight only) select <span class="bold">Tags</span> option from the filter menu.</p>
+
+		<p>Type in the name of a tag and select from autocomplete.</p>
+
+		<p><span class="bold">Return</span> will filter the image thumbnails shown in the centre pane according to the tag selected.</p>
+
+<!-- 		<img alt="../images/managingFilter.jpg" class="align-center" src="images/managingFilter.jpg" style="width: 100%;" />
+
+		<div class="line-block">
+			<div class="line"><br /></div>
+		</div> -->
+
+	</li>
+</ol>
+
+
+<div class="line-block">
+	<div class="line"><br /></div>
+</div>
+
+
+<h3>
+	<a class="anchor" id="filterrating"></a>
+	Filter by Rating
+</h3>
+
+<ol>
+	<li>
+		<p>OMERO.insight:</p>
+
+		<p class="indent3">- click on the <span class="bold">Filter images</span> menu and select the rating
+			as a number of stars.</p>
+
+		<p>OMERO.web:</p>
+
+		<p class="indent3">- Click on the <span class="bold">Add filter</span> drop-down menu and select <span class="bold">By Rating</span>.</p>
+		<p class="indent3">- The rating filter will be shown. Click on the stars to filter for images with exactly that rating.</p>
+
+		<h3>OMERO.insight</h3>
+		<img alt="Filter by Rating in Insight" src="images/managingFilterRating.png" style="width: 80%;" />
+
+
+		<div class="line-block">
+			<div class="line"><br /></div>
+		</div>
+
+		<h3>OMERO.web</h3>
+		<img alt="Filtering by Rating in Web client" src="images/managingFilterRatingWeb.png" style="width: 80%;" />
+
+	</li>
+</ol>
+
 
 <p class="top_link">
 	<a href="#top">
