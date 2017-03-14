@@ -29,7 +29,7 @@ started and set to watch for updates using:
     $ cd ome-help/
     $ jekyll serve --watch
 
-You can then edit, added, commit and push as usual using your git repository.
+You can then edit, add, commit and push as usual using your git repository.
 
 When a file has been edited locally, the new version will be instantly visible
 at:
