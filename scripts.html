@@ -400,6 +400,33 @@ dimension (it will be ignored if you do).</p>
 </div> <!-- end #line-block -->
 
 <div class="line-block">
+	<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<h3>Move Annotations</h3>
+
+<img alt="Move Annotations screen-shot" src="images/scriptsMoveAnnotations.jpg" style="width: 55%;" />
+
+<p>In OMERO 5.3.0 a new UI layout of Plates allows individual Wells to be annotated. Previously you could only
+annotate the separate Images within a Well using the OMERO clients.
+It is therefore possible that Annotations previously added to Images would be more appropriate if linked
+to the Well that contains those Images.</p>
+
+<p>This script allows you to select Screens, Plates or Wells and run the script to move the Annotations
+from the Images to their parent Wells. You can choose which Type of Annotations to move (such as Tags) and
+Annotations can also be selected by namespace.
+You also have the option of whether to remove Annotations from their current Images, or leave
+them linked to both the Image AND the Well.</p>
+
+<p>For regular users, only Annotations that <i>you</i> have added to the Images will be moved.
+For Admins, Annotations added by all users will be moved and it will appear that those same users
+added the Annotations to the Well (ownership of the Well-Annotation link will be the same as the
+owner of the Image-Annotation link).</p>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
