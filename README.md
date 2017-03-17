@@ -15,8 +15,26 @@ zipped PDF archives of previous versions and other resources are available from 
 [http://downloads.openmicroscopy.org/help/](http://downloads.openmicroscopy.org/help/)
 in subfolders: pdfs, archives and resources.
 
+**Editing Process**
+
+Jekyll inserts the page content into the template held in the default layout
+file and builds the site.
+
 To do any editing or updating you will need to install and use Jekyll with any
 dependencies required. Instructions are on the Jekyll site.
+
+Once the Ruby gem and Jekyll are installed, the local server needs to be
+started and set to watch for updates using:
+
+    $ cd ome-help/
+    $ jekyll serve --watch
+
+You can then edit, add, commit and push as usual using your git repository.
+
+When a file has been edited locally, the new version will be instantly visible
+at:
+
+[http://localhost:4000/ome-help/](http://localhost:4000/ome-help/)
 
 **Jekyll version**
 
@@ -31,7 +49,8 @@ repository.
 Clone this repository and create a branch to use for your work. You should use
 your local Jekyll server to review changes and when ready, commit and push to
 your branch. Your changes will be viewable at
-http://your-github-username.github.io/ome-help/ if you use 'gh-pages' as your
+[http://your-github-username.github.io/ome-help/](http://your-github-username.github.io/ome-help/)
+if you use 'gh-pages' as your
 branch. If you do this, it is best to delete the cloned 'gh-pages'
 branch from the main repo and then create your own which tracks the 'master'
 branch. **Do not use your 'gh-pages' branch to track the 'gh-pages' branch
@@ -98,28 +117,6 @@ These are used as follows:
 **CSS**
 
 Straight forward CSS and (very minimal) inline styling is used.
-
-**Editing Process**
-
-Jekyll inserts the page content into the template held in the default layout
-file and builds the site.
-
-Once the Ruby gem and Jekyll are installed, the local server needs to be
-started and set to watch for updates using:
-
-$ jekyll serve --watch
-
-You can then edit, added, commit and push as usual using your git repository.
-
-When a file has been edited locally, the new version will be instantly visible
-at:
-
-http://localhost:4000/ome-help/
-
-Once changes have been pushed to your 'gh-pages' branch, they take a short
-time to build, and then will be visible on GitHub at:
-
-[http://your-github-username.github.io/ome-help/](http://your-github-username.github.io/ome-help/)
 
 **Images**
 
