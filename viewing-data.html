@@ -419,10 +419,6 @@ version:
 
 <p>OMERO allows the importing, storing and viewing of screening data. Many common formats are supported as standard, although some screens benefit from custom handling of their metadata before or after import.</p>
 
-<p>A demonstration server showing published screening and other high volume data is available for public viewing at:</p>
-
-<p><a href="http://idr-demo.openmicroscopy.org" target="_blank" class="external-url">http://idr-demo.openmicroscopy.org</a></p>
-
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
@@ -433,15 +429,40 @@ version:
 
 <p>Expand the <span class="bold">Screen</span> folder, expand the <span class="bold">Plate</span> container and select a <span class="bold">Run</span>.</p>
 
-<p>Click on a well in the plate shown on the centre pane to view the data in that well.</p>
-
-<p>Double-click on a well to open the image in the full viewer.</p>
+<p>Click on a <span class="bold">Well</span> in the Plate shown in the centre pane to view the data in the Well. Well annotations, but not Image annotations, are displayed in right-hand pane. Preview for Wells is not currently available.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/viewingDataIDR.jpg" class="align-center" src="images/viewingDataIDR.jpg" style="width: 100%;" />
+<img alt="../images/viewingDataSPWell.jpg" class="align-center" src="images/viewingDataSPWell.jpg" style="width: 100%;" />
+
+<li><p class="first">Select an <span class="bold">Image</span> (a Field contained in the selected Well) in the lower centre pane.</p>
+
+<p>Annotations for the Image are displayed in right-hand pane. The spatial position of the selected Field is highlighted in the lower left-hand pane.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/viewingDataSPWImage.jpg" class="align-center" src="images/viewingDataSPWImage.jpg" style="width: 100%;" />
+
+<li><p class="first">Select <span class="bold">Preview</span> tab in right-hand pane to see the preview of the selected Image.</p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/viewingDataSPWImagePreview.jpg" class="align-center" src="images/viewingDataSPWImagePreview.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="note">
+<p class="note-title">Note</p>
+<p class="note-text">In the Preview panel you can Save new rendering settings to the current Image or 'Save to All' Images in the Plate. In the latter case thumbnails will be updated for currently visible Images in the plate but a browser refresh may be needed to refresh thumbnails from other Fields.</p>
+</div><!-- End note -->
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -457,27 +478,11 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<li><p class="first">Metadata associated with any level from screens to wells can contain annotations such as gene or siRNA identifiers.</p>
+<li><p class="first">In OMERO.insight, first click on the Screen accordion tab in the left hand panel.</p>
 
-<p>Annotations can be formatted as hyperlinks to online resources such as <a href="http://www.pombase.org" target="_blank" class="external-url">PomBase</a> or <a href="http://www.ensembl.org/index.html" target="_blank" class="external-url">Ensembl</a>.</p>
+<p>Continue now with the same workflow as for OMERO.web above, clicking on a <span class="bold">Screen</span>, a <span class="bold">Plate</span> and a <span class="bold">Run</span> to expand them. The rest of the workflow is identical with OMERO.web, see steps above.</p>
 
-<p>Click on a well in the plate shown on the centre pane to view the data in that well.</p>
-
-<p>Click on the hyperlink to open a new page showing the appropriate online resource entry.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/viewingDataScreenLink.jpg" class="align-center" src="images/viewingDataScreenLink.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<li><p class="first">In OMERO.insight, click on the Screen accordion tab in the left hand panel.</p>
-
-<p>Images in any well can be opened in the full viewer for ROI viewing, addition or analysis.</p>
+<p>Both in OMERO.insight and OMERO.web, Images in any Well can be opened in the Full viewer for ROI viewing. In OMERO.insight also addition or analysis of ROIs is available in Full viewer.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
