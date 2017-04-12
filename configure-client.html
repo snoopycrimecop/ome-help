@@ -9,359 +9,540 @@ redirect_from:
   - /client-memory.html
 ---
 <div class="page-navigation">
-<h2>Contents</h2>
-<p>
-<a href="#introduction">Introduction</a><br />
-<a href="#jar">Adding third-party JARs to OMERO.insight</a><br />
-<a href="#jarmacosx" class="indent1">OMERO.insight on OSX</a><br />
-<a href="#jarwindows" class="indent1">OMERO.insight on Windows</a><br />
-<a href="#jarlinux" class="indent1">OMERO.insight on Linux/Unix</a><br />
-<a href="#increase">Increasing OMERO.insight memory allocation</a><br />
-<a href="#increasemacosx" class="indent1">OMERO.insight on OSX</a><br />
-<a href="#increasewindows" class="indent1">OMERO.insight on Windows</a><br />
-<a href="#increaselinux" class="indent1">OMERO.insight on Linux/Unix</a><br />
-</p>
+    <h2>Contents</h2>
+    <p>
+        <a href="#introduction">Introduction</a><br />
+        <a href="#jar">Adding third-party JARs to OMERO.insight</a><br />
+        <a href="#jarmacosx" class="indent1">OMERO.insight on OSX</a><br />
+        <a href="#jarwindows" class="indent1">OMERO.insight on Windows</a><br />
+        <a href="#jarlinux" class="indent1">OMERO.insight on Linux/Unix</a><br />
+        <a href="#increase">Increasing OMERO.insight memory allocation</a><br />
+        <a href="#increasemacosx" class="indent1">OMERO.insight on OSX</a><br />
+        <a href="#increasewindows" class="indent1">OMERO.insight on
+            Windows</a><br />
+        <a href="#increaselinux" class="indent1">OMERO.insight on
+            Linux/Unix</a><br />
+    </p>
 </div><!-- End Page Navigation -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>The OMERO.insight client is a Java based desktop application that runs on Windows, Mac and Unix/Linux. There are a number of ways the client can be configured to improve or extend its functionality.</p>
+<p>
+    The OMERO.insight client is a Java based desktop application that runs on
+    Windows, Mac and Unix/Linux. There are a number of ways the client can be
+    configured to improve or extend its functionality.
+</p>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="note">
-<p class="note-title">Note</p>
-<p class="note-text">Configuring your client application depends on the operating system and the client used. Also note that this guide does not cover OMERO.web, which uses a different, server-based, configuration.</p>
+    <p class="note-title">Note</p>
+
+    <p class="note-text">
+        Configuring your client application depends on the
+        operating system and the client used. Also note that this guide does
+        not cover OMERO.web, which uses a different, server-based,
+        configuration.
+    </p>
 </div><!-- End note -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<h2><a class="anchor" id="jar"></a>Adding third-party JARs to OMERO.insight</h2>
+<h2><a class="anchor" id="jar"></a>Adding third-party JARs to
+    OMERO.insight</h2>
 
-<p>OMERO comes bundled with a number of standard Java Archives (JARs). However, functionality can be extended by adding JARs to OMERO.insight and OMERO.server.</p>
+<p>
+    OMERO comes bundled with a number of standard Java Archives (JARs).
+    However, functionality can be extended by adding JARs to OMERO.insight and
+    OMERO.server.
+</p>
 
-<p>An example of this is where some proprietary file formats require additional readers to enable OMERO to open and read the files. These readers can be provided by the owners of the formats as JARs, which need to be added to OMERO to enable the functionality.</p>
+<p>
+    An example of this is where some proprietary file formats require
+    additional readers to enable OMERO to open and read the files. These
+    readers can be provided by the owners of the formats as JARs, which need
+    to be added to OMERO to enable the functionality.
+</p>
 
 <p>Download the third-party JAR from the appropriate source.</p>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="note">
-<p class="note-title">Note</p>
-<p class="note-text">If third-party JARs are related to the Bio-Formats import reader, they will also need to be added to the OMERO.server by your OMERO systems administrator. There is no need to do this if they are simply OMERO.insight update JARs.</p>
+    <p class="note-title">Note</p>
+    
+    <p class="note-text">
+        If third-party JARs are related to the Bio-Formats
+        import reader, they will also need to be added to the OMERO.server by
+        your OMERO systems administrator. There is no need to do this if they
+        are simply OMERO.insight update JARs.
+    </p>
 
-<p>The appropriate Bio-Formats version required by the third-party JAR, indicated by the provider, will also need to be installed on your OMERO.server by the administrator.
-</p>
+    <p>
+        The appropriate Bio-Formats version required by the third-party JAR,
+        indicated by the provider, will also need to be installed on your
+        OMERO.server by the administrator.
+    </p>
 </div><!-- End note -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a></p>
 
 <h2><a class="anchor" id="jarmacosx"></a>OMERO.insight on OS X</h2>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <ol>
 
-<li><p class="first">Locate the <span class="bold">OMERO.insight.app</span> in Finder and right-click (or control-click) on it.</p>
+    <li>
+        <p class="first">
+            Locate the <span class="bold">OMERO.insight.app</span> in Finder 
+            and right-click (or control-click) on it.
+        </p>
 
-<p>Choose <span class="bold">Show Package Contents</span> from the contextual menu.</p>
+        <p>
+            Choose <span class="bold">Show Package Contents</span> from the
+            contextual menu.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-<img alt="../images/configureClientPackage.jpg" class="align-center" src="images/configureClientPackage.jpg" style="width: 100%;" />
+        <img alt="../images/configureClientPackage.jpg" class="align-center"
+        src="images/configureClientPackage.jpg" style="width: 100%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
-<li><p class="first">Navigate to the <span class="bold">Contents</span> folder.</p>
-<p>Select the <span class="bold">Java</span> folder.</p>
-<p>Drag and drop, or copy, the third-party <span class="code-example">.jar</span> file into the Java folder.</p>
+    <li>
+        <p class="first">
+            Navigate to the <span class="bold">Contents</span>
+            folder.
+        </p>
+        
+        <p>Select the <span class="bold">Java</span> folder.</p>
+        
+        <p>
+            Drag and drop, or copy, the third-party <span
+            class="code-example">.jar</span> file into the Java
+            folder.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-<img alt="../images/configureClientJava.jpg" class="align-center" src="images/configureClientJava.jpg" style="width: 80%;" />
+        <img alt="../images/configureClientJava.jpg" class="align-center"
+        src="images/configureClientJava.jpg" style="width: 80%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+    <div class="line-block">
+        <div class="line"><br /></div> <!-- end #line -->
+    </div> <!-- end #line-block -->
 
-<li><p class="first">Restart OMERO.insight to enable the new JAR’s functionality.</p>
+    <li>
+        <p class="first">
+            Restart OMERO.insight to enable the new JAR’s
+            functionality.
+        </p>
 
-</li>
+    </li>
 
 </ol>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a>
+</p>
 
 <h2><a class="anchor" id="jarwindows"></a>OMERO.insight on Windows</h2>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <ol>
 
-<li><p class="first">Locate the <span class="bold">OMERO.insight.app</span> in Explorer.</p>
-<p>Open the <span class="bold">libs</span> directory.</p>
-<p>Drag and drop, or copy, the third-party <span class="code-example">.jar</span> file into the libs folder.</p>
+    <li>
+        <p class="first">
+            Locate the <span class="bold">OMERO.insight.app</span> in
+            Explorer.
+        </p>
+        
+        <p>Open the <span class="bold">libs</span> directory.</p>
+        
+        <p>
+            Drag and drop, or copy, the third-party <span
+            class="code-example">.jar</span> file into the libs
+            folder.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-<img alt="../images/configureClientWindows.jpg" class="align-center" src="images/configureClientWindows.jpg" style="width: 90%;" />
+        <img alt="../images/configureClientWindows.jpg" class="align-center"
+        src="images/configureClientWindows.jpg" style="width: 90%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+    <div class="line-block">
+        <div class="line"><br /></div> <!-- end #line -->
+    </div> <!-- end #line-block -->
 
-<li><p class="first">Restart OMERO.insight to enable the new JAR’s functionality.</p>
+    <li>
+        <p class="first">
+            Restart OMERO.insight to enable the new JAR’s
+            functionality.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
 </ol>
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a>
+</p>
 
 <h2><a class="anchor" id="jarlinux"></a>OMERO.insight on Unix/Linux</h2>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <ol>
 
-<li><p class="first">Locate the directory that contains the OMERO.insight.jar.</p>
-<p>Open the <span class="bold">libs</span> directory.</p>
-<p>Drag and drop, or copy, the third-party <span class="code-example">.jar</span> file into the libs folder.</p>
+    <li>
+        <p class="first">
+            Locate the directory that contains the
+            OMERO.insight.jar.
+        </p>
+        
+        <p>Open the <span class="bold">libs</span> directory.</p>
+        
+        <p>
+            Drag and drop, or copy, the third-party <span
+            class="code-example">.jar</span> file into the libs folder.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-<img alt="../images/configureClientLinux.jpg" class="align-center" src="images/configureClientLinux.jpg" style="width: 100%;" />
+        <img alt="../images/configureClientLinux.jpg" class="align-center"
+        src="images/configureClientLinux.jpg" style="width: 100%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+    <div class="line-block">
+        <div class="line"><br /></div> <!-- end #line -->
+    </div> <!-- end #line-block -->
 
-<li><p class="first">Restart OMERO.insight to enable the new JAR’s functionality.</p>
+    <li>
+        <p class="first">
+            Restart OMERO.insight to enable the new JAR’s
+            functionality.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
 </ol>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a>
+</p>
 
-<h2><a class="anchor" id="increase"></a>Increasing OMERO.insight memory allocation</h2>
+<h2><a class="anchor" id="increase"></a>Increasing OMERO.insight memory
+    allocation</h2>
 
-<p>By default, the OMERO desktop clients allocate a certain amount of memory for themselves during the start-up process which should be sufficient for most uses.</p>
+<p>
+    By default, the OMERO desktop clients allocate a certain amount of memory
+    for themselves during the start-up process which should be sufficient for
+    most uses.
+</p>
 
-<p>However, you may encounter out of memory exceptions while trying to import or display very large images. In these situations, it is beneficial to increase the memory allocation to the clients as outlined below.</p>
+<p>
+    However, you may encounter out of memory exceptions while trying to import
+    or display very large images. In these situations, it is beneficial to
+    increase the memory allocation to the clients as outlined below.
+</p>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a>
+</p>
 
-<h2><a class="anchor" id="increasemacosx"></a>OMERO.insight on OS X</h2> 
+<h2><a class="anchor" id="increasemacosx"></a>OMERO.insight on OS X</h2>
 
 <ol>
 
-<li><p class="first">Locate the OMERO.insight.app in Finder and right-click (or control-click) on it.</p>
+    <li>
+        <p class="first">
+            Locate the OMERO.insight.app in Finder and
+            right-click (or control-click) on it.
+        </p>
 
-<p>Choose <span class="bold">Show Package Contents</span> from the contextual menu.</p>
+        <p>
+            Choose <span class="bold">Show Package Contents</span> from the
+            contextual menu.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-<img alt="../images/configureClientPackage.jpg" class="align-center" src="images/configureClientPackage.jpg" style="width: 100%;" />
+        <img alt="../images/configureClientPackage.jpg" class="align-center"
+        src="images/configureClientPackage.jpg" style="width: 100%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
-<li><p class="first">Navigate to the <span class="bold">Contents</span> folder.</p>
+    <li>
+        <p class="first">
+            Navigate to the <span class="bold">Contents</span>
+            folder.
+        </p>
 
-<p>Right-click on the <span class="bold">Info.plist</span> file, and select to open it in either Xcode (if installed) or your default text editor.</p>
+        <p>
+            Right-click on the <span class="bold">Info.plist</span> file, and
+            select to open it in either Xcode (if installed) or your default
+            text editor.
+        </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-<img alt="../images/configureClientPlist.jpg" class="align-center" src="images/configureClientPlist.jpg" style="width: 100%;" />
+        <img alt="../images/configureClientPlist.jpg" class="align-center"
+        src="images/configureClientPlist.jpg" style="width: 100%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+    <div class="line-block">
+        <div class="line"><br /></div> <!-- end #line -->
+    </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+    <p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+        alt="Image for link to top of page" style="float: right;"/></a>
+    </p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+    <div class="line-block">
+        <div class="line"><br /></div> <!-- end #line -->
+    </div> <!-- end #line-block -->
 
-<li><p class="first">Within Xcode, click and open the <span class="bold">JVMDefaultOptions</span> node.</p>
+    <li>
+        <p class="first">Within Xcode, click and open the
+        <span class="bold">JVMDefaultOptions</span> node.
+        </p>
 
-<p>Under <span class="bold">Xmx</span>, you will see a value such as:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">-Xmx1024M</span>&nbsp;&nbsp;&nbsp;&nbsp;indicating you currently have 1024 Megabytes reserved for the application to use.</p>
+        <p>
+            Under <span class="bold">Xmx</span>, you will see a value such
+            as:&nbsp;&nbsp;&nbsp;&nbsp;<span
+            class="code-example">-Xmx1024M</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            indicating you currently have 1024 Megabytes reserved for the
+            application to use.
+        </p>
 
-<p>Increase this to the amount of memory you wish to allocate, <span class="code-example">-Xmx2048M</span> if you wish to allocate 2048 Megabytes of memory, for example.</p>
+        <p>
+            Increase this to the amount of memory you wish to allocate,
+            <span class="code-example">-Xmx2048M</span> if you wish to
+            allocate 2048 Megabytes of memory, for example.
+        </p>
 
-<p>Viewing the file in a text editor, line <span class="bold">54</span>, has the value set as:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">&lt;string&gt;-Xmx1024M&lt;/string&gt;</span> .</p>
+        <p>
+            Viewing the file in a text editor, line <span
+            class="bold">54</span>, has the value set
+            as:&nbsp;&nbsp;&nbsp;&nbsp;<span
+            class="code-example">&lt;string&gt;-Xmx1024M&lt;/string&gt;</span>
+            .
+        </p>
 
-<p>Edit the value to:&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-example">&lt;string&gt;-Xmx2048M&lt;/string&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp;to increase the allocated memory to 2048 Megabytes.</p>
+        <p>
+            Edit the value to:&nbsp;&nbsp;&nbsp;&nbsp;<span
+            class="code-example">&lt;string&gt;-Xmx2048M&lt;/string&gt;</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;to increase the allocated memory to 2048
+            Megabytes.
+        </p>
 
-<p>The minimum memory allocation, the <span class="code-example">-Xms</span> value, should not be changed.</p>
+        <p>
+            The minimum memory allocation, the <span
+            class="code-example">-Xms</span> value, should not be changed.
+        </p>
 
-<p>Save the file and close.</p>
+        <p>Save the file and close.</p>
 
-<p>Restart OMERO.insight to load the new setting.</p>
+        <p>Restart OMERO.insight to load the new setting.</p>
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-<img alt="../images/configureClientEdit.jpg" class="align-center" src="images/configureClientEdit.jpg" style="width: 100%;" />
+        <img alt="../images/configureClientEdit.jpg" class="align-center"
+        src="images/configureClientEdit.jpg" style="width: 100%;" />
 
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
 
-</li>
+    </li>
 
 </ol>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a>
+</p>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <h2><a class="anchor" id="increasewindows"></a>OMERO.insight on Windows</h2>
 
-<p>To alter the memory allocation of the Windows clients, you must add an optional parameter file to the same folder as the application.</p>
+<p>
+    To alter the memory allocation of the Windows clients, you must add an
+    optional parameter file to the same folder as the application.
+</p>
 
-<p>Create a file called <span class="code-example">OMERO.insight.vmoptions</span> in the same directory as your <span class="code-example">OMERO.insight_64.exe</span> or <span class="code-example">OMERO.insight.exe</span> file and insert a value such as <span class="code-example">-Xmx2048M</span>, as described in OMERO.insight on OS X above.</p>
-  
+<p>
+    Create a file called <span
+    class="code-example">OMERO.insight.vmoptions</span> in the same
+    directory as your <span class="code-example">OMERO.insight_64.exe</span>
+    or <span class="code-example">OMERO.insight.exe</span> file and insert a
+    value such as <span class="code-example">-Xmx2048M</span>, as described in
+    OMERO.insight on OS X above.
+</p>
+
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <h2><a class="anchor" id="increaselinux"></a>OMERO.insight on Unix/Linux</h2>
 
-<p>Changing OMERO.insight memory allocation under Unix requires you to edit the start-up script file, <span class="code-example">OMEROinsight_unix.sh</span> located with the clients.</p>
+<p>
+    Changing OMERO.insight memory allocation under Unix requires you to edit
+    the start-up script file, <span
+    class="code-example">OMEROinsight_unix.sh</span> located with the
+    clients.
+</p>
 
-<p>In the <span class="code-example">OMEROinsight_unix.sh</span> file, edit the maximum value for allocated memory (-Xmx) in the line <span class="code-example">java -Xms256000000 -Xmx1024000000 -jar omero.insight.jar</span> with a new maximum memory value.</p>
+<p>
+    In the <span class="code-example">OMEROinsight_unix.sh</span> file, edit
+    the maximum value for allocated memory (-Xmx) in the line <span
+    class="code-example">java -Xms256000000 -Xmx1024000000 -jar
+    omero.insight.jar</span> with a new maximum memory value.
+</p>
 
-<p>See the <a class="reference external" href="http://docs.oracle.com/javase/6/docs/technotes/tools/solaris/java.html">Java online documentation</a> for a full description of these options.</p>
+<p>
+    See the <a class="reference external"  href="http://docs.oracle.com/javase/6/docs/technotes/tools/solaris/java.html">
+    Java online documentation</a> for a full description of these options.
+</p>
 
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a>
+</p>
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="page-end">
-<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
-<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+    <p>
+        All Tutorial Material is available on line at: <a
+        href="http://help.openmicroscopy.org">help.openmicroscopy.org</a>
+    </p>
+    <p>
+        The Main OME website is at: <a
+        href="http://www.openmicroscopy.org">www.openmicroscopy.org</a>
+    </p>
 </div> <!-- end page-end -->
