@@ -1,5 +1,5 @@
 name: OMERO User Help Website
-gems:
+plugins:
   - jekyll-redirect-from
 markdown: redcarpet
 highlighter: rouge
