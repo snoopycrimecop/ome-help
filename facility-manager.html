@@ -14,6 +14,7 @@ version:
         <a href="#permissions">Permissions on OMERO</a><br />
         <a href="#access">Access control, authentication, user accounts</a><br />
         <a href="#manage">Managing Groups</a><br />
+        <a href="#lightadmin">Creating administrators with restricted privileges</a><br />
         <a href="#import">Importing</a><br />
         <a href="#data">Data structure</a><br />
         <a href="#measure">Measurement and analysis</a><br />
@@ -105,10 +106,12 @@ version:
 <h2><a class="anchor" id="permissions"></a>Permissions on OMERO</h2>
 
 <p>
-    There are three levels of user permission in OMERO, Administrator, Group
-    Owner and Member. Each level of permission allows different actions to be
+    There are three fixed levels of user permission in OMERO, Administrator, Group
+    Owner and Member as well as one adjustable level, Administrator with restricted
+    privileges. Each level of permission allows different actions to be
     performed on a user's own, or other user's data, and certain
-    administrative tasks.
+    administrative tasks. Administrator with restricted privileges permission levels
+    are determined at the point of their creation by the creating Administrator.
 </p>
 
 <p>
@@ -116,6 +119,15 @@ version:
     like to any user's data, in any group (except annotate in Private groups)
     and Group Owners can do anything to any user's data in the groups they
     own.
+</p>
+
+<p>
+    Administrators with restricted privileges can have varying levels
+    of specific permissions, see <a href="https://www.openmicroscopy.org/site/support/omero5.3-staging/sysadmins/admins-with-restricted-privileges.html"
+    target="_blank" class="external-url">Administrators with restricted privileges</a>.
+    Their additional (above Member) specific permissions, such as ability
+    to import for others or organize other users' data, are independent
+    of their group ownership or membership.
 </p>
 
 <p>
@@ -365,6 +377,59 @@ version:
     <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<h2><a class="anchor" id="lightadmin"></a>Creating administrators with restricted privileges</h2>
+
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<ol>
+
+    <li>
+        <p class="first">
+            Click on <span class="bold">Admin</span> in the top
+            toolbar.
+        </p>
+
+        <p class="first">Click on the <span class="bold">Users</span> tab.</p>
+
+        <p>Click on the <span class="bold">Add new User</span> button.</p>
+
+        <p>Fill in the details.</p>
+
+        <p>Click on the radio button <span class="bold">Administrator with restricted privileges</span> in line <span class="bold">Role</span>.</p>
+
+        <p>Hover with mouse over the checkboxes to see short descriptions of the privileges.</p>
+
+        <p>Fill in the table <span class="bold">Choose user privileges</span> by checking the checkboxes.</p>
+
+        <p>Click <span class="bold">Save</span>.</p>
+
+        <div class="line-block">
+            <div class="line"><br /></div> <!-- end #line -->
+        </div> <!-- end #line-block -->
+
+        <img alt="../images/facilityManagerLightAdminWeb.jpg" class="align-center"
+        src="images/facilityManagerLightAdminWeb.jpg" style="width: 100%;" />
+
+    </li>
+
+</ol>
+
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
+    alt="Image for link to top of page" style="float: right;"/></a>
+</p>
+
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
 <h2><a class="anchor" id="new"></a>Creating groups and users</h2>
 
 <div class="line-block">
@@ -441,14 +506,6 @@ version:
     </li>
 
 </ol>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png"
-    alt="Image for link to top of page" style="float: right;"/></a>
-</p>
-
-<div class="line-block">
-    <div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
 
 <h3>OMERO.insight</h3>
 
