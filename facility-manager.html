@@ -14,7 +14,7 @@ version:
         <a href="#permissions">Permissions on OMERO</a><br />
         <a href="#access">Access control, authentication, user accounts</a><br />
         <a href="#manage">Managing Groups</a><br />
-        <a href="#lightadmin">Creating administrators with restricted privileges</a><br />
+        <a href="#lightadmin">Creating Administrators with restricted privileges</a><br />
         <a href="#import">Importing</a><br />
         <a href="#data">Data structure</a><br />
         <a href="#measure">Measurement and analysis</a><br />
@@ -110,8 +110,9 @@ version:
     Owner and Member as well as one adjustable level, Administrator with restricted
     privileges (Restricted Administrators). Each level of permissions allows different
     actions to be performed on a user's own, or another user's data, and certain
-    administrative tasks. Permission levels of Restricted Administrators
-    are determined at the point of their creation by the creating Administrator.
+    administrative tasks. Restricted Administrators can be created and edited by
+    Administrators or other Restricted Administrators. This includes setting of their
+    permission levels.
 </p>
 
 <p>
@@ -545,15 +546,15 @@ version:
     <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<h2><a class="anchor" id="lightadmin"></a>Creating administrators with restricted privileges</h2>
+<h2><a class="anchor" id="lightadmin"></a>Creating Administrators with restricted privileges</h2>
 
 <p>This requires using the OMERO.web Admin tool.</p>
 
-<p>Both administrators with restricted privileges (restricted administrators) and full
-   administrators can create restricted administrators. The privileges of the new
-   restricted administrators can be maximally the same as the privileges
-   of the creating user. Privileges (checkboxes) which the creator does not
-   possess themselves will be disabled in the OMERO.web Admin tool.</p>
+<p>Both Administrators with restricted privileges (Restricted Administrators) and
+   Administrators with full privileges can create Restricted Administrators.
+   The privileges of the new Restricted Administrators can be maximally the same as
+   the privileges of the creating user. Privileges (checkboxes) which the creator
+   does not possess themselves will be disabled in the OMERO.web Admin tool.</p>
 
 <p>This workflow is not implemented in OMERO.insight.</p>
 
@@ -996,8 +997,8 @@ version:
             Right-clicking on Project and creating Dataset will
             create a Dataset linked to the Project. Link between the
             Project and Dataset will belong to the selected user too.
-            Only full administrators or restricted administrators can
-            create objects for other users. Restricted administrators
+            Only Administrators or Restricted Administrators can
+            create objects for other users. Restricted Administrators
             need to have "Write Data" permission
             to create objects for others.
         </p>
