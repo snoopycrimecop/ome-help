@@ -467,6 +467,40 @@ img.flag-left {
 	color: #1f5398;
 }
 
+/*Tables*/
+
+/* .matrix */
+table.matrix {
+	border-spacing: 0;
+}
+.matrix th, .matrix td {
+	border: solid black 1px;
+	text-align: center;
+}
+.matrix th {
+	border-width: 2px 0;
+	font-weight: 900;
+    font-size: 110%;
+    padding: 10px;
+}
+.matrix td {
+	border-width: 0 0 1px 0;
+	padding: 5px;
+}
+.matrix tr td:nth-child(1) {
+	text-align: left;
+}
+.matrix tbody tr:nth-child(2n) td {
+  background-color: #e3ebf3;
+}
+
+.text-red {
+	color: red;
+}
+.text-green {
+	color: green;
+}
+
 /*Footer*/
 
 #footer {
