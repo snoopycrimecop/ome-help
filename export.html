@@ -31,6 +31,8 @@ version:
     The following matrix details the levels at which the different export
     formats are enabled.
     The * indicates usage of the Batch Image Export script (see below).
+    The download of original data can be enabled or disabled for
+    Images or Plates by <a href="https://docs.openmicroscopy.org/latest/omero/sysadmins/config.html#omero-policy-binary-access">sysadmin configuration</a>.
 </p>
 
 <div class="line-block">
@@ -42,11 +44,13 @@ version:
 		<td>Operation</td>
 		<td>Projects</td>
 		<td>Datasets</td>
+		<td>Plates</td>
 		<td>Multiple Images</td>
 		<td>Single Images</td>
 	</tr>
 	<tr>
 		<td>Download in original format</td>
+		<td>X</td>
 		<td>X</td>
 		<td>X</td>
 		<td>✓</td>
@@ -57,12 +61,14 @@ version:
 		<td>X</td>
 		<td>X</td>
 		<td>X</td>
+		<td>X</td>
 		<td>✓</td>
 	</tr>
 	<tr>
 		<td>Export as JPEG, PNG or TIFF</td>
 		<td>X</td>
 		<td>✓ *</td>
+		<td>X</td>
 		<td>✓</td>
 		<td>✓</td>
 	</tr>
