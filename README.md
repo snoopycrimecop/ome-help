@@ -12,7 +12,7 @@ The web site is developed and maintained using Jekyll and GitHub.
 
 The HTML, configuration, layout and CSS files are in this repository. The
 zipped PDF archives of previous versions and other resources are available from the OME Downloads site:
-[http://downloads.openmicroscopy.org/help/](http://downloads.openmicroscopy.org/help/)
+[https://downloads.openmicroscopy.org/help/](https://downloads.openmicroscopy.org/help/)
 in subfolders: pdfs, archives and resources.
 
 **Editing Process**
