@@ -12,7 +12,7 @@ The web site is developed and maintained using Jekyll and GitHub.
 
 The HTML, configuration, layout and CSS files are in this repository. The
 zipped PDF archives of previous versions and other resources are available from the OME Downloads site:
-[http://downloads.openmicroscopy.org/help/](http://downloads.openmicroscopy.org/help/)
+[https://downloads.openmicroscopy.org/help/](https://downloads.openmicroscopy.org/help/)
 in subfolders: pdfs, archives and resources.
 
 **Editing Process**
@@ -38,7 +38,7 @@ at:
 
 **Jekyll version**
 
-Jekyll 3 [changed the way layout metadata is handled](http://jekyllrb.com/docs/upgrading/2-to-3/#layout-metadata).
+Jekyll 3 [changed the way layout metadata is handled](https://jekyllrb.com/docs/upgrading/2-to-3/#layout-metadata).
 As of version 3.1.2, support for the former behaviour was withdrawn, breaking
 the website menu and requiring a fix which was not backwards compatible.
 Therefore, you should ensure you have Jekyll version 3.1.2+ to work with this
@@ -49,7 +49,7 @@ repository.
 Clone this repository and create a branch to use for your work. You should use
 your local Jekyll server to review changes and when ready, commit and push to
 your branch. Your changes will be viewable at
-[http://your-github-username.github.io/ome-help/](http://your-github-username.github.io/ome-help/)
+[https://your-github-username.github.io/ome-help/](https://your-github-username.github.io/ome-help/)
 if you use 'gh-pages' as your
 branch. If you do this, it is best to delete the cloned 'gh-pages'
 branch from the main repo and then create your own which tracks the 'master'

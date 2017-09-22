@@ -25,7 +25,7 @@ redirect_from:
 
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>As well as scripts for exporting images and figures, OMERO.insight and OMERO.web also include a scripts menu for additional scripts. OMERO comes with some scripts pre-installed, to add functionality such as the Populate Metadata (under the &#8216;import_scripts&#8217; item in the menu) and &#8216;utility scripts&#8217;. Custom scripts can be installed on the server by the system administrator so they are available to all users. For details see the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
+<p>As well as scripts for exporting images and figures, OMERO.insight and OMERO.web also include a scripts menu for additional scripts. OMERO comes with some scripts pre-installed, to add functionality such as the Populate Metadata (under the &#8216;import_scripts&#8217; item in the menu) and &#8216;utility scripts&#8217;. Custom scripts can be installed on the server by the system administrator so they are available to all users. For details see the <a href="https://docs.openmicroscopy.org/latest/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
 
 <p>Click on the <span class="bold">Scripts</span> menu button and select the script to be run from the sub-menu.</p>
 
@@ -65,9 +65,9 @@ redirect_from:
 
 <p>The metadata to be uploaded must be in Comma Separated Values format (<span class="code-example">.csv</span>) with a line of entries for each Well in a Plate. The data in the <span class="code-example">.csv</span> must be formatted appropriately, depending on whether it is being used to populate a Screen or a Plate with metadata (see below).</p>
 
-<p>Detailed guidelines can be seen on the <a href="http://www.openmicroscopy.org/site/support/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
+<p>Detailed guidelines can be seen on the <a href="https://docs.openmicroscopy.org/latest/omero/developers/scripts/" target="_blank" class="external-url">scripts documentation</a> page.</p>
 
-<p>Example metadata files for a Screen, <span class="code-example">populateMetadata_example_screen.csv</span>, and a Plate, <span class="code-example">populateMetadata_example_plate.csv</span>, can be downloaded from the OME <a href="http://downloads.openmicroscopy.org/resources/" target="_blank" class="external-url">resources</a> page.</p>
+<p>Example metadata files for a Screen, <span class="code-example">populateMetadata_example_screen.csv</span>, and a Plate, <span class="code-example">populateMetadata_example_plate.csv</span>, can be downloaded from the OME <a href="https://downloads.openmicroscopy.org/resources/" target="_blank" class="external-url">resources</a> page.</p>
 
 <p>The column headers from the <span class="code-example">.csv</span> become the row titles and the values in each row are read from the row in the <span class="code-example">.csv</span> corresponding with that Well.</p>
 
@@ -239,11 +239,11 @@ redirect_from:
 <h3>Populating a Screen with Metadata or Analysis Results
 </h3>
 
-<p>This is exactly the same procedure as described for the Plate above, but the metadata <span class="code-example">.cvs</span> file is attached to a Screen and then used by the script.</p>
+<p>This is exactly the same procedure as described for the Plate above, but the metadata <span class="code-example">.csv</span> file is attached to a Screen and then used by the script.</p>
 
 <p>If metadata is to be added to several or all Plates in a Screen then a column with the Plate name should be included in the .csv and the metadata will be attached to the Screen.</p>
 
-<p>If metadata is to be added to a single Plate, then the Plate name column can be omitted, and the metadata will be attached to the Plate the metadata <span class="code-example">.cvs</span> file is attached to when the script is run.</p>
+<p>If metadata is to be added to a single Plate, then the Plate name column can be omitted, and the metadata will be attached to the Plate the metadata <span class="code-example">.csv</span> file is attached to when the script is run.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
@@ -259,7 +259,7 @@ redirect_from:
 
 <h3>Channel offsets</h3>
 
-<p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/ChannelOffsets-4.3.mov">MOVIE: channel offsets demo</a></p>
+<p><a class="external-url" href="https://downloads.openmicroscopy.org/movies/omero-4-3/mov/ChannelOffsets-4.3.mov">MOVIE: channel offsets demo</a></p>
 
 <p>The Channel Offsets script allows you to apply X, Y and Z offsets to
 individual channels in an image, creating a new image in the process.
@@ -276,7 +276,7 @@ Name&#8221; parameter is filled out.</p>
 
 <h3>Dataset to Plate</h3>
 
-<p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/Dataset_To_Plate-4.3.2.mov">MOVIE: Dataset to Plate demo</a></p>
+<p><a class="external-url" href="https://downloads.openmicroscopy.org/movies/omero-4-3/mov/Dataset_To_Plate-4.3.2.mov">MOVIE: Dataset to Plate demo</a></p>
 
 <p>This script allows you to create a &#8220;Plate&#8221; from an ordered set of images
 in a Dataset, assigning images to a row and column based on their
@@ -298,8 +298,8 @@ size of the row or column and how they are named.</p>
 </div><!-- End image -->
 
 
-<p><a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-3/mov/Combine_Images.mov">MOVIE: Combine Images demo</a>.  Slightly older movie
-<a class="external-url" href="http://cvs.openmicroscopy.org.uk/snapshots/movies/omero-4-2/mov/Scripting1.mov">here</a>.</p>
+<p><a class="external-url" href="https://downloads.openmicroscopy.org/movies/omero-4-3/mov/Combine_Images.mov">MOVIE: Combine Images demo</a>.  Slightly older movie
+<a class="external-url" href="https://downloads.openmicroscopy.org/movies/omero-4-2/mov/Scripting1.mov">here</a>.</p>
 
 <p>This script takes a number of single-plane images or image Z-stacks,
 identified either by <cite>Image_ID</cite> or by the ID of the Dataset that contains
@@ -432,7 +432,7 @@ owner of the Image-Annotation link).</p>
 
 <div class="page-end">
 	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
-	<p>The Main OME website is at: <a href="http://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+	<p>The Main OME website is at: <a href="https://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
 </div> <!-- end page-end -->
 
 </div><!-- End section -->
