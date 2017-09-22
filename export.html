@@ -23,21 +23,70 @@ version:
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
 <p>
-    In OMERO you are able to download any image in its original format, or
-    export it as an OME-TIFF, JPEG, PNG or TIFF image.
+    In OMERO you are able to download most images in their original format.
+    You can also export images as OME-TIFF, JPEG, PNG or TIFF images
 </p>
 
 <p>
-    The following matrix details the levels at which the different export
+    The following table details the levels at which the different export
     formats are enabled.
+    The * indicates usage of the Batch Image Export script (see below).
+    The download of original data can be enabled or disabled for
+    Images or Plates by <a href="https://docs.openmicroscopy.org/latest/omero/sysadmins/config.html#omero-policy-binary-access">sysadmin configuration</a>.
+    The table below shows the expected behaviour with the default configuration.
+</p>
+
+<p>
+    Export of images as OME-TIFF, JPEG, PNG or TIFF is not supported for large tiled images,
+    typically above 3000 x 3000 pixels.
 </p>
 
 <div class="line-block">
     <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/exportMatrix.jpg" class="align-center"
-src="images/exportMatrix.jpg" style="width: 70%;" />
+<table class="matrix">
+	<tr>
+		<th>Operation</th>
+		<th>Projects</th>
+		<th>Datasets</th>
+		<th>Multiple Images</th>
+		<th>Single Images</th>
+        <th>Plates</th>
+        <th>Single Images in Plates</th>
+        <th>Multiple Images in Plates</th>
+	</tr>
+	<tr>
+		<td>Download in original format</td>
+		<td class='text-red'>X</td>
+		<td class='text-red'>X</td>
+		<td class='text-green'>✓</td>
+		<td class='text-green'>✓</td>
+        <td class='text-red'>X</td>
+        <td class='text-red'>X</td>
+        <td class='text-red'>X</td>
+	</tr>
+	<tr>
+		<td>Export as OME-TIFF</td>
+		<td class='text-red'>X</td>
+		<td class='text-green'>✓ *</td>
+		<td class='text-green'>✓ *</td>
+		<td class='text-green'>✓</td>
+        <td class='text-red'>X</td>
+        <td class='text-green'>✓</td>
+        <td class='text-green'>✓ *</td>
+	</tr>
+	<tr>
+		<td>Export as JPEG, PNG or TIFF</td>
+		<td class='text-red'>X</td>
+		<td class='text-green'>✓ *</td>
+		<td class='text-green'>✓</td>
+		<td class='text-green'>✓</td>
+        <td class='text-red'>X</td>
+        <td class='text-green'>✓</td>
+        <td class='text-green'>✓</td>
+	</tr>
+</table>
 
 <div class="line-block">
     <div class="line"><br /></div> <!-- end #line -->
