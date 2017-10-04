@@ -20,7 +20,7 @@ version:
 <a href="#default">Changing your default group</a><br />
 <a href="#share">Sharing data with users you are not in a group with</a><br />
 <a href="#owner">Managing groups as a Group Owner</a><br />
-<a href="#admin">Managing groups as an OMERO system Administrator</a>
+<a href="#admin">Managing groups as an OMERO Administrator</a>
 
 </p>
 
@@ -32,7 +32,7 @@ version:
  
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>Groups are used in OMERO to enable sharing of data between users. Groups are created by the OMERO system administrator and usually have one or more group owners. Group owners and admins can add or remove members.</p>
+<p>Groups are used in OMERO to enable sharing of data between users. Groups are created by the OMERO administrator and usually have one or more group owners. Group owners and admins can add or remove members.</p>
 
 <p>There are four levels of group permissions allowing members different degrees of interaction with the data owned by other members in the group. In all groups, you retain ownership of your own data, and there are no limitations on the operations and actions you can perform on your own data. You can be in many groups, each with different permissions.</p>
 
@@ -46,7 +46,7 @@ version:
 
 <h2><a class="anchor" id="roles"></a>User roles</h2>
 
-<p>There are three levels of role in any group:</p>
+<p>Users in OMERO can be assigned to four roles that offer different permission levels::</p>
 
 <p><span class="bold">Member</span> - the level most users will be at:</p>
 <ul class="bullet-list">
@@ -61,6 +61,17 @@ version:
 <li>can increase the permissions level on a group</li>
 <li>can view, annotate, edit and delete data belonging to other members in the group (except annotate in Private groups)</li>
 <li>other interactions with data belonging to other group members depends on group type.</li>
+</ul>
+
+<p><span class="bold">Restricted Administrators</span> - typically used by Facility Managers, Image Analysts or persons organizing groups and data for other users.
+</p>
+<ul class="bullet-list">
+<li>practically speaking, any specific action can be done by a Restricted Administrator for which they were given corresponding specific permission. They can perform such action in any group just like Admins (see below).
+<li>Restricted Administrator can also see and download any user’s data, in any group.
+<li>see system administrator documentation
+section <a href="https://docs.openmicroscopy.org/latest/omero/sysadmins/restricted-admins.html"
+target="_blank" class="external-url">Administrators with restricted privileges</a>.
+</li>
 </ul>
 
 <p><span class="bold">Admin</span> - this role is typically reserved for the OMERO server administrator:</p>
@@ -652,7 +663,7 @@ version:
 
 <div class="note">
 <p class="note-title">Note</p>
-<p class="note-text">The points described below apply only if you are an OMERO system <span class="bold">Administrator</span>.</p>
+<p class="note-text">The points described below apply only if you are an OMERO <span class="bold">Administrator</span>.</p>
 </div><!-- End note -->	
 
 <div class="line-block">
@@ -665,11 +676,12 @@ version:
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<h2><a class="anchor" id="admin"></a>Managing groups as an OMERO system Administrator</h2>
+<h2><a class="anchor" id="admin"></a>Managing groups as an OMERO Administrator</h2>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
+<p>Administrators in this context can be full system Administrators or Restricted Administrators with the correct privileges.</p>
 
 <p>Administrators can:</p>
 <ul>
