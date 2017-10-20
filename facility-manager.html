@@ -601,9 +601,15 @@ version:
 
 <h2><a class="anchor" id="remove"></a>Removing a user from a group</h2>
 
-<p>This requires using the OMERO.web Admin tool.</p>
+<p>
+    Do not remove users from a group where they own data - make sure the data
+    is moved or assigned to a new owner first.
+</p>
 
-<p>There are two ways to do this.</p>
+<p>
+    This action requires using the OMERO.web Admin tool and there are two ways
+    to do it:
+</p>
 
 <div class="line-block">
     <div class="line"><br /></div> <!-- end #line -->
@@ -695,13 +701,12 @@ version:
 <h2>Moving Data</h2>
 
 <p>
-    When a user is removed from a group, any data they have in the group
-    remains in the group, and is still owned by the user.
-</p>
-
-<p>
-    Data can be moved to another group by the user before they are removed, or
-    by the group owner or administrator at any time.
+    Data can be moved to another group by the data owner (provided they
+    are a member of both groups) or by an administrator (including a 
+    restricted administrator with the correct privileges) at any time. A group
+    owner will need to use
+    <a href="https://docs.openmicroscopy.org/latest/omero/users/cli/chown.html">OMERO.cli to change ownership of the data</a> to themselves before they can move it
+    and must be a member of the target group.
 </p>
 
 <div class="line-block">
@@ -715,12 +720,6 @@ version:
     <li>
 
         <p>
-            Select <span class="bold">All Members</span> from the group
-            display menu to view data owned by a user who is no longer a
-            member of the group.
-        </p>
-
-        <p>
             Right-click on the data to be moved and select <span
             class="bold">Move to Group ... </span>.
         </p>
@@ -731,8 +730,8 @@ version:
             <div class="line"><br /></div> <!-- end #line -->
         </div> <!-- end #line-block -->
 
-        <img alt="../images/facilityManagerMoveWeb.jpg" class="align-center"
-        src="images/facilityManagerMoveWeb.jpg" style="width: 100%;" />
+        <img alt="../images/sharingDataMoveWeb.jpg" class="align-center" 
+        src="images/sharingDataMoveWeb.jpg" style="width: 100%;" />
 
     </li>
 
@@ -753,12 +752,6 @@ version:
     <li>
 
         <p>
-            Uncheck <span class="bold">Display Users</span> from the Display
-            Groups menu to view data owned by a user who is no longer a member
-            of the group.
-        </p>
-
-        <p>
             Right-click on the data to be moved and select <span
             class="bold">Move to Group ... </span>.
         </p>
@@ -771,7 +764,7 @@ version:
 
         <img alt="../images/facilityManagerMoveInsight.jpg"
         class="align-center" src="images/facilityManagerMoveInsight.jpg"
-        style="width: 100%;" />
+        style="width: 70%;" />
 
         <div class="line-block">
             <div class="line"><br /></div> <!-- end #line -->
@@ -785,18 +778,22 @@ version:
     <p class="note-title">Note</p>
 
     <p class="note-text">
-        Using the Command Line Interface (CLI),
-        administrators and group owners (for data in their groups)  can:
+        Guides for using the Command Line Interface (CLI) are available:
     </p>
 
     <ul>
 
-        <li>list and <a href="https://docs.openmicroscopy.org/latest/omero/users/cli/chgrp.html"
-        target="_blank" class="external-url">move data</a> owned by users no
-        longer a member of a group
+        <li><a href="https://docs.openmicroscopy.org/latest/omero/users/cli/chgrp.html" target="_blank" class="external-url">Moving data between groups (chgrp)</a> -
+        possible for administrators (either full or restricted admins with the
+        correct privileges), and data owners if they are a member of the
+        target group.
         </li>
 
-        <li>change ownership of data</li>
+        <li><a href="https://docs.openmicroscopy.org/latest/omero/users/cli/chown.html" target="_blank" class="external-url">Changing ownership of data (chown)</a> -
+        possible for administrators (either full or restricted admins with the
+        correct privileges), and group owners provided the target user is
+        a member of their group.
+        </li>
 
     </ul>
 
@@ -832,8 +829,9 @@ version:
 </p>
 
 <p>
-    Administrators can import data to any group for any user i.e. the data 
-    will belong to that user.
+    Administrators can import data for any user i.e. the data 
+    will belong to that user (in OMERO.insight and OMERO.importer, they will
+    need to be members of the target group but in <a href="https://docs.openmicroscopy.org/latest/omero/users/cli/import.html#advanced-import-commands">OMERO.cli they can import for</a> users to any group)
 </p>
 
 <p>Similarly a Group Owner can import for other members of their group.</p>
