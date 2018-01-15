@@ -16,7 +16,8 @@ description: Use OMERO.figure to create, save and edit figures using data from t
         <a href="#rois">Adding and editing ROIs</a><br />
         <a href="#files">Adding different file types and legends</a><br />
         <a href="#paper_setup">Paper Setup</a><br />
-        <a href="#saving">Configuring, saving and exporting your figure</a><br />
+        <a href="#saving">Configuring and saving your figure</a><br />
+        <a href="#export">Figure Export</a><br />
     </p>
 </div><!-- End Page Navigation -->
 
@@ -883,8 +884,8 @@ description: Use OMERO.figure to create, save and edit figures using data from t
 
 <div class="line"><br /></div>
 
-<h2><a class="anchor" id="saving"></a>Configuring, saving and exporting your
-    figure
+<h2><a class="anchor" id="saving"></a>
+    Configuring and saving your figure
 </h2>
 
 <li>
@@ -1007,6 +1008,10 @@ description: Use OMERO.figure to create, save and edit figures using data from t
 </li>
 
 
+<h2><a class="anchor" id="export"></a>
+    Figure Export
+</h2>
+
 <li>
     <p class="first">
         Click <span class="bold">Export PDF</span> to create a figure for
@@ -1041,24 +1046,34 @@ description: Use OMERO.figure to create, save and edit figures using data from t
         to select different export options.
     </p>
 
-    <p>
-        Select <span class="bold">TIFF</span> to export the figure as a TIFF
-        image at 300 dpi.
-    </p>
+    <ul>
+        <li>
+            Select <span class="bold">TIFF</span> to export the figure as a TIFF
+            image at 300 dpi.
+        </li>
 
-    <p>
-        Select the <span class="bold">... with images</span> option to create
-        a zip file that includes the figure and all the individual figure
-        panels as separate images.
-    </p>
+        <li>
+            Select <span class="bold">New OMERO Image</span> to create a new Image
+            in OMERO from the figure.
+        </li>
 
-    <p>
-        The zip will include the different processing stages of zooming,
-        cropping, rotating, resampling etc. to act as a record of the figure
-        generation steps.
-    </p>
+        <li>
+            Select the <span class="bold">... with images</span> option to create
+            a zip file that includes the figure and all the individual figure
+            panels as separate images. <br>
+            The zip will include the different processing stages of zooming,
+            cropping, rotating, resampling etc. to act as a record of the figure
+            generation steps.
+        </li>
+    </ul>
 
-    <p>Click the green button to create the selected format for export.</p>
+    <div class="line"><br /></div>
+
+    <img alt="../images/figureFormat.jpg" class="align-center" src="images/figureFormat.jpg" style="width: 85%;" />
+
+    <div class="line"><br /></div>
+
+    <p>Click the green button to perform the chosen export.</p>
 
     <p>
         When this is complete the blue download button will become
@@ -1078,19 +1093,7 @@ description: Use OMERO.figure to create, save and edit figures using data from t
     </p>
 </div><!-- End note -->
 
-<div class="line-block">
-    <div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<div class="line-block">
-    <div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/figureFormat.jpg" class="align-center" src="images/figureFormat.jpg" style="width: 85%;" />
-
-<div class="line-block">
-    <div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
+<div class="line"><br /></div>
 
 </li>
 
