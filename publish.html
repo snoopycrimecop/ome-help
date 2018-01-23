@@ -13,7 +13,8 @@ version:
 <a href="#figures">Creating figures</a><br />
 <a href="#movies">Creating movies</a><br />
 <a href="#public">Using a public group</a><br />
-<a href="#repository">Using OMERO as a Public Repository</a>
+<a href="#repository">Using OMERO as a Public Repository</a><br />
+<a href="#scripts">Using scripts to create figures</a><br />
 </p>
 </div><!-- End Page Navigation -->
 
@@ -23,23 +24,74 @@ version:
 
 <h2><a class="anchor" id="introduction"></a>Introduction</h2>
 
-<p>The principal tool for creating figures using images on OMERO is OMERO.figure. This is an optional installation, so may not be available on your server. Details can be found on the <a href="http://help.openmicroscopy.org/figure.html" target="_blank" class="external-url">OMERO.figure</a> page. If you would like to use OMERO.figure, speak to your OMERO system administrator.</p>
+<p>
+    Both OMERO.insight and OMERO.web provide access to scripts that produce
+    basic figures and movies from images on the OMERO server. For the best
+    figure-making functionality, you should ask your OMERO server
+    administrator to
+    <a href="https://pypi.python.org/pypi/omero-figure/" target="_blank">install the OMERO.figure web app from PyPI</a>
+</p>
 
-<p>Both OMERO.insight and OMERO.web also provide access to scripts that produce basic figures and movies from images on the OMERO server.</p>
-
-<p>OMERO also offers a facility that allows public access to specified data on the server, provided this has been enabled by your OMERO server administrator. These are all described below.</p>
+<p>
+    OMERO also offers a facility that allows public access to specified data 
+    on the server, provided this has been enabled by your OMERO server 
+    administrator. These are all described below.
+</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<h2><a class="anchor" id="figures"></a>Creating figures</h2>
+
+<p>
+    OMERO.figure is a web app which combines OMERO's image
+    rendering and metadata to provide a tool for rapid figure creation. Each
+    panel of the figure becomes a multi-dimensional image viewer, allowing you
+    to zoom and pan, adjust rendering settings and even scroll through Z and
+    Time. Figures can be exported as TIFF images or PDF documents, so you can
+    move seamlessly to other editing tools such as Adobe Illustrator.
+</p>
+
+<p>
+    Further details are on the
+    <a href="http://help.openmicroscopy.org/figure.html">OMERO.figure</a> page
+    and the <a href="http://figure.openmicroscopy.org" target="_blank">figure.openmicroscopy.org</a> website.
+</p>
+
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/figureRendering.jpg" class="align-center" src="images/figureRendering.jpg" style="width: 100%;" />
+
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<p>
+    If you do not have access to OMERO.figure, you can still use the script
+    functionality in OMERO.insight and OMERO.web to create basic figures, see
+    the <a href="#scripts">Using scripts to create figures</a> section below.
+</p>
+
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
-<h2><a class="anchor" id="figures"></a>Creating figures</h2>
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h2><a class="anchor" id="movies"></a>Creating movies</h2>
 
 <ol class="step">
 
-<li><p class="first">Click on the <span class="bold">Publish</span> icon in the toolbar.</p>
+<li><p class="first">
+    Select a time-lapse Image in the OMEO.insight or OMERO.web client and
+    click on the <span class="bold">Publish</span> icon in the toolbar.
+</p>
 
 <p></p>
 
@@ -68,159 +120,6 @@ version:
 </div> <!-- end #line-block -->
 
 </li>
-
-
-<li><p class="first">Each script will open in a custom window.</p>
-
-<p>Various parameters can be adjusted, and these values will be used by the script.</p>
-
-<p>Edit the name of the figure or movie if desired.</p>
-
-<p>Select the format of the figure from JPEG, PNG or TIFF.</p>
-
-<p>Some of the script windows differ cosmetically between OMERO.insight and OMERO.web in terms of parameters available for setting and previews of the figures, but both OMERO.insight and OMERO.web use the same scripts, so the eventual output will be the same.</p>
-
-<p>In OMERO.insight click on the <span class="bold">Script</span> button to download or view the script code.</p>
-
-<p>In OMERO.web click on the <span class="bold">View Script</span> link to view the script code.</p>
-
-<p>Use the slider to adjust the size of the previews in OMERO.web script windows.</p>
-
-<p>Click the <span class="bold">Create</span>, <span class="bold">Create Figure</span> or <span class="bold">Make Movie</span> button to run the script.</p>
-
-<p>Figures created by scripts are attached to the Images or the Dataset used in the figure.</p>
-
-<p>Once created, figures can be viewed or downloaded from the activities menu.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/publishAll.jpg" class="align-center" src="images/publishAll.jpg" style="width: 100%;" />
-
-</li>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<li><p class="first">Select <span class="bold">Split View Figure...</span> from the drop-down menu to create a figure with a thumbnail for each channel and one for the full image.</p>
-
-<p>Select the source of labelling from the <span class="bold">Image Label</span> drop-down.</p>
-
-<p>Toggle the Scale Bar on and off and set size and color.</p>
-
-<p>Select Z-sections to be included.</p>
-
-<p>Toggle channels on or off and edit channel colors as required.</p>
-
-<h3>OMERO.insight</h3>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/publishSplitInsight.jpg" class="align-centre" src="images/publishSplitInsight.jpg" style="width: 75%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<h3>OMERO.web</h3>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/publishSplitWeb.jpg" class="align-center" src="images/publishSplitWeb.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<li><p class="first">Select <span class="bold">ROI Split Figure...</span> to create a split figure of the area of an image marked by a rectangular ROI.</p>
-
-<p>The full image thumbnail indicates the area of the image selected by the ROI.</p>
-
-<h3>OMERO.insight</h3>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/publishROISplitInsight.jpg" class="align-left" src="images/publishROISplitInsight.jpg" style="width: 75%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<li><p class="first">Select <span class="bold">Thumbnail Figure...</span> from the drop-down menu to create a figure with a thumbnail for each image.</p>
-
-<p>Select the size from the <span class="bold">Thumbnail Size</span> drop-down.</p>
-
-<p>Enter the number of thumbnails in a row.</p>
-
-<p>Images to be included can be selected according to tags linked to them.</p>
-
-<h3>OMERO.insight</h3>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/publishThumbnailInsight.jpg" class="align-left" src="images/publishThumbnailInsight.jpg" style="width: 85%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<h3>OMERO.web</h3>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/publishThumbnailWeb.jpg" class="align-center" src="images/publishThumbnailWeb.jpg" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-</ol>
-
-<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<h2><a class="anchor" id="movies"></a>Creating movies</h2>
-
-<ol class="step">
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
 
 <li><p class="first">Select <span class="bold">Movie Figure...</span> to create a figure with a thumbnail for each frame of the movie.</p>
 
@@ -637,9 +536,17 @@ Click on thumbnail or
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p>In addition to adding the Public User to allow access to your data, the appearance of OMERO.web can be customised or you can use a separate custom app to tailor the front end of your OMERO installation to your target audience.</p>
+<p>
+    In addition to adding the Public User to allow access to your data, the
+    appearance of OMERO.web can be customized or you can use a separate custom
+    app to tailor the front end of your OMERO installation to your target
+    audience.
+</p>
 
-<p>There are a number of repositories based on OMERO with bespoke front ends, including:</p>
+<p>
+    There are a number of repositories based on OMERO with customized front
+    ends, including:
+</p>
 
 <ul>
 
@@ -652,11 +559,21 @@ The Cell Image Library</a></p></li>
 
 </ul>
 
+<p>
+    See the
+    <a href="https://www.openmicroscopy.org/explore/" target="_blank">Explore</a> page for more examples.
+</p>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p>OMERO.gallery provides a basic gallery front end based on the Group-Project-Dataset-Image, and is a good starting point to develop a bespoke front end.</p>
+<p>
+    <a href="https://github.com/ome/omero-gallery" target="_blank">OMERO.gallery</a>
+    provides a basic gallery front end based on the
+    Group-Project-Dataset-Image, and is a good starting point to develop a
+    customized front end.
+</p>
 
 <p>An example of this can be seen at:</p>
 
@@ -670,7 +587,11 @@ The Cell Image Library</a></p></li>
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<p>Full documentation on how to set up OMERO as a public repository and details of customisation options can be found in the <a href="https://docs.openmicroscopy.org/latest/omero/sysadmins/index.html#optimizing-omero-as-a-data-repository" target="_blank" class="external-url">OMERO Repository documentation</a>.</p>
+<p>
+    Full documentation on how to set up OMERO as a public repository and
+    details of customization options can be found in the
+    <a href="https://docs.openmicroscopy.org/latest/omero/sysadmins/index.html#optimizing-omero-as-a-data-repository" target="_blank" class="external-url">OMERO Repository documentation</a>.
+</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -678,16 +599,168 @@ The Cell Image Library</a></p></li>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
+<h2><a class="anchor" id="scripts"></a>Using scripts to create figures</h2>
+
+<p>
+    If you do not have access to OMERO.figure, you can still use the script
+    functionality in OMERO.insight and OMERO.web to create basic figures from
+    the same menu as the movie functionality described above.
+</p>
+
+<p>
+    Figures created by scripts are attached to the Images or the Dataset used
+    in the figure. They can also be viewed or downloaded from the activities
+    menu.
+</p>
+
+<ol class="step">
+
+<li><p class="first">Click on the <span class="bold">Publish</span> icon in the toolbar.</p>
+
+<p></p>
+
+<h3>OMERO.insight</h3>
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
+<img alt="../images/publishDropdownInsight.jpg" class="align-center" src="images/publishDropdownInsight.jpg" style="width: 80%;" />
+
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishDropdownWeb.jpg" class="align-center" src="images/publishDropdownWeb.jpg" style="width: 82%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+
+<li><p class="first">Select <span class="bold">Split View Figure...</span> from the drop-down menu to create a figure with a thumbnail for each channel and one for the full image.</p>
+
+<p>Select the source of labelling from the <span class="bold">Image Label</span> drop-down.</p>
+
+<p>Toggle the Scale Bar on and off and set size and color.</p>
+
+<p>Select Z-sections to be included.</p>
+
+<p>Toggle channels on or off and edit channel colors as required.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishSplitInsight.jpg" class="align-centre" src="images/publishSplitInsight.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishSplitWeb.jpg" class="align-center" src="images/publishSplitWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select <span class="bold">ROI Split Figure...</span> to create a split figure of the area of an image marked by a rectangular ROI.</p>
+
+<p>The full image thumbnail indicates the area of the image selected by the ROI.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishROISplitInsight.jpg" class="align-left" src="images/publishROISplitInsight.jpg" style="width: 75%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<li><p class="first">Select <span class="bold">Thumbnail Figure...</span> from the drop-down menu to create a figure with a thumbnail for each image.</p>
+
+<p>Select the size from the <span class="bold">Thumbnail Size</span> drop-down.</p>
+
+<p>Enter the number of thumbnails in a row.</p>
+
+<p>Images to be included can be selected according to tags linked to them.</p>
+
+<h3>OMERO.insight</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishThumbnailInsight.jpg" class="align-left" src="images/publishThumbnailInsight.jpg" style="width: 85%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<h3>OMERO.web</h3>
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<img alt="../images/publishThumbnailWeb.jpg" class="align-center" src="images/publishThumbnailWeb.jpg" style="width: 100%;" />
+
+<div class="line-block">
+<div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+</li>
+
+</ol><!-- end page list -->
+
+<p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
+
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+</div> <!-- end #line-block -->
+
+<div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
 <div class="page-end">
-	<p>All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a></p>
-	<p>The Main OME website is at: <a href="https://www.openmicroscopy.org">www.openmicroscopy.org</a></p>
+	<p>
+	    All Tutorial Material is available on line at: <a href="http://help.openmicroscopy.org">help.openmicroscopy.org</a>
+	</p>
+	<p>
+	    The Main OME website is at: <a href="https://www.openmicroscopy.org">www.openmicroscopy.org</a>
+	</p>
 </div> <!-- end page-end -->
-
