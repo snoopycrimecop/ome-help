@@ -164,7 +164,7 @@ Links need to be updated in:
 
 **Licensing**
 
-© Copyright Open Microscopy Environment 2000 - 2017.
+© Copyright Open Microscopy Environment 2000 - 2018.
 All material is covered by the
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 You are free to share or adapt content as long as you credit the Open
