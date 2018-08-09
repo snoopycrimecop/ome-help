@@ -4,8 +4,8 @@ Stylesheet for the OMERO User Guides Website
 All material is covered by the Creative Commons Attribution 3.0 Unported License - you are free to share or adapt content as long as you credit the Open Microscopy Environment. The exception to this is the screenshots and videos which can only be used for non-commercial purposes.
 */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 * {
 	margins: 0;
