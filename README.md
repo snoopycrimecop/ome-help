@@ -60,7 +60,7 @@ branch.**
 When work is complete and the changes pushed, a pull request should be opened
 against the 'master' branch of the main repo. This will be picked up by the
 OME CI system and the updated page will be viewable for review at
-[http://help.staging.openmicroscopy.org/](http://help.staging.openmicroscopy.org/) once the build has been run.
+[https://help.staging.openmicroscopy.org/](https://help.staging.openmicroscopy.org/) once the build has been run.
 The PR will be posted in the OME stand-up document for review.
 
 **Web Site Structure**
@@ -166,7 +166,7 @@ Links need to be updated in:
 
 © Copyright Open Microscopy Environment 2000 - 2018.
 All material is covered by the
-[Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
+[Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 You are free to share or adapt content as long as you credit the Open
 Microscopy Environment. The exception to this is the screenshots and videos
 which can only be used for non-commercial purposes.
