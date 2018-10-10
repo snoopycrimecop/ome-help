@@ -4,5 +4,8 @@ plugins:
 markdown: redcarpet
 highlighter: rouge
 
+omero:
+  version: 5.4.9
+
 baseurl: /ome-help
 clsbaseurl: /ome-help/cls
