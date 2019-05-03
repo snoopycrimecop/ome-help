@@ -15,6 +15,7 @@ version:
 <a href="#tips">Tips (wildcards)</a><br />
 <a href="#keyword">Keyword Searching</a><br />
 <a href="#keyvalue">Key-Value Pair Annotation Search</a><br />
+<a href="#advanced">Advanced Search</a><br />
 </p>
 
 </div><!-- End Page Navigation -->
@@ -286,6 +287,38 @@ version:
 
 <p>will return objects with a Key-Value pair annotation with the specific key: <span class="code-example">Temperature</span>.</p>
 
+<h2><a class="anchor" id="advanced"></a>Advanced Search</h2>
+
+<p>Advanced search is available in OMERO.web only.</p>
+
+<p>Inside the search page, click on the <span class="bold">Advanced</span> tab in the left-hand pane.</p>
+
+<p>OMERO.server uses <a href="https://lucene.apache.org/">Lucene</a> to perform the search commands. The <span class="bold">Advanced</span> tab accepts directly the Lucene queries, with no parsing. Follow the steps below to get started with Lucene queries.
+
+<p>Construct searches for a string in any <span class="bold">Field</span> as listed in <a href="https://docs.openmicroscopy.org/latest/omero/developers/Modules/Search.html#field-names"
+    target="_blank" class="external-url">the table of fields in the documentation</a> using the syntax: <span class="code-example">Field:string</span>.</p>
+
+<p>For example, searching for:</p>
+
+<p class="code-example">file.format:pdf</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a FileAnnotation where the format of the FileAnnotation is pdf.</p>
+
+<p>Combine searching in fields using AND, OR, NOT.</p>
+
+<p>For example, searching for:</p>
+
+<p class="code-example">file.contents:figure AND file.format:pdf</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a FileAnnotation which has the string <span class="code-example">figure</span> in it and with a FileAnnotation where the format of the FileAnnotation is pdf. Note that the two FileAnnotations may or may not be identical, both cases will be listed in the search results.</p>
+
+<p>Combine searching in fields using AND, OR, NOT and brackets.</p>
+
+<p>For example, searching for:</p>
+
+<p class="code-example">annotation.ns:gene AND annotation.type:MapAnnotation AND (tag:Mitosis OR (tag:40x AND tag:confocal))</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a MapAnnotation and an annotation with a namespace <span class="code-example">gene</span>, which are also tagged with either the tag <span class="code-example">Mitosisf</span> or both the tags <span class="code-example">40x</span> and <span class="code-example">confocal</span>.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
