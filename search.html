@@ -303,6 +303,65 @@ version:
 <p>Construct searches for a string in any <span class="bold">Field</span> as listed in <a href="https://docs.openmicroscopy.org/latest/omero/developers/Modules/Search.html#field-names"
     target="_blank" class="external-url">the table of fields in the documentation</a> using the syntax: <span class="code-example">Field:string</span>.</p>
 
+<table>
+ <tr>
+  <th>Field</th>
+  <th>Comment</th>
+ </tr>
+ <tr>
+  <td>name</td>
+  <td>name of the field</td>
+ </tr>
+ <tr>
+  <td>details.owner.omeName</td>
+  <td>login name of the owner</td>
+ </tr>
+ <tr>
+  <td>details.owner.firstName</td>
+  <td>first name of the owner</td>
+ </tr>
+ <tr>
+  <td>details.owner.lastName</td>
+  <td>last name of the owner</td>
+ </tr>
+ <tr>
+  <td>details.group.name</td>
+  <td>group name of the group</td>
+ </tr>
+ <tr>
+  <td>tag</td>
+  <td>A Tag attached to the object</td>
+ </tr>
+ <tr>
+  <td>annotation</td>
+  <td>Tag, Key-Value Pairs, Comment, but not Attachment.</td>
+ </tr>
+ <tr>
+  <td>annotation.ns</td>
+  <td>A namespace of an annotation (Tag, Key-Value Pairs, Comment and Attachment)</td>
+ </tr>
+ <tr>
+  <td>annotation.type</td>
+  <td>Type of an annotation, in the syntax TagAnnotation for Tags, MapAnnotation for Key-Value Pairs, CommentAnnotation for Comment, FileAnnotation for Attachment and LongAnnotation for Ratings.</td>
+ </tr>
+ <tr>
+  <td>file.name</td>
+  <td>Name of original file attached to an object. Note: When a file is attached to an object in OMERO, OMERO.server creates an object called OriginalFile. It is actually the name of this OriginalFile which is searched for. The OriginalFile name and the name of the uploaded file match unless the OriginalFile was renamed by an explicit action of the owner or admin.</td>
+ </tr>
+ <tr>
+  <td>file.format</td>
+  <td>Format of original file attached to an object. Note: When a file is attached to an object in OMERO, OMERO.server creates an object called OriginalFile. It is actually the format of this OriginalFile which is searched for. The OriginalFile format and the format of the uploaded file match unless the OriginalFile format was changed by an explicit action of the owner or admin.</td>
+ </tr>
+ <tr>
+  <td>file.path</td>
+  <td>Path of original file attached to an object. Note: When a file is attached to an object in OMERO, OMERO.server creates an object called OriginalFile. It is actually the path of this OriginalFile which is searched for. The OriginalFile path and the path of the uploaded file match unless the OriginalFile path was changed by an explicit action of the owner or admin.</td>
+ </tr>
+ <tr>
+  <td>file.contents</td>
+  <td>Contents of original file attached to an object. Presently, the "pdf" and "csv" formats only are searched for contents.</td>
+ </tr>
+</table>
+
 <p>For example, searching for:</p>
 
 <p class="code-example">file.format:pdf</p>
