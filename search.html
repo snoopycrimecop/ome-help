@@ -364,6 +364,12 @@ version:
 
 <p>For example, searching for:</p>
 
+<p class="code-example">name:injected</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images which have the search term <span class="code-example">injected</span> in their name.</p>
+
+<p>and searching for:</p>
+
 <p class="code-example">file.format:pdf</p>
 
 <p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a FileAnnotation where the format of the FileAnnotation is pdf.</p>
@@ -380,9 +386,9 @@ version:
 
 <p>For example, searching for:</p>
 
-<p class="code-example">annotation.ns:gene AND annotation.type:MapAnnotation AND (tag:Mitosis OR (tag:40x AND tag:confocal))</p>
+<p class="code-example">name:injected AND annotation.type:MapAnnotation AND (tag:Mitosis OR (tag:40x AND tag:confocal))</p>
 
-<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a MapAnnotation and an annotation with a namespace <span class="code-example">gene</span>, which are also tagged with either the tag <span class="code-example">Mitosisf</span> or both the tags <span class="code-example">40x</span> and <span class="code-example">confocal</span>.</p>
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a name containing <span class="code-example">injected</span>, annotated with any Key-Value Pairs, which are also tagged with either the tag <span class="code-example">Mitosisf</span> or both the tags <span class="code-example">40x</span> and <span class="code-example">confocal</span>.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
