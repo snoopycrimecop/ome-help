@@ -289,8 +289,8 @@ version:
 
 <h2><a class="anchor" id="advanced"></a>Advanced Search</h2>
 
-<p>To understand basics of Search in OMERO, or to search for Key-Value pairs, please read also the <a href="#tips"
-    target="_blank">Tips (wildcars),</a> <a href="#keyword"
+<p>To understand the basics of Search in OMERO, or to search for Key-Value pairs, please also read the <a href="#tips"
+    target="_blank">Tips (wildcards),</a> <a href="#keyword"
     target="_blank">Keyword searching</a> and <a href="#keyvalue"
     target="_blank">Key-Value Pair Annotation Search</a> chapters. There is no difference in searching for Key-Value pairs between the basic and the <span class="bold">Advanced</span> search tabs.</p>
 
@@ -298,10 +298,10 @@ version:
 
 <p>Inside the search page, click on the <span class="bold">Advanced</span> tab in the left-hand pane.</p>
 
-<p>OMERO.server uses <a href="https://lucene.apache.org/">Lucene</a> to perform the search commands. The <span class="bold">Advanced</span> tab accepts directly the Lucene queries, with no parsing. Follow the steps below to get started with Lucene queries.
+<p>OMERO.server uses <a href="https://lucene.apache.org/">Lucene</a> to perform the search commands. The <span class="bold">Advanced</span> tab accepts the Lucene queries directly, with no parsing. Follow the steps below to get started with Lucene queries.
 
-<p>Construct searches for a string in any <span class="bold">Field</span> as listed in <a href="https://docs.openmicroscopy.org/latest/omero/developers/Modules/Search.html#field-names"
-    target="_blank" class="external-url">the table of fields in the documentation</a> using the syntax: <span class="code-example">Field:string</span>.</p>
+<p>Construct searches for a token in any <span class="bold">Field</span> as listed in <a href="https://docs.openmicroscopy.org/latest/omero/developers/Modules/Search.html#field-names"
+    target="_blank" class="external-url">the table of fields</a> using the syntax: <span class="code-example">Field:token</span>.</p>
 
 <table>
  <tr>
@@ -330,35 +330,35 @@ version:
  </tr>
  <tr>
   <td>tag</td>
-  <td>A Tag attached to the object</td>
+  <td>a Tag attached to the object</td>
  </tr>
  <tr>
   <td>annotation</td>
-  <td>Tag, Key-Value Pairs, Comment, but not Attachment.</td>
+  <td>Tag, Key-Value Pairs, Comment, but not Attachment</td>
  </tr>
  <tr>
   <td>annotation.ns</td>
-  <td>A namespace of an annotation (Tag, Key-Value Pairs, Comment and Attachment)</td>
+  <td>a namespace of an annotation (Tag, Key-Value Pairs, Comment and Attachment)</td>
  </tr>
  <tr>
   <td>annotation.type</td>
-  <td>Type of an annotation, in the syntax TagAnnotation for Tags, MapAnnotation for Key-Value Pairs, CommentAnnotation for Comment, FileAnnotation for Attachment and LongAnnotation for Ratings.</td>
+  <td>type of an annotation, in the syntax TagAnnotation for Tags, MapAnnotation for Key-Value Pairs, CommentAnnotation for Comment, FileAnnotation for Attachment and LongAnnotation for Ratings</td>
  </tr>
  <tr>
   <td>file.name</td>
-  <td>Name of original file attached to an object.</td>
+  <td>name of original file attached to an object</td>
  </tr>
  <tr>
   <td>file.format</td>
-  <td>Format of original file attached to an object.</td>
+  <td>format of original file attached to an object</td>
  </tr>
  <tr>
   <td>file.path</td>
-  <td>Path of original file attached to an object.</td>
+  <td>path of original file attached to an object</td>
  </tr>
  <tr>
   <td>file.contents</td>
-  <td>Contents of original file attached to an object. Presently, the "pdf" and "csv" formats only are searched for contents.</td>
+  <td>contents of original file attached to an object. Presently, the "pdf" and "csv" formats only are searched for contents</td>
  </tr>
 </table>
 
@@ -366,7 +366,7 @@ version:
 
 <p class="code-example">name:injected</p>
 
-<p>will find all Projects, Datasets, Screens, Plates, Wells or Images which have the search term <span class="code-example">injected</span> in their name.</p>
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images which have the token <span class="code-example">injected</span> in their name.</p>
 
 <p>and searching for:</p>
 
@@ -380,7 +380,7 @@ version:
 
 <p class="code-example">file.contents:figure AND file.format:pdf</p>
 
-<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a FileAnnotation which has the string <span class="code-example">figure</span> in it and with a FileAnnotation where the format of the FileAnnotation is pdf. Note that the two FileAnnotations may or may not be identical, both cases will be listed in the search results.</p>
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a FileAnnotation which has the token <span class="code-example">figure</span> in it and with a FileAnnotation where the format of the FileAnnotation is pdf. Note that the two FileAnnotations may or may not be identical, both cases will be listed in the search results.</p>
 
 <p>Combine searching in fields using AND, OR, NOT and brackets.</p>
 
