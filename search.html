@@ -386,9 +386,9 @@ version:
 
 <p>For example, searching for:</p>
 
-<p class="code-example">name:injected AND annotation.type:MapAnnotation AND (tag:Mitosis OR (tag:40x AND tag:confocal))</p>
+<p class="code-example">name:injected AND staining:HE AND tag:granulocyte AND NOT (tag:eosinophil OR tag:neutrophil)</p>
 
-<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a name containing <span class="code-example">injected</span>, annotated with any Key-Value Pairs, which are also tagged with either the tag <span class="code-example">Mitosisf</span> or both the tags <span class="code-example">40x</span> and <span class="code-example">confocal</span>.</p>
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a name containing <span class="code-example">injected</span>, annotated with a Key-Value pair annotation with the specific key: <span class="code-example">staining</span> and the corresponding value: <span class="code-example">HE</span>  which are also tagged with the tag <span class="code-example">granulocyte</span> but neither of the tags <span class="code-example">eosinophil</span> and <span class="code-example">neutrophil</span>.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
