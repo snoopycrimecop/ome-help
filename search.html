@@ -15,6 +15,7 @@ version:
 <a href="#tips">Tips (wildcards)</a><br />
 <a href="#keyword">Keyword Searching</a><br />
 <a href="#keyvalue">Key-Value Pair Annotation Search</a><br />
+<a href="#advanced">Advanced Search</a><br />
 </p>
 
 </div><!-- End Page Navigation -->
@@ -286,6 +287,108 @@ version:
 
 <p>will return objects with a Key-Value pair annotation with the specific key: <span class="code-example">Temperature</span>.</p>
 
+<h2><a class="anchor" id="advanced"></a>Advanced Search</h2>
+
+<p>To understand the basics of Search in OMERO, or to search for Key-Value pairs, please also read the <a href="#tips"
+    target="_blank">Tips (wildcards),</a> <a href="#keyword"
+    target="_blank">Keyword searching</a> and <a href="#keyvalue"
+    target="_blank">Key-Value Pair Annotation Search</a> chapters. There is no difference in searching for Key-Value pairs between the basic and the <span class="bold">Advanced</span> search tabs.</p>
+
+<p>Advanced search is available in OMERO.web only.</p>
+
+<p>Inside the search page, click on the <span class="bold">Advanced</span> tab in the left-hand pane.</p>
+
+<p>OMERO.server uses <a href="https://lucene.apache.org/">Lucene</a> to perform the search commands. The <span class="bold">Advanced</span> tab accepts the Lucene queries directly, with no parsing. Follow the steps below to get started with Lucene queries.
+
+<p>Construct searches for a token in any <span class="bold">Field</span> as listed in <a href="https://docs.openmicroscopy.org/latest/omero/developers/Modules/Search.html#field-names"
+    target="_blank" class="external-url">the table of fields</a> using the syntax: <span class="code-example">Field:token</span>.</p>
+
+<table>
+ <tr>
+  <th>Field</th>
+  <th>Comment</th>
+ </tr>
+ <tr>
+  <td>name</td>
+  <td>name of the field</td>
+ </tr>
+ <tr>
+  <td>details.owner.omeName</td>
+  <td>login name of the owner</td>
+ </tr>
+ <tr>
+  <td>details.owner.firstName</td>
+  <td>first name of the owner</td>
+ </tr>
+ <tr>
+  <td>details.owner.lastName</td>
+  <td>last name of the owner</td>
+ </tr>
+ <tr>
+  <td>details.group.name</td>
+  <td>group name of the group</td>
+ </tr>
+ <tr>
+  <td>tag</td>
+  <td>a Tag attached to the object</td>
+ </tr>
+ <tr>
+  <td>annotation</td>
+  <td>Tag, Key-Value Pairs, Comment, but not Attachment</td>
+ </tr>
+ <tr>
+  <td>annotation.ns</td>
+  <td>a namespace of an annotation (Tag, Key-Value Pairs, Comment and Attachment)</td>
+ </tr>
+ <tr>
+  <td>annotation.type</td>
+  <td>type of an annotation, in the syntax TagAnnotation for Tags, MapAnnotation for Key-Value Pairs, CommentAnnotation for Comment, FileAnnotation for Attachment and LongAnnotation for Ratings</td>
+ </tr>
+ <tr>
+  <td>file.name</td>
+  <td>name of original file attached to an object</td>
+ </tr>
+ <tr>
+  <td>file.format</td>
+  <td>format of original file attached to an object</td>
+ </tr>
+ <tr>
+  <td>file.path</td>
+  <td>path of original file attached to an object</td>
+ </tr>
+ <tr>
+  <td>file.contents</td>
+  <td>contents of original file attached to an object. Presently, the "pdf" and "csv" formats only are searched for contents</td>
+ </tr>
+</table>
+
+<p>For example, searching for:</p>
+
+<p class="code-example">name:injected</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images which have the token <span class="code-example">injected</span> in their name.</p>
+
+<p>and searching for:</p>
+
+<p class="code-example">file.format:pdf</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a FileAnnotation where the format of the FileAnnotation is pdf.</p>
+
+<p>Combine searching in fields using AND, OR, NOT.</p>
+
+<p>For example, searching for:</p>
+
+<p class="code-example">file.contents:figure AND file.format:pdf</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a FileAnnotation which has the token <span class="code-example">figure</span> in it and with a FileAnnotation where the format of the FileAnnotation is pdf. Note that the two FileAnnotations may or may not be identical, both cases will be listed in the search results.</p>
+
+<p>Combine searching in fields using AND, OR, NOT and brackets.</p>
+
+<p>For example, searching for:</p>
+
+<p class="code-example">name:injected AND staining:HE AND tag:granulocyte AND NOT (tag:eosinophil OR tag:neutrophil)</p>
+
+<p>will find all Projects, Datasets, Screens, Plates, Wells or Images with a name containing <span class="code-example">injected</span>, annotated with a Key-Value pair annotation with the specific key: <span class="code-example">staining</span> and the corresponding value: <span class="code-example">HE</span>  which are also tagged with the tag <span class="code-example">granulocyte</span> but neither of the tags <span class="code-example">eosinophil</span> and <span class="code-example">neutrophil</span>.</p>
 
 <p class="top_link"><a href="#top"><img src="images/back_to_top.png" alt="Image for link to top of page" style="float: right;"/></a></p>
 
