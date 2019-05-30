@@ -5,7 +5,9 @@ markdown: redcarpet
 highlighter: rouge
 
 omero:
-  version: 5.4.10
+  version: 5.5.0
+  insight:
+    version: 5.5.0
 
 baseurl: /ome-help
 clsbaseurl: /ome-help/cls
