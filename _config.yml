@@ -7,7 +7,7 @@ highlighter: rouge
 omero:
   version: 5.5.0
   insight:
-    version: 5.5.0
+    version: 5.5.1
 
 baseurl: /ome-help
 clsbaseurl: /ome-help/cls
