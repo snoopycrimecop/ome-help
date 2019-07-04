@@ -37,9 +37,11 @@ redirect_from:
 
 <h2><a class="anchor" id="insight"></a>Installing OMERO.insight</h2>
 
-<p>For Windows machines, or Apple Macs where the user has administrative privileges, follow the instructions for downloading and installing in steps 1 and 2 below.</p>
+<p>For IT-managed Windows machines, where users do not have administrative privileges, use the Software Centre app to download OMERO.insight as described in Step 1.</p>
 
-<p>For Apple Mac machines with the standard SLS disc image, where users do not have administrative privileges, use the Self Service app to download OMERO as described in step 3.</p>
+<p>For IT-managed Apple Mac machines, where users do not have administrative privileges, use the Self Service app to download OMERO.insight as described in Step 2.</p>
+
+<p>For Windows machines or Apple Mac machines where the user has administrative privileges, follow <a href="https://help.openmicroscopy.org/getting-started-5.html#installing" target="_blank" class="external-url">these installation steps</a>.</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
@@ -49,87 +51,43 @@ redirect_from:
 
 <li>
 
-<p class="first">Download the OMERO.insight client for your operating system from:</p>
-
-<p><span class="bold"><a href="https://www.openmicroscopy.org/omero/downloads/" target="_blank" class="external-url">https://www.openmicroscopy.org/omero/downloads/</a></span></p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<img alt="../images/gettingStarted5Downloads.png" class="align-center" src="images/gettingStarted5Downloads.png" style="width: 100%;" />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
-<li><p class="first">Expand OMERO.insight client archive and move it to your home directory.</p>
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p class="bold">Windows:</p>
-
-<img alt="../images/gettingStarted5ZipsWin.jpg" src="images/gettingStarted5ZipsWin.jpg" style="width: 100%; class="align-center" " />
-
-<p class="bold">Mac OS X:</p>
-
-<img alt="../images/gettingStarted5ZipsMac.jpg" src="images/gettingStarted5ZipsMac.jpg" style="width: 100%; class="align-center" " />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-<p class="bold">Linux:</p>
-
-<img alt="../images/gettingStarted5ZipsLinux.jpg" src="images/gettingStarted5ZipsLinux.jpg" style="width: 100%; class="align-center" " />
-
-<div class="line-block">
-<div class="line"><br /></div> <!-- end #line -->
-</div> <!-- end #line-block -->
-
-</li>
-
+<p class="first">For IT-managed Windows machines with no administrator privileges, first uninstall any previously installed OMERO.insight using "Programs and Features Manager"<a href="https://www.dundee.ac.uk/it/guide/details/add-software-windows-staff-desktop.php" target="_blank" class="external-url">Programs and Features Manager</a>. Then, install the latest available OMERO.insight from
+     the "Software Centre" app, as described in <a href="https://www.dundee.ac.uk/it/guide/details/add-software-windows-staff-desktop.php" target="_blank" class="external-url">the UoD IT Software Centre documentation.</a></p>
 <div class="note">
-<p><span class="bold">Note</span></p>
-<p class="note-text">As OMERO.insight is a stand-alone Java application, and does not require installation as such, you do not need administrator privileges to install it.</p>
-<p class="note-text">On Windows, expand the .zip archive and move the OMERO.clients folder to your Documents or home directory, or the Programs folder if you have the permissions.</p>
-<p class="note-text">On a Mac move the OMERO.clients folder to your Applications folder.</p>
-<p class="note-text">Mac users on machines where they are an administrator may be blocked by a warning that OMERO.insight has been prevented from opening as it is from an unidentified developer.</p>
-<p class="note-text">Follow these instructions to adjust the security settings so OMERO.insight can run on your Mac:</p>
-
-<p><a href="https://support.apple.com/kb/PH14369?" target="_blank" class="external-url">OS X Mavericks: Open an app from an unidentified developer</a></p>
-
-</div><!-- End note -->
-
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-
-<li><p class="first">For Mac users with standard SLS disc images installed (no administrative privileges).</p>
-
-<p>Open the <span class="bold">Self Service.app</span> in the Applications folder.</p>
-
-<p>Select the <span class="bold">Scientific</span> section from the menu on the right.</p>
-
-<p>Click the <span class="bold">Install</span> button for OMERO.</p>
+    <p><span class="bold">Note</span></p>
+    <p class="note-text">OMERO.insight installation is usually short, nevertheless the "Software Centre" might inaccurately report "Installing" or even "Failed". A shortcut to
+    the newly installed OMERO.insight on your Desktop and an OMERO.insight item in your Start menu will be automatically created. Once you see the shortcut or the menu item,
+    try clicking on either of those and this will start OMERO.insight.</p>
+</p>
 
 <div class="line-block">
 <div class="line"><br /></div> <!-- end #line -->
 </div> <!-- end #line-block -->
 
-<img alt="../images/slsOmeroSelfService.jpg" src="images/slsOmeroSelfService.jpg" style="width: 100%; class="align-center" " />
-
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-
 </li>
+
+<li><p class="first">For IT-managed Apple Mac machines, where users do not have administrative privileges.</p>
+
+    <p>Open the <span class="bold">Self Service.app</span>.</p>
+    
+    <p>Type "insight" into the search box in top left of the Self Serivice app.</p>
+    
+    <p>Click the <span class="bold">Install</span> button for OMERO.insight.</p>
+
+    <p>This will install OMERO.insight directly into the <span class="bold">Applications</span> folder of your Mac.</p>
+    
+    <div class="line-block">
+    <div class="line"><br /></div> <!-- end #line -->
+    </div> <!-- end #line-block -->
+    
+    <img alt="../images/slsOmeroSelfService.png" src="images/slsOmeroSelfService.png" style="width: 100%; class="align-center" />
+    
+    <div class="line-block">
+    <div class="line"><br /></div>
+    <div class="line"><br /></div>
+    </div>
+    
+    </li>
 
 <li>
 
