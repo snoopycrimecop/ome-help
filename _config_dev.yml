@@ -4,5 +4,7 @@ plugins:
 markdown: redcarpet
 highlighter: rouge
 
-baseurl: ''
-clsbaseurl: /cls
+url: https://snoopycrimecrop.github.io
+repository: ome/ome-help
+baseurl: /ome-help
+clsbaseurl: /ome-help/cls

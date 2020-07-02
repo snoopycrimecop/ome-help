@@ -1,11 +1,8 @@
 language: ruby
-sudo: false
-cache: bundler
-rvm: 2.2.2
-install: bundle install
+sudo: required
+services:
+- docker
+
 script:
-    - bundle exec jekyll build --config _config_dev.yml
-    - bundle exec htmlproofer ./_site --disable-external --alt-ignore "\/images\/.*.gif"
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - docker run -it --rm -v $PWD:/srv/jekyll -eJEKYLL_UID=$UID jekyll/builder:pages jekyll build --config _config_dev.yml
+    - docker run -it  --rm -v $(pwd)/_site:/site -v $(pwd)/images:/images -it jekyll/builder:pages /usr/gem/bin/htmlproofer /site --disable-external --alt-ignore "\/images\/.*.gif"

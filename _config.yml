@@ -9,5 +9,7 @@ omero:
   insight:
     version: 5.5.2
 
+url: https://ome.github.io
+repository: ome/ome-help
 baseurl: /ome-help
 clsbaseurl: /ome-help/cls
